@@ -1,0 +1,40 @@
+# Operation Potao snort rules
+# For feedback or questions contact us at: threatintel@eset.com
+# https://github.com/eset/malware-ioc/
+#
+# These snort rules are provided to the community under the two-clause BSD
+# license as follows:
+#
+# Copyright (c) 2015, ESET
+# All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are met:
+#
+# 1. Redistributions of source code must retain the above copyright notice, this
+# list of conditions and the following disclaimer.
+#
+# 2. Redistributions in binary form must reproduce the above copyright notice,
+# this list of conditions and the following disclaimer in the documentation
+# and/or other materials provided with the distribution.
+#
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+# AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+# IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+# DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+# FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+# DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+# SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+# CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+# OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+# OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#
+alert tcp $HOME_NET any -> $EXTERNAL_NET [80,8008,8080] (msg:"ET TROJAN Win32/Potao HTTP CnC Beacon"; flow:established,to_server; content:"POST"; http_method; content:"/winter/task"; http_uri; fast_pattern; content:"Content-Type|3a| application/xml|0d 0a|"; http_header; content:"10a7d030-1a61-11e3-beea-001c42e2a08b"; reference:url,http://www.welivesecurity.com/wp-content/uploads/2015/07/Operation-Potao-Express_final_v2.pdf; reference:url,github.com/eset/malware-ioc; classtype:trojan-activity; sid:35370001; rev:1;)
+alert udp any any -> any 53 (msg:"ET TROJAN Win32/FakeTC C&C DNS request"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|0f|truecryptrussia|02|ru|00|"; fast_pattern; nocase; distance:0; reference:url,http://www.welivesecurity.com/wp-content/uploads/2015/07/Operation-Potao-Express_final_v2.pdf; reference:url,github.com/eset/malware-ioc; classtype:trojan-activity; sid:35370002; rev:1;)
+alert udp any any -> any 53 (msg:"ET TROJAN Win32/Potao C&C DNS request"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|0a|mntexpress|03|com"; fast_pattern; nocase; distance:0; reference:url,http://www.welivesecurity.com/wp-content/uploads/2015/07/Operation-Potao-Express_final_v2.pdf; reference:url,github.com/eset/malware-ioc; classtype:trojan-activity; sid:35370003; rev:1;)
+alert udp any any -> any 53 (msg:"ET TROJAN Win32/Potao C&C DNS request"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|0c|worldairpost|03|com"; fast_pattern; nocase; distance:0; reference:url,http://www.welivesecurity.com/wp-content/uploads/2015/07/Operation-Potao-Express_final_v2.pdf; reference:url,github.com/eset/malware-ioc; classtype:trojan-activity; sid:35370004; rev:1;)
+alert udp any any -> any 53 (msg:"ET TROJAN Win32/Potao C&C DNS request"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|0c|worldairpost|03|net"; fast_pattern; nocase; distance:0; reference:url,http://www.welivesecurity.com/wp-content/uploads/2015/07/Operation-Potao-Express_final_v2.pdf; reference:url,github.com/eset/malware-ioc; classtype:trojan-activity; sid:35370005; rev:1;)
+alert udp any any -> any 53 (msg:"ET TROJAN Win32/Potao C&C DNS request"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|0f|camprainbowgold|02|ru"; fast_pattern; nocase; distance:0; reference:url,http://www.welivesecurity.com/wp-content/uploads/2015/07/Operation-Potao-Express_final_v2.pdf; reference:url,github.com/eset/malware-ioc; classtype:trojan-activity; sid:35370006; rev:1;)
+alert udp any any -> any 53 (msg:"ET TROJAN Win32/Potao C&C DNS request"; content:"|01 00 00 01 00 00 00 00 00 00|"; depth:10; offset:2; content:"|12|poolwaterslide2011|02|ru"; fast_pattern; nocase; distance:0; reference:url,http://www.welivesecurity.com/wp-content/uploads/2015/07/Operation-Potao-Express_final_v2.pdf; reference:url,github.com/eset/malware-ioc; classtype:trojan-activity; sid:35370007; rev:1;)
+alert ip $HOME_NET any -> 78.47.218.234 443 (msg:"ET TROJAN Win32/FakeTC Connection to C&C IP"; reference:url,http://www.welivesecurity.com/wp-content/uploads/2015/07/Operation-Potao-Express_final_v2.pdf; reference:url,github.com/eset/malware-ioc; classtype:trojan-activity; sid:35370008; rev:1;)
+alert ip $HOME_NET any -> [95.86.129.92,115.68.23.192,67.18.208.92,37.139.47.162,212.227.137.245,62.76.189.181,87.106.44.200,62.76.42.14,94.242.199.78,178.239.60.96,84.234.71.215,67.103.159.141,62.76.184.245,83.169.20.47,148.251.33.219,98.129.238.97,195.210.28.105,198.136.24.155,46.165.228.130,192.154.97.239,5.44.99.46,188.240.46.1,81.196.48.188,74.54.206.162,69.64.72.206,74.208.68.243,46.163.73.99,193.34.144.63,103.3.77.219,119.59.105.221,188.40.71.188,188.40.71.137,108.179.245.41,64.40.101.43,190.228.169.253,194.15.126.123,188.127.249.19] [80,8008,8080,443] (msg:"ET TROJAN Win32/Potao Connection to C&C IP"; reference:url,http://www.welivesecurity.com/wp-content/uploads/2015/07/Operation-Potao-Express_final_v2.pdf; reference:url,github.com/eset/malware-ioc; classtype:trojan-activity; sid:35370009; rev:1;)
