@@ -1,0 +1,29 @@
+#*************************************************************
+#  Copyright (c) 2003-2015, Emerging Threats
+#  All rights reserved.
+#  
+#  Redistribution and use in source and binary forms, with or without modification, are permitted provided that the 
+#  following conditions are met:
+#  
+#  * Redistributions of source code must retain the above copyright notice, this list of conditions and the following 
+#    disclaimer.
+#  * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the 
+#    following disclaimer in the documentation and/or other materials provided with the distribution.
+#  * Neither the name of the nor the names of its contributors may be used to endorse or promote products derived 
+#    from this software without specific prior written permission.
+#  
+#  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS AS IS AND ANY EXPRESS OR IMPLIED WARRANTIES, 
+#  INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE 
+#  DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, 
+#  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR 
+#  SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, 
+#  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE 
+#  USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. 
+#
+#*************************************************************
+#
+alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"ET TROJAN Potao CnC"; flow:to_server,established; content:"POST"; http_method; content:"Content-Type|3a 20|application/xml"; content:"<?xml version=|22|1.0|22|?>"; depth:21; http_client_body; content:"10a7d030-1a61-11e3-beea-001c42e2a08b"; distance:24; http_client_body; fast_pattern; classtype:trojan-activity; sid:2021554; rev:1;)
+
+#
+alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"ET TROJAN Potao CnC POST Response"; flow:to_client,established; content:"Server|3a 20|nginx"; http_header; file_data; content:"<?xml version=|27|1.0|27|?>"; depth:21; content:"<methodResponse>"; distance:1; content:"<params>|0a|<param>"; distance:1; content:"<value><base64>"; fast_pattern; distance:1; pcre:"/^\x0a(?:[A-Za-z0-9/+]{4})*(?:[A-Za-z0-9/+]{2}==|[A-Za-z0-9/+]{3}=|[A-Za-z0-9/+]{4})\x0a/R"; classtype:trojan-activity; sid:2021555; rev:1;)
+
