@@ -1,0 +1,38 @@
+= OSX/Keydnap IoCs
+
+For a description of Keydnap, please see the
+http://www.welivesecurity.com/2016/07/06/new-osxkeydnap-malware-is-hungry-for-credentials[article about Keydnap]
+on http://www.welivesecurity.com[WeLiveSecurity].
+
+== Samples
+
+=== Downloader
+
+[options="header"]
+|======
+| SHA-1 | Filename | First seen on VirusTotal | Backdoor download URL | Decoy description or URL
+| `07cd177f5baf8c1bdbbae22f1e8f03f22dfdb148` | info_list.txt | 2016-05-09 | hxxp://dev.aneros.com/media/icloudsyncd | "Most Common Interview Questions"
+| `78ba1152ef3883e63f10c3a85cbf00f2bb305a6a` | screenshot_2016-06-28-01.jpg | 2016-06-28 | hxxp://freesafesoft.com/icloudsyncd | BlackHat-TDS Panel screenshot
+| `773a82343367b3d09965f6f09cc9887e7f8f01bf` | screenshot.jpg | 2016-05-07 | hxxp://dev.aneros.com/media/icloudsyncd | Firefox 20 about screenshot
+| `dfdb38f1e3ca88cfc8e9a2828599a8ce94eb958c` | CVdetails.doc | 2016-05-03 | hxxp://lovefromscratch.ca/wp-admin/css/icloudsyncd | hxxp://lovefromscratch.ca/wp-admin/CVdetails.doc
+| `2739170ed195ff1b9f00c44502a21b5613d08a58` | CVdetails.doc | 2016-05-03 | hxxp://lovefromscratch.ca/wp-admin/css/icloudsyncd | hxxp://lovefromscratch.ca/wp-admin/CVdetails.doc
+| `e9d4523d9116b3190f2068b1be10229e96f21729` | logo.jpg | 2016-06-02 | hxxp://dev.aneros.com/media/icloudsyncd | sanelite logo
+| `7472102922f91a78268430510eced1059eef1770` | screenshot_9324 2.jpg | 2016-06-28 | hxxp://freesafesoft.com/icloudsyncd | Some C&C panel
+|======
+
+=== Backdoor
+
+[options="header"]
+|======
+| SHA-1                                      | C&C                               | Version
+| `a4bc56f5ddbe006c9a68422a7132ad782c1aeb7b` | hxxps://g5wcesdfjzne7255.onion.to | 1.3.1
+| `abf99129e0682d2fa40c30a1a1ad9e0c701e14a4` | hxxps://r2elajikcosf7zee.onion.to | 1.3.5
+|======
+
+A patch for UPX to unpack the samples is provided here:
+https://github.com/eset/malware-research/blob/master/keydnap/keydnap_upx.patch
+
+== Backdoor C&C servers
+
+- `hxxps://g5wcesdfjzne7255.onion.to/`
+- `hxxps://r2elajikcosf7zee.onion.to/`
