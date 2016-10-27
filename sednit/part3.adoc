@@ -1,0 +1,71 @@
+== Indicators of Compromise
+
+=== DOWNDELPH
+
+==== ESET Detection Names
+
+----
+Win32/Rootkit.Agent.OAW
+Win32/Rootkit.Agent.OAY
+Win32/Sednit.AZ
+Win32/Sednit.BA
+Win32/Sednit.BB
+Win32/Sednit.K
+Win64/Sednit.J
+----
+
+==== Hashes
+
+----
+1cc2b6b208b7687763659aeb5dcb76c5c2fbbf26
+49acba812894444c634b034962d46f986e0257cf
+4c9c7c4fd83edaf7ec80687a7a957826de038dd7
+4f92d364ce871c1aebbf3c5d2445c296ef535632
+516ec3584073a1c05c0d909b8b6c15ecb10933f1
+593d0eb95227e41d299659842395e76b55aa048d
+5c132ae63e3b41f7b2385740b9109b473856a6a5
+5fc4d555ca7e0536d18043977602d421a6fd65f9
+669a02e330f5afc55a3775c4c6959b3f9e9965cf
+6caa48cd9532da4cabd6994f62b8211ab9672d9e
+7394ea20c3d510c938ef83a2d0195b767cd99ed7
+9f3ab8779f2b81cae83f62245afb124266765939
+e8aca4b0cfe509783a34ff908287f98cab968d9e
+ee788901cd804965f1cd00a0afc713c8623430c4
+----
+
+==== File Names
+
+----
+apivscd.dll
+install_com_x32_LL_full.dll
+shcore.dll
+userinit.exe
+----
+
+==== Registry Keys
+
+----
+HKCU\Software\Microsoft\Windows\CurrentVersion\Run\LastEnum
+SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system\shell
+----
+
+==== C&C Server Domain Names
+
+----
+intelmeserver.com
+----
+
+==== C&C Server IP addresses
+
+----
+104.171.117.216
+141.255.160.52
+----
+
+==== PDB Paths
+
+----
+d:\\!work\\etc\\hideinstaller_kis2013\\Bin\\Debug\\win7\\x64\\fsflt.pdb
+d:\\new\\hideinstaller\\Bin\\Debug\\wxp\\x86\\fsflt.pdb
+d:\\!work\\etc\\hi\\Bin\\Debug\\win7\\x86\\fsflt.pdb
+----
