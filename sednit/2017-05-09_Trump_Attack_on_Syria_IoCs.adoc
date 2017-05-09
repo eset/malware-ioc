@@ -1,0 +1,39 @@
+== Sednit's _Trump's_Attack_on_Syria_ Indicators of Compromise
+
+Related blog post:
+
+- http://www.welivesecurity.com/2017/05/09/sednit-adds-two-zero-day-exploits-using-trumps-attack-on-syria-as-a-decoy/[Sednit
+  adds two zero-day exploits using ‘Trump’s attack on Syria’ as a decoy]
+
+Also available in link:2017-05-09_Trump_Attack_on_Syria_IoCs.json[MISP JSON format].
+
+=== CVE Numbers
+
+- CVE-2017-0261
+- CVE-2017-0262
+- CVE-2017-0263
+
+=== SHA-1 Hashes
+
+- `d072d9f81390c14ffc5f3b7ae066ba3999f80fee` - LPE
+- `6a90e0b5ec9970a9f443a7d52eee4c16f17fcc70` - SedUploader Dropper
+- `18b7dd3917231d7bae93c11f915e9702aa5d1bbb` - Office RCE
+- `d5235d136cfcadbef431eea7253d80bde414db9d` - Docx
+
+
+=== File names
+
+- `Trump's_Attack_on_Syria_English.docx`
+- `image1.eps`
+- `joiner.dll`
+- `apisecconnect.dll`
+
+=== ESET Detection Names
+
+- Win32/Exploit.Agent.NWV
+- Win32/Exploit.Agent.NWZ
+- Win32/Sednit.B
+
+=== Registry Keys
+
+- `HKCU\Software\Microsoft\Office test\Special\Perf|%TEMP%\apisecconnect.dll`
