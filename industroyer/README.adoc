@@ -1,0 +1,30 @@
+= Win32/Industroyer -- Indicators of Compromise
+
+For a description of Industroyer, please see the article about
+https://www.welivesecurity.com/2017/06/12/industroyer-biggest-threat-industrial-control-systems-since-stuxnet/[Industroyer]
+on https://www.welivesecurity.com[WeLiveSecurity].
+
+== SHA-1 hashes
+----
+F6C21F8189CED6AE150F9EF2E82A3A57843B587D
+CCCCE62996D578B984984426A024D9B250237533
+8E39ECA1E48240C01EE570631AE8F0C9A9637187
+2CB8230281B86FA944D3043AE906016C8B5984D9
+79CA89711CDAEDB16B0CCCCFDCFBD6AA7E57120A
+94488F214B165512D2FC0438A581F5C9E3BD4D4C
+5A5FAFBC3FEC8D36FD57B075EBF34119BA3BFF04
+B92149F046F00BB69DE329B8457D32C24726EE00
+B335163E6EB854DF5E08E85026B2C3518891EDA8
+----
+
+== IP addresses of C&C servers
+
+WARNING: Most of the servers with these IP addresses were part of Tor network,
+         which means that the use of these indicators could result in false
+         positives.
+
+- 195.16.88.6
+- 46.28.200.132
+- 188.42.253.43
+- 5.39.218.152
+- 93.115.27.57
