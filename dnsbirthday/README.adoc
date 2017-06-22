@@ -1,0 +1,59 @@
+= DNSBirthday -- Indicators of Compromise
+
+For a description of DNSBirthday, please see the article about
+https://www.welivesecurity.com/2017/06/22/got-birthday-reminder/[DNSBirthday]
+on https://www.welivesecurity.com[WeLiveSecurity].
+
+== IoCs
+
+=== Registry
+
+* `HKLM\Software\Microsoft\Windows\CurrentVersion\Run\BirthdayReminder`
+
+=== Mutex
+
+* `Global\Global\RqzSingleInst`
+* `Global\downloadExec`
+
+=== Hashes
+
+[options="header"]
+|=====
+| Component                      | SHA-1                                       | ESET Detection name
+| BirthdayReminderSetup.exe      | `6a07de60da0962ee952e63ac89ce86d2581f3926` | Win32/Adware.DNSBirthday.A
+| rqz-loader 1.1.0 x32           | `19041323a4ecd92eb888664e1d2c0b2893419f78` | Win32/Adware.DNSBirthday.A
+| rqz-loader 1.1.0 x64           | `94c6f2bbad0ce47957d18b53ef1938d846d7576f` | Win64/Adware.DNSBirthday.B
+| rqz-stg1 1.1.0 x32             | `59eb5b5d3171069761a13389a1a7cce12a95e0bd` | Win32/Adware.DNSBirthday.A
+| rqz-stg1 1.1.0 x64             | `f02e0012aedf02f898f1558c827491d7099c1d62` | Win64/Adware.DNSBirthday.A
+| rqz-info-gatherer 1.0.4 x32    | `8cfbd1f7e4d8c4357766f0f4b84bb08cf2e78c17` | Win32/Adware.DNSBirthday.B
+| rqz-info-gatherer 1.0.4 x64    | `0f4aeee1a0878eb510229b871e02eb1e1939107e` | Win64/Adware.DNSBirthday.B
+| rqz-dnsduvel-ldr 1.0.4 x32     | `892785875fcdfe4cc672ba1c3fc59bfbf37c7efe` | Win32/Adware.DNSBirthday.A
+| rqz-dnsduvel-ldr 1.0.4 x64     | `5a5174739bbb7881c46112704cbf039f39d98fec` | Win64/Adware.DNSBirthday.B
+| rqz-dnsduvel-ldr-exe 1.0.4 x32 | `cc291be6cbc7b0dc3aa09973d0ed98e363f9083f` | Win32/Adware.DNSBirthday.A
+| rqz-dnsduvel-ldr-exe 1.0.4 x64 | `ce84d96a974e95499fadd3320f851c0b728cd438` | Win64/Adware.DNSBirthday.B
+| rqz-dnsduvel 1.0.3-68c0c5 x32  | `e6b6fe919cf6c3af0d40594e86da4cf776dbcf9a` | Win32/Adware.DNSBirthday.B
+| rqz-dnsduvel 1.0.3-68c0c5 x64  | `d1085fb7f2c4d1add9244cb8af6d0e25b50d7b14` | Win64/Adware.DNSBirthday.B
+|=====
+
+Because `BirthdayReminderSetup.exe` and `BRController.exe` contains a unique
+bot id, here are ssdeep fuzzy hashes:
+
+[options="header"]
+|=====
+| Component | ssdeep
+| BirthdayReminderSetup.exe | `393216:ZD4b8Ev/xl3OB4fcUx6uj55/Q7COLc1cm+DkC1GWF2jazuIYRCxEfFCqgY9iHtKZ:ZD5EhFOmcUs85/OCOLecm+14OzzY9Fdl`
+| BRController.exe (x86) | `24576:0+KpP0PYnsKdFCH6BMKHiBMikwMbSyM52it6YTekcys4e6faNe0M4RzRPxM4TuZR:cfs4F6KHiy7kM4CjlpRPx1TuZ+tgP8K`
+| BRController.exe (x64) | `49152:l4+VwASOwGtlqKPb8KHh+3ulMrqkvTiV3ML3OsQXIU6inTe2mEPEB:jCTiVGV+q2mHB`
+|=====
+
+=== Network
+
+* Rogue DNS server: `176.31.106.50` (inactive)
+* C&C server: `updates.rqztech.com` (was `188.165.205.99`)
+* Ad server IP addresses: `188.214.30.97` and `188.214.30.98`
+* DNS query to domain matching `[0-9a-f]{60}.smoke`
+
+=== SSL certificates
+
+* link:358bb04f6a0bf8ce88d23b2e620ac01b28d307ab80286f6ee2dcc484a6b1a5d0.pem[`358bb04f6a0bf8ce88d23b2e620ac01b28d307ab80286f6ee2dcc484a6b1a5d0.pem`]
+* link:45cbc80fe0cac8004f862b9eb90b53b57b06299f98e20923185eb08c363d1ec4.pem[`45cbc80fe0cac8004f862b9eb90b53b57b06299f98e20923185eb08c363d1ec4.pem`]
