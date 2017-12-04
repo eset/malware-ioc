@@ -1,0 +1,85 @@
+= Gamarue (Andromeda) Indicators of Compromise
+
+== ESET Detection names
+
+Gamarue is detected as
+
+* Win32/TrojanDownloader.Wauchos
+
+USB spreader plugin is detected as
+
+* Win32/Bundpil.CS
+
+== DGA algorithm
+
+=== First version
+
+Both the downloader and the USB spreader use the exact same DGA. The only
+difference are the seeds that they use. Here is pseudo-code of the DGA used:
+
+[source, c]
+----
+generate domain:
+seed = dgaSeed(systemTime);
+for(i = 0; i < random(&seed) % 4 + 8; ++i){
+    int c = random(&seed) % 75 + '0';
+    if ((c >= '0' && c <= '9') || (c >= 'a' && c <= 'z'))
+        domain += c;
+    else
+        --i;
+}
+return domain + ".ru";
+----
+
+The following shows first how the USB spreader gets its seed while the second
+shows the downloader seed generation:
+
+[source, c]
+----
+dgaSeed:
+a = (14 - systemTime->wMonth) / 12;
+y = systemTime->wYear + 4800 - a;
+m = systemTime->wMonth + 12 * a - 3;
+JD = systemTime->wDay + (153 * m + 2) / 5 + y * 365 + y / 4 - y / 100 + y / 400 - 32045;
+d = (JD + 31741 - (JD % 7)) % 146097 % 36524 % 1461;
+seed = (((d - d / 1460) % 365) + d / 1460) / 7 + 1;
+----
+
+[source, c]
+----
+dgaSeed:
+a = (14 - systemTime->wMonth) / 12;
+y = systemTime->wYear + 4800 - a;
+m = systemTime->wMonth + 12 * a - 3;
+JD = systemTime->wDay + (153 * m + 2) / 5 + y * 365 + y / 4 - y / 100 + y / 400 - 32045;
+d = (JD + 31741 - (JD % 7)) % 146097 % 36524 % 1461;
+seed = systemTime->wYear + (((d - d / 1460) % 365) + d / 1460) / 7 + 1;
+----
+
+=== Second version
+
+The newest version we know of the downloader changed the seed generation of its
+DGA slightly by adding the square of the year instead of just the year:
+
+[source, c]
+----
+dgaSeed:
+a = (14 - systemTime->wMonth) / 12;
+y = systemTime->wYear + 4800 - a;
+m = systemTime->wMonth + 12 * a - 3;
+JD = systemTime->wDay + (153 * m + 2) / 5 + y * 365 + y / 4 - y / 100 + y / 400 - 32045;
+d = (JD + 31741 - (JD % 7)) % 146097 % 36524 % 1461;
+seed = (systemTime->wYear * systemTime->wYear) + (((d - d / 1460) % 365) + d / 1460) / 7 + 1;
+----
+
+== Hashes
+
+[options="header"]
+|===
+|SHA-1|ESET Detection Name
+|`CC9AC16847427CC15909A60B130CB7E67D2D3804`|Win32/TrojanDownloader.Wauchos.B
+|`BCD45398983EB58B33294DFE852B57B1ADD5117E`|Win32/TrojanDownloader.Wauchos.AK
+|`6FA5E48AD60B53761A42725A4B9EC12B85963F90`|Win32/TrojanDownloader.Small.AHI
+|`6D5051580DA73570944BBE79A9EA7F2E4D006699`|Win32/TrojanDownloader.Wauchos.O
+|===
+
