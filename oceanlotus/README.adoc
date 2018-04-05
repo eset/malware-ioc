@@ -1,0 +1,135 @@
+= OceanLotus -- Indicators of Compromise
+
+For a description of OceanLotus' latest campaign (using side-loaded binaries such as rastls.exe)
+please see the article 
+https://www.welivesecurity.com/2018/03/13/oceanlotus-ships-new-backdoor/[OceanLotus article]
+and for a detailed explanation the paper 
+https://www.welivesecurity.com/wp-content/uploads/2018/03/ESET_OceanLotus.pdf[OceanLotus whitepaper].
+
+== IoCs
+
+=== Registry
+
+* `HKCU\SOFTWARE\Classes\AppXc52346ec40fb4061ad96be0e6cb7d16a\`
+* `HKCU\SOFTWARE\Classes\AppX3bbba44c6cae4d9695755183472171e2\`
+* `HKCU\SOFTWARE\Classes\CLSID{E3517E26-8E93-458D-A6DF-8030BC80528B}\`
+* `HKCU\SOFTWARE\Intel\Display\igfxcui\igfxtray\;[NUMBER];[DWORD]`
+
+=== Hashes
+
+==== Initial Dropper
+
+[options="header"]
+|=====
+|SHA1                                      |Filename                                        |ESET Detection name
+|`fdcb35cd9cb8dc1474cbcdf1c9bb03200dcf3f18`|RobototFontUpdate.exe                           |Win32/TrojanDropper.Agent.RUI
+|`a40ee8ff313e59aa92d48592c494a4c3d81449af`|Firefox Installer.exe                           |Win32/TrojanDropper.Agent.RUI
+|`c2eb1033bc01ab0fd732a7ba4967be02c0690bf0`|20170905-Evaluation Table.xls.exe               |Win32/TrojanDropper.Agent.RUI
+|`d35695f2366a43628231e73ffa83ca106306a8fa`|CV_LeHoangThing.doc.exe                         |Win32/TrojanDropper.Agent.RUI
+|`fe0161fb8a26a0bf4afad746c7ebf89499dcd3a7`|Chi tiet don khieu nai gui saigontel.exe        |Win32/TrojanDropper.Agent.RUI
+|`032ef58b7978d079287874044dc516af624ae5f5`|Mi17 Technical issues - Phonesack Grp.exe       |Win32/TrojanDropper.Agent.RUI
+|`2a387d7d47a63d6e47d9cc92d3dc69a53816c2c0`|Sorchornor_with_PM_-_Sep_2017.exe               |Win32/TrojanDropper.Agent.RUI
+|`7105caa6d4fd8a2c67523d385277528e556ae4f6`|Updated AF MOD contract - Jan 2018.exe          |Win32/TrojanDropper.Agent.RUI
+|`f96bcd875836da89800912de1e557891697c7cf4`|remove_pw_Reschedule of CISD Regular Meeting.exe|Win32/TrojanDropper.Agent.RUI
+|=====
+
+==== Sideloaded libraries
+
+[options="header"]
+|=====
+|SHA1                                      |Filename  |ESET Detection name
+|`82e579bd49d69845133c9aa8585f8bd26736437b`|rastls.dll|Win32/Salgorea.BD
+|`202fb56edb2fb542e05c845d62ffbdcfbebed9ec`|McUtil.dll|Win32/Korplug.MK
+|=====
+
+=== Network
+
+==== IP addresses
+
+* `46.183.220.81`
+* `46.183.220.82`
+* `46.183.222.82`
+* `46.183.222.83`
+* `46.183.222.84`
+* `46.183.223.106`
+* `46.183.223.107`
+* `74.121.190.130`
+* `74.121.190.150`
+* `79.143.87.230`
+* `79.143.87.233`
+* `84.38.132.226`
+* `84.38.132.227`
+* `149.56.180.243`
+* `158.69.100.199`
+* `164.132.45.67`
+* `192.34.109.163`
+* `192.34.109.173`
+* `198.50.191.194`
+* `198.50.191.195`
+* `198.50.234.96`
+* `198.50.234.111`
+
+==== Domains
+
+* `adineohler.com`
+* `aisicoin.com`
+* `alicervois.com`
+* `anessallie.com`
+* `antenham.com`
+* `arinaurna.com`
+* `arkoimmerma.com`
+* `aulolloy.com`
+* `avidilleneu.com`
+* `avidsontre.com`
+* `aximilian.com`
+* `biasatts.com`
+* `braydenhateaub.com`
+* `carosseda.com`
+* `chascloud.com`
+* `dreyoddu.com`
+* `dwarduong.com`
+* `eckenbaue.com`
+* `eighrimeau.com`
+* `errellawle.com`
+* `erstin.com`
+* `frahreiner.com`
+* `hieryells.com`
+* `hristophe.com`
+* `ichardt.com`
+* `icmannaws.com`
+* `iecopeland.com`
+* `irkaimboeuf.com`
+* `jamedalue.com`
+* `jamyer.com`
+* `jeanessbinder.com`
+* `jeffreyue.com`
+* `keoucha.com`
+* `laudiaouc.com`
+* `lbertussbau.com`
+* `loridanase.com`
+* `marrmann.com`
+* `meroque.com`
+* `moureuxacv.com`
+* `myolton.com`
+* `nasahlaes.com`
+* `ntjeilliams.com`
+* `omasicase.com`
+* `onnaha.com`
+* `onteagle.com`
+* `orinneamoure.com`
+* `orresto.com`
+* `orrislark.com`
+* `rackerasr.com`
+* `rcuselynac.com`
+* `sanauer.com`
+* `stopherau.com`
+* `tefanie.com`
+* `tefanortin.com`
+* `tephens.com`
+* `traveroyce.com`
+* `tsworthoa.com`
+* `ucaargo.com`
+* `ucairtz.com`
+* `urnage.com`
+* `venionne.com`
+* `virginiaar.com`
