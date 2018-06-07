@@ -1,0 +1,125 @@
+= InvisiMole -- Indicators of Compromise
+
+For a description of InvisiMole, please see the article about
+https://www.welivesecurity.com/2018/06/07/invisimole-equipped-spyware-undercover/[InvisiMole]
+on https://www.welivesecurity.com[WeLiveSecurity].
+
+== ESET detection names
+- Win32/InvisiMole.A
+- Win32/InvisiMole.B
+- Win32/InvisiMole.C
+- Win32/InvisiMole.D
+- Win64/InvisiMole.B
+- Win64/InvisiMole.C
+- Win64/InvisiMole.D
+
+== Host based indicators
+=== SHA-1 hashes
+----
+5EE6E0410052029EAFA10D1669AE3AA04B508BF9
+2FCC87AB226F4A1CC713B13A12421468C82CD586
+B6BA65A48FFEB800C29822265190B8EAEA3935B1
+C8C4B6BCB4B583BA69663EC3AED8E1E01F310F9F
+A5A20BC333F22FD89C34A532680173CBCD287FF8
+----
+
+=== Files and folders
+==== RC2FM
+----
+%APPDATA%\Microsoft\Internet Explorer\Cache\AMB6HER8\
+    %volumeSerialNumber%.dat
+    content.dat
+    cache.dat
+    index.dat
+%APPDATA%\Microsoft\Internet Explorer\Cache\MX0ROSB1\
+    content.dat
+    index.dat
+    %random%.%ext%
+%APPDATA%\Microsoft\Internet Explorer\Cache\index0.dat
+----
+==== RC2CL
+----
+Winrar\
+    comment.txt
+    descript.ion
+    Default.SFX
+    WinRAR.exe
+    main.ico
+fl_%timestamp%\strcn%num%\
+    fdata.dat
+    index.dat
+~mrc_%random%.tmp
+~src_%random%.tmp
+~wbc_%random%.tmp
+sc\~sc%random%.tmp
+~zlp\zdf_%random%.data
+~lcf\tfl_%random%
+
+----
+
+=== Registry keys and values
+==== RC2FM
+----
+[HKEY_CURRENT_USER\Software\Microsoft\IE\Cache]
+"Index"
+----
+==== RC2CL
+----
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Console]
+or [HKEY_CURRENT_USER\Software\Microsoft\Direct3D]
+"Settings"
+"Type"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OLE]
+or [HKEY_CURRENT_USER\Software\Microsoft\Direct3D]
+"Common"
+"Current"
+"ENC"
+"FFLT"
+"Flag1"
+"FlagLF"
+"FlagLF2"
+"IfData"
+"INFO"
+"InstallA"
+"InstallB"
+"LegacyImpersonationNumber"
+"LM"
+"MachineAccessStateData"
+"MachineState 0"
+"RPT"
+"SP2"
+"SP3"
+"SettingsMC"
+"SettingsSR1"
+"SettingsSR2"
+----
+
+== Network indicators
+=== InvisiMole's C&C servers domains
+
+----
+activationstate.sytes[.]net
+advstatecheck.sytes[.]net
+akamai.sytes[.]net
+statbfnl.sytes[.]net
+updchecking.sytes[.]net
+----
+
+=== InvisiMole's C&C servers IP addresses
+
+[options="header"]
+|=====
+| Active period  | IP address
+| 2013-2014      | `46.165.231.85`
+| 2013-2014      | `213.239.220.41`
+| 2014-2017      | `46.165.241.129`
+| 2014-2016      | `46.165.241.153`
+| 2014-2018      | `78.46.35.74`
+| 2016-2016      | `95.215.111.109`
+| 2016-2018      | `185.118.66.163`
+| 2017-2017      | `185.118.67.233`
+| 2017-2018      | `185.156.173.92`
+| 2018-2018      | `46.165.230.241`
+| 2018-2018      | `194.187.249.157`
+|=====
