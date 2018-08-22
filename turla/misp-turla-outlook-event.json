@@ -1,0 +1,456 @@
+{"response":[{
+    "Event": {
+        "id": "250",
+        "orgc_id": "2",
+        "org_id": "2",
+        "date": "2018-08-17",
+        "threat_level_id": "1",
+        "info": "Turla Outlook White Paper",
+        "published": false,
+        "uuid": "5b773e07-e694-458b-b99c-27f30a016219",
+        "attribute_count": "12",
+        "analysis": "0",
+        "timestamp": "1534881925",
+        "distribution": "0",
+        "proposal_email_lock": false,
+        "locked": false,
+        "publish_timestamp": "0",
+        "sharing_group_id": "0",
+        "disable_correlation": false,
+        "extends_uuid": "",
+        "event_creator_email": "matthieu.faou@eset.com",
+        "Org": {
+            "id": "2",
+            "name": "ESET",
+            "uuid": "55f6ea5e-51ac-4344-bc8c-4170950d210f"
+        },
+        "Orgc": {
+            "id": "2",
+            "name": "ESET",
+            "uuid": "55f6ea5e-51ac-4344-bc8c-4170950d210f"
+        },
+        "Attribute": [
+            {
+                "id": "63056",
+                "type": "filename",
+                "category": "Artifacts dropped",
+                "to_ids": false,
+                "uuid": "5b773e89-9738-4bbb-90bc-2fb20a016219",
+                "event_id": "250",
+                "distribution": "5",
+                "timestamp": "1534805111",
+                "comment": "",
+                "sharing_group_id": "0",
+                "deleted": false,
+                "disable_correlation": false,
+                "object_id": "0",
+                "object_relation": null,
+                "value": "%appdata%\\Microsoft\\Windows\\scawrdot.db",
+                "Galaxy": [],
+                "ShadowAttribute": []
+            },
+            {
+                "id": "63057",
+                "type": "filename",
+                "category": "Artifacts dropped",
+                "to_ids": false,
+                "uuid": "5b773e89-7e14-4280-9249-2fb20a016219",
+                "event_id": "250",
+                "distribution": "5",
+                "timestamp": "1534805102",
+                "comment": "",
+                "sharing_group_id": "0",
+                "deleted": false,
+                "disable_correlation": false,
+                "object_id": "0",
+                "object_relation": null,
+                "value": "%appdata%\\Microsoft\\Windows\\flobcsnd.dat",
+                "Galaxy": [],
+                "ShadowAttribute": []
+            },
+            {
+                "id": "63058",
+                "type": "filename",
+                "category": "Artifacts dropped",
+                "to_ids": false,
+                "uuid": "5b773e89-4934-4d34-be4c-2fb20a016219",
+                "event_id": "250",
+                "distribution": "5",
+                "timestamp": "1534541449",
+                "comment": "",
+                "sharing_group_id": "0",
+                "deleted": false,
+                "disable_correlation": false,
+                "object_id": "0",
+                "object_relation": null,
+                "value": "mapid.tlb",
+                "Galaxy": [],
+                "ShadowAttribute": []
+            },
+            {
+                "id": "63059",
+                "type": "filename",
+                "category": "Artifacts dropped",
+                "to_ids": false,
+                "uuid": "5b773e89-1e7c-48d3-a6cb-2fb20a016219",
+                "event_id": "250",
+                "distribution": "5",
+                "timestamp": "1534541449",
+                "comment": "",
+                "sharing_group_id": "0",
+                "deleted": false,
+                "disable_correlation": false,
+                "object_id": "0",
+                "object_relation": null,
+                "value": "msmime.dll",
+                "Galaxy": [],
+                "ShadowAttribute": []
+            },
+            {
+                "id": "63060",
+                "type": "sha1",
+                "category": "Artifacts dropped",
+                "to_ids": false,
+                "uuid": "5b773ec0-53e0-4142-b4c8-27f30a016219",
+                "event_id": "250",
+                "distribution": "5",
+                "timestamp": "1534541504",
+                "comment": "Backdoor DLL",
+                "sharing_group_id": "0",
+                "deleted": false,
+                "disable_correlation": false,
+                "object_id": "0",
+                "object_relation": null,
+                "value": "8a7e2399a61ec025c15d06ecdd9b7b37d6245ec2",
+                "Galaxy": [],
+                "ShadowAttribute": []
+            },
+            {
+                "id": "63061",
+                "type": "sha1",
+                "category": "Artifacts dropped",
+                "to_ids": false,
+                "uuid": "5b773ec0-9d2c-4d19-9f6e-27f30a016219",
+                "event_id": "250",
+                "distribution": "5",
+                "timestamp": "1534805219",
+                "comment": "Dropper",
+                "sharing_group_id": "0",
+                "deleted": false,
+                "disable_correlation": false,
+                "object_id": "0",
+                "object_relation": null,
+                "value": "f992abe8a67120667a01b88cd5bf11ca39d491a0",
+                "Galaxy": [],
+                "ShadowAttribute": []
+            },
+            {
+                "id": "63062",
+                "type": "sha1",
+                "category": "Artifacts dropped",
+                "to_ids": false,
+                "uuid": "5b773ec0-c0f8-4c14-9220-27f30a016219",
+                "event_id": "250",
+                "distribution": "5",
+                "timestamp": "1534805215",
+                "comment": "Backdoor DLL",
+                "sharing_group_id": "0",
+                "deleted": false,
+                "disable_correlation": false,
+                "object_id": "0",
+                "object_relation": null,
+                "value": "cf943895684c6ff8d1e922a76b71a188cfb371d7",
+                "Galaxy": [],
+                "ShadowAttribute": []
+            },
+            {
+                "id": "63063",
+                "type": "sha1",
+                "category": "Artifacts dropped",
+                "to_ids": false,
+                "uuid": "5b773ec0-dc2c-4d79-8db2-27f30a016219",
+                "event_id": "250",
+                "distribution": "5",
+                "timestamp": "1534541504",
+                "comment": "Backdoor DLL",
+                "sharing_group_id": "0",
+                "deleted": false,
+                "disable_correlation": false,
+                "object_id": "0",
+                "object_relation": null,
+                "value": "851dffa6cd611dc70c9a0d5b487ff00bc3853f30",
+                "Galaxy": [],
+                "ShadowAttribute": []
+            },
+            {
+                "id": "63064",
+                "type": "regkey",
+                "category": "Persistence mechanism",
+                "to_ids": false,
+                "uuid": "5b773eed-662c-4150-b6ef-2fb10a016219",
+                "event_id": "250",
+                "distribution": "5",
+                "timestamp": "1534541549",
+                "comment": "COM hijacking",
+                "sharing_group_id": "0",
+                "deleted": false,
+                "disable_correlation": false,
+                "object_id": "0",
+                "object_relation": null,
+                "value": "HKCU\\Software\\Classes\\CLSID\\{49CBB1C7-97D1-485A-9EC1-A26065633066}",
+                "Galaxy": [],
+                "ShadowAttribute": []
+            },
+            {
+                "id": "63065",
+                "type": "regkey",
+                "category": "Persistence mechanism",
+                "to_ids": false,
+                "uuid": "5b773eed-6158-4680-941f-2fb10a016219",
+                "event_id": "250",
+                "distribution": "5",
+                "timestamp": "1534541549",
+                "comment": "COM hijacking",
+                "sharing_group_id": "0",
+                "deleted": false,
+                "disable_correlation": false,
+                "object_id": "0",
+                "object_relation": null,
+                "value": "HKCU\\Software\\Classes\\CLSID\\{84DA0A92-25E0-11D3-B9F7-00C04F4C8F5D}",
+                "Galaxy": [],
+                "ShadowAttribute": []
+            },
+            {
+                "id": "63066",
+                "type": "regkey",
+                "category": "Artifacts dropped",
+                "to_ids": false,
+                "uuid": "5b773f0c-07c4-4a31-b191-2fb20a016219",
+                "event_id": "250",
+                "distribution": "5",
+                "timestamp": "1534541580",
+                "comment": "Virtual File System",
+                "sharing_group_id": "0",
+                "deleted": false,
+                "disable_correlation": false,
+                "object_id": "0",
+                "object_relation": null,
+                "value": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Settings\\ZonePolicy\\",
+                "Galaxy": [],
+                "ShadowAttribute": []
+            },
+            {
+                "id": "63128",
+                "type": "url",
+                "category": "External analysis",
+                "to_ids": false,
+                "uuid": "5b7c7085-9658-46bf-afdc-59530a016219",
+                "event_id": "250",
+                "distribution": "5",
+                "timestamp": "1534881925",
+                "comment": "White Paper",
+                "sharing_group_id": "0",
+                "deleted": false,
+                "disable_correlation": false,
+                "object_id": "0",
+                "object_relation": null,
+                "value": "https:\/\/www.welivesecurity.com\/wp-content\/uploads\/2018\/08\/Eset-Turla-Outlook-Backdoor.pdf",
+                "Galaxy": [],
+                "ShadowAttribute": []
+            }
+        ],
+        "ShadowAttribute": [],
+        "RelatedEvent": [],
+        "Galaxy": [
+            {
+                "id": "25",
+                "uuid": "698774c7-8022-42c4-917f-8d6e4f06ada3",
+                "name": "Threat Actor",
+                "type": "threat-actor",
+                "description": "Threat actors are characteristics of malicious actors (or adversaries) representing a cyber attack threat including presumed intent and historically observed behaviour.",
+                "version": "2",
+                "icon": "user-secret",
+                "namespace": "misp",
+                "GalaxyCluster": [
+                    {
+                        "id": "5163",
+                        "uuid": "7cdff317-a673-4474-84ec-4f1754947823",
+                        "type": "threat-actor",
+                        "value": "Turla Group",
+                        "tag_name": "misp-galaxy:threat-actor=\"Turla Group\"",
+                        "description": "A 2014 Guardian article described Turla as: 'Dubbed the Turla hackers, initial intelligence had indicated western powers were key targets, but it was later determined embassies for Eastern Bloc nations were of more interest. Embassies in Belgium, Ukraine, China, Jordan, Greece, Kazakhstan, Armenia, Poland, and Germany were all attacked, though researchers from Kaspersky Lab and Symantec could not confirm which countries were the true targets. In one case from May 2012, the office of the prime minister of a former Soviet Union member country was infected, leading to 60 further computers being affected, Symantec researchers said. There were some other victims, including the ministry for health of a Western European country, the ministry for education of a Central American country, a state electricity provider in the Middle East and a medical organisation in the US, according to Symantec. It is believed the group was also responsible for a much - documented 2008 attack on the US Central Command. The attackers - who continue to operate - have ostensibly sought to carry out surveillance on targets and pilfer data, though their use of encryption across their networks has made it difficult to ascertain exactly what the hackers took.Kaspersky Lab, however, picked up a number of the attackers searches through their victims emails, which included terms such as Nato and EU energy dialogue Though attribution is difficult to substantiate, Russia has previously been suspected of carrying out the attacks and Symantecs Gavin O\u2019 Gorman told the Guardian a number of the hackers appeared to be using Russian names and language in their notes for their malicious code. Cyrillic was also seen in use.'",
+                        "galaxy_id": "25",
+                        "source": "MISP Project",
+                        "authors": [
+                            "Alexandre Dulaunoy",
+                            "Florian Roth",
+                            "Thomas Schreck",
+                            "Timo Steffens",
+                            "Various"
+                        ],
+                        "version": "30",
+                        "tag_id": "4",
+                        "meta": {
+                            "synonyms": [
+                                "Turla",
+                                "Snake",
+                                "Venomous Bear",
+                                "Group 88",
+                                "Waterbug",
+                                "WRAITH",
+                                "Turla Team",
+                                "Uroburos",
+                                "Pfinet",
+                                "TAG_0530",
+                                "KRYPTON",
+                                "Hippo Team"
+                            ],
+                            "refs": [
+                                "https:\/\/www.first.org\/resources\/papers\/tbilisi2014\/turla-operations_and_development.pdf",
+                                "https:\/\/www.circl.lu\/pub\/tr-25\/",
+                                "https:\/\/www.theguardian.com\/technology\/2014\/aug\/07\/turla-hackers-spying-governments-researcher-kaspersky-symantec",
+                                "https:\/\/www.symantec.com\/content\/en\/us\/enterprise\/media\/security_response\/whitepapers\/waterbug-attack-group.pdf",
+                                "https:\/\/securelist.com\/analysis\/publications\/65545\/the-epic-turla-operation\/",
+                                "https:\/\/securelist.com\/blog\/research\/72081\/satellite-turla-apt-command-and-control-in-the-sky\/",
+                                "https:\/\/securelist.com\/blog\/research\/67962\/the-penquin-turla-2\/",
+                                "https:\/\/www2.fireeye.com\/rs\/848-DID-242\/images\/rpt-witchcoven.pdf",
+                                "https:\/\/www.welivesecurity.com\/2017\/03\/30\/carbon-paper-peering-turlas-second-stage-backdoor\/"
+                            ],
+                            "country": [
+                                "RU"
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "33",
+                "uuid": "c4e851fa-775f-11e7-8163-b774922098cd",
+                "name": "Attack Pattern",
+                "type": "mitre-attack-pattern",
+                "description": "ATT&CK Tactic",
+                "version": "4",
+                "icon": "map",
+                "namespace": "misp",
+                "GalaxyCluster": [
+                    {
+                        "id": "3734",
+                        "uuid": "dcb864dc-775f-11e7-9fbb-1f41b4996683",
+                        "type": "mitre-attack-pattern",
+                        "value": "Component Object Model Hijacking",
+                        "tag_name": "misp-galaxy:mitre-attack-pattern=\"Component Object Model Hijacking\"",
+                        "description": "The Microsoft Component Object Model (COM) is a system within Windows to enable interaction between software components through the operating system.[[Citation: Microsoft Component Object Model]] Adversaries can use this system to insert malicious code that can be executed in place of legitimate software through hijacking the COM references and relationships as a means for persistence. Hijacking a COM object requires a change in the Windows Registry to replace a reference to a legitimate system component which may cause that component to not work when executed. When that system component is executed through normal system operation the adversary's code will be executed instead.[[Citation: GDATA COM Hijacking]] An adversary is likely to hijack objects that are used frequently enough to maintain a consistent level of persistence, but are unlikely to break noticeable functionality within the system as to avoid system instability that could lead to detection.\n\nDetection: There are opportunities to detect COM hijacking by searching for Registry references that have been replaced and through Registry operations replacing know binary paths with unknown paths. Even though some third party applications define user COM objects, the presence of objects within <code>HKEY_CURRENT_USER\\Software\\Classes\\CLSID\\<\/code> may be anomalous and should be investigated since user objects will be loaded prior to machine objects in <code>HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\CLSID\\<\/code>.[[Citation: Endgame COM Hijacking]] Registry entries for existing COM objects may change infrequently. When an entry with a known good path and binary is replaced or changed to an unusual value to point to an unknown binary in a new location, then it may indicate suspicious behavior and should be investigated. Likewise, if software DLL loads are collected and analyzed, any unusual DLL load that can be correlated with a COM object Registry modification may indicate COM hijacking has been performed.\n\nPlatforms: Windows Server 2003, Windows Server 2008, Windows Server 2012, Windows XP, Windows 7, Windows 8, Windows Server 2003 R2, Windows Server 2008 R2, Windows Server 2012 R2, Windows Vista, Windows 8.1, Windows 10\n\nData Sources: Windows Registry, DLL monitoring, Loaded DLLs\n\nContributors: ENDGAME",
+                        "galaxy_id": "33",
+                        "source": "https:\/\/github.com\/mitre\/cti",
+                        "authors": [
+                            "MITRE"
+                        ],
+                        "version": "4",
+                        "tag_id": "32",
+                        "meta": {
+                            "mitre_data_sources": [
+                                "Windows Registry",
+                                "DLL monitoring",
+                                "Loaded DLLs"
+                            ],
+                            "uuid": [
+                                "9b52fca7-1a36-4da0-b62d-da5bd83b4d69"
+                            ],
+                            "refs": [
+                                "https:\/\/attack.mitre.org\/wiki\/Technique\/T1122",
+                                "https:\/\/blog.gdatasoftware.com\/2014\/10\/23941-com-object-hijacking-the-discreet-way-of-persistence",
+                                "https:\/\/msdn.microsoft.com\/library\/ms694363.aspx",
+                                "https:\/\/www.endgame.com\/blog\/how-hunt-detecting-persistence-evasion-com"
+                            ],
+                            "mitre_platforms": [
+                                "Windows Server 2003",
+                                "Windows Server 2008",
+                                "Windows Server 2012",
+                                "Windows XP",
+                                "Windows 7",
+                                "Windows 8",
+                                "Windows Server 2003 R2",
+                                "Windows Server 2008 R2",
+                                "Windows Server 2012 R2",
+                                "Windows Vista",
+                                "Windows 8.1",
+                                "Windows 10"
+                            ]
+                        }
+                    },
+                    {
+                        "id": "3729",
+                        "uuid": "dcb864dc-775f-11e7-9fbb-1f41b4996683",
+                        "type": "mitre-attack-pattern",
+                        "value": "Email Collection",
+                        "tag_name": "misp-galaxy:mitre-attack-pattern=\"Email Collection\"",
+                        "description": "Adversaries may target user email to collect sensitive information from a target.\n\nFiles containing email data can be acquired from a user's system, such as Outlook storage or cache files .pst and .ost.\n\nAdversaries may leverage a user's credentials and interact directly with the Exchange server to acquire information from within a network.\n\nSome adversaries may acquire user credentials and access externally facing webmail applications, such as Outlook Web Access.\n\nDetection: There are likely a variety of ways an adversary could collect email from a target, each with a different mechanism for detection.\n\nFile access of local system email files for Windows Management Instrumentation and PowerShell.\n\nPlatforms: Windows Server 2003, Windows Server 2008, Windows Server 2012, Windows XP, Windows 7, Windows 8, Windows Server 2003 R2, Windows Server 2008 R2, Windows Server 2012 R2, Windows Vista, Windows 8.1, Windows 10\n\nData Sources: Authentication logs, File monitoring, Process monitoring, Process use of network",
+                        "galaxy_id": "33",
+                        "source": "https:\/\/github.com\/mitre\/cti",
+                        "authors": [
+                            "MITRE"
+                        ],
+                        "version": "4",
+                        "tag_id": "33",
+                        "meta": {
+                            "mitre_data_sources": [
+                                "Authentication logs",
+                                "File monitoring",
+                                "Process monitoring",
+                                "Process use of network"
+                            ],
+                            "uuid": [
+                                "1608f3e1-598a-42f4-a01a-2e252e81728f"
+                            ],
+                            "refs": [
+                                "https:\/\/attack.mitre.org\/wiki\/Technique\/T1114"
+                            ],
+                            "mitre_platforms": [
+                                "Windows Server 2003",
+                                "Windows Server 2008",
+                                "Windows Server 2012",
+                                "Windows XP",
+                                "Windows 7",
+                                "Windows 8",
+                                "Windows Server 2003 R2",
+                                "Windows Server 2008 R2",
+                                "Windows Server 2012 R2",
+                                "Windows Vista",
+                                "Windows 8.1",
+                                "Windows 10"
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "Object": [],
+        "Tag": [
+            {
+                "id": "4",
+                "name": "misp-galaxy:threat-actor=\"Turla Group\"",
+                "colour": "#0088cc",
+                "exportable": true,
+                "hide_tag": false,
+                "user_id": "0"
+            },
+            {
+                "id": "32",
+                "name": "misp-galaxy:mitre-attack-pattern=\"Component Object Model Hijacking\"",
+                "colour": "#0088cc",
+                "exportable": true,
+                "hide_tag": false,
+                "user_id": "0"
+            },
+            {
+                "id": "33",
+                "name": "misp-galaxy:mitre-attack-pattern=\"Email Collection\"",
+                "colour": "#0088cc",
+                "exportable": true,
+                "hide_tag": false,
+                "user_id": "0"
+            }
+        ]
+    }
+}
+]}
