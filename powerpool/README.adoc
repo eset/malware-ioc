@@ -1,0 +1,32 @@
+= PowerPool -  Indicators of Compromise
+
+The blog post about PowerPool is available on WeLiveSecurity at https://www.welivesecurity.com/2018/09/05/powerpool-malware-exploits-zero-day-vulnerability/.
+
+== Sample hashes
+
+[options="header"]
+|========================================
+|SHA-1 hash|Component|Compilation Time (GMT)|ESET Detection Name
+|`038f75dcf1e5277565c68d57fa1f4f7b3005f3f3`|First stage backdoor|2018-01-10 14:07:16|Win32/Agent.SZS
+|`247b542af23ad9c63697428c7b77348681aadc9a`|First stage backdoor|2018-05-12 12:13:13|Win32/Agent.TCH
+|`0423672fe9201c325e33f296595fb70dcd81bcd9`|Second stage backdoor|2019-06-17 08:07:18|Win32/Agent.TIA
+|`b4ec4837d07ff64e34947296e73732171d1c1586`|Second stage backdoor|2019-05-21 12:38:53|Win32/Agent.TIA
+|`9dc173d4d4f74765b5fc1e1c9a2d188d5387beea`|ALPC LPE exploit|2018-08-29 23:28:35|Win64/Exploit.Agent.H
+|========================================
+
+== ESET detection names
+* Win32/Agent.SZS
+* Win32/Agent.TCH
+* Win32/Agent.TEL
+* Win32/Agent.THT
+* Win32/Agent.TDK
+* Win32/Agent.TIA
+* Win32/Agent.TID
+
+== C&C servers
+* newsrental[.]net
+* rosbusiness[.]eu
+* afishaonline[.]eu
+* sports-collectors[.]com
+* 27.102.106[.]149
+
