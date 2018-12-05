@@ -1,0 +1,492 @@
+= Linux/SSHDoor IoCs
+
+The following tables are the samples analyzed during our research on OpenSSH
+backdoors. For a full description of each family, see ESET's research paper
+https://www.welivesecurity.com/wp-content/uploads/2018/12/ESET-The_Dark_Side_of_the_ForSSHe.pdf[The
+Dark Side of the ForSSHe] available on
+https://www.welivesecurity.com[WeLiveSecurity]. A blog post summarizing our finding is https://www.welivesecurity.com/2018/12/05/dark-side-of-the-forsshe/[also available].
+
+== Abafar
+
+=== ESET detection name
+
+- Linux/SSHDoor.AB
+
+=== Samples
+
+[width="100%",cols="20,4,4,6,5",options="header"]
+|========
+|Hash (SHA-1) |Type |Arch |Log filename |Backdoor password
+|`3f1ffb5ee5dd6712999ca82371bf8b755c8a873f` |Daemon |x64 |"/etc/X11/.pr" |"PRtestD"
+|`669c5c3ccd1ec54c7abc07278f0b08022e360c47` |Client |x64 |"/etc/X11/.pr" |N/A
+|`14ad09321b977ee738a1df59710ab765053f40ea` |Daemon |x86 |"/etc/X11/.pr" |"PRtestD"
+|`fc07cb8e43a9901eb8cd779b5646d34477155cea` |Client |x86 |"/etc/X11/.pr" |N/A
+|`b3b0e5f685bce3e22943ad2fe292cb7aa64d4c50` |Daemon |MIPS|"/etc/X11/.pr" |"PRtestD"
+|`605505b8bf167aad873fc700b02cc5a7389d7fe7` |Client |MIPS|"/etc/X11/.pr" |N/A
+|`d3e07951977b2da99aa402aead708c90ff1f5a69` |Client |ARM |"/etc/X11/.pr" |N/A
+|`51c9abcc5455c4c8d7e45fd25a2fa8657974227f` |Daemon |ARM |"/etc/X11/.pr" |"PRtest0"
+|========
+
+== Alderaan
+
+=== ESET detection name
+
+- Linux/SSHDoor.AE
+
+=== Samples
+
+[width="100%",cols="20,4,4,6,5",options="header"]
+|========
+|Hash (SHA-1) |Type |Arch |Log filename |Backdoor password
+|`797dc9a1b70942b920f03e525fae0682aa05d394` |Daemon |x64 |"/etc/gshadow--" |"adm1n":"www.linuxso.com"
+|`a74ebc167a8f087aa9bfee250f6faa51ef05a378` |Daemon |x86 |"/etc/gshadow--" |"immortall"
+|========
+
+== Anoat
+
+=== ESET detection name
+
+- Linux/SSHDoor.AF
+
+=== Samples
+
+[width="100%",cols="20,4,4,6,5",options="header"]
+|========
+|Hash (SHA-1) |Type |Version |Log filename |Backdoor password
+|`8a5946cce468518feb9442cd2b9d09a801abbfb4` |Daemon |OpenSSH_5.3p1 |"/usr/share/polkit-1/policy.in" |"openbsd-compat"
+|`19e7fc6f552ea199ea735b234ad1eecaca168dad` |Daemon |OpenSSH_4.3p2 |"/usr/share/X11/sessmgr/coredump.in" |"openbsd-compat"
+|`d33f54935b473edbfe1a49823b2a5bcf71c17d7e` |Client |OpenSSH_5.3p1 |"/usr/share/polkit-1/policy.out" |"openbsd-compat"
+|`0c487d16c2bebb200342f1a7599799a858505b93` |Daemon |OpenSSH_5.3p1 |"/usr/include/X11/sessmgr/coredump.in" |"openbsd-compat"
+|========
+
+== Akiva
+
+=== ESET detection names
+
+- Linux/SSHDoor.AI
+- Linux/SSHDoor.AJ
+
+=== Samples
+
+[width="100%",cols="20,4,4,6,5",options="header"]
+|========
+|Hash (SHA-1) |Type |Version |Log filename |Backdoor password
+|`751f21767211f5ad256dbe30fc3e1efd74485eba` |Client |OpenSSH_7.2p2 |"/usr/local/include/uconf.h" |"$gt5y^Yfgd3sss"
+|`f7d9159b6f3eeff0cfc6626d665bc781a2b012df` |Client |OpenSSH_5.3p1 |"/usr/local/include/uconf.h" |"&8BBy7f&f$s@sfu8H<nyfd"
+|========
+
+== Ando
+
+=== ESET detection name
+
+- Linux/SSHDoor.AN
+- Linux/SSHDoor.BW
+- Linux/SSHDoor.BR
+
+=== Samples
+
+[width="100%",cols="20,4,4,6,5",options="header"]
+|========
+|Hash (SHA-1) |Version |Log filename |Backdoor password |Email
+|`6d1a47ee6554323a11fc5555ba21e02104ec30fa` |OpenSSH_3.5.1p1 (x86) |"/tmp/log" | "baltamafiotu" |N/A
+|`5fa1f033e64d3ca1e0e6d4afaa3e1cd5ede3c5b7` |OpenSSH_4.3p2 (x86) |"/usr/lib/libsoftokn3.so.0"	|"$6$vzbteb/9$6.LnOlCOzetFVCFIPBx9KPqC.8Ln7leQCNw7UjnTB5ccBKijsN4/LeE9.aQV.Eq4IJv/SiNaACLjaG.bMbIEw0" (bcrypted) |N/A
+|`868573a9235d35cabe6f4d48aaa3589d289389a2` |OpenSSH_4.3p2 (x86) |"/usr/lib/libsoftokn3.so.0" |"$6$vzbteb/9$6.LnOlCOzetFVCFIPBx9KPqC.8Ln7leQCNw7UjnTB5ccBKijsN4/LeE9.aQV.Eq4IJv/SiNaACLjaG.bMbIEw0" (bcrypted) |N/A
+|`e0f41b99481a5822254d94c8b538eb51b106189e` |OpenSSH_4.3p2 (x64) |"/etc/ssh/.sshd_auth" |"t3se#ne@info" | \testrambo2@gmail.com
+|========
+
+== Atollon
+
+=== ESET detection name
+
+- Linux/SSHDoor.AT
+
+=== Samples
+
+[width="100%",cols="20,4,4,6,5",options="header"]
+|========
+|Hash (SHA-1) |Type |Version |Log filename |Backdoor password
+|`41eeac3a00971ccd5c04a9cabc10257278b45bd3` |Daemon |OpenSSH_5.3p1 |"/usr/share/man/hu/sd" |"$1$qZZu0d$ciSfcyjvp4713igP4R2Kz0" (bcrypted)
+|`1f484b74a3c0cd79d39efb6c9af5644f50054cd4` |Client |OpenSSH_5.3p1 |"/usr/share/man/hu/sd" |N/A
+|`fa965b0099cacbf64d428d267f13dcc21bb37ede` |Client |OpenSSH_6.7p1 |"/usr/share/man/man1/sd" |N/A
+|`292ab2dcb3af0efe8e0b36b480fb914b2f763b6a` |Daemon |OpenSSH_6.7p1 |"/usr/share/man/man1/sd" |"$1$Rm9vLe$KBk/bBdtHwLh1WT.XmrUR1" (bcrypted)
+|========
+
+== Batuu
+
+=== ESET detection name
+
+- Linux/SSHDoor.BX
+- Linux/SSHDoor.CA
+
+=== Samples
+
+[width="100%",cols="20,4,6",options="header"]
+|========
+|Hash (SHA-1) |Version |Log filename
+|`3a9d4ea8d1056d50dbbe294987bfe2e7050e7fb0` |OpenSSH_3.7.1p2 (x86) |"/usr/lib/libt1x.so.1.5"
+|`213480254030b94a10a3cae35dff7e9645f68be7` |OpenSSH_5.4p1 (x86) |"/usr/lib/libcurl.a.2.1"
+|`f314c2e8f63d9662e63e803f6457a1708684a6d7` |OpenSSH_5.2p1 (x86) |"/usr/lib/libpanel.so.a.3"
+|========
+
+== Bespin
+
+=== ESET detection name
+
+- Linux/SSHDoor.BE
+
+=== Samples
+
+[width="100%",cols="20,4,6",options="header"]
+|========
+|Hash (SHA-1) |Version |Log filename
+|`48bd2075313b1731938ee82282dc2562fbaa6cb1` |OpenSSH_6.6.1p1 |"/var/tmp/.pipe.sock"
+|========
+
+.3DES key
+----
+43AC12995F9B230967FA1306B3D8E3FF1021C9E1EE92F30C
+----
+
+== Bonadan
+
+=== ESET detection name
+
+- Linux/SSHDoor.BO
+
+=== Samples
+
+[width="100%",cols="20,4,6,8,10",options="header"]
+|========
+|Hash (SHA-1) |Type |Version |Log filename |Backdoor password
+|`8ea8f206100a73b3ec47069633989e8b4b8046b6` |Daemon |OpenSSH_7.2p2 |"/usr/share/lsx/.ig.swr" |"AaSSh.@test"
+|========
+
+.XOR key
+----
+39 41 30 0D 08 7A 10 0A 61 1A
+----
+
+== Borleias
+
+=== ESET detection name
+
+- Linux/SSHDoor.BZ
+
+=== Samples
+
+[width="100%",cols="20,6,8,10",options="header"]
+|========
+|Hash (SHA-1) |Version |Log filename |C&C
+|`846cdb8cd32cac0bd6d739746f9368850ff5228d` |OpenSSH_6.0p1 |"/var/lib" |94.75.207.3
+|========
+
+.XOR key
+----
+m12!*g0^&@$^,./?L>|."}568[/.b;\)KmQA<I(48h<N(KP%$!8)*3(-=_&h3
+----
+
+== Chandrila
+
+=== ESET Detection name
+
+- Linux/SSHDoor.CH
+
+=== Samples
+
+[width="100%",cols="20,4,6,8,10",options="header"]
+|========
+|Hash (SHA-1) |Type |Log filename |C&C |Backdoor passwords
+|`6db7f00564d28a5a236ee38a00da9405409357af` |Client |"/usr/share/man/.urandom" |198.23.187.46 |N/A
+|`0f8d41ec2ed3a7f7d0d28fe1c167b6480f80de3f` |Daemon |"/usr/share/man/.urandom" |198.23.187.46 |"C0011455OpenSSHd" (command line) or "C001145SOpenSSHd" (reverse shell IP)
+|========
+
+== Crait
+
+=== ESET detection name
+
+- Linux/SSHDoor.CI
+
+=== Samples
+
+[width="100%",cols="20,4,6,8,10",options="header"]
+|========
+|Hash (SHA-1) |Type |Log filename |C&C |Backdoor passwords
+|`eaaffa6ae25fdccda2bcb7dfaf205da41129548b` |Client |"/usr/share/man/man0/.cache" |176.9.47.34:28739 |N/A
+|`d1d7bc9ed506b364f7713e19a35692bad50c3304` |ssh-add |"/usr/share/man/man0/.cache" |176.9.47.34:28739 |N/A
+|`191ab40fd464a5b80b287e848f1a4ad7fcd572ae` |ssh-agent |"/usr/share/man/man0/.cache" |176.9.47.34:28739 |N/A
+|`1169569d23a1e028d9c6f6e0c4d1ffe6532d0d60` |ssh-keygen |"/usr/share/man/man0/.cache" |176.9.47.34:28739 |N/A
+|`c4070d1ad35070c8df2914bf56ad554e18af4961` |ssh-keyscan |"/usr/share/man/man0/.cache" |176.9.47.34:28739 |N/A
+|`ab7ab346296d5c306e642590b21417d634c8abeb` |Daemon |"/usr/share/man/man0/.cache" |176.9.47.34:28739 |5b28726ee7526a2b9efd73705d0e1e89 (MD5) or 8c7f8f511ddbba00a551a266098ccad2 (MD5)
+|========
+
+.RSA public modulus (public exponent is: 65537)
+----
+a93387b8f1a725d07bb39c3a66ac1828b85d131fca619d3205e5061e5edaf6effb47ea76f2243c70
+fb9ce886a1f4eafae2c768759610b8ebb32923ba584d352cd7bc83facb8011ac4589a02a558f7fd8
+fbca459044cf8fc65eb775fbf4952c538f54936be244c1dbe8a210ac4fded9110e894b5d53dfd892
+eeff16f29f0d2b9c3dd5d6ca17398fba58efa0f7dde1ad165616423004ce024219151a47604b7eb6
+33d9231c812438ae599bde368f88c35c57adbb73631a2aa2ec21b8973568aaef8dbc49845accb31e
+40a0a52ef716177d1f7451a4f2ec25a0cf642dbde110cae4571dcf148eab911db3f57016893c7dc7
+0d7c717173cc1e64c5c93a91b129bba7
+----
+
+.SSH public key
+----
+ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEA2zHxhkR+mQdhtsOZbDvY5XpM9on6m28wRmrcc2lve8Hp
+srBCEiMXId5DMwoAOvrFXkuxQdQKaaLpwRR575zEUATZGb3BpMJ6pgFxf5vP2xC2r0IhOdpJqZzPFsgI
+pNQGLGCbTCPgZeNrjGCrQRji4lep7/E4xFHY3KXnh/fRS7TKIawdYCqHfeoEHZ29mQQ4zceuaqxKiMGL
+sMy62pew5hhEgs0W7aYPo7/or1C3eLTshfGOGJRoc8P9zSL7QNZCk3fIlym3Uv4FSaSxaeel3fJNvfdT
+vRYn6vXbBpq6o9YvqCGMxLjB371wfYrIuFyCQlW/FGmcsRUTg913R3HlYw==
+----
+
+== Coruscant
+
+=== ESET detection name
+
+- Linux/SSHDoor.CD
+
+=== Samples
+
+[width="100%",cols="20,4,6,8,10",options="header"]
+|========
+|Hash (SHA-1) |Version |Log filename |C&C |Backdoor username:password
+|`2d767d0ede311cf3a853e90d18f50ae102358590` |OpenSSH_5.6p1 |"/dev/.ctrl" |patf[.]site90[.]net |"~X4CK3R":"QWERTY!"
+|========
+
+== Endor
+
+=== ESET detection names
+
+- Linux/SSHDoor.E
+- Linux/SSHDoor.G
+- Linux/SSHDoor.I
+- Linux/SSHDoor.S
+- Linux/SSHDoor.Z
+- Linux/SSHDoor.AC
+- Linux/SSHDoor.AH
+- Linux/SSHDoor.AO
+- Linux/SSHDoor.AP
+- Linux/SSHDoor.AW
+- Linux/SSHDoor.BV
+- Linux/SSHDoor.CC
+
+=== Samples
+
+[width="100%",cols="20,4,6,8,10,8",options="header"]
+|========
+|Hash (SHA-1) |Type |Version |Log filename |Backdoor password| Email
+|`ebb450393809f657f1ab77b4582e0c4758f7b50d` |Daemon |OpenSSH_6.6.1p1 |"/usr/include/netda.h" |"password" |N/A
+|`2e6324d71eed1573d2bc30a09f41e1204c38187d` |Client |OpenSSH_2.5.3 (x86) |"/usr/include/pwd.h" |N/A |N/A
+|`ce79d1bee06b42a5d710baaec7bea519236749ba` |Client |OpenSSH_6.0p1 |"/usr/include/ide.h" |N/A |\jupitersimarte@gmail.com
+|`7a80ecbebc8cf06bc77513380c64600ba9f1856b` |Daemon |OpenSSH_4.3p2 |"/usr/include/netda.h" |"1.162.2"	 |N/A
+|`bd547812018e59be543d9742b01431eb2e5e2641` |Daemon |OpenSSH_6.6.1p1 |"/usr/include/sys/record.h"	 |"Pqfu_o6j5vYi7o" |N/A
+|`d3a0b7d4a07b89555c77f1f1425f7469df884088` |Daemon |OpenSSH_5.3p1 |"/usr/bin/ssd" |"zVmRvLrutLPa" |\jupitersimarte@gmail.com
+|`2f0a064230d406c9133def6d2a65830fd2c65f6a` |Client |OpenSSH_5.2p1 |"/usr/include/netda.h" |N/A |N/A
+|`5675bfba9c4ae9e8d3fff00cb64074c131698d38` |Client |OpenSSH_3.9p1 |"/usr/include/pwd2.h"	 |N/A |N/A
+|`6d949fdfa29140662634aaf3fdc3657c99d278e1` |Client |OpenSSH_5.1p1 |"/usr/include/pwd2.h" |N/A |N/A
+|`9de46ff09d575ee46ebc7ecaebe9e3cc368f9fc9` |Client |OpenSSH_5.5p1 |"/usr/include/netda.h" |N/A |N/A
+|`d49bcc5e710bdae7746b79a6bfe8ce16b8ff84cb` |Client |OpenSSH_4.2p1 |"/usr/include/out.h"	 |N/A |N/A
+|========
+
+== Jakku
+
+=== ESET detection name
+
+- Linux/SSHDoor.J
+- Linux/SSHDoor.L
+
+=== Samples
+
+[width="100%",cols="20,4,6,8,10",options="header"]
+|========
+|Hash (SHA-1) |Type |Version |C&C |Backdoor password
+|`fd7af0fcb483c2e308c453519156df31e9e1dce6` |Daemon |OpenSSH_5.8p2 |status-ok[.]com |"random()root!"
+|`d9841ef6e14d1a6a369501402bf8fe5b607db0be` |Daemon |OpenSSH_3.6p1 |status-ok[.]com |"drowssap999"
+|`e7610aad54003b0cc78ca2f2f0ca51d6250e9dca` |Client |OpenSSH_3.61p2 |status-ok[.]com |N/A
+|========
+
+.RC4 key
+----
+A1 71 31 17 11 1A 22 27 55 00 66 A3 10 FE C2 10 22 32 6E 95 90 84 F9 11 73 62 95 5F 4D 3B
+----
+
+.SSH public key
+----
+ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEA0g/wdIrAPPTKa8pDuvFhlTVECbYr4bpS1E9op3vtrdNw
+T4/UJUiSlCRUXhj64LHn9Y8Lu1Tp7AxP0r3AzOEpGDhFt7aO7oDze8KfHQAX5R1C6hOpP7nVdpqu2duq
+eRDBGBfAlEToqHL5+3i3Skc0W5GolnmRt964jUiGWAm9HLBHLu/1RsCzWzRZoUTuBTQSNR8caB7sa5jg
+7xlpi+2NNA+9U4fIflZ2kJQohj7ekxi78ZfJ6elsrJfKTTxun6kZ6AsoLqYLQCaRnDNj3yD4LF/TO9rf
+hBMSdNME2TTidzekGteOhXASkImi66gwt0eicMASIKreMf2l3NnXGx+luQ==
+----
+
+== Kamino
+
+=== ESET detection names
+
+- Linux/SSHDoor.K
+- Linux/SSHDoor.A
+- Linux/SSHDoor.B
+
+=== Samples
+
+[width="100%",cols="20,4,6,8,10",options="header"]
+|========
+|Hash (SHA-1) |UUID |C&C |URL to update C&C| Backdoor password
+|`422fafa3a87a7d6d2ca3c2197955df7b1e58efb8` |"ba7ff018-a64a-9e48-f151-5583d8e8b844" | hagaipipko[.]net | "/nl" | "9VHrMDiAMUQBpYJz3vop"
+|`cb7a464aa8d58f26f6561c32ef4a1464c583a7ca` |N/A | linuxrepository[.]org |N/A | "iJ93MnFj4VnWf0sA78gCx"
+|`7a85595ecf040a310f5d3d2098ec4e40cfd704ff` |"232bd65f-772c-fb7a-4026-85adb7676452" | hagaipipko[.]net | "/nl" | "9VHrMDiAMUQBpYJz3vop"
+|`b0eea95e442ebc75f73b1f979de0494b33a831ff` |"3c17d24a-88e3-7b2c-11eb-1ea836890ad2" | hagaipipko[.]net | "/nl" | "9VHrMDiAMUQBpYJz3vop"
+|`23c3868e904f76d3421a98d0d6944b30e09c3014` |"9effd8e8-f179-310f-7834-004b748c2d38" | javacdnupdate[.]com	| "/upd" | "jYiCr0OS8aLP3TKajQn5"
+|`804a40acf2689f3ad9bfeb7cd74f75b2a6d2b021` |"f7385d56-e808-42e5-8104-b6f08457c84d" | javacdnupdate[.]com	| "/upd" | "jYiCr0OS8aLP3TKajQn5"
+|========
+
+.RSA public key
+----
+-----BEGIN PUBLIC KEY-----
+MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC0LpZig4XGsKVVRPHwyE1Kpi48
+mxImIA9fkVkvEyRVlagjl89js1zAd7+cSDMO1SMSGdZgERPYdykME+cDrLm/csUh
+PvjF1h47YeyrARUdpOz6D2NT1/ZdIMcgHYUS4hWsNHsxzLWK8QIb+10nvVfCLHry
+/tVNZ/nMEj1J/Loj0QIDAQAB
+-----END PUBLIC KEY----
+----
+
+.SSH public key
+----
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDXP0CPTJEmOZa2ur20Hobes8Umj
+7o1aFv7dFsSxp8v9k6wLj+0WSLBCIQ+6mkUdy1m27313+bLIgOjkKq3ZQKvczFYth
+FWfrUxtXUv2Wrum+k/DynxU8YYOhD2tJBLRAJDmUvijKSOGllcP8t+ZDDkIqc65k4
+q6jNtSmcPPkFCXB6Pr4BfKj2C4NhhCyx6O18PSrEa6SbugZgPPo7dTHVFY5JCYbPv
+dyu+zoT3NgkPTHsdEMcZaXCWU5I5xIv5nT1TvSn6gnPkemcsAUIAA77eTTL9TSr2F
+hCcLSQQScN0yDzn5ddOWFzd2taOpVvis3ANnWy+4YhwwbBlUtyoifDP
+----
+
+== Kessel
+
+=== ESET detection name
+
+- Linux/SSHDoor.CK
+
+=== Samples
+
+[width="100%",cols="20,4,6,8,10",options="header"]
+|========
+|Hash (SHA-1) |Type |Version |Log filename |C&C
+|`f5ac779c8fd506e7d4b72b70331623042a807a6b` |Client |OpenSSH_5.3p1 |"/tmp/KCtbBo" |dc0.cc
+|`3e0c142d6b656c490c28e0910628db5886dfc143` |Client |OpenSSH_7.2p2 |"/tmp/KCtbBo" |dc0.cc
+|========
+
+== Mimban
+
+=== ESET detection names
+
+- Linux/SSHDoor.M
+- Linux/SSHDoor.Y
+
+=== Samples
+
+[width="100%",cols="20,6,8,4,6,8,10",options="header"]
+|========
+|Hash (SHA-1) |Version |Type |UUID |C&C |RC4 key |Backdoor password
+|`70e9078f9d2df6dfb394a5016b5f6581b810e7a6` |OpenSSH_4.3p2 |Daemon |"1dbe9a73-c59e-4f1f-b3f9-6b730ab3ecaf" |linux-flavor[.]net |gANkKxbWazVzLjbbakRrfxWkfuJlLGYa |28e305ffac314b72cce8f222ee5710f8 (MD5)
+|`fb550cc228b6a4fb2a254a782a0d5a5b3b96d8b2` |OpenSSH_4.3p2 |Client |"1dbe9a73-c59e-4f1f-b3f9-6b730ab3ecaf" |linux-flavor[.]net |gANkKxbWazVzLjbbakRrfxWkfuJlLGYa |N/A
+|`c608f2b7b0b893e8dcc092ecfcc8bd715f86fbc7` |OpenSSH_6.0p1 |Daemon |"0d6fa712-cd93-4490-9e75-979b1e0a65de" |linux-flavor[.]net |cuetQhcOmfiJGwDWrjXIpzTglcLFAwLU |7f0e7fc709e7d63be14cbe7ae034f702 (MD5)
+|`45e617ca0c551f70d2d87313149a302ee4d4ba1b` |OpenSSH_5.3p1 (x86) |Client |"2199b968-8a08-4dac-b3b8-8c64a168c598" |linux-flavor[.]net |tTlxgWHDLroHwuHaqYjdwciBsxhuzfny |N/A
+|`56c83a9bd7e4296fcef9f8eb336145e7956c87c8` |OpenSSH_5.3p1 (x86) |Daemon |"962d7af7-3e01-48a2-8100-8377916c12f8" |linux-flavor[.]net |THAlVGydJjBaElZeiSvMRVAInypylVvq |68676a481dac9a15e7fdea9b8a8b0e5e (MD5)
+|`83e3de6d96b4f6b0309d0722e3196970de829b52` |OpenSSH_5.3p1 (x86) |Client |"962d7af7-3e01-48a2-8100-8377916c12f8" |linux-flavor[.]net |THAlVGydJjBaElZeiSvMRVAInypylVvq |N/A
+|`f348b1aec4cafc3fc004003458ce65636991d712` |OpenSSH_5.3p1 (x86) |Daemon |"2199b968-8a08-4dac-b3b8-8c64a168c598" |linux-flavor[.]net |tTlxgWHDLroHwuHaqYjdwciBsxhuzfny |5c0b616400ebfcfd67022cc767ac3ab6  (MD5)
+|========
+
+.RSA key
+----
+-----BEGIN PUBLIC KEY-----
+MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAutfSf5IeNDW8TVUrL/H3
+oX3h8cdMMzr+CO63tykuEy+397KFZKIuRNL2yVbl7+W/SDP49qB7rOR0Pls20UqV
+FqsdauUoSH5IUu5lMuwQRS1w8VHbk4eGJroIULaJFNSqEg1xX8U4cqmSLbD3uHIx
+N0cfvHRqIYNLm9URDcVIYQv8sg5lSed9WjlxnA8oR1nkr3azkOoCE7JGolVUrA76
+KJ+GmgjvQIKNazbiOp3ST7LGAXkvZFf5j2Yih0H0TvBX1C8qSG8iMPm2zcrB/wjk
+3kWOZYqFDm6WDe0gnZTOg8RSSo0EImtH7dM84qwXrHm+KRWeF1oU6N/OVZYlLOOt
+vbbSmVA02z/EEOn+gpsH+7p5iQiGK0iERkeHC0FFVb5wCPVF21aiy6FH6IngwP1v
+MA3rm9BF+62DokEi/8LQseW8Vu6zd4LPrQaVt/xJT8OT85kSc11HfpUJLO7Qj8C/
+FtYAAhdHtITAy0OenNStN6k5dBk5XfEqn3rPN9CvIyh9m5SM4TC86t9NIka2iyC9
+LbBl685ftZxUjYcsgyeN19qD+l2J9SbPhw4+Xg5/5w6Xzp/R8lvhYAQq6qciMbIt
+BwThS9wRI9yWC93Hv/yIjm99ZtVSuWOrIvClEtb7mRZ3iGr73FM6Myyv8J8c6OMZ
+RRF3wcTSrCgLTw6vMcT4aLMCAwEAAQ==
+-----END PUBLIC KEY-----
+----
+
+== Onderon
+
+=== ESET detection names
+
+- Linux/SSHDoor.O
+- Linux/SSHDoor.T
+- Linux/SSHDoor.U
+- Linux/SSHDoor.AG
+- Linux/SSHDoor.BC
+- Linux/SSHDoor.BN
+- Linux/SSHDoor.BO
+- Linux/SSHDoor.CB
+- Linux/SSHDoor.CE
+- Linux/SSHDoor.CF
+
+=== Samples
+
+[width="100%",cols="20,4,6,8,10",options="header"]
+|========
+|Hash (SHA-1) |Type |Version |Log filename |Backdoor password
+|`66b809792ad1cf9461f4592acf1cdd9111bf9ae6` |Daemon |OpenSSH_5.3p1 |"/usr/lib/mozilla/extensions/mozzlia.ini"	|"WEJH123JKH1J24HWBERJQWEHJR132124124512"
+|`78acd95139f4162a610dbd2d1dcbfd0c3ab99684` |Daemon |OpenSSH_5.8p1 |"/tmp/zilog" |"asdasdqaza"
+|`5353af393112e6e5eda99bf19e0b02c36bfe3559` |Daemon |OpenSSH_5.3p1 (x86) |"/usr/tmp/~tmp441" |"A*99Vs5L77d"
+|`f02c6df5dd2a92a2637e5a0ce493a8cf79a0c351` |Daemon |OpenSSH_4.3p1 |"/var/opt/power" |"lz123..0***"
+|`c484869ce4b6c8c25a7ffe04cea6425831c45716` |Daemon |OpenSSH_4.3p2 |"/usr/local/share/man/man1/Openssh.1" |"\ssh@qu.se"
+|`6eb4a83502ea3063a3c6171a71ec3216eb9ec6ce` |Daemon |OpenSSH_6.6p1 |"/usr/lib/gcc/x86_64-redhat-linux/.0" |"+jHr@FrIendLy@+)eXplOiTeR="
+|`7ae69340fbaada0e9017bd453dface505d397877` |Daemon |OpenSSH_5.8p1 |"/etc/ssh/ssh_known_hosts" |"$1$ytoMBVEP$6x.YSPCwlJya4Lzvnu0tW0" (bcrypted)
+|`f6e73c88c7c971054ff3065507f1ab40df2c9b0b` |Client |OpenSSH_3.9p1 |"/usr/share/man/man1/.olog" |N/A
+|`3c8a6029e9a695a414a75ac3d06fd92809bd52c2` |Client |OpenSSH_5.3p1 |"/usr/include/sn.h" |N/A
+|========
+
+== Polis Massa
+
+=== ESET detection names
+
+- Linux/SSHDoor.P
+- Linux/SSHDoor.R
+- Linux/SSHDoor.X
+- Linux/SSHDoor.AS
+- Linux/SSHDoor.AY
+- Linux/SSHDoor.BL
+- Linux/SSHDoor.BU
+- Linux/SSHDoor.CG
+
+=== Samples
+
+[width="100%",cols="20,4,6,8,10,10",options="header"]
+|========
+|Hash (SHA-1) |Type |Version |Log filename |Backdoor password |Email
+|`77025a5f4d714918ca22e92387ae7395be17ba65` |Daemon |OpenSSH_5.2p1 (x86) |"/usr/lib/libpanel.so.a.3" |"Accepted host %s ip %sclient_user%s server_user %s" |N/A
+|`1d5f3ecdea636e837cedd0a21d7a73203071f4c2` |Daemon |OpenSSH_3.9p1 (x86) |"/usr/share/boot.sync" |"poe350wag718" |\dann3bunu@yahoo.com
+|`3425969c064e382dfb0187be2876bb65b31419bf` |Client |OpenSSH_3.9p1 (x86) |"/usr/share/boot.sync" |N/A |\dann3bunu@yahoo.com
+|`3b403369fb1600f2cc6072585e439e92f7de096c` |Daemon |OpenSSH_4.7p1 |"/usr/include/mbstring.h"  |"GWSllM1NdMdsE" (bcrypted, salt="GW") |N/A
+|`69784162aeab9a6bbcdc1e1f502524eb796e70d2` |Daemon |OpenSSH_5.5p1 |"/var/html/lol" |"FaeEkcuoKLomN" (bcrypted, salt="Fa") |N/A
+|`651bc9a1eea9e886f9c56a791e6f2a1263502cab` |Client |OpenSSH_6.0p1 |"/usr/share/boot.sync"	|N/A |\r0fl24@yahoo.com
+|`84ce13d3196800ed6c9643e808f47cc96f67e20c` |Daemon |OpenSSH_6.0p1 |"/usr/share/boot.sync"	|"Akjshdfsd8fuisdjfhsd87f"	 |\r0fl24@yahoo.com
+|`9a74e4b3a46ac1cc603502d2ef10768ceccb2d8f` |Client |OpenSSH_3.7.1p2 |"/var/log/utmp" |N/A |N/A
+|`9b5a8ef9cc1b9b3eaf2abdcd15a057502a7c1641` |Daemon |OpenSSH_7.4p1 |"/usr/share/boot.sync"	|"ZXVtmMSrd2F2ecDqPj4mXNzn"	|\acvila.1977@protonmail.com
+|`40400734f766444779bd907aa7fc5cf375b5ba74` |Daemon |OpenSSH_6.4p1 |"/usr/share/boot.sync"	|"wzLJJVQ4JMJQz4yEdJCTVAaM"	|\acvila.1977@protonmail.com
+|`fdbf978badb738bf7d5d05e1ccb30433e14a5ebc` |Daemon |OpenSSH_5.3p1 |"/usr/share/boot.sync"	|"naimanmij1981" |\fartingbunny@protonmail.com
+|========
+
+== Quarren
+
+=== ESET detection name
+
+- Linux/SSHDoor.Q
+
+=== Samples
+
+[width="100%",cols="20,6,8,10",options="header"]
+|========
+|Hash (SHA-1) |Version |Log filename |Backdoor password
+|`3898d60b41ba2665f4e694f06d263fe558db97c5` |OpenSSH_5.1p1 |"/usr/share/man/man5/ttyl.5.gz" (PAM) or "/usr/share/man/man5/ttyv.5.gz" (not PAM) |"$1$p07lj588$8HpZkidOEkIbgUCcLVw331" (bcrypted, salt="$1$p07lj588$")
+|`6515109c55fd0673332c302f9cb68f9c2567457c` |OpenSSH_5.3p1 |"/usr/share/man/man5/ttyl.5.gz" (PAM) or "/usr/share/man/man5/ttyv.5.gz" (not PAM) |"$1$z5q8k2Pw$KxBES6xTuEFOayvJvokKf1" (bcrypted, salt="$1$z5q8k2Pw$")
+|========
