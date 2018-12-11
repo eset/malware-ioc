@@ -1,0 +1,98 @@
+= DanaBot Indicators of Compromise (IoCs)
+
+For more information about DanaBot, please refer to the following articles on
+https://www.welivesecurity.com/[WeLiveSecurity].
+
+* 2018-12-06
+   https://www.welivesecurity.com/2018/12/06/danabot-evolves-beyond-banking-trojan-new-spam/[
+DanaBot evolves beyond banking Trojan with new spam-sending capability]
+* 2018-08-21
+   https://www.welivesecurity.com/2018/09/21/danabot-targeting-europe-adds-new-features/[
+  DanaBot shifts its targeting to Europe, adds new features]
+
+== ESET Detection Names
+
+.DanaBot
+* VBS/TrojanDownloader.Agent.PYC
+* JS/TrojanDropper.Agent.NPQ
+* Win32/TrojanDropper.Danabot.I
+* Win32/TrojanDownloader.Danabot.I
+* Win32/Spy.Danabot
+
+.GootKit
+* https://www.virusradar.com/en/Win32_Kryptik.GNNS/detail[Win32/Kryptik.GNNS]
+
+== Network indicators
+
+=== Webmail services targeted by email-address-harvesting feature
+
+* *any service based on Roundcube*
+* *any service based on Horde*
+* *any service based on Open-Xchange*
+* `aruba.it`
+* `bluewin.ch`
+* `email.it`
+* `gmx.net`
+* `libero.it`
+* `mail.yahoo.com`
+* `mail.google.com`
+* `mail.one.com`
+* `outlook.live.com`
+* `tecnocasa.it`
+* `tim.it`
+* `tiscali.it`
+* `vianova.it`
+
+=== Webmail services targeted by spam-sending feature
+
+*  *any service based on Open-Xchange*
+
+=== Domains used by the VBS file to download malware (GootKit at the time of writing)
+
+* `amd.cibariefoodconsulting.it`
+* `dcc.fllimorettinilegnaegiardini.it`
+* `icon.fllimorettinilegnaegiardini.it`
+* `job.hitjob.it`
+* `vps.hitjob.it`
+* `latest.hitweb.it`
+* `team.hitweb.it`
+* `pph.picchio-intl.com`
+
+=== Example domains used by the GootKit downloader module
+
+* `ricci.bikescout24.fr`
+* `vps.cibariefoodconsulting.it`
+* `drk.fm604.com`
+* `gtdspr.space`
+* `it.sunballast.de`
+
+=== Active DanaBot C&C servers (as of December 6, 2018)
+
+* `5.8.55.205`
+* `31.214.157.12`
+* `47.74.130.165`
+* `149.154.157.106`
+* `176.119.1.99`
+* `176.119.1.100`
+* `176.119.1.120`
+* `176.119.1.176`
+* `176.223.133.15`
+* `185.254.121.44`
+* `188.68.208.77`
+* `192.71.249.50`
+
+== File indicators
+
+.Example of .VBS file from a spam email sent by DanaBot downloading GootKit
+[options="headers"]
+|====
+|SHA-1 |ESET detection name
+|`A05A71F11D84B75E8D33B06E9E1EBFE84FAE0C76` | https://www.virusradar.com/en/VBS_Kryptik.KY/detail[VBS/Kryptik.KY]
+|====
+
+.Example of GootKit downloaded by DanaBot .VBS file
+[options="headers"]
+|====
+|SHA-1 |ESET detection name
+|`0C2389B3E0A489C8E101FFD0E3E2F00E0C461B31` | https://www.virusradar.com/en/Win32_Kryptik.GNNS/detail[Win32/Kryptik.GNNS]
+|====
