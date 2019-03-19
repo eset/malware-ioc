@@ -1,0 +1,991 @@
+{
+  "response": [
+    {
+      "Event": {
+        "id": "464",
+        "orgc_id": "2",
+        "org_id": "2",
+        "date": "2019-03-18",
+        "threat_level_id": "4",
+        "info": "Asian gaming industry supply-chain attacks",
+        "published": false,
+        "uuid": "5c8ff618-0998-4b11-89d4-39d70a016219",
+        "attribute_count": "22",
+        "analysis": "2",
+        "timestamp": "1553003952",
+        "distribution": "3",
+        "proposal_email_lock": false,
+        "locked": false,
+        "publish_timestamp": "0",
+        "sharing_group_id": "0",
+        "disable_correlation": false,
+        "extends_uuid": "",
+        "event_creator_email": "leveille@eset.com",
+        "Org": {
+          "id": "2",
+          "name": "ESET",
+          "uuid": "55f6ea5e-51ac-4344-bc8c-4170950d210f"
+        },
+        "Orgc": {
+          "id": "2",
+          "name": "ESET",
+          "uuid": "55f6ea5e-51ac-4344-bc8c-4170950d210f"
+        },
+        "Attribute": [
+          {
+            "id": "159216",
+            "type": "sha1",
+            "category": "Payload delivery",
+            "to_ids": false,
+            "uuid": "5c8ff76a-2720-47d4-bfad-38350a016219",
+            "event_id": "464",
+            "distribution": "5",
+            "timestamp": "1552938858",
+            "comment": "",
+            "sharing_group_id": "0",
+            "deleted": false,
+            "disable_correlation": false,
+            "object_id": "0",
+            "object_relation": null,
+            "value": "7cf41b1acfb05064518a2ad9e4c16fde9185cd4b",
+            "Galaxy": [],
+            "ShadowAttribute": []
+          },
+          {
+            "id": "159217",
+            "type": "sha1",
+            "category": "Payload delivery",
+            "to_ids": false,
+            "uuid": "5c8ff76a-1ba8-44e1-a59b-38350a016219",
+            "event_id": "464",
+            "distribution": "5",
+            "timestamp": "1552938858",
+            "comment": "",
+            "sharing_group_id": "0",
+            "deleted": false,
+            "disable_correlation": false,
+            "object_id": "0",
+            "object_relation": null,
+            "value": "7f73def251fcc34cbd6f5ac61822913479124a2a",
+            "Galaxy": [],
+            "ShadowAttribute": []
+          },
+          {
+            "id": "159218",
+            "type": "sha1",
+            "category": "Payload delivery",
+            "to_ids": false,
+            "uuid": "5c8ff76a-f4d8-4d04-918a-38350a016219",
+            "event_id": "464",
+            "distribution": "5",
+            "timestamp": "1552938858",
+            "comment": "",
+            "sharing_group_id": "0",
+            "deleted": false,
+            "disable_correlation": false,
+            "object_id": "0",
+            "object_relation": null,
+            "value": "dac0bd8972f23c9b5f7f8f06c5d629eac7926269",
+            "Galaxy": [],
+            "ShadowAttribute": []
+          },
+          {
+            "id": "159219",
+            "type": "sha1",
+            "category": "Payload delivery",
+            "to_ids": false,
+            "uuid": "5c8ff76a-cffc-4af3-9772-38350a016219",
+            "event_id": "464",
+            "distribution": "5",
+            "timestamp": "1552938858",
+            "comment": "",
+            "sharing_group_id": "0",
+            "deleted": false,
+            "disable_correlation": false,
+            "object_id": "0",
+            "object_relation": null,
+            "value": "4830dcbcff55dac56e10362c73c70b444ddd569d",
+            "Galaxy": [],
+            "ShadowAttribute": []
+          },
+          {
+            "id": "159220",
+            "type": "sha1",
+            "category": "Payload delivery",
+            "to_ids": false,
+            "uuid": "5c8ff7c3-c65c-4eca-93bd-35700a016219",
+            "event_id": "464",
+            "distribution": "5",
+            "timestamp": "1552939008",
+            "comment": "",
+            "sharing_group_id": "0",
+            "deleted": false,
+            "disable_correlation": false,
+            "object_id": "0",
+            "object_relation": null,
+            "value": "a045939f53c5ad2c0f7368b082aa7b0bd7b116da",
+            "Galaxy": [],
+            "ShadowAttribute": []
+          },
+          {
+            "id": "159221",
+            "type": "sha1",
+            "category": "Payload delivery",
+            "to_ids": false,
+            "uuid": "5c8ff7c3-b634-430f-9bf2-35700a016219",
+            "event_id": "464",
+            "distribution": "5",
+            "timestamp": "1552939016",
+            "comment": "",
+            "sharing_group_id": "0",
+            "deleted": false,
+            "disable_correlation": false,
+            "object_id": "0",
+            "object_relation": null,
+            "value": "a260dcf193e747cee49ae83568eea6c04bf93cb3",
+            "Galaxy": [],
+            "ShadowAttribute": []
+          },
+          {
+            "id": "159222",
+            "type": "sha1",
+            "category": "Payload delivery",
+            "to_ids": false,
+            "uuid": "5c8ff7c3-9ab8-4fc5-889e-35700a016219",
+            "event_id": "464",
+            "distribution": "5",
+            "timestamp": "1552939020",
+            "comment": "",
+            "sharing_group_id": "0",
+            "deleted": false,
+            "disable_correlation": false,
+            "object_id": "0",
+            "object_relation": null,
+            "value": "dde82093decde6371eb852a5e9a1aa4acf3b56ba",
+            "Galaxy": [],
+            "ShadowAttribute": []
+          },
+          {
+            "id": "159223",
+            "type": "sha1",
+            "category": "Payload delivery",
+            "to_ids": false,
+            "uuid": "5c8ff7c3-6a88-4b7b-aa52-35700a016219",
+            "event_id": "464",
+            "distribution": "5",
+            "timestamp": "1552939026",
+            "comment": "Campaign: warz",
+            "sharing_group_id": "0",
+            "deleted": false,
+            "disable_correlation": false,
+            "object_id": "0",
+            "object_relation": null,
+            "value": "8272c1f41f7c223316c0d78bd3bd5744e25c2e9f",
+            "Galaxy": [],
+            "ShadowAttribute": []
+          },
+          {
+            "id": "159224",
+            "type": "sha1",
+            "category": "Payload delivery",
+            "to_ids": false,
+            "uuid": "5c8ff7c3-4160-439f-a7a3-35700a016219",
+            "event_id": "464",
+            "distribution": "5",
+            "timestamp": "1552939030",
+            "comment": "Campaign: Gagena1",
+            "sharing_group_id": "0",
+            "deleted": false,
+            "disable_correlation": false,
+            "object_id": "0",
+            "object_relation": null,
+            "value": "44260a1dfd92922a621124640015160e621f32d5",
+            "Galaxy": [],
+            "ShadowAttribute": []
+          },
+          {
+            "id": "159225",
+            "type": "url",
+            "category": "Network activity",
+            "to_ids": false,
+            "uuid": "5c8ff843-bbdc-435e-87c5-35740a016219",
+            "event_id": "464",
+            "distribution": "5",
+            "timestamp": "1552939075",
+            "comment": "",
+            "sharing_group_id": "0",
+            "deleted": false,
+            "disable_correlation": false,
+            "object_id": "0",
+            "object_relation": null,
+            "value": "https://bugcheck.xigncodeservice.com/Common/Lib/Common_bsod.php",
+            "Galaxy": [],
+            "ShadowAttribute": []
+          },
+          {
+            "id": "159226",
+            "type": "url",
+            "category": "Network activity",
+            "to_ids": false,
+            "uuid": "5c8ff843-bbb8-421f-ae56-35740a016219",
+            "event_id": "464",
+            "distribution": "5",
+            "timestamp": "1552939075",
+            "comment": "",
+            "sharing_group_id": "0",
+            "deleted": false,
+            "disable_correlation": false,
+            "object_id": "0",
+            "object_relation": null,
+            "value": "https://bugcheck.xigncodeservice.com/Common/Lib/Common_Include.php",
+            "Galaxy": [],
+            "ShadowAttribute": []
+          },
+          {
+            "id": "159227",
+            "type": "url",
+            "category": "Network activity",
+            "to_ids": false,
+            "uuid": "5c8ff843-84e4-46f0-a15f-35740a016219",
+            "event_id": "464",
+            "distribution": "5",
+            "timestamp": "1552939075",
+            "comment": "",
+            "sharing_group_id": "0",
+            "deleted": false,
+            "disable_correlation": false,
+            "object_id": "0",
+            "object_relation": null,
+            "value": "https://bugcheck.xigncodeservice.com/Common/Lib/common.php",
+            "Galaxy": [],
+            "ShadowAttribute": []
+          },
+          {
+            "id": "159228",
+            "type": "url",
+            "category": "Network activity",
+            "to_ids": false,
+            "uuid": "5c8ff843-4320-43bd-a626-35740a016219",
+            "event_id": "464",
+            "distribution": "5",
+            "timestamp": "1552939075",
+            "comment": "",
+            "sharing_group_id": "0",
+            "deleted": false,
+            "disable_correlation": false,
+            "object_id": "0",
+            "object_relation": null,
+            "value": "https://nw.infestexe.com/version/last.php",
+            "Galaxy": [],
+            "ShadowAttribute": []
+          },
+          {
+            "id": "159229",
+            "type": "url",
+            "category": "Network activity",
+            "to_ids": false,
+            "uuid": "5c8ff843-03b4-4634-9297-35740a016219",
+            "event_id": "464",
+            "distribution": "5",
+            "timestamp": "1552939075",
+            "comment": "",
+            "sharing_group_id": "0",
+            "deleted": false,
+            "disable_correlation": false,
+            "object_id": "0",
+            "object_relation": null,
+            "value": "https://dump.gxxservice.com/common/up/up_base.php",
+            "Galaxy": [],
+            "ShadowAttribute": []
+          },
+          {
+            "id": "159230",
+            "type": "sha1",
+            "category": "Payload delivery",
+            "to_ids": false,
+            "uuid": "5c8ff869-4ad4-4c80-b5c9-35740a016219",
+            "event_id": "464",
+            "distribution": "5",
+            "timestamp": "1552939113",
+            "comment": "",
+            "sharing_group_id": "0",
+            "deleted": false,
+            "disable_correlation": false,
+            "object_id": "0",
+            "object_relation": null,
+            "value": "4256fa6f6a39add6a1fa10ef1497a74088f12be0",
+            "Galaxy": [],
+            "ShadowAttribute": []
+          },
+          {
+            "id": "159231",
+            "type": "sha1",
+            "category": "Payload delivery",
+            "to_ids": false,
+            "uuid": "5c8ff869-427c-4e78-8f09-35740a016219",
+            "event_id": "464",
+            "distribution": "5",
+            "timestamp": "1552939113",
+            "comment": "",
+            "sharing_group_id": "0",
+            "deleted": false,
+            "disable_correlation": false,
+            "object_id": "0",
+            "object_relation": null,
+            "value": "bb4ab0d8d05a3404f1f53f152ebd79f4ba4d4d81",
+            "Galaxy": [],
+            "ShadowAttribute": []
+          },
+          {
+            "id": "159232",
+            "type": "domain",
+            "category": "Network activity",
+            "to_ids": false,
+            "uuid": "5c8ff8a3-9f74-4951-9224-35710a016219",
+            "event_id": "464",
+            "distribution": "5",
+            "timestamp": "1552939224",
+            "comment": "2nd stage update server (HTTP)",
+            "sharing_group_id": "0",
+            "deleted": false,
+            "disable_correlation": false,
+            "object_id": "0",
+            "object_relation": null,
+            "value": "checkin.travelsanignacio.com",
+            "Galaxy": [],
+            "ShadowAttribute": []
+          },
+          {
+            "id": "159233",
+            "type": "domain",
+            "category": "Network activity",
+            "to_ids": false,
+            "uuid": "5c8ff8a3-96b8-44d0-9f18-35710a016219",
+            "event_id": "464",
+            "distribution": "5",
+            "timestamp": "1552939208",
+            "comment": "2nd stage URL domain (HTTPS)",
+            "sharing_group_id": "0",
+            "deleted": false,
+            "disable_correlation": false,
+            "object_id": "0",
+            "object_relation": null,
+            "value": "api.goallbandungtravel.com",
+            "Galaxy": [],
+            "ShadowAttribute": []
+          },
+          {
+            "id": "159234",
+            "type": "text",
+            "category": "Antivirus detection",
+            "to_ids": false,
+            "uuid": "5c8ff900-9e70-42e1-bee1-38350a016219",
+            "event_id": "464",
+            "distribution": "5",
+            "timestamp": "1552939264",
+            "comment": "",
+            "sharing_group_id": "0",
+            "deleted": false,
+            "disable_correlation": false,
+            "object_id": "0",
+            "object_relation": null,
+            "value": "Win32/HackedApp.Winnti.A",
+            "Galaxy": [],
+            "ShadowAttribute": []
+          },
+          {
+            "id": "159235",
+            "type": "text",
+            "category": "Antivirus detection",
+            "to_ids": false,
+            "uuid": "5c8ff900-9ac8-4f87-a3cd-38350a016219",
+            "event_id": "464",
+            "distribution": "5",
+            "timestamp": "1552939264",
+            "comment": "",
+            "sharing_group_id": "0",
+            "deleted": false,
+            "disable_correlation": false,
+            "object_id": "0",
+            "object_relation": null,
+            "value": "Win32/HackedApp.Winnti.B",
+            "Galaxy": [],
+            "ShadowAttribute": []
+          },
+          {
+            "id": "159236",
+            "type": "text",
+            "category": "Antivirus detection",
+            "to_ids": false,
+            "uuid": "5c8ff900-65e8-478f-b59d-38350a016219",
+            "event_id": "464",
+            "distribution": "5",
+            "timestamp": "1552939264",
+            "comment": "",
+            "sharing_group_id": "0",
+            "deleted": false,
+            "disable_correlation": false,
+            "object_id": "0",
+            "object_relation": null,
+            "value": "Win32/Winnti.AG",
+            "Galaxy": [],
+            "ShadowAttribute": []
+          },
+          {
+            "id": "159237",
+            "type": "text",
+            "category": "Antivirus detection",
+            "to_ids": false,
+            "uuid": "5c8ff900-3b94-4458-bc14-38350a016219",
+            "event_id": "464",
+            "distribution": "5",
+            "timestamp": "1552939264",
+            "comment": "",
+            "sharing_group_id": "0",
+            "deleted": false,
+            "disable_correlation": false,
+            "object_id": "0",
+            "object_relation": null,
+            "value": "Win64/Winnti.BN",
+            "Galaxy": [],
+            "ShadowAttribute": []
+          }
+        ],
+        "ShadowAttribute": [],
+        "RelatedEvent": [
+          {
+            "Event": {
+              "id": "463",
+              "date": "2019-03-18",
+              "threat_level_id": "4",
+              "info": "Asian gaming industry supply-chain attacks (internal)",
+              "published": false,
+              "uuid": "5c8fe013-979c-499a-a100-38330a016219",
+              "analysis": "2",
+              "timestamp": "1552938489",
+              "distribution": "0",
+              "org_id": "2",
+              "orgc_id": "2",
+              "Org": {
+                "id": "2",
+                "name": "ESET",
+                "uuid": "55f6ea5e-51ac-4344-bc8c-4170950d210f"
+              },
+              "Orgc": {
+                "id": "2",
+                "name": "ESET",
+                "uuid": "55f6ea5e-51ac-4344-bc8c-4170950d210f"
+              }
+            }
+          }
+        ],
+        "Galaxy": [
+          {
+            "id": "25",
+            "uuid": "698774c7-8022-42c4-917f-8d6e4f06ada3",
+            "name": "Threat Actor",
+            "type": "threat-actor",
+            "description": "Threat actors are characteristics of malicious actors (or adversaries) representing a cyber attack threat including presumed intent and historically observed behaviour.",
+            "version": "3",
+            "icon": "user-secret",
+            "namespace": "misp",
+            "GalaxyCluster": [
+              {
+                "id": "16822",
+                "collection_uuid": "7cdff317-a673-4474-84ec-4f1754947823",
+                "type": "threat-actor",
+                "value": "Axiom",
+                "tag_name": "misp-galaxy:threat-actor=\"Axiom\"",
+                "description": "The Winnti grouping of activity is large and may actually be a number of linked groups rather than a single discrete entity. Kaspersky describe Winnti as: 'The Winnti group has been attacking companies in the online video game industry since 2009 and is currently still active. The groups objectives are stealing digital certificates signed by legitimate software vendors in addition to intellectual property theft, including the source code of online game projects. The majority of the victims are from South East Asia.'",
+                "galaxy_id": "25",
+                "source": "MISP Project",
+                "authors": [
+                  "Alexandre Dulaunoy",
+                  "Florian Roth",
+                  "Thomas Schreck",
+                  "Timo Steffens",
+                  "Various"
+                ],
+                "version": "93",
+                "uuid": "24110866-cb22-4c85-a7d2-0413e126694b",
+                "tag_id": "156",
+                "meta": {
+                  "cfr-suspected-state-sponsor": [
+                    "China"
+                  ],
+                  "cfr-suspected-victims": [
+                    "United States",
+                    "Netherlands",
+                    "Italy",
+                    "Japan",
+                    "United Kingdom",
+                    "Belgium",
+                    "Russia",
+                    "Indonesia",
+                    "Germany",
+                    "Switzerland",
+                    "China"
+                  ],
+                  "cfr-target-category": [
+                    "Government",
+                    "Private sector"
+                  ],
+                  "cfr-type-of-incident": [
+                    "Espionage"
+                  ],
+                  "country": [
+                    "CN"
+                  ],
+                  "refs": [
+                    "http://securelist.com/blog/research/57585/winnti-faq-more-than-just-a-game/",
+                    "http://williamshowalter.com/a-universal-windows-bootkit/",
+                    "https://blogs.technet.microsoft.com/mmpc/2017/01/25/detecting-threat-actors-in-recent-german-industrial-attacks-with-windows-defender-atp",
+                    "https://www.cfr.org/interactive/cyber-operations/axiom"
+                  ],
+                  "synonyms": [
+                    "Winnti Group",
+                    "Tailgater Team",
+                    "Group 72",
+                    "Group72",
+                    "Tailgater",
+                    "Ragebeast",
+                    "Blackfly",
+                    "Lead",
+                    "Wicked Spider",
+                    "APT17",
+                    "APT 17",
+                    "Dogfish",
+                    "Deputy Dog",
+                    "Wicked Panda",
+                    "Barium"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "id": "33",
+            "uuid": "c4e851fa-775f-11e7-8163-b774922098cd",
+            "name": "Attack Pattern",
+            "type": "mitre-attack-pattern",
+            "description": "ATT&CK Tactic",
+            "version": "7",
+            "icon": "map",
+            "namespace": "mitre-attack",
+            "kill_chain_order": {
+              "mitre-attack": [
+                "initial-access",
+                "execution",
+                "persistence",
+                "privilege-escalation",
+                "defense-evasion",
+                "credential-access",
+                "discovery",
+                "lateral-movement",
+                "collection",
+                "exfiltration",
+                "command-and-control"
+              ],
+              "mitre-mobile-attack": [
+                "initial-access",
+                "persistence",
+                "privilege-escalation",
+                "defense-evasion",
+                "credential-access",
+                "discovery",
+                "lateral-movement",
+                "effects",
+                "collection",
+                "exfiltration",
+                "network-effects",
+                "remote-service-effects"
+              ],
+              "mitre-pre-attack": [
+                "priority-definition-planning",
+                "priority-definition-direction",
+                "target-selection",
+                "technical-information-gathering",
+                "people-information-gathering",
+                "organizational-information-gathering",
+                "technical-weakness-identification",
+                "people-weakness-identification",
+                "organizational-weakness-identification",
+                "adversary-opsec",
+                "establish-&-maintain-infrastructure",
+                "persona-development",
+                "build-capabilities",
+                "test-capabilities",
+                "stage-capabilities"
+              ]
+            },
+            "GalaxyCluster": [
+              {
+                "id": "12331",
+                "collection_uuid": "dcb864dc-775f-11e7-9fbb-1f41b4996683",
+                "type": "mitre-attack-pattern",
+                "value": "Commonly Used Port - T1043",
+                "tag_name": "misp-galaxy:mitre-attack-pattern=\"Commonly Used Port - T1043\"",
+                "description": "Adversaries may communicate over a commonly used port to bypass firewalls or network detection systems and to blend with normal network activity to avoid more detailed inspection. They may use commonly open ports such as\n\n* TCP:80 (HTTP)\n* TCP:443 (HTTPS)\n* TCP:25 (SMTP)\n* TCP/UDP:53 (DNS)\n\nThey may use the protocol associated with the port or a completely different protocol. \n\nFor connections that occur internally within an enclave (such as those between a proxy or pivot node and other nodes), examples of common ports are \n\n* TCP/UDP:135 (RPC)\n* TCP/UDP:22 (SSH)\n* TCP/UDP:3389 (RDP)",
+                "galaxy_id": "33",
+                "source": "https://github.com/mitre/cti",
+                "authors": [
+                  "MITRE"
+                ],
+                "version": "8",
+                "uuid": "f879d51c-5476-431c-aedf-f14d207e4d1e",
+                "tag_id": "154",
+                "meta": {
+                  "external_id": [
+                    "T1043"
+                  ],
+                  "kill_chain": [
+                    "mitre-attack:command-and-control"
+                  ],
+                  "mitre_data_sources": [
+                    "Packet capture",
+                    "Netflow/Enclave netflow",
+                    "Process use of network",
+                    "Process monitoring"
+                  ],
+                  "mitre_platforms": [
+                    "Linux",
+                    "macOS",
+                    "Windows"
+                  ],
+                  "refs": [
+                    "https://attack.mitre.org/techniques/T1043",
+                    "https://arxiv.org/ftp/arxiv/papers/1408/1408.1136.pdf"
+                  ]
+                }
+              },
+              {
+                "id": "12493",
+                "collection_uuid": "dcb864dc-775f-11e7-9fbb-1f41b4996683",
+                "type": "mitre-attack-pattern",
+                "value": "Multilayer Encryption - T1079",
+                "tag_name": "misp-galaxy:mitre-attack-pattern=\"Multilayer Encryption - T1079\"",
+                "description": "An adversary performs C2 communications using multiple layers of encryption, typically (but not exclusively) tunneling a custom encryption scheme within a protocol encryption scheme such as HTTPS or SMTPS.",
+                "galaxy_id": "33",
+                "source": "https://github.com/mitre/cti",
+                "authors": [
+                  "MITRE"
+                ],
+                "version": "8",
+                "uuid": "428ca9f8-0e33-442a-be87-f869cb4cf73e",
+                "tag_id": "161",
+                "meta": {
+                  "external_id": [
+                    "T1079"
+                  ],
+                  "kill_chain": [
+                    "mitre-attack:command-and-control"
+                  ],
+                  "mitre_data_sources": [
+                    "Packet capture",
+                    "Process use of network",
+                    "Malware reverse engineering",
+                    "Process monitoring"
+                  ],
+                  "mitre_platforms": [
+                    "Linux",
+                    "macOS",
+                    "Windows"
+                  ],
+                  "refs": [
+                    "https://attack.mitre.org/techniques/T1079",
+                    "https://arxiv.org/ftp/arxiv/papers/1408/1408.1136.pdf",
+                    "http://www.sans.org/reading-room/whitepapers/analyst/finding-hidden-threats-decrypting-ssl-34840",
+                    "https://insights.sei.cmu.edu/cert/2015/03/the-risks-of-ssl-inspection.html",
+                    "https://www.fidelissecurity.com/sites/default/files/FTA_1018_looking_at_the_sky_for_a_dark_comet.pdf"
+                  ]
+                }
+              },
+              {
+                "id": "12326",
+                "collection_uuid": "dcb864dc-775f-11e7-9fbb-1f41b4996683",
+                "type": "mitre-attack-pattern",
+                "value": "Standard Cryptographic Protocol - T1032",
+                "tag_name": "misp-galaxy:mitre-attack-pattern=\"Standard Cryptographic Protocol - T1032\"",
+                "description": "Adversaries may explicitly employ a known encryption algorithm to conceal command and control traffic rather than relying on any inherent protections provided by a communication protocol. Despite the use of a secure algorithm, these implementations may be vulnerable to reverse engineering if necessary secret keys are encoded and/or generated within malware samples/configuration files.",
+                "galaxy_id": "33",
+                "source": "https://github.com/mitre/cti",
+                "authors": [
+                  "MITRE"
+                ],
+                "version": "8",
+                "uuid": "4b74a1d4-b0e9-4ef1-93f1-14ecc6e2f5b5",
+                "tag_id": "162",
+                "meta": {
+                  "external_id": [
+                    "T1032"
+                  ],
+                  "kill_chain": [
+                    "mitre-attack:command-and-control"
+                  ],
+                  "mitre_data_sources": [
+                    "Packet capture",
+                    "Netflow/Enclave netflow",
+                    "Malware reverse engineering",
+                    "Process use of network",
+                    "Process monitoring",
+                    "SSL/TLS inspection"
+                  ],
+                  "mitre_platforms": [
+                    "Linux",
+                    "macOS",
+                    "Windows"
+                  ],
+                  "refs": [
+                    "https://attack.mitre.org/techniques/T1032",
+                    "http://www.sans.org/reading-room/whitepapers/analyst/finding-hidden-threats-decrypting-ssl-34840",
+                    "https://insights.sei.cmu.edu/cert/2015/03/the-risks-of-ssl-inspection.html",
+                    "https://www.fidelissecurity.com/sites/default/files/FTA_1018_looking_at_the_sky_for_a_dark_comet.pdf",
+                    "https://arxiv.org/ftp/arxiv/papers/1408/1408.1136.pdf"
+                  ]
+                }
+              },
+              {
+                "id": "12449",
+                "collection_uuid": "dcb864dc-775f-11e7-9fbb-1f41b4996683",
+                "type": "mitre-attack-pattern",
+                "value": "Binary Padding - T1009",
+                "tag_name": "misp-galaxy:mitre-attack-pattern=\"Binary Padding - T1009\"",
+                "description": "Some security tools inspect files with static signatures to determine if they are known malicious. Adversaries may add data to files to increase the size beyond what security tools are capable of handling or to change the file hash to avoid hash-based blacklists.",
+                "galaxy_id": "33",
+                "source": "https://github.com/mitre/cti",
+                "authors": [
+                  "MITRE"
+                ],
+                "version": "8",
+                "uuid": "519630c5-f03f-4882-825c-3af924935817",
+                "tag_id": "163",
+                "meta": {
+                  "external_id": [
+                    "CAPEC-572"
+                  ],
+                  "kill_chain": [
+                    "mitre-attack:defense-evasion"
+                  ],
+                  "mitre_data_sources": [
+                    "Binary file metadata",
+                    "File monitoring",
+                    "Malware reverse engineering"
+                  ],
+                  "mitre_platforms": [
+                    "Linux",
+                    "macOS",
+                    "Windows"
+                  ],
+                  "refs": [
+                    "https://attack.mitre.org/techniques/T1009",
+                    "https://capec.mitre.org/data/definitions/572.html"
+                  ]
+                }
+              },
+              {
+                "id": "12373",
+                "collection_uuid": "dcb864dc-775f-11e7-9fbb-1f41b4996683",
+                "type": "mitre-attack-pattern",
+                "value": "Supply Chain Compromise - T1195",
+                "tag_name": "misp-galaxy:mitre-attack-pattern=\"Supply Chain Compromise - T1195\"",
+                "description": "Supply chain compromise is the manipulation of products or product delivery mechanisms prior to receipt by a final consumer for the purpose of data or system compromise. Supply chain compromise can take place at any stage of the supply chain including:\n\n* Manipulation of development tools\n* Manipulation of a development environment\n* Manipulation of source code repositories (public or private)\n* Manipulation of software update/distribution mechanisms\n* Compromised/infected system images (multiple cases of removable media infected at the factory)\n* Replacement of legitimate software with modified versions\n* Sales of modified/counterfeit products to legitimate distributors\n* Shipment interdiction\n\nWhile supply chain compromise can impact any component of hardware or software, attackers looking to gain execution have often focused on malicious additions to legitimate software in software distribution or update channels. (Citation: Avast CCleaner3 2018) (Citation: Microsoft Dofoil 2018) (Citation: Command Five SK 2011) Targeting may be specific to a desired victim set (Citation: Symantec Elderwood Sept 2012) or malicious software may be distributed to a broad set of consumers but only move on to additional tactics  on specific victims. (Citation: Avast CCleaner3 2018) (Citation: Command Five SK 2011)",
+                "galaxy_id": "33",
+                "source": "https://github.com/mitre/cti",
+                "authors": [
+                  "MITRE"
+                ],
+                "version": "8",
+                "uuid": "3f18edba-28f4-4bb9-82c3-8aa60dcac5f7",
+                "tag_id": "158",
+                "meta": {
+                  "external_id": [
+                    "CAPEC-439"
+                  ],
+                  "kill_chain": [
+                    "mitre-attack:initial-access"
+                  ],
+                  "mitre_data_sources": [
+                    "Web proxy",
+                    "File monitoring"
+                  ],
+                  "mitre_platforms": [
+                    "Linux",
+                    "Windows",
+                    "macOS"
+                  ],
+                  "refs": [
+                    "https://attack.mitre.org/techniques/T1195",
+                    "https://capec.mitre.org/data/definitions/437.html",
+                    "https://capec.mitre.org/data/definitions/438.html",
+                    "https://capec.mitre.org/data/definitions/439.html",
+                    "http://www.symantec.com/content/en/us/enterprise/media/security_response/whitepapers/the-elderwood-project.pdf",
+                    "https://blog.avast.com/new-investigations-in-ccleaner-incident-point-to-a-possible-third-stage-that-had-keylogger-capacities",
+                    "https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign/",
+                    "https://www.commandfive.com/papers/C5_APT_SKHack.pdf"
+                  ]
+                }
+              },
+              {
+                "id": "12447",
+                "collection_uuid": "dcb864dc-775f-11e7-9fbb-1f41b4996683",
+                "type": "mitre-attack-pattern",
+                "value": "New Service - T1050",
+                "tag_name": "misp-galaxy:mitre-attack-pattern=\"New Service - T1050\"",
+                "description": "When operating systems boot up, they can start programs or applications called services that perform background system functions. (Citation: TechNet Services) A service's configuration information, including the file path to the service's executable, is stored in the Windows Registry. \n\nAdversaries may install a new service that can be configured to execute at startup by using utilities to interact with services or by directly modifying the Registry. The service name may be disguised by using a name from a related operating system or benign software with [Masquerading](https://attack.mitre.org/techniques/T1036). Services may be created with administrator privileges but are executed under SYSTEM privileges, so an adversary may also use a service to escalate privileges from administrator to SYSTEM. Adversaries may also directly start services through [Service Execution](https://attack.mitre.org/techniques/T1035).",
+                "galaxy_id": "33",
+                "source": "https://github.com/mitre/cti",
+                "authors": [
+                  "MITRE"
+                ],
+                "version": "8",
+                "uuid": "478aa214-2ca7-4ec0-9978-18798e514790",
+                "tag_id": "159",
+                "meta": {
+                  "external_id": [
+                    "CAPEC-550"
+                  ],
+                  "kill_chain": [
+                    "mitre-attack:persistence",
+                    "mitre-attack:privilege-escalation"
+                  ],
+                  "mitre_data_sources": [
+                    "Windows Registry",
+                    "Process monitoring",
+                    "Process command-line parameters",
+                    "Windows event logs"
+                  ],
+                  "mitre_platforms": [
+                    "Windows"
+                  ],
+                  "refs": [
+                    "https://attack.mitre.org/techniques/T1050",
+                    "https://capec.mitre.org/data/definitions/550.html",
+                    "https://technet.microsoft.com/en-us/library/cc772408.aspx",
+                    "https://technet.microsoft.com/en-us/sysinternals/bb963902",
+                    "https://docs.microsoft.com/windows/security/threat-protection/auditing/event-4697",
+                    "https://docs.microsoft.com/windows/security/threat-protection/use-windows-event-forwarding-to-assist-in-intrusion-detection"
+                  ]
+                }
+              },
+              {
+                "id": "12465",
+                "collection_uuid": "dcb864dc-775f-11e7-9fbb-1f41b4996683",
+                "type": "mitre-attack-pattern",
+                "value": "Data Encrypted - T1022",
+                "tag_name": "misp-galaxy:mitre-attack-pattern=\"Data Encrypted - T1022\"",
+                "description": "Data is encrypted before being exfiltrated in order to hide the information that is being exfiltrated from detection or to make the exfiltration less conspicuous upon inspection by a defender. The encryption is performed by a utility, programming library, or custom algorithm on the data itself and is considered separate from any encryption performed by the command and control or file transfer protocol. Common file archive formats that can encrypt files are RAR and zip.\n\nOther exfiltration techniques likely apply as well to transfer the information out of the network, such as [Exfiltration Over Command and Control Channel](https://attack.mitre.org/techniques/T1041) and [Exfiltration Over Alternative Protocol](https://attack.mitre.org/techniques/T1048)",
+                "galaxy_id": "33",
+                "source": "https://github.com/mitre/cti",
+                "authors": [
+                  "MITRE"
+                ],
+                "version": "8",
+                "uuid": "d54416bd-0803-41ca-870a-ce1af7c05638",
+                "tag_id": "160",
+                "meta": {
+                  "external_id": [
+                    "T1022"
+                  ],
+                  "kill_chain": [
+                    "mitre-attack:exfiltration"
+                  ],
+                  "mitre_data_sources": [
+                    "File monitoring",
+                    "Process monitoring",
+                    "Process command-line parameters",
+                    "Binary file metadata"
+                  ],
+                  "mitre_platforms": [
+                    "Linux",
+                    "macOS",
+                    "Windows"
+                  ],
+                  "refs": [
+                    "https://attack.mitre.org/techniques/T1022",
+                    "http://www.netsec.colostate.edu/~zhang/DetectingEncryptedBotnetTraffic.pdf",
+                    "https://en.wikipedia.org/wiki/List_of_file_signatures"
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "Object": [],
+        "Tag": [
+          {
+            "id": "156",
+            "name": "misp-galaxy:threat-actor=\"Axiom\"",
+            "colour": "#0088cc",
+            "exportable": true,
+            "hide_tag": false,
+            "user_id": "0",
+            "numerical_value": null
+          },
+          {
+            "id": "154",
+            "name": "misp-galaxy:mitre-attack-pattern=\"Commonly Used Port - T1043\"",
+            "colour": "#0088cc",
+            "exportable": true,
+            "hide_tag": false,
+            "user_id": "0",
+            "numerical_value": null
+          },
+          {
+            "id": "161",
+            "name": "misp-galaxy:mitre-attack-pattern=\"Multilayer Encryption - T1079\"",
+            "colour": "#0088cc",
+            "exportable": true,
+            "hide_tag": false,
+            "user_id": "0",
+            "numerical_value": null
+          },
+          {
+            "id": "162",
+            "name": "misp-galaxy:mitre-attack-pattern=\"Standard Cryptographic Protocol - T1032\"",
+            "colour": "#0088cc",
+            "exportable": true,
+            "hide_tag": false,
+            "user_id": "0",
+            "numerical_value": null
+          },
+          {
+            "id": "163",
+            "name": "misp-galaxy:mitre-attack-pattern=\"Binary Padding - T1009\"",
+            "colour": "#0088cc",
+            "exportable": true,
+            "hide_tag": false,
+            "user_id": "0",
+            "numerical_value": null
+          },
+          {
+            "id": "158",
+            "name": "misp-galaxy:mitre-attack-pattern=\"Supply Chain Compromise - T1195\"",
+            "colour": "#0088cc",
+            "exportable": true,
+            "hide_tag": false,
+            "user_id": "0",
+            "numerical_value": null
+          },
+          {
+            "id": "159",
+            "name": "misp-galaxy:mitre-attack-pattern=\"New Service - T1050\"",
+            "colour": "#0088cc",
+            "exportable": true,
+            "hide_tag": false,
+            "user_id": "0",
+            "numerical_value": null
+          },
+          {
+            "id": "160",
+            "name": "misp-galaxy:mitre-attack-pattern=\"Data Encrypted - T1022\"",
+            "colour": "#0088cc",
+            "exportable": true,
+            "hide_tag": false,
+            "user_id": "0",
+            "numerical_value": null
+          }
+        ]
+      }
+    }
+  ]
+}
