@@ -1,0 +1,1466 @@
+{
+    "response": [
+        {
+            "Event": {
+                "id": "536",
+                "orgc_id": "2",
+                "org_id": "2",
+                "date": "2019-05-03",
+                "threat_level_id": "4",
+                "info": "ESET Turla LightNeuron Research",
+                "published": false,
+                "uuid": "5cccb246-0da0-4c93-a463-61fe0a016219",
+                "attribute_count": "36",
+                "analysis": "0",
+                "timestamp": "1556920535",
+                "distribution": "3",
+                "proposal_email_lock": false,
+                "locked": false,
+                "publish_timestamp": "0",
+                "sharing_group_id": "0",
+                "disable_correlation": false,
+                "extends_uuid": "",
+                "event_creator_email": "matthieu.faou@eset.com",
+                "Org": {
+                    "id": "2",
+                    "name": "ESET",
+                    "uuid": "55f6ea5e-51ac-4344-bc8c-4170950d210f"
+                },
+                "Orgc": {
+                    "id": "2",
+                    "name": "ESET",
+                    "uuid": "55f6ea5e-51ac-4344-bc8c-4170950d210f"
+                },
+                "Attribute": [
+                    {
+                        "id": "163995",
+                        "type": "md5",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "6f5800ff-87e0-46fc-adac-807018e9d07f",
+                        "event_id": "536",
+                        "distribution": "5",
+                        "timestamp": "1556919229",
+                        "comment": "",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "9ed3438587e25073c17e82958010a3aa",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "163996",
+                        "type": "sha1",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "64d9f4ac-632e-458b-af36-a2e6e1d2bd57",
+                        "event_id": "536",
+                        "distribution": "5",
+                        "timestamp": "1556919226",
+                        "comment": "",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "3c851e239fbf67a03e0dae8f63eee702b330db6c",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "163997",
+                        "type": "sha256",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "90bcabcb-b2fb-4e73-a1a1-88f8a9e186df",
+                        "event_id": "536",
+                        "distribution": "5",
+                        "timestamp": "1556919223",
+                        "comment": "",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "fec68a0fea0019c878c8a348976c0ec0b8ecf6e7c63fe99afabfff2b7e6d4b11",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "163998",
+                        "type": "md5",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "4f4bdd4d-f0c4-4761-bed8-711f1b3b7744",
+                        "event_id": "536",
+                        "distribution": "5",
+                        "timestamp": "1556919213",
+                        "comment": "",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "2b14f9f3c758a2cf842a61aca6a3455d",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "163999",
+                        "type": "sha1",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "25408199-95da-448d-a95f-a222dc7ba162",
+                        "event_id": "536",
+                        "distribution": "5",
+                        "timestamp": "1556919202",
+                        "comment": "",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "f9d52bb5a30b42fc2d1763be586cee8a57424732",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "164000",
+                        "type": "sha256",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "66fa127c-7625-441a-b0ab-bc0b72403ca8",
+                        "event_id": "536",
+                        "distribution": "5",
+                        "timestamp": "1556919196",
+                        "comment": "",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "25facbc4265ca90f0508e77e97e1e6fcc7e46f6cca316b251b06d41232f6360c",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "164001",
+                        "type": "text",
+                        "category": "Antivirus detection",
+                        "to_ids": false,
+                        "uuid": "5df144ba-2702-4d5b-9070-a089c28fe905",
+                        "event_id": "536",
+                        "distribution": "5",
+                        "timestamp": "1556918970",
+                        "comment": "",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "MSIL/Turla.A",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "164002",
+                        "type": "md5",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "4440b265-2377-474c-83f1-8c8f24348f57",
+                        "event_id": "536",
+                        "distribution": "5",
+                        "timestamp": "1556919193",
+                        "comment": "",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "5924eac8af1f3e3f1f825998bc59c062",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "164003",
+                        "type": "sha1",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "17417300-6cef-4720-8772-b90887ce8cb9",
+                        "event_id": "536",
+                        "distribution": "5",
+                        "timestamp": "1556919189",
+                        "comment": "",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "0a9f10925af42df94925d07112f303d57392c908",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "164004",
+                        "type": "sha256",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "24645bfe-0e15-4c57-806e-27b6dacb18e8",
+                        "event_id": "536",
+                        "distribution": "5",
+                        "timestamp": "1556919187",
+                        "comment": "",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "88c90c2b123a357423ab3241624cba49d57122ee3b8ff4130504090c174bb09d",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "164005",
+                        "type": "text",
+                        "category": "Antivirus detection",
+                        "to_ids": false,
+                        "uuid": "22e9a8ca-f758-440b-befe-f5cec1d249d0",
+                        "event_id": "536",
+                        "distribution": "5",
+                        "timestamp": "1556918976",
+                        "comment": "",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "Win64/Turla.CC",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "164006",
+                        "type": "md5",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "eea9d060-4ae7-41f8-ac22-a4a0c15a31b5",
+                        "event_id": "536",
+                        "distribution": "5",
+                        "timestamp": "1556919181",
+                        "comment": "",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "c86e40e1fd2bd477a7f0cfed63fbca4a",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "164007",
+                        "type": "sha1",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "09c6ef7c-ff1a-4b86-9d87-74b859bfbfae",
+                        "event_id": "536",
+                        "distribution": "5",
+                        "timestamp": "1556919184",
+                        "comment": "",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "76ee1802a6c920cbeb3a1053a4ec03c71b7e46f8",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "164008",
+                        "type": "sha256",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "6af7a8c3-f17d-43fb-8c10-1602910bc038",
+                        "event_id": "536",
+                        "distribution": "5",
+                        "timestamp": "1556919160",
+                        "comment": "",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "92af9451d6809e035246869e53a56e1717224b28e8e96af4d80573264435d524",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "164012",
+                        "type": "md5",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "edfdb3f9-c762-46d9-8597-29cc5f1fa50e",
+                        "event_id": "536",
+                        "distribution": "5",
+                        "timestamp": "1556919123",
+                        "comment": "",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "7519b8c8ed36ec0840112bf9581717a3",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "164013",
+                        "type": "sha1",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "7111a10b-7725-4579-96b6-cf01f779b816",
+                        "event_id": "536",
+                        "distribution": "5",
+                        "timestamp": "1556919120",
+                        "comment": "",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "c1ff6804fdb8656ab08928d187837d28060a552f",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "164014",
+                        "type": "sha256",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "0b557f56-389f-4c44-abf0-1d464922eb01",
+                        "event_id": "536",
+                        "distribution": "5",
+                        "timestamp": "1556919117",
+                        "comment": "",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "c730d1af146bc420a1dfbbc647e53133a95cc87e9e519f37a01a413410e16498",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "164015",
+                        "type": "md5",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "606aa8cc-8fe7-4a35-8755-7804c04a19d3",
+                        "event_id": "536",
+                        "distribution": "5",
+                        "timestamp": "1556919113",
+                        "comment": "",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "32d92f9c125816c5ffd407577ad3ccc2",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "164016",
+                        "type": "sha1",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "d8cc496a-4c78-4d26-8ded-e605b7f65179",
+                        "event_id": "536",
+                        "distribution": "5",
+                        "timestamp": "1556919110",
+                        "comment": "",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "ff28b53b55bc77a5b4626f9db856e67ac598c787",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "164017",
+                        "type": "sha256",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "60abe762-ba0e-46a0-86a9-d9de3a6ef85e",
+                        "event_id": "536",
+                        "distribution": "5",
+                        "timestamp": "1556919107",
+                        "comment": "",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "d01745a8f454fbf173c8b410f279a84fd3b2dace379c1d67ba9b40c9813b200d",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "164018",
+                        "type": "md5",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "21bf9cf9-356b-44cd-9b40-534f3d26ace6",
+                        "event_id": "536",
+                        "distribution": "5",
+                        "timestamp": "1556919102",
+                        "comment": "",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "e1fdde61d9db9d6875994e4a412987f7",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "164019",
+                        "type": "sha1",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "1ce77aca-09f7-4e3b-b249-444b349dd34c",
+                        "event_id": "536",
+                        "distribution": "5",
+                        "timestamp": "1556919097",
+                        "comment": "",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "556674f08ecca84d19a8a756e3457dbf6aff4a1c",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "164020",
+                        "type": "sha256",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "efc3fcdc-9987-43a4-82b3-c6b51f28e9f4",
+                        "event_id": "536",
+                        "distribution": "5",
+                        "timestamp": "1556919094",
+                        "comment": "",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "ce01c8087368b7938175b217e9d4e2b50bbd3007d6f9b786d9b86a38a1acbc85",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "164021",
+                        "type": "sha1",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "5cccb302-f18c-4e72-9744-65540a016219",
+                        "event_id": "536",
+                        "distribution": "5",
+                        "timestamp": "1556919042",
+                        "comment": "",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "a4d1a34fe5effd90ccb6897679586ddc07fbc5cd",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "164022",
+                        "type": "md5",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "5cccb30f-1b18-476d-9558-5d380a016219",
+                        "event_id": "536",
+                        "distribution": "5",
+                        "timestamp": "1556919055",
+                        "comment": "",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "55319464e46e2c31d22b39b46d5477fb",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "164023",
+                        "type": "sha256",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "5cccb32b-8110-48f1-a6a8-65560a016219",
+                        "event_id": "536",
+                        "distribution": "5",
+                        "timestamp": "1556919083",
+                        "comment": "",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "14f530e16e8c6dbac02f1bde53594f01b7edab9c45c4c371a3093120276ffaf1",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "164024",
+                        "type": "filename",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "5cccb441-3720-468d-88a1-5d3a0a016219",
+                        "event_id": "536",
+                        "distribution": "5",
+                        "timestamp": "1556919373",
+                        "comment": "config file",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "%tmp%\\winmail.dat",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "164025",
+                        "type": "filename",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "5cccb441-1e60-443e-919e-5d3a0a016219",
+                        "event_id": "536",
+                        "distribution": "5",
+                        "timestamp": "1556919361",
+                        "comment": "log file",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "%WINDIR%\\ServiceProfiles\\NetworkService\\appdata\\Local\\Temp\\msmocf.xml",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "164026",
+                        "type": "filename",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "5cccb441-f920-4f2e-95bf-5d3a0a016219",
+                        "event_id": "536",
+                        "distribution": "5",
+                        "timestamp": "1556919361",
+                        "comment": "log file",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "%WINDIR%\\ServiceProfiles\\NetworkService\\appdata\\Local\\Temp\\msmodl.dat",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "164027",
+                        "type": "filename",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "5cccb441-cff8-4af7-b7ad-5d3a0a016219",
+                        "event_id": "536",
+                        "distribution": "5",
+                        "timestamp": "1556919361",
+                        "comment": "log file",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "Windows\\814ad43-58ab-2cd3-3e68-b82a8f402fd0",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "164028",
+                        "type": "filename",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "5cccb441-9730-46ba-ac64-5d3a0a016219",
+                        "event_id": "536",
+                        "distribution": "5",
+                        "timestamp": "1556919361",
+                        "comment": "log file",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "Windows\\42cf8a1-6e20-8c24-d35f-82c46d8b70ba",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "164029",
+                        "type": "filename",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "5cccb441-5ae4-450a-9e04-5d3a0a016219",
+                        "event_id": "536",
+                        "distribution": "5",
+                        "timestamp": "1556919361",
+                        "comment": "log file",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "%WINDIR%\\serviceprofiles\\networkservice\\appdata\\Roaming\\Microsoft\\",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "164030",
+                        "type": "filename",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "5cccb441-253c-4882-85f1-5d3a0a016219",
+                        "event_id": "536",
+                        "distribution": "5",
+                        "timestamp": "1556919361",
+                        "comment": "log file",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "Windows\\36b1f4a-82b9-eb06-7c1e-90b4b2d5c27d",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "164031",
+                        "type": "filename",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "5cccb441-f7c8-4e1c-bfc9-5d3a0a016219",
+                        "event_id": "536",
+                        "distribution": "5",
+                        "timestamp": "1556919361",
+                        "comment": "log file",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "%WINDIR%\\ServiceProfiles\\NetworkService\\AppData\\Roaming\\Microsoft\\thumbcache_idx.db",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "164032",
+                        "type": "filename",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "5cccb441-b8c0-4633-904e-5d3a0a016219",
+                        "event_id": "536",
+                        "distribution": "5",
+                        "timestamp": "1556919361",
+                        "comment": "log file",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "%WINDIR%\\ServiceProfiles\\NetworkService\\AppData\\Roaming\\Microsoft\\Windows\\thumbcache_32.db",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "164033",
+                        "type": "url",
+                        "category": "External analysis",
+                        "to_ids": false,
+                        "uuid": "5cccb8c1-67d4-43c3-b904-65540a016219",
+                        "event_id": "536",
+                        "distribution": "5",
+                        "timestamp": "1556920513",
+                        "comment": "White Paper",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "https://www.welivesecurity.com/wp-content/uploads/2019/05/ESET-LightNeuron.pdf",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    }
+                ],
+                "ShadowAttribute": [],
+                "RelatedEvent": [],
+                "Galaxy": [
+                    {
+                        "id": "25",
+                        "uuid": "698774c7-8022-42c4-917f-8d6e4f06ada3",
+                        "name": "Threat Actor",
+                        "type": "threat-actor",
+                        "description": "Threat actors are characteristics of malicious actors (or adversaries) representing a cyber attack threat including presumed intent and historically observed behaviour.",
+                        "version": "3",
+                        "icon": "user-secret",
+                        "namespace": "misp",
+                        "GalaxyCluster": [
+                            {
+                                "id": "19533",
+                                "collection_uuid": "7cdff317-a673-4474-84ec-4f1754947823",
+                                "type": "threat-actor",
+                                "value": "Turla Group",
+                                "tag_name": "misp-galaxy:threat-actor=\"Turla Group\"",
+                                "description": "A 2014 Guardian article described Turla as: 'Dubbed the Turla hackers, initial intelligence had indicated western powers were key targets, but it was later determined embassies for Eastern Bloc nations were of more interest. Embassies in Belgium, Ukraine, China, Jordan, Greece, Kazakhstan, Armenia, Poland, and Germany were all attacked, though researchers from Kaspersky Lab and Symantec could not confirm which countries were the true targets. In one case from May 2012, the office of the prime minister of a former Soviet Union member country was infected, leading to 60 further computers being affected, Symantec researchers said. There were some other victims, including the ministry for health of a Western European country, the ministry for education of a Central American country, a state electricity provider in the Middle East and a medical organisation in the US, according to Symantec. It is believed the group was also responsible for a much - documented 2008 attack on the US Central Command. The attackers - who continue to operate - have ostensibly sought to carry out surveillance on targets and pilfer data, though their use of encryption across their networks has made it difficult to ascertain exactly what the hackers took.Kaspersky Lab, however, picked up a number of the attackers searches through their victims emails, which included terms such as Nato and EU energy dialogue Though attribution is difficult to substantiate, Russia has previously been suspected of carrying out the attacks and Symantecs Gavin O’ Gorman told the Guardian a number of the hackers appeared to be using Russian names and language in their notes for their malicious code. Cyrillic was also seen in use.'",
+                                "galaxy_id": "25",
+                                "source": "MISP Project",
+                                "authors": [
+                                    "Alexandre Dulaunoy",
+                                    "Florian Roth",
+                                    "Thomas Schreck",
+                                    "Timo Steffens",
+                                    "Various"
+                                ],
+                                "version": "105",
+                                "uuid": "fa80877c-f509-4daf-8b62-20aba1635f68",
+                                "tag_id": "4",
+                                "meta": {
+                                    "attribution-confidence": [
+                                        "50"
+                                    ],
+                                    "cfr-suspected-state-sponsor": [
+                                        "Russian Federation"
+                                    ],
+                                    "cfr-suspected-victims": [
+                                        "France",
+                                        "Romania",
+                                        "Kazakhstan",
+                                        "Poland",
+                                        "Tajikistan",
+                                        "Russia",
+                                        "United States",
+                                        "Saudi Arabia",
+                                        "Germany",
+                                        "India",
+                                        "Belarus",
+                                        "Netherlands",
+                                        "Iran",
+                                        "Uzbekistan",
+                                        "Iraq"
+                                    ],
+                                    "cfr-target-category": [
+                                        "Government",
+                                        "Military"
+                                    ],
+                                    "cfr-type-of-incident": [
+                                        "Espionage"
+                                    ],
+                                    "country": [
+                                        "RU"
+                                    ],
+                                    "refs": [
+                                        "https://www.first.org/resources/papers/tbilisi2014/turla-operations_and_development.pdf",
+                                        "https://www.circl.lu/pub/tr-25/",
+                                        "https://www.theguardian.com/technology/2014/aug/07/turla-hackers-spying-governments-researcher-kaspersky-symantec",
+                                        "https://www.symantec.com/content/en/us/enterprise/media/security_response/whitepapers/waterbug-attack-group.pdf",
+                                        "https://securelist.com/analysis/publications/65545/the-epic-turla-operation/",
+                                        "https://securelist.com/blog/research/72081/satellite-turla-apt-command-and-control-in-the-sky/",
+                                        "https://securelist.com/blog/research/67962/the-penquin-turla-2/",
+                                        "https://www2.fireeye.com/rs/848-DID-242/images/rpt-witchcoven.pdf",
+                                        "https://www.welivesecurity.com/2017/03/30/carbon-paper-peering-turlas-second-stage-backdoor/",
+                                        "https://www.cfr.org/interactive/cyber-operations/turla",
+                                        "https://www.bleepingcomputer.com/news/security/turla-outlook-backdoor-uses-clever-tactics-for-stealth-and-persistence/",
+                                        "https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2018/november/turla-png-dropper-is-back/"
+                                    ],
+                                    "synonyms": [
+                                        "Turla",
+                                        "Snake",
+                                        "Venomous Bear",
+                                        "Group 88",
+                                        "Waterbug",
+                                        "WRAITH",
+                                        "Turla Team",
+                                        "Uroburos",
+                                        "Pfinet",
+                                        "TAG_0530",
+                                        "KRYPTON",
+                                        "Hippo Team"
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "id": "41",
+                        "uuid": "fa7016a8-1707-11e8-82d0-1b73d76eb204",
+                        "name": "Enterprise Attack - Attack Pattern",
+                        "type": "mitre-enterprise-attack-attack-pattern",
+                        "description": "ATT&CK Tactic",
+                        "version": "5",
+                        "icon": "map",
+                        "namespace": "deprecated",
+                        "GalaxyCluster": [
+                            {
+                                "id": "7822",
+                                "collection_uuid": "fb2242d8-1707-11e8-ab20-6fa7448c3640",
+                                "type": "mitre-enterprise-attack-attack-pattern",
+                                "value": "PowerShell - T1086",
+                                "tag_name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"PowerShell - T1086\"",
+                                "description": "PowerShell is a powerful interactive command-line interface and scripting environment included in the Windows operating system. (Citation: TechNet PowerShell) Adversaries can use PowerShell to perform a number of actions, including discovery of information and execution of code. Examples include the Start-Process cmdlet which can be used to run an executable and the Invoke-Command cmdlet which runs a command locally or on a remote computer. \n\nPowerShell may also be used to download and run executables from the Internet, which can be executed from disk or in memory without touching disk.\n\nAdministrator permissions are required to use PowerShell to connect to remote systems.\n\nA number of PowerShell-based offensive testing tools are available, including Empire, (Citation: Github PowerShell Empire) PowerSploit, (Citation: Powersploit) and PSAttack. (Citation: Github PSAttack)\n\nDetection: If proper execution policy is set, adversaries will likely be able to define their own execution policy if they obtain administrator or system access, either through the Registry or at the command line. This change in policy on a system may be a way to detect malicious use of PowerShell. If PowerShell is not used in an environment, then simply looking for PowerShell execution may detect malicious activity.\n\nIt is also beneficial to turn on PowerShell logging to gain increased fidelity in what occurs during execution. (Citation: Malware Archaeology PowerShell Cheat Sheet) PowerShell 5.0 introduced enhanced logging capabilities, and some of those features have since been added to PowerShell 4.0. Earlier versions of PowerShell do not have many logging features. (Citation: FireEye PowerShell Logging 2016) An organization can gather PowerShell execution details in a data analytic platform to supplement it with other data.\n\nPlatforms: Windows\n\nData Sources: Windows Registry, File monitoring, Process command-line parameters, Process monitoring\n\nPermissions Required: User, Administrator\n\nRemote Support: Yes",
+                                "galaxy_id": "41",
+                                "source": "https://github.com/mitre/cti",
+                                "authors": [
+                                    "MITRE"
+                                ],
+                                "version": "4",
+                                "uuid": "f4882e23-8aa7-4b12-b28a-b349c12ee9e0",
+                                "tag_id": "123",
+                                "meta": {
+                                    "external_id": [
+                                        "T1086"
+                                    ],
+                                    "kill_chain": [
+                                        "mitre-attack:enterprise-attack:execution"
+                                    ],
+                                    "mitre_data_sources": [
+                                        "Windows Registry",
+                                        "File monitoring",
+                                        "Process command-line parameters",
+                                        "Process monitoring"
+                                    ],
+                                    "mitre_platforms": [
+                                        "Windows"
+                                    ],
+                                    "refs": [
+                                        "https://attack.mitre.org/wiki/Technique/T1086",
+                                        "https://technet.microsoft.com/en-us/scriptcenter/dd742419.aspx",
+                                        "https://github.com/PowerShellEmpire/Empire",
+                                        "https://github.com/mattifestation/PowerSploit",
+                                        "https://github.com/jaredhaight/PSAttack",
+                                        "http://www.malwarearchaeology.com/s/Windows-PowerShell-Logging-Cheat-Sheet-ver-June-2016-v2.pdf",
+                                        "https://www.fireeye.com/blog/threat-research/2016/02/greater%20visibilityt.html"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "7831",
+                                "collection_uuid": "fb2242d8-1707-11e8-ab20-6fa7448c3640",
+                                "type": "mitre-enterprise-attack-attack-pattern",
+                                "value": "Valid Accounts - T1078",
+                                "tag_name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Valid Accounts - T1078\"",
+                                "description": "Adversaries may steal the credentials of a specific user or service account using Credential Access techniques or capture credentials earlier in their reconnaissance process through social engineering for means of gaining Initial Access. \n\nCompromised credentials may be used to bypass access controls placed on various resources on systems within the network and may even be used for persistent access to remote systems and externally available services, such as VPNs, Outlook Web Access and remote desktop. Compromised credentials may also grant an adversary increased privilege to specific systems or access to restricted areas of the network. Adversaries may choose not to use malware or tools in conjunction with the legitimate access those credentials provide to make it harder to detect their presence.\n\nAdversaries may also create accounts, sometimes using pre-defined account names and passwords, as a means for persistence through backup access in case other means are unsuccessful. \n\nThe overlap of credentials and permissions across a network of systems is of concern because the adversary may be able to pivot across accounts and systems to reach a high level of access (i.e., domain or enterprise administrator) to bypass access controls set within the enterprise. (Citation: TechNet Credential Theft)\n\nDetection: Configure robust, consistent account activity audit policies across the enterprise and with externally accessible services. (Citation: TechNet Audit Policy) Look for suspicious account behavior across systems that share accounts, either user, admin, or service accounts. Examples: one account logged into multiple systems simultaneously; multiple accounts logged into the same machine simultaneously; accounts logged in at odd times or outside of business hours. Activity may be from interactive login sessions or process ownership from accounts being used to execute binaries on a remote system as a particular account. Correlate other security systems with login information (e.g., a user has an active login session but has not entered the building or does not have VPN access).\n\nPerform regular audits of domain and local system accounts to detect accounts that may have been created by an adversary for persistence.\n\nPlatforms: Linux, macOS, Windows\n\nData Sources: Authentication logs, Process monitoring\n\nEffective Permissions: User, Administrator\n\nDefense Bypassed: Anti-virus, Firewall, Host intrusion prevention systems, Network intrusion detection system, Process whitelisting, System access controls\n\nPermissions Required: User, Administrator",
+                                "galaxy_id": "41",
+                                "source": "https://github.com/mitre/cti",
+                                "authors": [
+                                    "MITRE"
+                                ],
+                                "version": "4",
+                                "uuid": "b17a1a56-e99c-403c-8948-561df0cffe81",
+                                "tag_id": "109",
+                                "meta": {
+                                    "external_id": [
+                                        "T1078"
+                                    ],
+                                    "kill_chain": [
+                                        "mitre-attack:enterprise-attack:defense-evasion",
+                                        "mitre-attack:enterprise-attack:persistence",
+                                        "mitre-attack:enterprise-attack:privilege-escalation",
+                                        "mitre-attack:enterprise-attack:initial-access"
+                                    ],
+                                    "mitre_data_sources": [
+                                        "Authentication logs",
+                                        "Process monitoring"
+                                    ],
+                                    "mitre_platforms": [
+                                        "Linux",
+                                        "macOS",
+                                        "Windows"
+                                    ],
+                                    "refs": [
+                                        "https://attack.mitre.org/wiki/Technique/T1078",
+                                        "https://technet.microsoft.com/en-us/library/dn535501.aspx",
+                                        "https://technet.microsoft.com/en-us/library/dn487457.aspx"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "7887",
+                                "collection_uuid": "fb2242d8-1707-11e8-ab20-6fa7448c3640",
+                                "type": "mitre-enterprise-attack-attack-pattern",
+                                "value": "Automated Collection - T1119",
+                                "tag_name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Automated Collection - T1119\"",
+                                "description": "Once established within a system or network, an adversary may use automated techniques for collecting internal data. Methods for performing this technique could include use of Scripting to search for and copy information fitting set criteria such as file type, location, or name at specific time intervals. This functionality could also be built into remote access tools. \n\nThis technique may incorporate use of other techniques such as File and Directory Discovery and Remote File Copy to identify and move files.\n\nDetection: Depending on the method used, actions could include common file system commands and parameters on the command-line interface within batch files or scripts. A sequence of actions like this may be unusual, depending on the system and network environment. Automated collection may occur along with other techniques such as Data Staged. As such, file access monitoring that shows an unusual process performing sequential file opens and potentially copy actions to another location on the file system for many files at once may indicate automated collection behavior. Remote access tools with built-in features may interact directly with the Windows API to gather data. Data may also be acquired through Windows system management tools such as Windows Management Instrumentation and PowerShell.\n\nPlatforms: Linux, macOS, Windows\n\nData Sources: File monitoring, Process command-line parameters, Data loss prevention\n\nPermissions Required: User\n\nSystem Requirements: Permissions to access directories and files that store information of interest.",
+                                "galaxy_id": "41",
+                                "source": "https://github.com/mitre/cti",
+                                "authors": [
+                                    "MITRE"
+                                ],
+                                "version": "4",
+                                "uuid": "30208d3e-0d6b-43c8-883e-44462a514619",
+                                "tag_id": "121",
+                                "meta": {
+                                    "external_id": [
+                                        "T1119"
+                                    ],
+                                    "kill_chain": [
+                                        "mitre-attack:enterprise-attack:collection"
+                                    ],
+                                    "mitre_data_sources": [
+                                        "File monitoring",
+                                        "Process command-line parameters",
+                                        "Data loss prevention"
+                                    ],
+                                    "mitre_platforms": [
+                                        "Linux",
+                                        "macOS",
+                                        "Windows"
+                                    ],
+                                    "refs": [
+                                        "https://attack.mitre.org/wiki/Technique/T1119"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "7731",
+                                "collection_uuid": "fb2242d8-1707-11e8-ab20-6fa7448c3640",
+                                "type": "mitre-enterprise-attack-attack-pattern",
+                                "value": "System Network Configuration Discovery - T1016",
+                                "tag_name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"System Network Configuration Discovery - T1016\"",
+                                "description": "Adversaries will likely look for details about the network configuration and settings of systems they access or through information discovery of remote systems. Several operating system administration utilities exist that can be used to gather this information. Examples include Arp, ipconfig/ifconfig, nbtstat, and route.\n\nDetection: System and network discovery techniques normally occur throughout an operation as an adversary learns the environment. Data and events should not be viewed in isolation, but as part of a chain of behavior that could lead to other activities, such as Lateral Movement, based on the information obtained.\n\nMonitor processes and command-line arguments for actions that could be taken to gather system and network information. Remote access tools with built-in features may interact directly with the Windows API to gather information. Information may also be acquired through Windows system management tools such as Windows Management Instrumentation and PowerShell.\n\nPlatforms: Linux, macOS, Windows\n\nData Sources: Process command-line parameters, Process monitoring\n\nPermissions Required: User",
+                                "galaxy_id": "41",
+                                "source": "https://github.com/mitre/cti",
+                                "authors": [
+                                    "MITRE"
+                                ],
+                                "version": "4",
+                                "uuid": "707399d6-ab3e-4963-9315-d9d3818cd6a0",
+                                "tag_id": "190",
+                                "meta": {
+                                    "external_id": [
+                                        "T1016"
+                                    ],
+                                    "kill_chain": [
+                                        "mitre-attack:enterprise-attack:discovery"
+                                    ],
+                                    "mitre_data_sources": [
+                                        "Process command-line parameters",
+                                        "Process monitoring"
+                                    ],
+                                    "mitre_platforms": [
+                                        "Linux",
+                                        "macOS",
+                                        "Windows"
+                                    ],
+                                    "refs": [
+                                        "https://attack.mitre.org/wiki/Technique/T1016"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "7804",
+                                "collection_uuid": "fb2242d8-1707-11e8-ab20-6fa7448c3640",
+                                "type": "mitre-enterprise-attack-attack-pattern",
+                                "value": "Automated Exfiltration - T1020",
+                                "tag_name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Automated Exfiltration - T1020\"",
+                                "description": "Data, such as sensitive documents, may be exfiltrated through the use of automated processing or Scripting after being gathered during Collection. \n\nWhen automated exfiltration is used, other exfiltration techniques likely apply as well to transfer the information out of the network, such as Exfiltration Over Command and Control Channel and Exfiltration Over Alternative Protocol.\n\nDetection: Monitor process file access patterns and network behavior. Unrecognized processes or scripts that appear to be traversing file systems and sending network traffic may be suspicious.\n\nPlatforms: Linux, macOS, Windows\n\nData Sources: File monitoring, Process monitoring, Process use of network\n\nRequires Network: Yes",
+                                "galaxy_id": "41",
+                                "source": "https://github.com/mitre/cti",
+                                "authors": [
+                                    "MITRE"
+                                ],
+                                "version": "4",
+                                "uuid": "774a3188-6ba9-4dc4-879d-d54ee48a5ce9",
+                                "tag_id": "191",
+                                "meta": {
+                                    "external_id": [
+                                        "T1020"
+                                    ],
+                                    "kill_chain": [
+                                        "mitre-attack:enterprise-attack:exfiltration"
+                                    ],
+                                    "mitre_data_sources": [
+                                        "File monitoring",
+                                        "Process monitoring",
+                                        "Process use of network"
+                                    ],
+                                    "mitre_platforms": [
+                                        "Linux",
+                                        "macOS",
+                                        "Windows"
+                                    ],
+                                    "refs": [
+                                        "https://attack.mitre.org/wiki/Technique/T1020"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "7852",
+                                "collection_uuid": "fb2242d8-1707-11e8-ab20-6fa7448c3640",
+                                "type": "mitre-enterprise-attack-attack-pattern",
+                                "value": "Data Encrypted - T1022",
+                                "tag_name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Data Encrypted - T1022\"",
+                                "description": "Data is encrypted before being exfiltrated in order to hide the information that is being exfiltrated from detection or to make the exfiltration less conspicuous upon inspection by a defender. The encryption is performed by a utility, programming library, or custom algorithm on the data itself and is considered separate from any encryption performed by the command and control or file transfer protocol. Common file archive formats that can encrypt files are RAR and zip.\n\nOther exfiltration techniques likely apply as well to transfer the information out of the network, such as Exfiltration Over Command and Control Channel and Exfiltration Over Alternative Protocol\n\nDetection: Encryption software and encrypted files can be detected in many ways. Common utilities that may be present on the system or brought in by an adversary may be detectable through process monitoring and monitoring for command-line arguments for known encryption utilities. This may yield a significant amount of benign events, depending on how systems in the environment are typically used. Often the encryption key is stated within command-line invocation of the software. \n\nA process that loads the Windows DLL crypt32.dll may be used to perform encryption, decryption, or verification of file signatures. \n\nNetwork traffic may also be analyzed for entropy to determine if encrypted data is being transmitted. (Citation: Zhang 2013) If the communications channel is unencrypted, encrypted files of known file types can be detected in transit during exfiltration with a network intrusion detection or data loss prevention system analyzing file headers. (Citation: Wikipedia File Header Signatures)\n\nPlatforms: Linux, macOS, Windows\n\nData Sources: File monitoring, Binary file metadata, Process command-line parameters, Process monitoring\n\nRequires Network: No",
+                                "galaxy_id": "41",
+                                "source": "https://github.com/mitre/cti",
+                                "authors": [
+                                    "MITRE"
+                                ],
+                                "version": "4",
+                                "uuid": "d54416bd-0803-41ca-870a-ce1af7c05638",
+                                "tag_id": "93",
+                                "meta": {
+                                    "external_id": [
+                                        "T1022"
+                                    ],
+                                    "kill_chain": [
+                                        "mitre-attack:enterprise-attack:exfiltration"
+                                    ],
+                                    "mitre_data_sources": [
+                                        "File monitoring",
+                                        "Binary file metadata",
+                                        "Process command-line parameters",
+                                        "Process monitoring"
+                                    ],
+                                    "mitre_platforms": [
+                                        "Linux",
+                                        "macOS",
+                                        "Windows"
+                                    ],
+                                    "refs": [
+                                        "https://attack.mitre.org/wiki/Technique/T1022",
+                                        "http://www.netsec.colostate.edu/~zhang/DetectingEncryptedBotnetTraffic.pdf",
+                                        "https://en.wikipedia.org/wiki/List%20of%20file%20signatures"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "7871",
+                                "collection_uuid": "fb2242d8-1707-11e8-ab20-6fa7448c3640",
+                                "type": "mitre-enterprise-attack-attack-pattern",
+                                "value": "Data from Local System - T1005",
+                                "tag_name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Data from Local System - T1005\"",
+                                "description": "Sensitive data can be collected from local system sources, such as the file system or databases of information residing on the system prior to Exfiltration.\n\nAdversaries will often search the file system on computers they have compromised to find files of interest. They may do this using a Command-Line Interface, such as cmd, which has functionality to interact with the file system to gather information. Some adversaries may also use Automated Collection on the local system.\n\nDetection: Monitor processes and command-line arguments for actions that could be taken to collect files from a system. Remote access tools with built-in features may interact directly with the Windows API to gather data. Data may also be acquired through Windows system management tools such as Windows Management Instrumentation and PowerShell.\n\nPlatforms: Linux, macOS, Windows\n\nData Sources: File monitoring, Process monitoring, Process command-line parameters\n\nSystem Requirements: Privileges to access certain files and directories",
+                                "galaxy_id": "41",
+                                "source": "https://github.com/mitre/cti",
+                                "authors": [
+                                    "MITRE"
+                                ],
+                                "version": "4",
+                                "uuid": "3c4a2599-71ee-4405-ba1e-0e28414b4bc5",
+                                "tag_id": "92",
+                                "meta": {
+                                    "external_id": [
+                                        "T1005"
+                                    ],
+                                    "kill_chain": [
+                                        "mitre-attack:enterprise-attack:collection"
+                                    ],
+                                    "mitre_data_sources": [
+                                        "File monitoring",
+                                        "Process monitoring",
+                                        "Process command-line parameters"
+                                    ],
+                                    "mitre_platforms": [
+                                        "Linux",
+                                        "macOS",
+                                        "Windows"
+                                    ],
+                                    "refs": [
+                                        "https://attack.mitre.org/wiki/Technique/T1005"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "7784",
+                                "collection_uuid": "fb2242d8-1707-11e8-ab20-6fa7448c3640",
+                                "type": "mitre-enterprise-attack-attack-pattern",
+                                "value": "Email Collection - T1114",
+                                "tag_name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Email Collection - T1114\"",
+                                "description": "Adversaries may target user email to collect sensitive information from a target.\n\nFiles containing email data can be acquired from a user's system, such as Outlook storage or cache files .pst and .ost.\n\nAdversaries may leverage a user's credentials and interact directly with the Exchange server to acquire information from within a network.\n\nSome adversaries may acquire user credentials and access externally facing webmail applications, such as Outlook Web Access.\n\nDetection: There are likely a variety of ways an adversary could collect email from a target, each with a different mechanism for detection.\n\nFile access of local system email files for Exfiltration, unusual processes connecting to an email server within a network, or unusual access patterns or authentication attempts on a public-facing webmail server may all be indicators of malicious activity.\n\nMonitor processes and command-line arguments for actions that could be taken to gather local email files. Remote access tools with built-in features may interact directly with the Windows API to gather information. Information may also be acquired through Windows system management tools such as Windows Management Instrumentation and PowerShell.\n\nPlatforms: Windows\n\nData Sources: Authentication logs, File monitoring, Process monitoring, Process use of network",
+                                "galaxy_id": "41",
+                                "source": "https://github.com/mitre/cti",
+                                "authors": [
+                                    "MITRE"
+                                ],
+                                "version": "4",
+                                "uuid": "1608f3e1-598a-42f4-a01a-2e252e81728f",
+                                "tag_id": "120",
+                                "meta": {
+                                    "external_id": [
+                                        "T1114"
+                                    ],
+                                    "kill_chain": [
+                                        "mitre-attack:enterprise-attack:collection"
+                                    ],
+                                    "mitre_data_sources": [
+                                        "Authentication logs",
+                                        "File monitoring",
+                                        "Process monitoring",
+                                        "Process use of network"
+                                    ],
+                                    "mitre_platforms": [
+                                        "Windows"
+                                    ],
+                                    "refs": [
+                                        "https://attack.mitre.org/wiki/Technique/T1114"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "7797",
+                                "collection_uuid": "fb2242d8-1707-11e8-ab20-6fa7448c3640",
+                                "type": "mitre-enterprise-attack-attack-pattern",
+                                "value": "Data Obfuscation - T1001",
+                                "tag_name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Data Obfuscation - T1001\"",
+                                "description": "Command and control (C2) communications are hidden (but not necessarily encrypted) in an attempt to make the content more difficult to discover or decipher and to make the communication less conspicuous and hide commands from being seen. This encompasses many methods, such as adding junk data to protocol traffic, using steganography, commingling legitimate traffic with C2 communications traffic, or using a non-standard data encoding system, such as a modified Base64 encoding for the message body of an HTTP request.\n\nDetection: Analyze network data for uncommon data flows (e.g., a client sending significantly more data than it receives from a server). Processes utilizing the network that do not normally have network communication or have never been seen before are suspicious. Analyze packet contents to detect communications that do not follow the expected protocol behavior for the port that is being used. (Citation: University of Birmingham C2)\n\nPlatforms: Linux, macOS, Windows\n\nData Sources: Packet capture, Process use of network, Process monitoring, Network protocol analysis\n\nRequires Network: Yes",
+                                "galaxy_id": "41",
+                                "source": "https://github.com/mitre/cti",
+                                "authors": [
+                                    "MITRE"
+                                ],
+                                "version": "4",
+                                "uuid": "ad255bfe-a9e6-4b52-a258-8d3462abe842",
+                                "tag_id": "107",
+                                "meta": {
+                                    "external_id": [
+                                        "T1001"
+                                    ],
+                                    "kill_chain": [
+                                        "mitre-attack:enterprise-attack:command-and-control"
+                                    ],
+                                    "mitre_data_sources": [
+                                        "Packet capture",
+                                        "Process use of network",
+                                        "Process monitoring",
+                                        "Network protocol analysis"
+                                    ],
+                                    "mitre_platforms": [
+                                        "Linux",
+                                        "macOS",
+                                        "Windows"
+                                    ],
+                                    "refs": [
+                                        "https://attack.mitre.org/wiki/Technique/T1001",
+                                        "https://arxiv.org/ftp/arxiv/papers/1408/1408.1136.pdf"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "7722",
+                                "collection_uuid": "fb2242d8-1707-11e8-ab20-6fa7448c3640",
+                                "type": "mitre-enterprise-attack-attack-pattern",
+                                "value": "Exfiltration Over Command and Control Channel - T1041",
+                                "tag_name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Exfiltration Over Command and Control Channel - T1041\"",
+                                "description": "Data exfiltration is performed over the Command and Control channel.  Data is encoded into the normal communications channel using the same protocol as command and control communications.\n\nDetection: Detection for command and control applies. Analyze network data for uncommon data flows (e.g., a client sending significantly more data than it receives from a server). Processes utilizing the network that do not normally have network communication or have never been seen before are suspicious. Analyze packet contents to detect communications that do not follow the expected protocol behavior for the port that is being used. (Citation: University of Birmingham C2)\n\nPlatforms: Linux, macOS, Windows\n\nData Sources: User interface, Process monitoring\n\nRequires Network: Yes",
+                                "galaxy_id": "41",
+                                "source": "https://github.com/mitre/cti",
+                                "authors": [
+                                    "MITRE"
+                                ],
+                                "version": "4",
+                                "uuid": "92d7da27-2d91-488e-a00c-059dc162766d",
+                                "tag_id": "94",
+                                "meta": {
+                                    "external_id": [
+                                        "T1041"
+                                    ],
+                                    "kill_chain": [
+                                        "mitre-attack:enterprise-attack:exfiltration"
+                                    ],
+                                    "mitre_data_sources": [
+                                        "User interface",
+                                        "Process monitoring"
+                                    ],
+                                    "mitre_platforms": [
+                                        "Linux",
+                                        "macOS",
+                                        "Windows"
+                                    ],
+                                    "refs": [
+                                        "https://attack.mitre.org/wiki/Technique/T1041",
+                                        "https://arxiv.org/ftp/arxiv/papers/1408/1408.1136.pdf"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "7808",
+                                "collection_uuid": "fb2242d8-1707-11e8-ab20-6fa7448c3640",
+                                "type": "mitre-enterprise-attack-attack-pattern",
+                                "value": "Scheduled Transfer - T1029",
+                                "tag_name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Scheduled Transfer - T1029\"",
+                                "description": "Data exfiltration may be performed only at certain times of day or at certain intervals.  This could be done to blend traffic patterns with normal activity or availability.\n\nWhen scheduled exfiltration is used, other exfiltration techniques likely apply as well to transfer the information out of the network, such as Exfiltration Over Command and Control Channel and Exfiltration Over Alternative Protocol.\n\nDetection: Monitor process file access patterns and network behavior. Unrecognized processes or scripts that appear to be traversing file systems and sending network traffic may be suspicious. Network connections to the same destination that occur at the same time of day for multiple days are suspicious.\n\nPlatforms: Linux, macOS, Windows\n\nData Sources: Netflow/Enclave netflow, Process use of network, Process monitoring\n\nRequires Network: Yes",
+                                "galaxy_id": "41",
+                                "source": "https://github.com/mitre/cti",
+                                "authors": [
+                                    "MITRE"
+                                ],
+                                "version": "4",
+                                "uuid": "4eeaf8a9-c86b-4954-a663-9555fb406466",
+                                "tag_id": "192",
+                                "meta": {
+                                    "external_id": [
+                                        "T1029"
+                                    ],
+                                    "kill_chain": [
+                                        "mitre-attack:enterprise-attack:exfiltration"
+                                    ],
+                                    "mitre_data_sources": [
+                                        "Netflow/Enclave netflow",
+                                        "Process use of network",
+                                        "Process monitoring"
+                                    ],
+                                    "mitre_platforms": [
+                                        "Linux",
+                                        "macOS",
+                                        "Windows"
+                                    ],
+                                    "refs": [
+                                        "https://attack.mitre.org/wiki/Technique/T1029"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "7706",
+                                "collection_uuid": "fb2242d8-1707-11e8-ab20-6fa7448c3640",
+                                "type": "mitre-enterprise-attack-attack-pattern",
+                                "value": "Standard Application Layer Protocol - T1071",
+                                "tag_name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Standard Application Layer Protocol - T1071\"",
+                                "description": "Adversaries may communicate using a common, standardized application layer protocol such as HTTP, HTTPS, SMTP, or DNS to avoid detection by blending in with existing traffic. Commands to the remote system, and often the results of those commands, will be embedded within the protocol traffic between the client and server.\n\nFor connections that occur internally within an enclave (such as those between a proxy or pivot node and other nodes), commonly used protocols are RPC, SSH, or RDP.\n\nDetection: Analyze network data for uncommon data flows (e.g., a client sending significantly more data than it receives from a server). Processes utilizing the network that do not normally have network communication or have never been seen before are suspicious.  Analyze packet contents to detect application layer protocols that do not follow the expected protocol for the port that is being used. (Citation: University of Birmingham C2)\n\nPlatforms: Linux, macOS, Windows\n\nData Sources: Packet capture, Netflow/Enclave netflow, Process use of network, Malware reverse engineering, Process monitoring\n\nRequires Network: Yes",
+                                "galaxy_id": "41",
+                                "source": "https://github.com/mitre/cti",
+                                "authors": [
+                                    "MITRE"
+                                ],
+                                "version": "4",
+                                "uuid": "355be19c-ffc9-46d5-8d50-d6a036c675b6",
+                                "tag_id": "122",
+                                "meta": {
+                                    "external_id": [
+                                        "T1071"
+                                    ],
+                                    "kill_chain": [
+                                        "mitre-attack:enterprise-attack:command-and-control"
+                                    ],
+                                    "mitre_data_sources": [
+                                        "Packet capture",
+                                        "Netflow/Enclave netflow",
+                                        "Process use of network",
+                                        "Malware reverse engineering",
+                                        "Process monitoring"
+                                    ],
+                                    "mitre_platforms": [
+                                        "Linux",
+                                        "macOS",
+                                        "Windows"
+                                    ],
+                                    "refs": [
+                                        "https://attack.mitre.org/wiki/Technique/T1071",
+                                        "https://arxiv.org/ftp/arxiv/papers/1408/1408.1136.pdf"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "7827",
+                                "collection_uuid": "fb2242d8-1707-11e8-ab20-6fa7448c3640",
+                                "type": "mitre-enterprise-attack-attack-pattern",
+                                "value": "Standard Cryptographic Protocol - T1032",
+                                "tag_name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Standard Cryptographic Protocol - T1032\"",
+                                "description": "Adversaries use command and control over an encrypted channel using a known encryption protocol like HTTPS or SSL/TLS. The use of strong encryption makes it difficult for defenders to detect signatures within adversary command and control traffic.\n\nSome adversaries may use other encryption protocols and algorithms with symmetric keys, such as RC4, that rely on encryption keys encoded into malware configuration files and not public key cryptography. Such keys may be obtained through malware reverse engineering.\n\nDetection: SSL/TLS inspection is one way of detecting command and control traffic within some encrypted communication channels. (Citation: SANS Decrypting SSL) SSL/TLS inspection does come with certain risks that should be considered before implementing to avoid potential security issues such as incomplete certificate validation. (Citation: SEI SSL Inspection Risks)\n\nIf malware uses encryption with symmetric keys, it may be possible to obtain the algorithm and key from samples and use them to decode network traffic to detect malware communications signatures. (Citation: Fidelis DarkComet)\n\nIn general, analyze network data for uncommon data flows (e.g., a client sending significantly more data than it receives from a server). Processes utilizing the network that do not normally have network communication or have never been seen before are suspicious. Analyze packet contents to detect communications that do not follow the expected protocol behavior for the port that is being used. (Citation: University of Birmingham C2)\n\nPlatforms: Linux, macOS, Windows\n\nData Sources: Packet capture, Netflow/Enclave netflow, Malware reverse engineering, Process use of network, Process monitoring, SSL/TLS inspection\n\nRequires Network: Yes",
+                                "galaxy_id": "41",
+                                "source": "https://github.com/mitre/cti",
+                                "authors": [
+                                    "MITRE"
+                                ],
+                                "version": "4",
+                                "uuid": "4b74a1d4-b0e9-4ef1-93f1-14ecc6e2f5b5",
+                                "tag_id": "193",
+                                "meta": {
+                                    "external_id": [
+                                        "T1032"
+                                    ],
+                                    "kill_chain": [
+                                        "mitre-attack:enterprise-attack:command-and-control"
+                                    ],
+                                    "mitre_data_sources": [
+                                        "Packet capture",
+                                        "Netflow/Enclave netflow",
+                                        "Malware reverse engineering",
+                                        "Process use of network",
+                                        "Process monitoring",
+                                        "SSL/TLS inspection"
+                                    ],
+                                    "mitre_platforms": [
+                                        "Linux",
+                                        "macOS",
+                                        "Windows"
+                                    ],
+                                    "refs": [
+                                        "https://attack.mitre.org/wiki/Technique/T1032",
+                                        "https://arxiv.org/ftp/arxiv/papers/1408/1408.1136.pdf",
+                                        "http://www.sans.org/reading-room/whitepapers/analyst/finding-hidden-threats-decrypting-ssl-34840",
+                                        "https://insights.sei.cmu.edu/cert/2015/03/the-risks-of-ssl-inspection.html",
+                                        "https://www.fidelissecurity.com/sites/default/files/FTA%201018%20looking%20at%20the%20sky%20for%20a%20dark%20comet.pdf"
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "Object": [],
+                "Tag": [
+                    {
+                        "id": "4",
+                        "name": "misp-galaxy:threat-actor=\"Turla Group\"",
+                        "colour": "#0088cc",
+                        "exportable": true,
+                        "hide_tag": false,
+                        "user_id": "0",
+                        "numerical_value": null
+                    },
+                    {
+                        "id": "123",
+                        "name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"PowerShell - T1086\"",
+                        "colour": "#0088cc",
+                        "exportable": true,
+                        "hide_tag": false,
+                        "user_id": "0",
+                        "numerical_value": null
+                    },
+                    {
+                        "id": "109",
+                        "name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Valid Accounts - T1078\"",
+                        "colour": "#0088cc",
+                        "exportable": true,
+                        "hide_tag": false,
+                        "user_id": "0",
+                        "numerical_value": null
+                    },
+                    {
+                        "id": "121",
+                        "name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Automated Collection - T1119\"",
+                        "colour": "#0088cc",
+                        "exportable": true,
+                        "hide_tag": false,
+                        "user_id": "0",
+                        "numerical_value": null
+                    },
+                    {
+                        "id": "190",
+                        "name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"System Network Configuration Discovery - T1016\"",
+                        "colour": "#0088cc",
+                        "exportable": true,
+                        "hide_tag": false,
+                        "user_id": "0",
+                        "numerical_value": null
+                    },
+                    {
+                        "id": "191",
+                        "name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Automated Exfiltration - T1020\"",
+                        "colour": "#0088cc",
+                        "exportable": true,
+                        "hide_tag": false,
+                        "user_id": "0",
+                        "numerical_value": null
+                    },
+                    {
+                        "id": "93",
+                        "name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Data Encrypted - T1022\"",
+                        "colour": "#0088cc",
+                        "exportable": true,
+                        "hide_tag": false,
+                        "user_id": "0",
+                        "numerical_value": null
+                    },
+                    {
+                        "id": "92",
+                        "name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Data from Local System - T1005\"",
+                        "colour": "#0088cc",
+                        "exportable": true,
+                        "hide_tag": false,
+                        "user_id": "0",
+                        "numerical_value": null
+                    },
+                    {
+                        "id": "120",
+                        "name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Email Collection - T1114\"",
+                        "colour": "#0088cc",
+                        "exportable": true,
+                        "hide_tag": false,
+                        "user_id": "0",
+                        "numerical_value": null
+                    },
+                    {
+                        "id": "107",
+                        "name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Data Obfuscation - T1001\"",
+                        "colour": "#0088cc",
+                        "exportable": true,
+                        "hide_tag": false,
+                        "user_id": "0",
+                        "numerical_value": null
+                    },
+                    {
+                        "id": "94",
+                        "name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Exfiltration Over Command and Control Channel - T1041\"",
+                        "colour": "#0088cc",
+                        "exportable": true,
+                        "hide_tag": false,
+                        "user_id": "0",
+                        "numerical_value": null
+                    },
+                    {
+                        "id": "192",
+                        "name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Scheduled Transfer - T1029\"",
+                        "colour": "#0088cc",
+                        "exportable": true,
+                        "hide_tag": false,
+                        "user_id": "0",
+                        "numerical_value": null
+                    },
+                    {
+                        "id": "122",
+                        "name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Standard Application Layer Protocol - T1071\"",
+                        "colour": "#0088cc",
+                        "exportable": true,
+                        "hide_tag": false,
+                        "user_id": "0",
+                        "numerical_value": null
+                    },
+                    {
+                        "id": "193",
+                        "name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Standard Cryptographic Protocol - T1032\"",
+                        "colour": "#0088cc",
+                        "exportable": true,
+                        "hide_tag": false,
+                        "user_id": "0",
+                        "numerical_value": null
+                    }
+                ]
+            }
+        }
+    ]
+}
