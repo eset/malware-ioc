@@ -1,0 +1,1145 @@
+{
+    "response": [
+        {
+            "Event": {
+                "id": "548",
+                "orgc_id": "2",
+                "org_id": "2",
+                "date": "2019-05-28",
+                "threat_level_id": "4",
+                "info": "Turla PowerShell blogpost",
+                "published": false,
+                "uuid": "5ced8da1-0960-40bc-b5dc-2fed0a016219",
+                "attribute_count": "16",
+                "analysis": "0",
+                "timestamp": "1559072953",
+                "distribution": "3",
+                "proposal_email_lock": false,
+                "locked": false,
+                "publish_timestamp": "0",
+                "sharing_group_id": "0",
+                "disable_correlation": false,
+                "extends_uuid": "",
+                "event_creator_email": "matthieu.faou@eset.com",
+                "Org": {
+                    "id": "2",
+                    "name": "ESET",
+                    "uuid": "55f6ea5e-51ac-4344-bc8c-4170950d210f"
+                },
+                "Orgc": {
+                    "id": "2",
+                    "name": "ESET",
+                    "uuid": "55f6ea5e-51ac-4344-bc8c-4170950d210f"
+                },
+                "Attribute": [
+                    {
+                        "id": "166382",
+                        "type": "url",
+                        "category": "External analysis",
+                        "to_ids": false,
+                        "uuid": "5ced8dd3-7f14-4c15-949b-2feb0a016219",
+                        "event_id": "548",
+                        "distribution": "5",
+                        "timestamp": "1559072211",
+                        "comment": "Research blogpost",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "https://www.welivesecurity.com/2019/05/29/turla-powershell-usage/",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "166383",
+                        "type": "sha1",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "5ced8dec-24c4-4cde-8b69-2feb0a016219",
+                        "event_id": "548",
+                        "distribution": "5",
+                        "timestamp": "1559072258",
+                        "comment": "PowerShell loader with encrypted payload",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "50c0bf9479efc93fa9cf1aa99bdca923273b71a1",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "166384",
+                        "type": "sha1",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "5ced8dec-1500-48c8-a9a2-2feb0a016219",
+                        "event_id": "548",
+                        "distribution": "5",
+                        "timestamp": "1559072264",
+                        "comment": "RPC backdoor (client)",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "ec54ef8d79bf30b63c5249af7a8a3c652595b923",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "166385",
+                        "type": "sha1",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "5ced8dec-ddc8-4f9f-a60c-2feb0a016219",
+                        "event_id": "548",
+                        "distribution": "5",
+                        "timestamp": "1559072271",
+                        "comment": "RPC backdoor (server)",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "9cdf6d5878fc3aecf10761fd72371a2877f270d0",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "166386",
+                        "type": "sha1",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "5ced8dec-ab40-407c-832a-2feb0a016219",
+                        "event_id": "548",
+                        "distribution": "5",
+                        "timestamp": "1559072278",
+                        "comment": "File exfiltration RPC\r\nplugin",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "d3df3f32716042404798e3e9d691aced2f78bdd5",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "166387",
+                        "type": "sha1",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "5ced8dec-7408-4870-8004-2feb0a016219",
+                        "event_id": "548",
+                        "distribution": "5",
+                        "timestamp": "1559072285",
+                        "comment": "RPCSpoofServerInstaller",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "9d1c563e5228b2572f5ca14f0ec33ca0deda3d57",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "166388",
+                        "type": "sha1",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "5ced8dec-3564-4f61-8d0f-2feb0a016219",
+                        "event_id": "548",
+                        "distribution": "5",
+                        "timestamp": "1559072290",
+                        "comment": "B948E25D061039D64115CFDE74D2FF4372E83765",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "b948e25d061039d64115cfde74d2ff4372e83765",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "166389",
+                        "type": "text",
+                        "category": "Antivirus detection",
+                        "to_ids": false,
+                        "uuid": "5ced8e47-5b34-461c-823c-2c670a016219",
+                        "event_id": "548",
+                        "distribution": "5",
+                        "timestamp": "1559072327",
+                        "comment": "ESET detection name",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "PowerShell/Turla.T",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "166390",
+                        "type": "text",
+                        "category": "Antivirus detection",
+                        "to_ids": false,
+                        "uuid": "5ced8e47-5278-4677-8550-2c670a016219",
+                        "event_id": "548",
+                        "distribution": "5",
+                        "timestamp": "1559072327",
+                        "comment": "ESET detection name",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "Win64/Turla.BQ",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "166391",
+                        "type": "text",
+                        "category": "Antivirus detection",
+                        "to_ids": false,
+                        "uuid": "5ced8e47-1c08-420f-b3b5-2c670a016219",
+                        "event_id": "548",
+                        "distribution": "5",
+                        "timestamp": "1559072327",
+                        "comment": "ESET detection name",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "Win32/Turla.BZ",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "166392",
+                        "type": "text",
+                        "category": "Antivirus detection",
+                        "to_ids": false,
+                        "uuid": "5ced8e47-e78c-47c8-b0ec-2c670a016219",
+                        "event_id": "548",
+                        "distribution": "5",
+                        "timestamp": "1559072327",
+                        "comment": "ESET detection name",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "Win64/Turla.BS",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "166393",
+                        "type": "text",
+                        "category": "Antivirus detection",
+                        "to_ids": false,
+                        "uuid": "5ced8e47-a49c-468f-982e-2c670a016219",
+                        "event_id": "548",
+                        "distribution": "5",
+                        "timestamp": "1559072327",
+                        "comment": "ESET detection name",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "Win64/Turla.BR",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "166394",
+                        "type": "filename",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "5ced8e6b-88e0-4964-b4b9-34300a016219",
+                        "event_id": "548",
+                        "distribution": "5",
+                        "timestamp": "1559072363",
+                        "comment": "",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "%PUBLIC%\\iCore.dat",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "166395",
+                        "type": "filename",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "5ced8e6b-6530-4453-aa17-34300a016219",
+                        "event_id": "548",
+                        "distribution": "5",
+                        "timestamp": "1559072363",
+                        "comment": "",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "\\\\pipe\\\\atctl",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "166396",
+                        "type": "filename",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "5ced8e6b-28e4-435d-9f2f-34300a016219",
+                        "event_id": "548",
+                        "distribution": "5",
+                        "timestamp": "1559072363",
+                        "comment": "",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "msctx.ps1",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    },
+                    {
+                        "id": "166397",
+                        "type": "filename",
+                        "category": "Artifacts dropped",
+                        "to_ids": false,
+                        "uuid": "5ced8e6b-091c-4b71-88f2-34300a016219",
+                        "event_id": "548",
+                        "distribution": "5",
+                        "timestamp": "1559072363",
+                        "comment": "",
+                        "sharing_group_id": "0",
+                        "deleted": false,
+                        "disable_correlation": false,
+                        "object_id": "0",
+                        "object_relation": null,
+                        "value": "%PUBLIC%\\Documents\\desktop.db",
+                        "Galaxy": [],
+                        "ShadowAttribute": []
+                    }
+                ],
+                "ShadowAttribute": [],
+                "RelatedEvent": [],
+                "Galaxy": [
+                    {
+                        "id": "25",
+                        "uuid": "698774c7-8022-42c4-917f-8d6e4f06ada3",
+                        "name": "Threat Actor",
+                        "type": "threat-actor",
+                        "description": "Threat actors are characteristics of malicious actors (or adversaries) representing a cyber attack threat including presumed intent and historically observed behaviour.",
+                        "version": "3",
+                        "icon": "user-secret",
+                        "namespace": "misp",
+                        "GalaxyCluster": [
+                            {
+                                "id": "19533",
+                                "collection_uuid": "7cdff317-a673-4474-84ec-4f1754947823",
+                                "type": "threat-actor",
+                                "value": "Turla Group",
+                                "tag_name": "misp-galaxy:threat-actor=\"Turla Group\"",
+                                "description": "A 2014 Guardian article described Turla as: 'Dubbed the Turla hackers, initial intelligence had indicated western powers were key targets, but it was later determined embassies for Eastern Bloc nations were of more interest. Embassies in Belgium, Ukraine, China, Jordan, Greece, Kazakhstan, Armenia, Poland, and Germany were all attacked, though researchers from Kaspersky Lab and Symantec could not confirm which countries were the true targets. In one case from May 2012, the office of the prime minister of a former Soviet Union member country was infected, leading to 60 further computers being affected, Symantec researchers said. There were some other victims, including the ministry for health of a Western European country, the ministry for education of a Central American country, a state electricity provider in the Middle East and a medical organisation in the US, according to Symantec. It is believed the group was also responsible for a much - documented 2008 attack on the US Central Command. The attackers - who continue to operate - have ostensibly sought to carry out surveillance on targets and pilfer data, though their use of encryption across their networks has made it difficult to ascertain exactly what the hackers took.Kaspersky Lab, however, picked up a number of the attackers searches through their victims emails, which included terms such as Nato and EU energy dialogue Though attribution is difficult to substantiate, Russia has previously been suspected of carrying out the attacks and Symantecs Gavin O’ Gorman told the Guardian a number of the hackers appeared to be using Russian names and language in their notes for their malicious code. Cyrillic was also seen in use.'",
+                                "galaxy_id": "25",
+                                "source": "MISP Project",
+                                "authors": [
+                                    "Alexandre Dulaunoy",
+                                    "Florian Roth",
+                                    "Thomas Schreck",
+                                    "Timo Steffens",
+                                    "Various"
+                                ],
+                                "version": "105",
+                                "uuid": "fa80877c-f509-4daf-8b62-20aba1635f68",
+                                "tag_id": "4",
+                                "meta": {
+                                    "attribution-confidence": [
+                                        "50"
+                                    ],
+                                    "cfr-suspected-state-sponsor": [
+                                        "Russian Federation"
+                                    ],
+                                    "cfr-suspected-victims": [
+                                        "France",
+                                        "Romania",
+                                        "Kazakhstan",
+                                        "Poland",
+                                        "Tajikistan",
+                                        "Russia",
+                                        "United States",
+                                        "Saudi Arabia",
+                                        "Germany",
+                                        "India",
+                                        "Belarus",
+                                        "Netherlands",
+                                        "Iran",
+                                        "Uzbekistan",
+                                        "Iraq"
+                                    ],
+                                    "cfr-target-category": [
+                                        "Government",
+                                        "Military"
+                                    ],
+                                    "cfr-type-of-incident": [
+                                        "Espionage"
+                                    ],
+                                    "country": [
+                                        "RU"
+                                    ],
+                                    "refs": [
+                                        "https://www.first.org/resources/papers/tbilisi2014/turla-operations_and_development.pdf",
+                                        "https://www.circl.lu/pub/tr-25/",
+                                        "https://www.theguardian.com/technology/2014/aug/07/turla-hackers-spying-governments-researcher-kaspersky-symantec",
+                                        "https://www.symantec.com/content/en/us/enterprise/media/security_response/whitepapers/waterbug-attack-group.pdf",
+                                        "https://securelist.com/analysis/publications/65545/the-epic-turla-operation/",
+                                        "https://securelist.com/blog/research/72081/satellite-turla-apt-command-and-control-in-the-sky/",
+                                        "https://securelist.com/blog/research/67962/the-penquin-turla-2/",
+                                        "https://www2.fireeye.com/rs/848-DID-242/images/rpt-witchcoven.pdf",
+                                        "https://www.welivesecurity.com/2017/03/30/carbon-paper-peering-turlas-second-stage-backdoor/",
+                                        "https://www.cfr.org/interactive/cyber-operations/turla",
+                                        "https://www.bleepingcomputer.com/news/security/turla-outlook-backdoor-uses-clever-tactics-for-stealth-and-persistence/",
+                                        "https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2018/november/turla-png-dropper-is-back/"
+                                    ],
+                                    "synonyms": [
+                                        "Turla",
+                                        "Snake",
+                                        "Venomous Bear",
+                                        "Group 88",
+                                        "Waterbug",
+                                        "WRAITH",
+                                        "Turla Team",
+                                        "Uroburos",
+                                        "Pfinet",
+                                        "TAG_0530",
+                                        "KRYPTON",
+                                        "Hippo Team"
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "id": "41",
+                        "uuid": "fa7016a8-1707-11e8-82d0-1b73d76eb204",
+                        "name": "Enterprise Attack - Attack Pattern",
+                        "type": "mitre-enterprise-attack-attack-pattern",
+                        "description": "ATT&CK Tactic",
+                        "version": "5",
+                        "icon": "map",
+                        "namespace": "deprecated",
+                        "GalaxyCluster": [
+                            {
+                                "id": "7822",
+                                "collection_uuid": "fb2242d8-1707-11e8-ab20-6fa7448c3640",
+                                "type": "mitre-enterprise-attack-attack-pattern",
+                                "value": "PowerShell - T1086",
+                                "tag_name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"PowerShell - T1086\"",
+                                "description": "PowerShell is a powerful interactive command-line interface and scripting environment included in the Windows operating system. (Citation: TechNet PowerShell) Adversaries can use PowerShell to perform a number of actions, including discovery of information and execution of code. Examples include the Start-Process cmdlet which can be used to run an executable and the Invoke-Command cmdlet which runs a command locally or on a remote computer. \n\nPowerShell may also be used to download and run executables from the Internet, which can be executed from disk or in memory without touching disk.\n\nAdministrator permissions are required to use PowerShell to connect to remote systems.\n\nA number of PowerShell-based offensive testing tools are available, including Empire, (Citation: Github PowerShell Empire) PowerSploit, (Citation: Powersploit) and PSAttack. (Citation: Github PSAttack)\n\nDetection: If proper execution policy is set, adversaries will likely be able to define their own execution policy if they obtain administrator or system access, either through the Registry or at the command line. This change in policy on a system may be a way to detect malicious use of PowerShell. If PowerShell is not used in an environment, then simply looking for PowerShell execution may detect malicious activity.\n\nIt is also beneficial to turn on PowerShell logging to gain increased fidelity in what occurs during execution. (Citation: Malware Archaeology PowerShell Cheat Sheet) PowerShell 5.0 introduced enhanced logging capabilities, and some of those features have since been added to PowerShell 4.0. Earlier versions of PowerShell do not have many logging features. (Citation: FireEye PowerShell Logging 2016) An organization can gather PowerShell execution details in a data analytic platform to supplement it with other data.\n\nPlatforms: Windows\n\nData Sources: Windows Registry, File monitoring, Process command-line parameters, Process monitoring\n\nPermissions Required: User, Administrator\n\nRemote Support: Yes",
+                                "galaxy_id": "41",
+                                "source": "https://github.com/mitre/cti",
+                                "authors": [
+                                    "MITRE"
+                                ],
+                                "version": "4",
+                                "uuid": "f4882e23-8aa7-4b12-b28a-b349c12ee9e0",
+                                "tag_id": "123",
+                                "meta": {
+                                    "external_id": [
+                                        "T1086"
+                                    ],
+                                    "kill_chain": [
+                                        "mitre-attack:enterprise-attack:execution"
+                                    ],
+                                    "mitre_data_sources": [
+                                        "Windows Registry",
+                                        "File monitoring",
+                                        "Process command-line parameters",
+                                        "Process monitoring"
+                                    ],
+                                    "mitre_platforms": [
+                                        "Windows"
+                                    ],
+                                    "refs": [
+                                        "https://attack.mitre.org/wiki/Technique/T1086",
+                                        "https://technet.microsoft.com/en-us/scriptcenter/dd742419.aspx",
+                                        "https://github.com/PowerShellEmpire/Empire",
+                                        "https://github.com/mattifestation/PowerSploit",
+                                        "https://github.com/jaredhaight/PSAttack",
+                                        "http://www.malwarearchaeology.com/s/Windows-PowerShell-Logging-Cheat-Sheet-ver-June-2016-v2.pdf",
+                                        "https://www.fireeye.com/blog/threat-research/2016/02/greater%20visibilityt.html"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "7800",
+                                "collection_uuid": "fb2242d8-1707-11e8-ab20-6fa7448c3640",
+                                "type": "mitre-enterprise-attack-attack-pattern",
+                                "value": "Obfuscated Files or Information - T1027",
+                                "tag_name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Obfuscated Files or Information - T1027\"",
+                                "description": "Adversaries may attempt to make an executable or file difficult to discover or analyze by encrypting, encoding, or otherwise obfuscating its contents on the system or in transit. This is common behavior that can be used across different platforms and the network to evade defenses.\n\nPayloads may be compressed, archived, or encrypted in order to avoid detection. These payloads may be used during Initial Access or later to mitigate detection. Sometimes a user's action may be required to open and Deobfuscate/Decode Files or Information for User Execution. The user may also be required to input a password to open a password protected compressed/encrypted file that was provided by the adversary. (Citation: Volexity PowerDuke November 2016) Adversaries may also used compressed or archived scripts, such as Javascript.\n\nPortions of files can also be encoded to hide the plain-text strings that would otherwise help defenders with discovery. (Citation: Linux/Cdorked.A We Live Security Analysis) Payloads may also be split into separate, seemingly benign files that only reveal malicious functionality when reassembled. (Citation: Carbon Black Obfuscation Sept 2016)\n\nAdversaries may also obfuscate commands executed from payloads or directly via a Command-Line Interface. Environment variables, aliases, characters, and other platform/language specific semantics can be used to evade signature based detections and whitelisting mechanisms. (Citation: FireEye Obfuscation June 2017) (Citation: FireEye Revoke-Obfuscation July 2017) (Citation: PaloAlto EncodedCommand March 2017)\n\nAnother example of obfuscation is through the use of steganography, a technique of hiding messages or code in images, audio tracks, video clips, or text files. One of the first known and reported adversaries that used steganography activity surrounding Invoke-PSImage. The Duqu malware encrypted the gathered information from a victim's system and hid it into an image followed by exfiltrating the image to a C2 server. (Citation: Wikipedia Duqu) By the end of 2017, an adversary group used Invoke-PSImage to hide PowerShell commands in an image file (png) and execute the code on a victim's system. In this particular case the PowerShell code downloaded another obfuscated script to gather intelligence from the victim's machine and communicate it back to the adversary. (Citation: McAfee Malicious Doc Targets Pyeongchang Olympics)\n\nDetection: Detection of file obfuscation is difficult unless artifacts are left behind by the obfuscation process that are uniquely detectable with a signature. If detection of the obfuscation itself is not possible, it may be possible to detect the malicious activity that caused the obfuscated file (for example, the method that was used to write, read, or modify the file on the file system).\n\nFlag and analyze commands containing indicators of obfuscation and known suspicious syntax such as uninterpreted escape characters like '''^''' and '''\"'''. Windows' Sysmon and Event ID 4688 displays command-line arguments for processes. Deobfuscation tools can be used to detect these indicators in files/payloads. (Citation: GitHub Revoke-Obfuscation) (Citation: FireEye Revoke-Obfuscation July 2017) (Citation: GitHub Office-Crackros Aug 2016)\n\nObfuscation used in payloads for Initial Access can be detected at the network. Use network intrusion detection systems and email gateway filtering to identify compressed and encrypted attachments and scripts. Some email attachment detonation systems can open compressed and encrypted attachments. Payloads delivered over an encrypted connection from a website require encrypted network traffic inspection.\n\nPlatforms: Linux, macOS, Windows\n\nData Sources: Network protocol analysis, Process use of network, Binary file metadata, File monitoring, Malware reverse engineering, Process command-line parameters, Environment variable, Process Monitoring, Windows event logs, Network intrusion detection system, Email gateway, SSL/TLS inspection\n\nDefense Bypassed: Host forensic analysis, Signature-based detection, Host intrusion prevention systems, Application whitelisting, Process whitelisting, Log analysis, Whitelisting by file name or path\n\nContributors: Red Canary, Christiaan Beek, @ChristiaanBeek",
+                                "galaxy_id": "41",
+                                "source": "https://github.com/mitre/cti",
+                                "authors": [
+                                    "MITRE"
+                                ],
+                                "version": "4",
+                                "uuid": "b3d682b6-98f2-4fb0-aa3b-b4df007ca70a",
+                                "tag_id": "101",
+                                "meta": {
+                                    "external_id": [
+                                        "T1027"
+                                    ],
+                                    "kill_chain": [
+                                        "mitre-attack:enterprise-attack:defense-evasion"
+                                    ],
+                                    "mitre_data_sources": [
+                                        "Network protocol analysis",
+                                        "Process use of network",
+                                        "Binary file metadata",
+                                        "File monitoring",
+                                        "Malware reverse engineering",
+                                        "Process command-line parameters",
+                                        "Environment variable",
+                                        "Process Monitoring",
+                                        "Windows event logs",
+                                        "Network intrusion detection system",
+                                        "Email gateway",
+                                        "SSL/TLS inspection"
+                                    ],
+                                    "mitre_platforms": [
+                                        "Linux",
+                                        "macOS",
+                                        "Windows"
+                                    ],
+                                    "refs": [
+                                        "https://attack.mitre.org/wiki/Technique/T1027",
+                                        "https://www.volexity.com/blog/2016/11/09/powerduke-post-election-spear-phishing-campaigns-targeting-think-tanks-and-ngos/",
+                                        "https://www.welivesecurity.com/2013/04/26/linuxcdorked-new-apache-backdoor-in-the-wild-serves-blackhole/",
+                                        "https://www.carbonblack.com/2016/09/23/security-advisory-variants-well-known-adware-families-discovered-include-sophisticated-obfuscation-techniques-previously-associated-nation-state-attacks/",
+                                        "https://www.fireeye.com/blog/threat-research/2017/06/obfuscation-in-the-wild.html",
+                                        "https://www.fireeye.com/content/dam/fireeye-www/blog/pdfs/revoke-obfuscation-report.pdf",
+                                        "https://researchcenter.paloaltonetworks.com/2017/03/unit42-pulling-back-the-curtains-on-encodedcommand-powershell-attacks/",
+                                        "https://en.wikipedia.org/wiki/Duqu",
+                                        "https://securingtomorrow.mcafee.com/mcafee-labs/malicious-document-targets-pyeongchang-olympics/",
+                                        "https://github.com/danielbohannon/Revoke-Obfuscation",
+                                        "https://github.com/itsreallynick/office-crackros"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "7902",
+                                "collection_uuid": "fb2242d8-1707-11e8-ab20-6fa7448c3640",
+                                "type": "mitre-enterprise-attack-attack-pattern",
+                                "value": "Deobfuscate/Decode Files or Information - T1140",
+                                "tag_name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Deobfuscate/Decode Files or Information - T1140\"",
+                                "description": "Adversaries may use Obfuscated Files or Information to hide artifacts of an intrusion from analysis. They may require separate mechanisms to decode or deobfuscate that information depending on how they intend to use it. Methods for doing that include built-in functionality of malware, Scripting, PowerShell, or by using utilities present on the system.\n\nOne such example is use of certutil to decode a remote access tool portable executable file that has been hidden inside a certificate file. (Citation: Malwarebytes Targeted Attack against Saudi Arabia)\n\nAnother example is using the Windows <code>copy /b</code> command to reassemble binary fragments into a malicious payload. (Citation: Carbon Black Obfuscation Sept 2016)\n\nPayloads may be compressed, archived, or encrypted in order to avoid detection. These payloads may be used with Obfuscated Files or Information during Initial Access or later to mitigate detection. Sometimes a user's action may be required to open it for deobfuscation or decryption as part of User Execution. The user may also be required to input a password to open a password protected compressed/encrypted file that was provided by the adversary. (Citation: Volexity PowerDuke November 2016) Adversaries may also used compressed or archived scripts, such as Javascript.\n\nDetection: Detecting the action of deobfuscating or decoding files or information may be difficult depending on the implementation. If the functionality is contained within malware and uses the Windows API, then attempting to detect malicious behavior before or after the action may yield better results than attempting to perform analysis on loaded libraries or API calls. If scripts are used, then collecting the scripts for analysis may be necessary. Perform process and command-line monitoring to detect potentially malicious behavior related to scripts and system utilities such as certutil.\n\nMonitor the execution file paths and command-line arguments for common archive file applications and extensions, such as those for Zip and RAR archive tools, and correlate with other suspicious behavior to reduce false positives from normal user and administrator behavior.\n\nPlatforms: Windows\n\nData Sources: File monitoring, Process Monitoring, Process command-line parameters\n\nDefense Bypassed: Anti-virus, Host intrusion prevention systems, Signature-based detection, Network intrusion detection system\n\nPermissions Required: User\n\nContributors: Matthew Demaske, Adaptforward, Red Canary",
+                                "galaxy_id": "41",
+                                "source": "https://github.com/mitre/cti",
+                                "authors": [
+                                    "MITRE"
+                                ],
+                                "version": "4",
+                                "uuid": "3ccef7ae-cb5e-48f6-8302-897105fbf55c",
+                                "tag_id": "96",
+                                "meta": {
+                                    "external_id": [
+                                        "T1140"
+                                    ],
+                                    "kill_chain": [
+                                        "mitre-attack:enterprise-attack:defense-evasion"
+                                    ],
+                                    "mitre_data_sources": [
+                                        "File monitoring",
+                                        "Process Monitoring",
+                                        "Process command-line parameters"
+                                    ],
+                                    "mitre_platforms": [
+                                        "Windows"
+                                    ],
+                                    "refs": [
+                                        "https://attack.mitre.org/wiki/Technique/T1140",
+                                        "https://blog.malwarebytes.com/cybercrime/social-engineering-cybercrime/2017/03/new-targeted-attack-saudi-arabia-government/",
+                                        "https://www.carbonblack.com/2016/09/23/security-advisory-variants-well-known-adware-families-discovered-include-sophisticated-obfuscation-techniques-previously-associated-nation-state-attacks/",
+                                        "https://www.volexity.com/blog/2016/11/09/powerduke-post-election-spear-phishing-campaigns-targeting-think-tanks-and-ngos/"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "7762",
+                                "collection_uuid": "fb2242d8-1707-11e8-ab20-6fa7448c3640",
+                                "type": "mitre-enterprise-attack-attack-pattern",
+                                "value": "Process Injection - T1055",
+                                "tag_name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Process Injection - T1055\"",
+                                "description": "Process injection is a method of executing arbitrary code in the address space of a separate live process. Running code in the context of another process may allow access to the process's memory, system/network resources, and possibly elevated privileges. Execution via process injection may also evade detection from security products since the execution is masked under a legitimate process.\n\n===Windows===\n\nThere are multiple approaches to injecting code into a live process. Windows implementations include: (Citation: Engame Process Injection July 2017)\n* '''Dynamic-link library (DLL) injection''' involves writing the path to a malicious DLL inside a process then invoking execution by creating a remote thread.\n* '''Portable executable injection''' involves writing malicious code directly into the process (without a file on disk) then invoking execution with either additional code or by creating a remote thread. The displacement of the injected code introduces the additional requirement for functionality to remap memory references. Variations of this method such as reflective DLL injection (writing a self-mapping DLL into a process) and memory module (map DLL when writing into process) overcome the address relocation issue. (Citation: Endgame HuntingNMemory June 2017)\n* '''Thread execution hijacking''' involves injecting malicious code or the path to a DLL into a thread of a process. Similar to Process Hollowing, the thread must first be suspended.\n* '''Asynchronous Procedure Call''' (APC) injection involves attaching malicious code to the APC Queue (Citation: Microsoft APC) of a process's thread. Queued APC functions are executed when the thread enters an alterable state. AtomBombing  (Citation: ENSIL AtomBombing Oct 2016) is a variation that utilizes APCs to invoke malicious code previously written to the global atom table. (Citation: Microsoft Atom Table)\n* '''Thread Local Storage''' (TLS) callback injection involves manipulating pointers inside a portable executable (PE) to redirect a process to malicious code before reaching the code's legitimate entry point. (Citation: FireEye TLS Nov 2017)\n\n===Mac and Linux===\n\nImplementations for Linux and OS X/macOS systems include: (Citation: Datawire Code Injection) (Citation: Uninformed Needle)\n*'''LD_PRELOAD, LD_LIBRARY_PATH''' (Linux), '''DYLD_INSERT_LIBRARIES''' (Mac OS X) environment variables, or the dlfcn application programming interface (API) can be used to dynamically load a library (shared object) in a process which can be used to intercept API calls from the running process. (Citation: Phrack halfdead 1997)\n*'''Ptrace system calls''' can be used to attach to a running process and modify it in runtime. (Citation: Uninformed Needle)\n*'''/proc/[pid]/mem''' provides access to the memory of the process and can be used to read/write arbitrary data to it. This technique is very rare due to its complexity. (Citation: Uninformed Needle)\n*'''VDSO hijacking''' performs runtime injection on ELF binaries by manipulating code stubs mapped in from the linux-vdso.so shared object. (Citation: VDSO hijack 2009)\n\nMalware commonly utilizes process injection to access system resources through which Persistence and other environment modifications can be made. More sophisticated samples may perform multiple process injections to segment modules and further evade detection, utilizing named pipes or other inter-process communication (IPC) mechanisms as a communication channel.\n\nDetection: Monitoring Windows API calls indicative of the various types of code injection may generate a significant amount of data and may not be directly useful for defense unless collected under specific circumstances for known bad sequences of calls, since benign use of API functions may be common and difficult to distinguish from malicious behavior. API calls such as CreateRemoteThread, SuspendThread/SetThreadContext/ResumeThread, QueueUserAPC, and those that can be used to modify memory within another process, such as WriteProcessMemory, may be used for this technique. (Citation: Engame Process Injection July 2017)\n\nMonitoring for Linux specific calls such as the ptrace system call, the use of LD_PRELOAD environment variable, or dlfcn dynamic linking API calls, should not generate large amounts of data due to their specialized nature, and can be a very effective method to detect some of the common process injection methods.  (Citation: ArtOfMemoryForensics)  (Citation: GNU Acct)  (Citation: RHEL auditd)  (Citation: Chokepoint preload rootkits)\n\nMonitor for named pipe creation and connection events (Event IDs 17 and 18) for possible indicators of infected processes with external modules. (Citation: Microsoft Sysmon v6 May 2017)\n\nMonitor processes and command-line arguments for actions that could be done before or after code injection has occurred and correlate the information with related event information. Code injection may also be performed using PowerShell with tools such as PowerSploit, (Citation: Powersploit) so additional PowerShell monitoring may be required to cover known implementations of this behavior.\n\nPlatforms: Linux, macOS, Windows\n\nData Sources: API monitoring, Windows Registry, File monitoring, DLL monitoring, Named Pipes, Process Monitoring\n\nEffective Permissions: User, Administrator, SYSTEM, root\n\nDefense Bypassed: Process whitelisting, Anti-virus\n\nPermissions Required: User, Administrator, SYSTEM, root\n\nContributors: Anastasios Pingios",
+                                "galaxy_id": "41",
+                                "source": "https://github.com/mitre/cti",
+                                "authors": [
+                                    "MITRE"
+                                ],
+                                "version": "4",
+                                "uuid": "43e7dc91-05b2-474c-b9ac-2ed4fe101f4d",
+                                "tag_id": "197",
+                                "meta": {
+                                    "external_id": [
+                                        "T1055"
+                                    ],
+                                    "kill_chain": [
+                                        "mitre-attack:enterprise-attack:defense-evasion",
+                                        "mitre-attack:enterprise-attack:privilege-escalation"
+                                    ],
+                                    "mitre_data_sources": [
+                                        "API monitoring",
+                                        "Windows Registry",
+                                        "File monitoring",
+                                        "DLL monitoring",
+                                        "Named Pipes",
+                                        "Process Monitoring"
+                                    ],
+                                    "mitre_platforms": [
+                                        "Linux",
+                                        "macOS",
+                                        "Windows"
+                                    ],
+                                    "refs": [
+                                        "https://attack.mitre.org/wiki/Technique/T1055",
+                                        "https://github.com/mattifestation/PowerSploit",
+                                        "https://www.endgame.com/blog/technical-blog/ten-process-injection-techniques-technical-survey-common-and-trending-process",
+                                        "https://www.endgame.com/blog/technical-blog/hunting-memory",
+                                        "https://msdn.microsoft.com/library/windows/desktop/ms681951.aspx",
+                                        "https://blog.ensilo.com/atombombing-brand-new-code-injection-for-windows",
+                                        "https://msdn.microsoft.com/library/windows/desktop/ms649053.aspx",
+                                        "https://www.fireeye.com/blog/threat-research/2017/11/ursnif-variant-malicious-tls-callback-technique.html",
+                                        "https://www.datawire.io/code-injection-on-linux-and-macos/",
+                                        "http://hick.org/code/skape/papers/needle.txt",
+                                        "http://phrack.org/issues/51/8.html",
+                                        "http://vxer.org/lib/vrn00.html",
+                                        "https://www.gnu.org/software/acct/",
+                                        "https://access.redhat.com/documentation/red%20hat%20enterprise%20linux/6/html/security%20guide/chap-system%20auditing",
+                                        "http://www.chokepoint.net/2014/02/detecting-userland-preload-rootkits.html",
+                                        "https://docs.microsoft.com/sysinternals/downloads/sysmon"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "7774",
+                                "collection_uuid": "fb2242d8-1707-11e8-ab20-6fa7448c3640",
+                                "type": "mitre-enterprise-attack-attack-pattern",
+                                "value": "Timestomp - T1099",
+                                "tag_name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Timestomp - T1099\"",
+                                "description": "Timestomping is a technique that modifies the timestamps of a file (the modify, access, create, and change times), often to mimic files that are in the same folder. This is done, for example, on files that have been modified or created by the adversary so that they do not appear conspicuous to forensic investigators or file analysis tools. Timestomping may be used along with file name Masquerading to hide malware and tools. (Citation: WindowsIR Anti-Forensic Techniques)\n\nDetection: Forensic techniques exist to detect aspects of files that have had their timestamps modified. (Citation: WindowsIR Anti-Forensic Techniques) It may be possible to detect timestomping using file modification monitoring that collects information on file handle opens and can compare timestamp values.\n\nPlatforms: Linux, Windows\n\nData Sources: File monitoring, Process monitoring, Process command-line parameters\n\nDefense Bypassed: Host forensic analysis\n\nPermissions Required: User, Administrator, SYSTEM",
+                                "galaxy_id": "41",
+                                "source": "https://github.com/mitre/cti",
+                                "authors": [
+                                    "MITRE"
+                                ],
+                                "version": "4",
+                                "uuid": "128c55d3-aeba-469f-bd3e-c8996ab4112a",
+                                "tag_id": "136",
+                                "meta": {
+                                    "external_id": [
+                                        "T1099"
+                                    ],
+                                    "kill_chain": [
+                                        "mitre-attack:enterprise-attack:defense-evasion"
+                                    ],
+                                    "mitre_data_sources": [
+                                        "File monitoring",
+                                        "Process monitoring",
+                                        "Process command-line parameters"
+                                    ],
+                                    "mitre_platforms": [
+                                        "Linux",
+                                        "Windows"
+                                    ],
+                                    "refs": [
+                                        "https://attack.mitre.org/wiki/Technique/T1099",
+                                        "http://windowsir.blogspot.com/2013/07/howto-determinedetect-use-of-anti.html"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "7814",
+                                "collection_uuid": "fb2242d8-1707-11e8-ab20-6fa7448c3640",
+                                "type": "mitre-enterprise-attack-attack-pattern",
+                                "value": "File and Directory Discovery - T1083",
+                                "tag_name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"File and Directory Discovery - T1083\"",
+                                "description": "Adversaries may enumerate files and directories or may search in specific locations of a host or network share for certain information within a file system. \n\n===Windows===\n\nExample utilities used to obtain this information are <code>dir</code> and <code>tree</code>. (Citation: Windows Commands JPCERT) Custom tools may also be used to gather file and directory information and interact with the Windows API.\n\n===Mac and Linux===\n\nIn Mac and Linux, this kind of discovery is accomplished with the <code>ls</code>, <code>find</code>, and <code>locate</code> commands.\n\nDetection: System and network discovery techniques normally occur throughout an operation as an adversary learns the environment. Data and events should not be viewed in isolation, but as part of a chain of behavior that could lead to other activities, such as Collection and Exfiltration, based on the information obtained.\n\nMonitor processes and command-line arguments for actions that could be taken to gather system and network information. Remote access tools with built-in features may interact directly with the Windows API to gather information. Information may also be acquired through Windows system management tools such as Windows Management Instrumentation and PowerShell.\n\nPlatforms: Linux, macOS, Windows\n\nData Sources: File monitoring, Process command-line parameters, Process monitoring\n\nPermissions Required: User, Administrator, SYSTEM\n\nSystem Requirements: Some folders may require Administrator, SYSTEM or specific user depending on permission levels and access controls",
+                                "galaxy_id": "41",
+                                "source": "https://github.com/mitre/cti",
+                                "authors": [
+                                    "MITRE"
+                                ],
+                                "version": "4",
+                                "uuid": "7bc57495-ea59-4380-be31-a64af124ef18",
+                                "tag_id": "128",
+                                "meta": {
+                                    "external_id": [
+                                        "T1083"
+                                    ],
+                                    "kill_chain": [
+                                        "mitre-attack:enterprise-attack:discovery"
+                                    ],
+                                    "mitre_data_sources": [
+                                        "File monitoring",
+                                        "Process command-line parameters",
+                                        "Process monitoring"
+                                    ],
+                                    "mitre_platforms": [
+                                        "Linux",
+                                        "macOS",
+                                        "Windows"
+                                    ],
+                                    "refs": [
+                                        "https://attack.mitre.org/wiki/Technique/T1083",
+                                        "http://blog.jpcert.or.jp/2016/01/windows-commands-abused-by-attackers.html"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "7769",
+                                "collection_uuid": "fb2242d8-1707-11e8-ab20-6fa7448c3640",
+                                "type": "mitre-enterprise-attack-attack-pattern",
+                                "value": "Peripheral Device Discovery - T1120",
+                                "tag_name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Peripheral Device Discovery - T1120\"",
+                                "description": "Adversaries may attempt to gather information about attached peripheral devices and components connected to a computer system. The information may be used to enhance their awareness of the system and network environment or may be used for further actions.\n\nDetection: System and network discovery techniques normally occur throughout an operation as an adversary learns the environment. Data and events should not be viewed in isolation, but as part of a chain of behavior that could lead to other activities based on the information obtained.\n\nMonitor processes and command-line arguments for actions that could be taken to gather system and network information. Remote access tools with built-in features may interact directly with the Windows API to gather information. Information may also be acquired through Windows system management tools such as Windows Management Instrumentation and PowerShell.\n\nPlatforms: Windows\n\nPermissions Required: User, Administrator, SYSTEM",
+                                "galaxy_id": "41",
+                                "source": "https://github.com/mitre/cti",
+                                "authors": [
+                                    "MITRE"
+                                ],
+                                "version": "4",
+                                "uuid": "348f1eef-964b-4eb6-bb53-69b3dcb0c643",
+                                "tag_id": "198",
+                                "meta": {
+                                    "external_id": [
+                                        "T1120"
+                                    ],
+                                    "kill_chain": [
+                                        "mitre-attack:enterprise-attack:discovery"
+                                    ],
+                                    "mitre_platforms": [
+                                        "Windows"
+                                    ],
+                                    "refs": [
+                                        "https://attack.mitre.org/wiki/Technique/T1120"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "7738",
+                                "collection_uuid": "fb2242d8-1707-11e8-ab20-6fa7448c3640",
+                                "type": "mitre-enterprise-attack-attack-pattern",
+                                "value": "Process Discovery - T1057",
+                                "tag_name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Process Discovery - T1057\"",
+                                "description": "Adversaries may attempt to get information about running processes on a system. Information obtained could be used to gain an understanding of common software running on systems within the network.\n\n===Windows===\n\nAn example command that would obtain details on processes is \"tasklist\" using the Tasklist utility.\n\n===Mac and Linux===\n\nIn Mac and Linux, this is accomplished with the <code>ps</code> command.\n\nDetection: System and network discovery techniques normally occur throughout an operation as an adversary learns the environment. Data and events should not be viewed in isolation, but as part of a chain of behavior that could lead to other activities, such as Lateral Movement, based on the information obtained.\n\nNormal, benign system and network events that look like process discovery may be uncommon, depending on the environment and how they are used. Monitor processes and command-line arguments for actions that could be taken to gather system and network information. Remote access tools with built-in features may interact directly with the Windows API to gather information. Information may also be acquired through Windows system management tools such as Windows Management Instrumentation and PowerShell.\n\nPlatforms: Linux, macOS, Windows\n\nData Sources: Process command-line parameters, Process monitoring\n\nPermissions Required: User, Administrator, SYSTEM\n\nSystem Requirements: Administrator, SYSTEM may provide better process ownership details",
+                                "galaxy_id": "41",
+                                "source": "https://github.com/mitre/cti",
+                                "authors": [
+                                    "MITRE"
+                                ],
+                                "version": "4",
+                                "uuid": "8f4a33ec-8b1f-4b80-a2f6-642b2e479580",
+                                "tag_id": "199",
+                                "meta": {
+                                    "external_id": [
+                                        "T1057"
+                                    ],
+                                    "kill_chain": [
+                                        "mitre-attack:enterprise-attack:discovery"
+                                    ],
+                                    "mitre_data_sources": [
+                                        "Process command-line parameters",
+                                        "Process monitoring"
+                                    ],
+                                    "mitre_platforms": [
+                                        "Linux",
+                                        "macOS",
+                                        "Windows"
+                                    ],
+                                    "refs": [
+                                        "https://attack.mitre.org/wiki/Technique/T1057"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "7907",
+                                "collection_uuid": "fb2242d8-1707-11e8-ab20-6fa7448c3640",
+                                "type": "mitre-enterprise-attack-attack-pattern",
+                                "value": "Query Registry - T1012",
+                                "tag_name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Query Registry - T1012\"",
+                                "description": "Adversaries may interact with the Windows Registry to gather information about the system, configuration, and installed software.\n\nThe Registry contains a significant amount of information about the operating system, configuration, software, and security. (Citation: Wikipedia Windows Registry) Some of the information may help adversaries to further their operation within a network.\n\nDetection: System and network discovery techniques normally occur throughout an operation as an adversary learns the environment. Data and events should not be viewed in isolation, but as part of a chain of behavior that could lead to other activities, such as Lateral Movement, based on the information obtained.\n\nInteraction with the Windows Registry may come from the command line using utilities such as Reg or through running malware that may interact with the Registry through an API. Command-line invocation of utilities used to query the Registry may be detected through process and command-line monitoring. Remote access tools with built-in features may interact directly with the Windows API to gather information. Information may also be acquired through Windows system management tools such as Windows Management Instrumentation and PowerShell.\n\nPlatforms: Windows\n\nData Sources: Windows Registry, Process monitoring, Process command-line parameters\n\nPermissions Required: User, Administrator, SYSTEM",
+                                "galaxy_id": "41",
+                                "source": "https://github.com/mitre/cti",
+                                "authors": [
+                                    "MITRE"
+                                ],
+                                "version": "4",
+                                "uuid": "c32f7008-9fea-41f7-8366-5eb9b74bd896",
+                                "tag_id": "131",
+                                "meta": {
+                                    "external_id": [
+                                        "T1012"
+                                    ],
+                                    "kill_chain": [
+                                        "mitre-attack:enterprise-attack:discovery"
+                                    ],
+                                    "mitre_data_sources": [
+                                        "Windows Registry",
+                                        "Process monitoring",
+                                        "Process command-line parameters"
+                                    ],
+                                    "mitre_platforms": [
+                                        "Windows"
+                                    ],
+                                    "refs": [
+                                        "https://attack.mitre.org/wiki/Technique/T1012",
+                                        "https://en.wikipedia.org/wiki/Windows%20Registry"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "7871",
+                                "collection_uuid": "fb2242d8-1707-11e8-ab20-6fa7448c3640",
+                                "type": "mitre-enterprise-attack-attack-pattern",
+                                "value": "Data from Local System - T1005",
+                                "tag_name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Data from Local System - T1005\"",
+                                "description": "Sensitive data can be collected from local system sources, such as the file system or databases of information residing on the system prior to Exfiltration.\n\nAdversaries will often search the file system on computers they have compromised to find files of interest. They may do this using a Command-Line Interface, such as cmd, which has functionality to interact with the file system to gather information. Some adversaries may also use Automated Collection on the local system.\n\nDetection: Monitor processes and command-line arguments for actions that could be taken to collect files from a system. Remote access tools with built-in features may interact directly with the Windows API to gather data. Data may also be acquired through Windows system management tools such as Windows Management Instrumentation and PowerShell.\n\nPlatforms: Linux, macOS, Windows\n\nData Sources: File monitoring, Process monitoring, Process command-line parameters\n\nSystem Requirements: Privileges to access certain files and directories",
+                                "galaxy_id": "41",
+                                "source": "https://github.com/mitre/cti",
+                                "authors": [
+                                    "MITRE"
+                                ],
+                                "version": "4",
+                                "uuid": "3c4a2599-71ee-4405-ba1e-0e28414b4bc5",
+                                "tag_id": "92",
+                                "meta": {
+                                    "external_id": [
+                                        "T1005"
+                                    ],
+                                    "kill_chain": [
+                                        "mitre-attack:enterprise-attack:collection"
+                                    ],
+                                    "mitre_data_sources": [
+                                        "File monitoring",
+                                        "Process monitoring",
+                                        "Process command-line parameters"
+                                    ],
+                                    "mitre_platforms": [
+                                        "Linux",
+                                        "macOS",
+                                        "Windows"
+                                    ],
+                                    "refs": [
+                                        "https://attack.mitre.org/wiki/Technique/T1005"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "7716",
+                                "collection_uuid": "fb2242d8-1707-11e8-ab20-6fa7448c3640",
+                                "type": "mitre-enterprise-attack-attack-pattern",
+                                "value": "Data from Removable Media - T1025",
+                                "tag_name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Data from Removable Media - T1025\"",
+                                "description": "Sensitive data can be collected from any removable media (optical disk drive, USB memory, etc.) connected to the compromised system prior to Exfiltration.\n\nAdversaries may search connected removable media on computers they have compromised to find files of interest. Interactive command shells may be in use, and common functionality within cmd may be used to gather information. Some adversaries may also use Automated Collection on removable media.\n\nDetection: Monitor processes and command-line arguments for actions that could be taken to collect files from a system's connected removable media. Remote access tools with built-in features may interact directly with the Windows API to gather data. Data may also be acquired through Windows system management tools such as Windows Management Instrumentation and PowerShell.\n\nPlatforms: Linux, macOS, Windows\n\nData Sources: File monitoring, Process monitoring, Process command-line parameters\n\nSystem Requirements: Privileges to access removable media drive and files",
+                                "galaxy_id": "41",
+                                "source": "https://github.com/mitre/cti",
+                                "authors": [
+                                    "MITRE"
+                                ],
+                                "version": "4",
+                                "uuid": "1b7ba276-eedc-4951-a762-0ceea2c030ec",
+                                "tag_id": "200",
+                                "meta": {
+                                    "external_id": [
+                                        "T1025"
+                                    ],
+                                    "kill_chain": [
+                                        "mitre-attack:enterprise-attack:collection"
+                                    ],
+                                    "mitre_data_sources": [
+                                        "File monitoring",
+                                        "Process monitoring",
+                                        "Process command-line parameters"
+                                    ],
+                                    "mitre_platforms": [
+                                        "Linux",
+                                        "macOS",
+                                        "Windows"
+                                    ],
+                                    "refs": [
+                                        "https://attack.mitre.org/wiki/Technique/T1025"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "7722",
+                                "collection_uuid": "fb2242d8-1707-11e8-ab20-6fa7448c3640",
+                                "type": "mitre-enterprise-attack-attack-pattern",
+                                "value": "Exfiltration Over Command and Control Channel - T1041",
+                                "tag_name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Exfiltration Over Command and Control Channel - T1041\"",
+                                "description": "Data exfiltration is performed over the Command and Control channel.  Data is encoded into the normal communications channel using the same protocol as command and control communications.\n\nDetection: Detection for command and control applies. Analyze network data for uncommon data flows (e.g., a client sending significantly more data than it receives from a server). Processes utilizing the network that do not normally have network communication or have never been seen before are suspicious. Analyze packet contents to detect communications that do not follow the expected protocol behavior for the port that is being used. (Citation: University of Birmingham C2)\n\nPlatforms: Linux, macOS, Windows\n\nData Sources: User interface, Process monitoring\n\nRequires Network: Yes",
+                                "galaxy_id": "41",
+                                "source": "https://github.com/mitre/cti",
+                                "authors": [
+                                    "MITRE"
+                                ],
+                                "version": "4",
+                                "uuid": "92d7da27-2d91-488e-a00c-059dc162766d",
+                                "tag_id": "94",
+                                "meta": {
+                                    "external_id": [
+                                        "T1041"
+                                    ],
+                                    "kill_chain": [
+                                        "mitre-attack:enterprise-attack:exfiltration"
+                                    ],
+                                    "mitre_data_sources": [
+                                        "User interface",
+                                        "Process monitoring"
+                                    ],
+                                    "mitre_platforms": [
+                                        "Linux",
+                                        "macOS",
+                                        "Windows"
+                                    ],
+                                    "refs": [
+                                        "https://attack.mitre.org/wiki/Technique/T1041",
+                                        "https://arxiv.org/ftp/arxiv/papers/1408/1408.1136.pdf"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "7706",
+                                "collection_uuid": "fb2242d8-1707-11e8-ab20-6fa7448c3640",
+                                "type": "mitre-enterprise-attack-attack-pattern",
+                                "value": "Standard Application Layer Protocol - T1071",
+                                "tag_name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Standard Application Layer Protocol - T1071\"",
+                                "description": "Adversaries may communicate using a common, standardized application layer protocol such as HTTP, HTTPS, SMTP, or DNS to avoid detection by blending in with existing traffic. Commands to the remote system, and often the results of those commands, will be embedded within the protocol traffic between the client and server.\n\nFor connections that occur internally within an enclave (such as those between a proxy or pivot node and other nodes), commonly used protocols are RPC, SSH, or RDP.\n\nDetection: Analyze network data for uncommon data flows (e.g., a client sending significantly more data than it receives from a server). Processes utilizing the network that do not normally have network communication or have never been seen before are suspicious.  Analyze packet contents to detect application layer protocols that do not follow the expected protocol for the port that is being used. (Citation: University of Birmingham C2)\n\nPlatforms: Linux, macOS, Windows\n\nData Sources: Packet capture, Netflow/Enclave netflow, Process use of network, Malware reverse engineering, Process monitoring\n\nRequires Network: Yes",
+                                "galaxy_id": "41",
+                                "source": "https://github.com/mitre/cti",
+                                "authors": [
+                                    "MITRE"
+                                ],
+                                "version": "4",
+                                "uuid": "355be19c-ffc9-46d5-8d50-d6a036c675b6",
+                                "tag_id": "122",
+                                "meta": {
+                                    "external_id": [
+                                        "T1071"
+                                    ],
+                                    "kill_chain": [
+                                        "mitre-attack:enterprise-attack:command-and-control"
+                                    ],
+                                    "mitre_data_sources": [
+                                        "Packet capture",
+                                        "Netflow/Enclave netflow",
+                                        "Process use of network",
+                                        "Malware reverse engineering",
+                                        "Process monitoring"
+                                    ],
+                                    "mitre_platforms": [
+                                        "Linux",
+                                        "macOS",
+                                        "Windows"
+                                    ],
+                                    "refs": [
+                                        "https://attack.mitre.org/wiki/Technique/T1071",
+                                        "https://arxiv.org/ftp/arxiv/papers/1408/1408.1136.pdf"
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "id": "42",
+                        "uuid": "fb5a36c0-1707-11e8-81f5-d732b22a4982",
+                        "name": "Enterprise Attack - Course of Action",
+                        "type": "mitre-enterprise-attack-course-of-action",
+                        "description": "ATT&CK Mitigation",
+                        "version": "5",
+                        "icon": "chain",
+                        "namespace": "deprecated",
+                        "GalaxyCluster": [
+                            {
+                                "id": "20731",
+                                "collection_uuid": "fb870a6a-1707-11e8-b548-17523e4d0670",
+                                "type": "mitre-enterprise-attack-course-of-action",
+                                "value": "Windows Management Instrumentation Event Subscription Mitigation - T1084",
+                                "tag_name": "misp-galaxy:mitre-enterprise-attack-course-of-action=\"Windows Management Instrumentation Event Subscription Mitigation - T1084\"",
+                                "description": "Disabling WMI services may cause system instability and should be evaluated to assess the impact to a network. By default, only administrators are allowed to connect remotely using WMI; restrict other users that are allowed to connect, or disallow all users from connecting remotely to WMI. Prevent credential overlap across systems of administrator and privileged accounts. (Citation: FireEye WMI 2015)",
+                                "galaxy_id": "42",
+                                "source": "https://github.com/mitre/cti",
+                                "authors": [
+                                    "MITRE"
+                                ],
+                                "version": "6",
+                                "uuid": "0bc3ce00-83bc-4a92-a042-79ffbc6af259",
+                                "tag_id": "196",
+                                "meta": {
+                                    "external_id": [
+                                        "T1084"
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "Object": [],
+                "Tag": [
+                    {
+                        "id": "4",
+                        "name": "misp-galaxy:threat-actor=\"Turla Group\"",
+                        "colour": "#0088cc",
+                        "exportable": true,
+                        "hide_tag": false,
+                        "user_id": "0",
+                        "numerical_value": null
+                    },
+                    {
+                        "id": "123",
+                        "name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"PowerShell - T1086\"",
+                        "colour": "#0088cc",
+                        "exportable": true,
+                        "hide_tag": false,
+                        "user_id": "0",
+                        "numerical_value": null
+                    },
+                    {
+                        "id": "196",
+                        "name": "misp-galaxy:mitre-enterprise-attack-course-of-action=\"Windows Management Instrumentation Event Subscription Mitigation - T1084\"",
+                        "colour": "#0088cc",
+                        "exportable": true,
+                        "hide_tag": false,
+                        "user_id": "0",
+                        "numerical_value": null
+                    },
+                    {
+                        "id": "101",
+                        "name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Obfuscated Files or Information - T1027\"",
+                        "colour": "#0088cc",
+                        "exportable": true,
+                        "hide_tag": false,
+                        "user_id": "0",
+                        "numerical_value": null
+                    },
+                    {
+                        "id": "96",
+                        "name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Deobfuscate/Decode Files or Information - T1140\"",
+                        "colour": "#0088cc",
+                        "exportable": true,
+                        "hide_tag": false,
+                        "user_id": "0",
+                        "numerical_value": null
+                    },
+                    {
+                        "id": "197",
+                        "name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Process Injection - T1055\"",
+                        "colour": "#0088cc",
+                        "exportable": true,
+                        "hide_tag": false,
+                        "user_id": "0",
+                        "numerical_value": null
+                    },
+                    {
+                        "id": "136",
+                        "name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Timestomp - T1099\"",
+                        "colour": "#0088cc",
+                        "exportable": true,
+                        "hide_tag": false,
+                        "user_id": "0",
+                        "numerical_value": null
+                    },
+                    {
+                        "id": "128",
+                        "name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"File and Directory Discovery - T1083\"",
+                        "colour": "#0088cc",
+                        "exportable": true,
+                        "hide_tag": false,
+                        "user_id": "0",
+                        "numerical_value": null
+                    },
+                    {
+                        "id": "198",
+                        "name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Peripheral Device Discovery - T1120\"",
+                        "colour": "#0088cc",
+                        "exportable": true,
+                        "hide_tag": false,
+                        "user_id": "0",
+                        "numerical_value": null
+                    },
+                    {
+                        "id": "199",
+                        "name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Process Discovery - T1057\"",
+                        "colour": "#0088cc",
+                        "exportable": true,
+                        "hide_tag": false,
+                        "user_id": "0",
+                        "numerical_value": null
+                    },
+                    {
+                        "id": "131",
+                        "name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Query Registry - T1012\"",
+                        "colour": "#0088cc",
+                        "exportable": true,
+                        "hide_tag": false,
+                        "user_id": "0",
+                        "numerical_value": null
+                    },
+                    {
+                        "id": "92",
+                        "name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Data from Local System - T1005\"",
+                        "colour": "#0088cc",
+                        "exportable": true,
+                        "hide_tag": false,
+                        "user_id": "0",
+                        "numerical_value": null
+                    },
+                    {
+                        "id": "200",
+                        "name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Data from Removable Media - T1025\"",
+                        "colour": "#0088cc",
+                        "exportable": true,
+                        "hide_tag": false,
+                        "user_id": "0",
+                        "numerical_value": null
+                    },
+                    {
+                        "id": "94",
+                        "name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Exfiltration Over Command and Control Channel - T1041\"",
+                        "colour": "#0088cc",
+                        "exportable": true,
+                        "hide_tag": false,
+                        "user_id": "0",
+                        "numerical_value": null
+                    },
+                    {
+                        "id": "122",
+                        "name": "misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Standard Application Layer Protocol - T1071\"",
+                        "colour": "#0088cc",
+                        "exportable": true,
+                        "hide_tag": false,
+                        "user_id": "0",
+                        "numerical_value": null
+                    }
+                ]
+            }
+        }
+    ]
+}
