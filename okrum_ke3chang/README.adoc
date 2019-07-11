@@ -1,0 +1,235 @@
+= Okrum and recent Ke3chang activity -- Indicators of Compromise
+
+These IoCs are related to ESET’s investigation on Okrum and recent Ke3chang
+activity.
+
+The blog post summarizing our report is available on WeLiveSecurity at
+https://www.welivesecurity.com/2019/07/18/okrum-ke3chang-targets-diplomatic-missions/.
+
+The full report is also available on blog at
+https://www.welivesecurity.com/wp-content/uploads/2019/07/ESET_Okrum_and_Ketrican.pdf.
+
+== Okrum
+
+=== ESET detection names
+
+- Win32/Okrum.A
+- Win32/Okrum.B
+- Win32/Okrum.C
+- Win32/Okrum.D
+- Win32/Okrum.E
+- Win32/Okrum.F
+- Win32/Okrum.G
+- Win32/Okrum.H
+- Win32/Okrum.I
+
+=== Host based indicators
+
+==== SHA-1 hashes
+
+----
+1CDC632E0A26F39E527ACF7B1CDECD829A6A2B3D
+1D271F22798313650C91C6FC34551CC8492A2019
+371B14F8BFD9B5DB098139E7FE2EBD4381CB259C
+38299BCF0BA25E331939683597F161A3D7121A26
+48F8BAFB334C6980FB578C09D7297A4B7F5E09E2
+5FBAFB71CFDF0C93E19882630D05F37C1F756CBF
+8D7E503D972C03C0F87F2D6F6EF65F1381D21BC6
+A426BCC6317F0D49F0F0B68091E8161C512E22C3
+AD740FD11688B2B39072C7024679CC22878E2619
+F0E2C3AF0297C80C0A14E95E151FC7DC319ACFC3
+F42A9D85ABE04E721461FE2B52DDC9E0EA411D9E
+----
+
+==== Mutex names
+
+----
+qDJsxrGpPacRndLdsdIoqesGBv
+SnpcnSHPPxsdfcwzEkmtdv
+zSpgnEHPPcvAltcFzlIscD
+----
+
+=== Network indicators
+
+==== C&C servers domains
+
+----
+finance.globaleducat[.]com
+support.slovakmaps[.]com
+misiones.soportesisco[.]com
+----
+
+== Ketrican
+
+=== ESET detection names
+
+- Win32/Ketrican.A
+- Win32/Ketrican.B
+- Win32/Ketrican.C
+- Win32/Ketrican.D
+- Win32/Ketrican.E
+- Win32/Ketrican.F
+- Win32/Ketrican.G
+- Win32/Ketrican.H
+- Win32/Ketrican.I
+- Win32/Ketrican.J
+- Win32/Ketrican.K
+- Win32/Ketrican.L
+- Win32/Ketrican.M
+- Win32/Ketrican.N
+- Win32/Ketrican.O
+- Win32/Ketrican.P
+- Win32/Ketrican.Q
+- Win32/Ketrican.R
+- Win32/Ketrican.S
+- Win32/Ketrican.T
+
+=== Ketrican 2015
+
+==== Host based indicators
+
+===== SHA-1 hashes
+
+----
+054EB61F2CE6DEB4FE011335CD88EBA530B8D09A
+10BD61F3FB03632E270FEF3AB6515677405A472F
+1730D90FFB888877EA2F18198BCC592087218E9A
+1C7559C57606B359EEB57F0416FE0B2784C01395
+233FF39DDE5A13CBF78EC1E9C020CF3CF18084E7
+2748A2928B6A4A528709ABA20AEF93D1EC9010F9
+43A4CC528134E218B9CEC2FF0C24B5912BF5C032
+4636E5FB97AFA68F60BE9247F5EB9684CA9CDBA6
+4C1198F726ACAD7AF78B36F250A128D5E3C52D8C
+65E3947144F6A3C31BC88E445514A83FCB331AFD
+7581337DB29E092101E4FD692D01AA26D65FA40A
+77369D3735B3B2C24CCAA93ECAA903D816EA9CD9
+809C53F71549D83ED8AB5BAB312249212F6F4149
+844E710D85DD63AA5BF245CEE94C1CC872429BD3
+86513FE43F2F2D2C486D6265C9098315E774F791
+94E6CB95585DBB59A61EC4029BC7EBB30BBA57E5
+A23EE1F17B746C1907293C7F8155E3E7DE135648
+AB7F63649BBC53E45DEEB7269BEBD54815AE9E27
+B49EDC05658907C888074905CE234BF3CF58D8A0
+D3A96C0FA84BFEE826E175D4664116A169D15D4E
+D3D0DED17D0029DFD90DA2AE74ADA885779E8926
+D7DFB547033B82765F8B0A6B70A22A4EC204D7A8
+DD753FCBAD4BE31066F278585D14C411DB3D7795
+----
+
+==== Network indicators
+
+===== C&C servers domains
+
+----
+center.nmsvillage[.]com
+control.mimepanel[.]org
+daily.huntereim[.]com
+dream.zepotac[.]com
+dyname.europemis[.]com
+item.amazonout[.]com
+promise.miniaturizate[.]org
+rain.nmsvillage[.]com
+store.ufmsecret[.]org
+translate.europemis[.]com
+view.beleimprensa[.]org
+wind.deltimesweb[.]com
+----
+
+=== Ketrican 2017
+
+==== Host based indicators
+
+===== SHA-1 hashes
+
+----
+2C8B145EF5AC177C99DFCB8C0221E30B3A363A96
+58DEA3A56DE1D95353230BE9BBBA582599AFE624
+9D41B44AF5BAAF581C0D9D7BEF466213BD8BE01A
+D3BFB10DB08C6828C3001C1F825ED6A6BF6F6E01
+D8AA9E4918E464D00BA95A3E28B8707A148EC4D7
+F2BFDA51BDA3EE57878475817AF6E5F24FFBBB28
+FE2BF0A613482A40CCF84157361054EE77C07960
+----
+
+==== Network indicators
+
+===== C&C servers domains
+
+----
+buy.babytoy-online[.]com
+forcan.hausblow[.]com
+items.babytoy-online[.]com
+login.allionhealth[.]com
+newflow.babytoy-online[.]com
+press.premlist[.]com
+grek.freetaxbar[.]com
+items.burgermap[.]org 
+upcv.inciohali[.]com
+www1.sanpaulostat[.]com
+cv.livehams[.]com
+info.audioexp[.]com
+----
+
+=== Ketrican 2018
+
+==== Host based indicators
+
+===== SHA-1 hashes
+
+----
+09B7999160C5D0DC9A7443F0FC248B6C23BC0724
+6BF0923577FE5939DEA66F466B74683AE2EBBC3E
+C1C89A1A1779515EC1DFD0EFFF293615D523279E
+----
+
+==== Network indicators
+
+===== C&C servers domains
+
+----
+compatsec[.]com
+dsmanfacture.privatedns[.]org
+----
+
+=== Ketrican 2019
+
+==== Host based indicators
+
+===== SHA-1 hashes
+
+----
+D98D258C234F5CEAD43FD897613B2EA2669AA7C0
+CE94EC2CFB23D8C662F558C69B64104C78B9D098
+----
+
+==== Network indicators
+
+===== C&C servers domains
+
+----
+chart.healthcare-internet[.]com
+inicializacion[.]com
+----
+
+== RoyalDNS
+
+=== ESET detection names
+
+- Win32/RoyalDNS.A
+- Win32/RoyalDNS.B
+
+=== Host based indicators
+
+==== SHA-1 hashes
+
+----
+23796442F7CE7288837536EBF4E8620DB55A0BC1
+----
+
+=== Network indicators
+
+==== C&C servers domains
+
+----
+menorustru[.]com
+----
