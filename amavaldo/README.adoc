@@ -1,0 +1,60 @@
+
+= Amavaldo Indicators of Compromise
+
+The blog post about Amavaldo "From Carnaval to Cinco de Mayo -- The journey of
+Amavaldo" is available on WeLiveSecurity at
+https://www.welivesecurity.com/2019/08/01/banking-trojans-amavaldo/.
+
+== Hashes
+
+=== Distribution chain 1 (targeting Brazil)
+
+[options="header"]
+|====
+| SHA-1                                      | Filename          | Description                      | ESET detection name                    |
+| `E0C8E11F8B271C1E40F5C184AFA427FFE99444F8` |                   | MSI downloader                   | VBS/TrojanDownloader.Agent.QSL trojan  |
+| `12C93BB262696314123562F8A4B158074C9F6B95` | NvSmartMaxApp.exe | Abused legitimate application    | Clean file                             |
+| `6D80A959E7F52150FDA2241A4073A29085C9386B` | NvSmartMax.dll    | Amavaldo injector                | Win32/Spy.Amavaldo.P trojan            |
+| `B855D8B1BAD07D578013BDB472122E405D49ACC1` | NvSmartMax        | Amavaldo banking trojan          | Win32/Spy.Amavaldo.N trojan            |
+| `FC37AC7523CF3B4020EC46D6A47BC26957E3C054` | gup.exe           | Abused legitimate application    | Clean file                             |
+| `4DBA5FE842B01B641A7228A4C8F805E4627C0012` | libcurl.dll       | Injector for email creation tool | Win32/Spy.Amavaldo.P trojan            |
+| `9A968341C65AB47BF5C7290F3B36FCF70E9C574B` | libcurl           | Email creation tool              | Win32/Spy.Banker.AEGH trojan           |
+|====
+
+=== Distribution chain 2 (targeting Mexico)
+
+[options="header"]
+|====
+| SHA-1                                      | Filename         | Description                   | ESET detection name                    |
+| `AD1FCE0C62B532D097DACFCE149C452154D51EB0` |                  | MSI downloader                | Win32/TrojanDownloader.Delf.CSG trojan |
+| `6C04499F7406E270B590374EF813C4012530273E` | ctfmon.exe       | Abused legitimate application | Clean file                             |
+| `1D56BAB28793E3AB96E390F09F02425E52E28FFC` | MsCtfMonitor.dll | Amavaldo injector             | Win32/Spy.Amavaldo.U trojan            |
+| `B761D9216C00F5E2871DE16AE157DE13C6283B5D` | MsCtfMonitor     | Amavaldo banking trojan       | Win32/Spy.Amavaldo.N trojan            |
+|====
+
+=== Legitimate third-party tools used by Amavaldo downloaders
+
+[options="header"]
+|====
+| SHA-1                                      | Filename      | Description                               | ESET detection name |
+| `B191810094DD2EE6B13C0D33458FAFCD459681AE` | VmDetect.exe  | A tool for detecting virtual environment  | Clean file          |
+| `B80294261C8A1635E16E14F55A3D76889FF2C857` | AICustAct.dll | A tool for checking internet connectivity | Clean file          |
+|====
+
+== Mutex
+- `{D7F8FEDF-D9A0-4335-A619-D3BB3EEAEDDB}`
+
+== Filenames
+- `%LocalAppData%\%RAND%\NvSmartMax[.dll]`
+- `%LocalAppData%\%RAND%\MsCtfMonitor[.dll]`
+- `%LocalAppData%\%RAND%\libcurl[.dll]`
+
+== Scheduled task names
+- `GoogleBol`
+- `Adobe Acrobat TaskB`
+
+== C&C servers
+- clausdomain.homeunix[.]com:3928
+- balacimed.mine[.]nu:3579
+- fbclinica.game-server[.]cc:3351
+- newcharlesxl.scrapping[.]cc:3844
