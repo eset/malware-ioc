@@ -1,0 +1,70 @@
+= Casbaneiro Indicators of Compromise
+
+The blog post about Casbaneiro "Casbaneiro: Dangerous cooking with a secret ingredient" is available on WeLiveSecurity at
+https://www.welivesecurity.com/2019/10/03/casbaneiro-trojan-dangerous-cooking/.
+
+== Hashes
+
+=== Campaign 1: Fishy financial manager update
+
+[options="header"]
+|====
+| SHA-1                                      | Description        | ESET detection name
+| `F07932D8A36F3E36F2552DADEDAD3E22EFA7AAE1` | MSI installer      | Win32/TrojanDownloader.Banload.YJD trojan
+| `BCDF0DDF98E3AA7D5C67063B9926C5D1C0CA6F3A` | Downloaded payload | Win32/Spy.Casbaneiro.AJ trojan
+|====
+
+=== Campaign 2: What’s cooking? A fowl Windows activator
+
+[options="header"]
+|====
+| SHA-1                                      | Description   | ESET detection name
+| `8745197972071EDE08AA9F7FBEC029BED56151C2` | MSI installer | JS/TrojanDownloader.Agent.TNX trojan
+| `BC909B76858402B3CBB5EFD6858FD5954A5E3FD8` | Re-Loader     | MSIL/HackTool.WinActivator.J potentially unsafe application
+|====
+
+=== Campaign 3: The most recent one
+
+[options="header"]
+|====
+| SHA-1                                      | Description        | ESET detection name
+| `DD2799C10954293C8E7D75CD4BE2686ADD9AC2D4` | MSI installer      | JS/TrojanDownloader.Agent.TNX trojan
+| `9DFFEB147D89ED58C98252B54C07FAE7D5F9FEA7` | Downloaded payload | Win32/Spy.Casbaneiro.AJ trojan
+|====
+
+=== Files distributed by Download & Execute
+
+[options="header"]
+|====
+| SHA-1                                      | Description      | ESET detection name
+| `C873ED94E582D24FAAE6403A17BF2DF497BE04EB` | Email tool       | MSIL/SpamTool.Agent.O trojan
+| `B3630A866802D6F3C1FA2EC487A6795A21833418` | Password stealer | Win32/PSW.Agent.OGH trojan
+|====
+
+== Filenames
+
+- `%APPDATA%\Spotify\Spotify.exe`
+- `%APPDATA%\OneDrive\OneDrive.exe`
+- `%APPDATA%\WhatsApp\WhatsApp.exe`
+- `%APPDATA%\Sun\Javar\%RANDOM%\%RANDOM%.exe`
+- `%APPDATA%\DMCache\%RANDOM%\%RANDOM%.exe`
+
+== Run key & values
+
+- `HKCU\Software\Microsoft\Windows\CurrentVersion\Run`
+** `Spotify = %APPDATA%\Spotify\Spotify.exe`
+** `OneDrive = %APPDATA%\OneDrive\OneDrive.exe`
+** `WhatsApp = %APPDATA%\WhatsApp\WhatsApp.exe`
+** `%RANDOM% = %APPDATA%\Sun\Javar\%RANDOM%\%RANDOM%.exe`
+** `%RANDOM% = %APPDATA%\DMCache\%RANDOM%\%RANDOM%.exe`
+
+== C&C servers
+
+- hostsize.sytes[.]net:7880
+- agosto2019.servepics[.]com:2456
+- noturnis.zapto[.]org
+- 4d9p5678.myvnc[.]com
+- seradessavez.ddns[.]net:14875
+
+== Bitcoin wallet
+- `18sn7w8ktbBNgsX8LeeeLMqKS84xMG54si`
