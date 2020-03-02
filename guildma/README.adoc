@@ -1,0 +1,52 @@
+= Guildma Indicators of Compromise
+
+The blog post about Guildma "Guildma: The Devil drives electric" is available on WeLiveSecurity at
+https://www.welivesecurity.com/2020/03/05/guildma-devil-drives-electric/.
+
+== Hashes
+
+[options="header"]
+|===
+| SHA-1                                      | Description                       | ESET detection name
+| `45c58bc40768dce6a6c611e08fd34c62441aa776` | Main module loader 1              | Win32/Spy.Guildma.BM
+| `861f20b0dcc55f94b4c43e4a7e77f042c21506cf` | Main module injector              | Win32/Spy.Guildma.BJ
+| `37fd19b1ab1dcc25e07bc96d4c02d81cf4edb8a1` | Main module loader 2              | Win32/Spy.Guildma.Q
+| `a7b10b8de2b0ef898cff31fa2d9d5cbaae2e9d0d` | Main module                       | Win32/Spy.Guildma.BS
+| `4f65736a9d6b94b376c58b3cdcb49bbd295cd8cc` | Contacts stealer and form grabber | Win32/Spy.Guildma.D
+| `6c9304c5862d4e0de1c86d7ae3764f5e8358daff` | RAT module (DLL)                  | Win32/Spy.Guildma.BR
+| `89fbffe456de850f7abf4f97d3b9da4bad6afb57` | RAT module (EXE)                  | Win32/Spy.Guildma.BR
+| `af0d495ecc3622b14a40ddcd8005873c5ddc3a2d` | MailPassView                      | Win32/PSWTool.MailPassView.E
+| `92bcf54079cbba04f584eac4486473c3abdd88cd` | WebBrowserPassView                | Win32/PSWTool.WebBrowserPassView.E
+| `a2048f435f076988bf094274192a196216d75a5f` | JScript dropper module            | Win32/Spy.Guildma.BP
+|===
+
+== Filenames
+
+- `C:\Users\Public\Libraries\qlanl\*`
+
+== Startup link
+
+- Location
+** `%APPDATA%\Microsoft\Programs\StartUp\reiast%USERNAME%%COMPUTERNAME%.lnk`
+- Targets
+** `C:\Program Files (x86)\Internet Explorer\ExtExport.exe`
+** `C:\Program Files\Internet Explorer\ExtExport.exe`
+- Args
+** `<install dir> <rand> <rand>`
+** (where `<rand>` is a random 5 to 9 character long string generated from the alphabet `qwertyuiop1lgfdsas2dfghj3zcvbnmm`)
+
+== C&C servers
+
+- `++https://www.zvatrswtsrw[.]ml++`
+- `++https://xskcjzamlkxwo[.]gq++`
+- `++https://www.vhguyeu[.]ml++`
+- `++https://www.carnataldez[.]ml++`
+- `++https://www.movbmog[.]ga++`
+- `++https://iuiuytrytrewrqw[.]gq++`
+- `++https://www.gucinowertr[.]tk++`
+- `++https://equilibrios[.]ga++`
+- `++https://www.clooinfor[.]cf++`
+- `++https://ambirsr[.]tk++`
+- `++https://dbuhcbudyu[.]tk++`
+- `++https://nvfjvtntt[.]cf++`
+- `++http://whia7g.acquafufheirybveru[.]online++`
