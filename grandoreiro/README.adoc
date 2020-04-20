@@ -1,0 +1,65 @@
+= Grandoreiro Indicators of Compromise
+
+The blog post about Grandoreiro "Grandoreiro: How engorged can an EXE get?" is available on WeLiveSecurity at
+https://www.welivesecurity.com/2020/04/28/grandoreiro-how-engorged-can-exe-get/.
+
+== Hashes
+
+=== Grandoreiro banking trojan
+
+[options="header"]
+|====
+| SHA-1                                      | Description                       | ESET detection name
+| `40FBC932BD45FEB3D2409B3A4C7029DDDE881389` | Old version of Grandoreiro (2017) | Win32/Spy.Grandoreiro.A
+| `7905DB9BBE2CB29519A5371B175551C6612255EF` | Grandoreiro                       | Win32/Spy.Grandoreiro.AE
+| `BD88A809B05168D6EFDBA4DC149653B0E1E1E448` | Grandoreiro                       | Win32/Spy.Grandoreiro.AJ
+|====
+
+=== Grandoreiro Win32 downloaders
+
+[options="header"]
+|====
+| SHA-1                                      | Description            | ESET detection name
+| `7C2ED8B4AA65BEFCC229A36CE50539E9D6A70EE3` | Grandoreiro downloader | Win32/TrojanDownloader.Banload.YJR
+| `27A434D2EF4D1D021F283BCB93C6C7E50ACB8EA6` | Grandoreiro downloader | Win32/TrojanDownloader.Banload.YLZ
+| `28D58402393B6BCA73FF0EAC319226233181EDC9` | Grandoreiro downloader | Win32/TrojanDownloader.Banload.YJB
+| `42892DF64F00F4C091E1C02F74C2BB8BAD131FC5` | Grandoreiro downloader | Win32/TrojanDownloader.Banload.YMI
+|====
+
+=== Grandoreiro spam tool
+
+[options="header"]
+|====
+| SHA-1                                      | Description           | ESET detection name
+| `BCED5D138ACEADA1EF11BFD22C2D6359CDA183DB` | Grandoreiro spam tool | Win32/Spy.Grandoreiro.AD
+|====
+
+== Windows Registry
+
+- `HKCU\Software\%USER_NAME%`
+- `HKCU\Software\ToolTech-RM`
+
+== User-Agent
+
+- `h55u4u4u5uii5`
+
+== Filenames
+
+- `%INSTALL_DIR%\` *
+** `MDL_YEL_01.dll`
+** `MDL_BLU_BR_02.dll`
+** `MDL_SIC_BR_03.dll`
+** `MDL_SANT_BR_04.dll`
+** `MDL_ITA_BR_05.dll`
+** `MDL_BRADA_BR_06.dll`
+** `MDL_SICCB_BR_07.dll`
+** `MDL_SAFRA_BR_08.dll`
+** `MDL_ORIGI_BR_09.dll`
+** `MDL_NORDES_BR_10.dll`
+** `MDL_BANEST_BR_11.dll`
+** `MDL_BANEZE_BR_12.dll`
+** `MDL_AMAZON_BR_13.dll`
+** `MDL_UNICRE_BR_14.dll`
+** `MDL_BRB_BR_15.dll`
+** `MDL_WUPDATE_BR_001.dll`
+** `%INSTALL_DIR%` is the path where Grandoreiro is installed
