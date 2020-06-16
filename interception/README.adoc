@@ -1,0 +1,124 @@
+= Operation In(ter)ception -- Indicators of Compromise
+
+For details about Operation In(ter)ception, read the summary
+https://www.welivesecurity.com/2020/06/17/operation-interception-aerospace-military-companies-cyberspies/[blog post]
+and research paper,
+https://www.welivesecurity.com/wp-content/uploads/2020/06/ESET_Operation_Interception.pdf[Operation
+In(ter)ception: Targeted attacks against European aerospace and military
+companies], on https://www.welivesecurity.com[WeLiveSecurity].
+
+== ESET detection name
+
+Win32/Interception.A
+
+== Host based indicators
+
+=== SHA-1 hashes
+
+----
+B1199EE7AFB1F348D42BEF1CAED7E405A7631B1B
+286C01EAB255DA32B7F36CE9814DA3999E17F40D
+0C63F318EDEAEDC7D7AF28304A61A0DF71699F89
+373EC71B31F803298F06B7EDED059BC1E7C6D70B
+AE130A678D76C44171799C0750FEFD5DB43A9DE4
+FB38C71DD02C3926F9A1C146A13A66579D3F88D2
+8690930299D83FE65A9C3C5CD1D7F509A79D8E71
+D07B19373293369C55CC6E7E0D4CF6CFE32542DF
+----
+
+=== Files and folders
+
+----
+C:\Intel\IntelR.lor
+C:\Intel\IntelV.cgi
+C:\Intel\crtutl.exe
+C:\NVIDIA\nvc.exe
+C:\NVIDIA\nve.exe
+C:\NVIDIA\nvd.exe
+C:\NVIDIA\nve.cgr
+C:\NVIDIA\nve.lom
+C:\NVIDIA\nve.cgt
+C:\NVIDIA\nve.loe
+C:\NVIDIA\nve.cgy
+C:\NVIDIA\nve.lop
+C:\NVIDIA\nve.cgb
+C:\NVIDIA\ctutl.exe
+C:\NVIDIA\ctrutl.exe
+C:\NVidia\NvDaemon.exe
+C:\ProgramData\Skype\Skype.exe
+C:\ProgramData\Mozilla\fx.rmb
+C:\ProgramData\DellTPad\ApMsgApp.exe
+C:\ProgramData\DellTPad\DellTPadRepair.exe
+C:\ProgramData\DellTPad\DellTPadMobile.exe
+C:\ProgramData\DVDStudio\DVDTools.exe
+C:\ProgramData\DVDStudio\DVDStudioSync.exe
+C:\Users\<USER>\AppData\Local\Temp\~pwshld3.dat
+C:\Users\<USER>\AppData\Local\Microsoft\OneDrive\OneDrive.exe
+C:\Users\<USER>\AppData\Local\Microsoft\oneDrive\oneDriveSync.exe
+C:\Users\<USER>\AppData\Local\IconCache.db7
+C:\Users\<USER>\AppData\Local\NTUSER45F7.POL
+----
+
+== Network indicators
+
+----
+https://cwjamaica[.]biz/images/logo.png
+https://sbsserv.camdvr[.]org/top.swf
+https://km.wu.ac[.]th/image/office.jpg
+https://safebrowsing.gleeze[.]com/welcome1.png
+http://safebrowsing.gleeze[.]com/header.png
+https://safebrowsing.gleeze[.]com/header.png
+http://205.210.162[.]36/start.html
+http://205.210.162[.]36/www2default/css1/style.xsl
+https://www2.markham[.]ca/css1/Mar.xsl
+https://www2.markham[.]ca/css1/style.swf
+https://www2.markham[.]ca/css1/style.jpg
+https://www2.markham[.]ca/css1/style.xsl
+https://www2.markham[.]ca/css1/style.css
+https://www2.markham[.]ca/view_center.asp
+https://www2.markham[.]ca/css/first.css
+https://www2.markham[.]ca/first.jpeg
+https://www2.markham[.]ca/politicia.asp
+https://www2.markham[.]ca/taxing-churc.asp
+https://www2.markham[.]ca/exports-to-Turkey.asp
+https://www2.markham[.]ca/Climate.asp
+https://www2.markham[.]ca/discoveries.asp
+https://www2.markham[.]ca/pay-talks-fai.asp
+https://www2.markham[.]ca/Nouvelles.asp
+https://www2.markham[.]ca/News.asp
+https://www2.markham[.]ca/Noticias.asp
+https://www2.markham[.]ca/EU-nominee.asp
+https://www2.markham[.]ca/Business.asp
+https://www2.markham[.]ca/Culture.asp
+https://www2.markham[.]ca/Life-Work.asp
+https://www2.markham[.]ca/Comercio.asp
+https://www2.markham[.]ca/Links.asp
+https://www2.markham[.]ca/churc.asp
+https://www2.markham[.]ca/products.asp
+https://www2.markham[.]ca/exports.asp
+https://online.verzatec[.]com/banner.asp
+https://nic.mywire[.]org/view.asp
+https://chuta[.]jp/jtool/dic.css
+https://chuta[.]jp/jtool/dic.png
+https://chuta[.]jp/jtool/politicia.asp
+https://chuta[.]jp/jtool/taxing-churc.asp
+https://chuta[.]jp/jtool/exports-to-Turkey.asp
+https://chuta[.]jp/jtool/Climate.asp
+https://chuta[.]jp/jtool/discoveries.asp
+https://chuta[.]jp/jtool/pay-talks-fai.asp
+https://chuta[.]jp/jtool/Nouvelles.asp
+https://chuta[.]jp/jtool/News.asp
+https://chuta[.]jp/jtool/Noticias.asp
+https://chuta[.]jp/jtool/EU-nominee.asp
+https://chuta[.]jp/jtool/Business.asp
+https://chuta[.]jp/jtool/Culture.asp
+https://chuta[.]jp/jtool/Life-Work.asp
+https://chuta[.]jp/jtool/Comercio.asp
+https://chuta[.]jp/jtool/Links.asp
+https://chuta[.]jp/jtool/churc.asp
+https://chuta[.]jp/jtool/products.asp
+https://chuta[.]jp/jtool/exports.asp
+https://comnet.aev[.]com/wik.xsl
+http://servicediscovery.kozow[.]com
+https://w3.casacam[.]net
+----
