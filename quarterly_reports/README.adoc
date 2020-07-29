@@ -1,0 +1,7 @@
+= Quarterly reports IoCs
+
+The directory contains indicators of compromise related to
+https://www.welivesecurity.com/papers/threat-reports/[ESET's quarterly Threat
+Reports] published on https://www.welivesecurity.com[WeLiveSecurity].
+
+Each publication has a subdirectory with its IoCs.
