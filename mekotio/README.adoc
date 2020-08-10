@@ -1,0 +1,37 @@
+= Mekotio Indicators of Compromise
+
+The blog post about Mekotio "Mekotio: These aren’t the security updates you’re looking for…" is available on WeLiveSecurity at
+https://www.welivesecurity.com/2020/08/13/mekotio-these-arent-the-security-updates-youre-looking-for/.
+
+== Hashes
+
+=== Mekotio samples
+
+[options="header"]
+|====
+| SHA-1                                      | Description                          | ESET detection name
+| `AEA1FD2062CD6E1C0430CA36967D359F922A2EC3` | Mekotio banking trojan (SQL variant) | Win32/Spy.Mekotio.CQ
+| `8CBD4BE36646E98C9D8C18DA954942620E515F32` | Mekotio banking trojan               | Win32/Spy.Mekotio.O
+| `297C2EDE67AE6F4C27858DCB0E84C495A57A7677` | Mekotio banking trojan               | Win32/Spy.Mekotio.DD
+| `511C7CFC2B942ED9FD7F99E309A81CEBD1228B50` | Mekotio banking trojan               | Win32/Spy.Mekotio.T
+| `47C3C058B651A04CA7C0FF54F883A05E2A3D0B90` | Mekotio banking trojan               | Win32/Spy.Mekotio.CD
+|====
+
+=== Legitimate AutoIt interpreter being abused
+
+[options="header"]
+|====
+| SHA-1                                      | Description                  | ESET detection name
+| `ACC07666F4C1D4461D3E1C263CF6A194A8DD1544` | AutoIt v3 Script interpreter | Clean file
+|====
+
+== Network communication
+- User-Agent
+  ** `MyCustomUser`
+  ** `4M5yC6u4stom5U8se3r` (and other variations)
+- HTTP verb: `111SA`
+
+== Bitcoin wallets
+- `1PkVmYNiT6mobnDgq8M6YLXWqFraW2jdAk`
+- `159cFxcSSpup2D4NSZiuBXgsGfgxWCHppv`
+- `1H35EiMsXDeDJif2fTC98i81n4JBVFfru6`
