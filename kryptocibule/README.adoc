@@ -1,0 +1,283 @@
+= KryptoCibule -- Indicators of Compromise
+
+An analysis of KryptoCibule is available as a blogpost on https://www.welivesecurity.com/2020/09/02/kryptocibule-multitasking-multicurrency-cryptostealer[WeLiveSecurity].
+
+The https://www.misp-project.org[MISP] event is available in link:misp-kryptocibule.json[`misp-kryptocibule.json`].
+
+== ESET Detection Name
+
+`MSIL/KryptoCibule.A`
+
+== Host based indicators
+
+=== SHA-1 Hashes
+
+.Main launcher (`armsvc.exe`)
+----
+49D3FE31B87B14BEF61A6029A644DA3DDC81AE85
+83F9C10D41A32D74FCF0549739487CEA90233EE2
+181C9FEE9834EAEE428EDFD4048F383BDD6FED2A
+D9AA64D954A531074AF5C167B7066EDF989B49D8
+DA402887CBD05CBE123EB6AF437EFCAC2BA70555
+3BCEF852639F85803974943FC34EFF2D6D7D916D
+5505341E3185E3EADCBE3164ECA616A0F86D8B5D
+7563610DA47ECE49216E6D4F75EA3E2FCEC4CE3E
+----
+
+.Clipboard Hijacker (`SystemArchitectureTranslation.exe`)
+----
+05D461259BDDB6AD70CEB96A6A81746423EB5DB4
+352743EBE6A0638CC0614216AD000B6A43C4D46E
+8EDEE68B15E2F3C8484F18D34976C3506EACA30D
+929E362EB857203155ACD9526E6FA60339DAA42F
+----
+
+.Updater (`Updater.exe`)
+----
+88920FE8AACFE9102B00026524353D28D2CCF5E1
+341F8F2566B601E6825DC9E00FA3BEE490AE4728
+A2D69583CFB8849C4852865FE43CEEA55BD7E065
+29B0DF9E0F1AFA5DF39B9F3E6C2EDA40AA8B1E5F
+70480D5F4CB10DE42DD2C863DDF57102BE6FA9E0
+8CC0C300739E6887358169E6B9939FB83362E17E
+----
+
+=== File Names
+
+----
+%ProgramFiles(X86)%\Adobe\Acrobat Reader DC\Reader\Update\armsvc.exe
+%ProgramFiles(X86)%\Adobe\Acrobat Reader DC\Reader\Update\firewall.exe
+%ProgramFiles(X86)%\Adobe\Acrobat Reader DC\Reader\Update\ADelRCP.exe
+%ProgramFiles(X86)%\Adobe\Acrobat Reader DC\Reader\Update\SystemArchitectureTranslation.exe
+%ProgramFiles(X86)%\Adobe\Acrobat Reader DC\Reader\Update\libstringutils.dll
+%ProgramFiles(X86)%\Adobe\Acrobat Reader DC\Reader\Update\settings.cfg
+%ProgramFiles(X86)%\Adobe\Acrobat Reader DC\Reader\Update\Setup.dll
+%ProgramFiles(X86)%\Adobe\Acrobat Reader DC\Reader\Update\Updater.exe
+%ProgramFiles(X86)%\Adobe\Acrobat Reader DC\Reader\Update\setup-version.json
+%ProgramFiles(X86)%\Adobe\Acrobat Reader DC\Reader\Update\client-version.dll
+%ProgramFiles(X86)%\Adobe\Acrobat Reader DC\Reader\Update\backup\
+%ProgramFiles(X86)%\Adobe\Acrobat Reader DC\Reader\Update\backup.log
+%ProgramFiles%\Apache\OpenSSH\buru.exe
+%ProgramFiles%\WindowsCMD\gLibTrans.exe
+%ProgramFiles%\WindowsCMD\qt.exe
+%ProgramFiles%\WindowsConfigs\gpu_depends.exe
+%ProgramFiles%\WindowsConfigs\gLibTrans.exe
+%ProgramFiles%\testabc123\
+%LocalAppData%\Config\qt.exe
+%LocalAppData%\Java Runtime\transmission-daemon.exe
+%LocalAppData%\Java Runtime\transmission-remote.exe
+%LocalAppData%\Microsoft\Architecture\SystemArchitectureTranslation.exe
+
+Environment.SpecialFolder.CommonStartup\AdobeUpdater.lnk
+Environment.SpecialFolder.Startup\AdobeUpdater.lnk
+----
+
+=== Scheduled Tasks
+
+[options="header"]
+|========================================
+|Name|Executable
+|GoogleUpdateTask|`%LocalAppData%\Microsoft\Architecture\SystemArchitectureTranslation.exe`
+|Adobe Update Task|`%ProgramFiles(X86)%\Adobe\Acrobat Reader DC\Reader\Update\armsvc.exe`
+|========================================
+
+=== Windows Firewall Rules
+
+----
+apache_http, in, allow, httpd.exe
+apache_http, out, allow, httpd.exe
+Bitlocker Service, out, block, %ProgramFiles%\ESET\ESET Security\ekrn.exe
+Identity Service, in, allow, %ProgramFiles(X86)%\Adobe\Acrobat Reader DC\Reader\Update\firewall.exe
+Identity Service, out, allow,  %ProgramFiles(X86)%\Adobe\Acrobat Reader DC\Reader\Update\firewall.exe
+Java Runtime Service, in, allow, %LocalAppData%\Java Runtime\transmission-daemon.exe
+Java Runtime Service, out, allow, %LocalAppData%\Java Runtime\transmission-daemon.exe
+Java Runtime Update, in, allow, %LocalAppData%\Java Runtime\transmission-remote.exe
+Java Runtime Update, out, allow, %LocalAppData%\Java Runtime\transmission-remote.exe
+WindowsCMD, in, allow, %ProgramFiles%\WindowsCMD\gLibTrans.exe
+WindowsCMD, out, allow, %ProgramFiles%\WindowsCMD\gLibTrans.exe
+WindowsConfig, in, allow, %ProgramFiles%\WindowsConfigs\gpu_depends.exe
+WindowsConfig, out, allow, %ProgramFiles%\WindowsConfigs\gpu_depends.exe
+----
+
+== Network based indicators
+
+=== IP addresses
+
+`198.211.34.151`
+
+=== Onion URIs
+
+.REST API Server
+`rlwryismmgjijryr55u5rqlbqghqvrwxe5qgxupuviyysxkky5wah6yd.onion`
+
+.File Server
+`4dtu3lxrpx6nn7snjovoc3ldiy4x67k7qsrgzftvkrttoqbwnsuirhqd.onion`
+
+.Mining Server
+`v6lajszeqfkt3h2nptorindpf3mow5p3thrx2vuqbqzbv3tjrcqmgdqd.onion`
+
+.Other Servers
+----
+2x6w4a4rpkc4im62qrsomw5cz7sh6xfwue6o2taasnzpj24emp2ytryd.onion
+36ptmdeoog6cb7qga5mvg67xxsvjcztppvexzv7v3nh3v5ysrqpdoqqd.onion
+372dwco4guzmbsxuzojpxu5szfonkxe5itnbscrq2j42rab2t2ncahyd.onion
+4awm6qxdepo4eezambtqy37glf3yfsqmffahdrftap52vnft7w6qjrqd.onion
+4d5sfoijltk6ymy56zxn5kibkev2bqrtvofpgej5q5td3y23sa7ot6id.onion
+4lb3ggyyldqrovgjn5muidit7lly26qysmhsvdvm7uxxor43r3trzeqd.onion
+6m4ujiinnntagmvcr5xlrhprwo4ogynx5ermkb5g2tmogqmvl4jqg2qd.onion
+6u7fbyoeztemm2x3eqqqmxdjnwcwr774omb357v575rdw6fbs6dsocid.onion
+7qggtksfcrk67dhxf34ywqf5442cuitztvmpaufhu6mfi4vemid4ayid.onion
+a3345hiuizvtfyiyu7rrj7oz4rn5pams42sawmtznuvlxjdqlhfutoad.onion
+a3ejbleqwu5fyiwvjk5bgqtezpmun6j52bgutf7dhlnxb6k5oq4wycyd.onion
+awmszp3t3zuni6f6stanp3zesiwdco4nekn34wauxxqbcztz74jxjgad.onion
+aydy72vlk4b43t6wqkrg2sijerykz5a7xpu3twpavurtfy6cr5yjnnad.onion
+braiqjhcq2by5ederrdm6phl5ibgaslr3whrwsiqjzqz2sopp4nixvid.onion
+eeg3ww3gtsq7ul7ovgrelurhahjtnuo5h6k7yivdbiab36qxhxuguvqd.onion
+eq4sd25kaavyspif2a72sa7zmdvwg7zzzwjxcfougqonrkcsd4gounyd.onion
+ev2awfjn4tsmeae3oiwiu2lndgxisnt66cclszqaiogymiwawebcvzid.onion
+ewecmdrizt7cbwi6d5lqdp2flm4xaxymhjfbfszay6zlwwmudsognhqd.onion
+fafo3thvdd74ogafpu6dqn6icsvyiphjda4kcspqkiiv2n76droolzqd.onion
+fyksdinxkx6k3wflss2smzpnfjmlj3xuy2sdfd5ardr6xaahkhtkxpyd.onion
+g67rpe6ii3fp2kcwsts5yfaiiprsa4kqfhycr2p3dsjqonwhhob3rnqd.onion
+geigbmqp356zfjfnc554dp4fs47x5wvyijhyqx27harlfpu42vrlprad.onion
+gg5nf65ygz7xlz4qjokmadu4lz6kykm7siuzmxv2dw36ft5oowizxyid.onion
+gjgdw2l7pup7ld3zkz3bftscffrmztsti2d355ekdc63f4bn27imohqd.onion
+gmfkr2hophk7quuedy2xtlydxo7wduofmpi3nbf7gzmg4cv3xuvgtyad.onion
+h3onjkbx25yjhvplvovqzp2tefp6hce3fo3cnakkxz3so2knvn6s6rad.onion
+iggd7l4zis6nypic7acmxtdoryc5laolmudcgiwtpzsg62v4vkxt6fid.onion
+ihki5r4vy5rhvhcjc6a2luebw7l3m5ahuxiail6wtsm5hrikbppdy5id.onion
+ixviwydgphadlbitfs3inizpeg674qycqlvnanoky7xpukrwtbafejyd.onion
+j3bp2a2ftceusjmsd2qz6htisf6uzcj4ngrx2exffur5wqe7mndtreqd.onion
+jay2ewakkvwfqhst3ug5q5fua5d7kcu5ecyrk4d5gbfhqlidmtiackqd.onion
+jhlkmmq4bvg5lncsllwfurwbymdtzdvkzpw7ruwdhyp4uadpwyz7yryd.onion
+jokcwtvo6t25g2oejfnmgztu6b6u2p3gmo2vgmc6vcewfsr2hlxwomad.onion
+k5fvnoaorhjem2yjoperd6lcdzev4y5xvz4nnc3x5tk2acyek56mamad.onion
+kiugtgblevzdc2srnvt7ldp2reuzdmjwkxwjugcofrpopsavqnynd7qd.onion
+klh6kylzhkerfgnosy3veygej3r7xrkwxpnzvfhjihc5hpz7oylaq4qd.onion
+kvekkvllgj35kmaa6oa63z6cexlqswtp2bfhddgupql3h4xlpj3mufqd.onion
+kw5z4ogvnhjxp2xllnset4iouho34romb5wsanoekwgzcem3uahoh3id.onion
+l6fio2skcgirpjnnwjyfw7i5b3lfvozkwnynrijutu5bergs4o7sgfad.onion
+loafhlyog55jtww2eqldflasnti7me64w4zoztqmik5oe4xyfiravxyd.onion
+mjevfcggupyf6o4tj3fgig7m6vf2xetsdev7rzjbxttwhl3uouar2kyd.onion
+mnuqin25leqrmfypizsieyo2h2ndegol5cmkdyqj7rkv7yv5uknlzmid.onion
+mtrwz36vndoar7iadv3qowefod5zmo3wz5iq2i63rpg266ysvo6frbid.onion
+ofsg5sib4xcikcczk7n73ypkd5uvzki57jiuj72ttg2hlrhpnwhaknqd.onion
+p32ug5tz2cgkk3sbclm7i6luoespolqq6v7dzldjwdpgxtm4h76zclyd.onion
+pckttjjykdykdk2os5smy4jk3t46nyqvqruch5xnnlh52yrt35wx5cad.onion
+pdsaqpznzqjy5t5myudk7odo37mu7g2olswaswhogrwglzk3iscbb2ad.onion
+pgejmpol56kkaa6xjjg3pkztkvwjoucqqdldrkka4ndaj467fr7jrgqd.onion
+ppbgauyt2evbm5xltxvmokoi4g5uh3wjdumudwlh2roxcodbl6ezzwqd.onion
+q5zwtdfoe2xr57jfik7pwmns3crjpx2ge6ibmrafjhqld64qyyk7tvyd.onion
+qdwmp4bjzvotdsyz326szvk4q3ftgtwyeoqsjyzywxw24y27n3z7mrqd.onion
+sow4wrmh5xpwkdq775fouugrlizxjsmn4yyyoa7hckkyol4kjudhrwyd.onion
+svwwrxksrmg4ea5ndfrzurtixogdckqkx4bhodf2tkqpxnpmujggooyd.onion
+tkovkg2j6pigb6vnxfhfpg3n4w2fpegjnlrhgzwfvlt4wfspqiuqkxad.onion
+udnxk4aprzds7khgjsllgmo6hluicn2hibbhfih72csmoktksf3ky7qd.onion
+ufxmwdan67ml3t4637l6tgor7jdxxhm7xvdk2b2jexuu5unqvc3okbqd.onion
+uye4vspplkdvqlw3rjb7kvjwtwqictc5pepfxpdy3kifpxlwqhuhnaad.onion
+vrfq4keuh6cx6hccue76emofi7ciitip3eqpe44mbnywamoi42wocsad.onion
+w2zvw33dab2vhk3pnyy5cmmybsvdwp7hgjwta4qoot57lsfxqpdbqpid.onion
+wsagl5qz3haptofnxyxayxxiyuomj6yqe4wruya6hyolohi7dux3ujqd.onion
+xouenzgjpkf6cfan5rrkbn27xe3shfnubchvnuztv2s2nnw4lpa2egqd.onion
+ysz2dvpvygiweaymzatzukaccvlhidkyw774ub2d77ibavelfoifgmqd.onion
+zcohozbt4gcrtbojiyukiza6q3gv4owz7sxrqmpvhd4bpczbnijlfnyd.onion
+znbyrqe4zrktft2kpwzb2ywx25k6exfdgxabky67csqado75364b2dad.onion
+----
+
+=== User-Agents
+
+ - `Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.0`
+ - `{adjective}-{noun}` where `{adjective}` is a word from link:adjectives.txt[`adjectives.txt`] and `{noun}` is one from link:nouns.txt[`nouns.txt`].
+ 	- _e.g._ `abased-aardvark`
+
+=== Torrents
+
+[options="header"]
+|========================================
+|Magnet Link|SHA-1 Hash
+|`magnet[:]?xt=urn:btih[:]4nn2g3t35xaufyr7k6kcwahvwmsrlhu6&dn=commodore_72.zip`| - 
+|`magnet[:]?xt=urn[:]btih[:]3hrhgchfvmzk7d7yft4pbjbxvbrjgpgh&dn=commodore_70.zip`| - 
+|`magnet[:]?xt=urn[:]btih[:]zbbeamadk3f5etfxafsk2nvpqom3qjly&dn=cygwin.zip`| - 
+|`magnet[:]?xt=urn[:]btih[:]d7lzxqeesxaiu6n6yeakpperdz2vyumg&dn=qtWebEngine.zip`| - 
+|`magnet[:]?xt=urn[:]btih[:]67yd647nivxhumoedvwnwnzve55b3bxj&dn=free-BuruServer-x64-v1.7.3.zip`| - 
+|`magnet[:]?xt=urn[:]btih[:]6dc4gjsg2nam4hewhrwqswu3lt3qfayk&dn=httpd-2.4.43-o111g-x64-vc15.zip`| - 
+|`magnet[:]?xt=urn[:]btih[:]wkam3fozjge4k3tvnxdw2llpmq5caxkk&dn=Dead.Cells.Incl.All.DLC.zip`| - 
+|`magnet[:]?xt=urn[:]btih[:]7sm4x4kk37blvo24wnxh66iaolozh6iu&dn=Marble_Blast_Gold_v1.4.zip`|`e61e1a0b6ad4648366554be2ed59cedbc6eee673`
+|`magnet[:]?xt=urn[:]btih[:]x4jubi3oxq45d4vfcrbqvmf5modbrjem&dn=SuperMario64v7 PC+HD Textures.exe.zip`| - 
+|`magnet[:]?xt=urn[:]btih[:]s2gf6xzhwid7yqbphuxbsm26ka7i4p6o&dn=terraria.v1405.cracked-F4CG.zip`| - 
+|`magnet[:]?xt=urn[:]btih[:]ac7xahxamrzpnckdnppllec2hbuoffzc&dn=Minecraft [TLauncher V2.66] (All Minecraft Versions).zip&xl=25912007&fc=1`|`8e7df84e1b4a23dddaa560739c4c71e7f7a1e4dd`
+|`magnet[:]?xt=urn[:]btih[:]wwph4enkxj5xpirxhng5jedsr56rk2ol&dn=Minecraft Android [Paid] [Mod] [Beta] (V1.14.0.1).zip&xl=94880023&fc=1`| - 
+|`magnet[:]?xt=urn[:]btih[:]yu6naotuoiqoomz3z3gtsg6hna7ipjtk&dn=Minecraft - Sonic Ether's SEUS PTGI E12 Shaders [PATREON LEAK].zip&xl=15264300&fc=1`|`1d88dfaf3bdb3ca1aa570e2c096e897650659c04`
+|`magnet[:]?xt=urn[:]btih[:]yf5a4tr3iqig2jtdqhm6locs4sfmyiu2&dn=Minecraft - UMSOEA R15R14 Textures [PATREON LEAK].zip&xl=351494801&fc=1`| - 
+|`magnet[:]?xt=urn[:]btih[:]wqnt64zatptln6dxiw2cchhyr5mywag4&dn=PowerISO.7.3.Incl.Serial-F4CG.zip&xl=37457059&fc=1`|`5a089236dd99e558cb1dca843792a6ba4a686c3a`
+|`magnet[:]?xt=urn[:]btih[:]nv2gl62yzdv2c25qn7725j5f27onesa2&dn=WinRARv5.60.Final.Incl.Serial-F4CG.zip&xl=36528197&fc=1`|`e2c9750c5143ebd558de6987643e46adc5e56410`
+|`magnet[:]?xt=urn[:]btih[:]av3ic5bg6nisqjb4z4nv3xr2lvilw3f3&dn=uTorrent.PRO.v.3.5.5.Multi.WinAll.Cracked-F4CG.zip&xl=62633442&fc=1`| - 
+|`magnet[:]?xt=urn[:]btih[:]32rjl6jywndpugvgmi3hlctf3buxfodj&dn=4K.Video.Downloader.Incl.Crack-F4CG.zip&xl=69906862&fc=1`| - 
+|`magnet[:]?xt=urn[:]btih[:]roi4uuql2wa3vdkaqexpc6hy7fzio23q&dn=CCleaner.v5.51.Inc.Serial-F4CG.zip&xl=48796629&fc=1`| - 
+|`magnet[:]?xt=urn[:]btih[:]dyncbr4vtrhwo7vngqmubgbscr732oq6&dn=kmspico.v40.2.0.0.WinALL-F4CG.zip&xl=36628504&fc=1`|`fa05f7d40e531647b0bdeb2868df882f5d8f913f`
+|`magnet[:]?xt=urn[:]btih[:]7durvghj3k4anynxyjbpt36c3dmgpqxu&dn=Microsoft.Toolkit.v.2.6.4.0.WinALL-F4CG.zip&xl=91925796&fc=1`| - 
+|`magnet[:]?xt=urn[:]btih[:]xqcpwho7piykhyzxl2lz25rcw22b6s7h&dn=VueScan 9.6.27 + x64 + launch - Crackingpatching.zip&xl=28904776&fc=1`|`0aca38e2ec0deae75511a42713f6bff3a17e82f1`
+|`magnet[:]?xt=urn[:]btih[:]pcvn5qf2hn4j4lze5xnsxcnygex2nqxy&dn=Freemake_Video_Converter_4.zip&xl=57353872&fc=1`| - 
+|`magnet[:]?xt=urn[:]btih[:]e7yps2eloaqfbwwg3bdmkoxeqjj7aq6i&dn=YTD Video Downloader PRO v5.9.10.4 (2-click run).zip&xl=30746230&fc=1`|`4cbad4710e68a96c954bce30b79f5f06252bcc6a`
+|`magnet[:]?xt=urn[:]btih[:]i4u5k6ukgjmlzmrz6y54d36rrgb2wivs&dn=Bandicam_4.3.1.1490.zip&xl=32268929&fc=1`|`bee66472876b806fbc0a989b34813c0c06cedcb0`
+|`magnet[:]?xt=urn[:]btih[:]ty3nlty4wdouzzatdmnjd3p64odxlkus&dn=Photo Supreme 4.3.2.1920 + x64 + patch - Crackingpatching.zip&xl=70934596&fc=1`| - 
+|`magnet[:]?xt=urn[:]btih[:]zpfxg5zf7slfinlsl4ltmbrgfwa4sqmq&dn=SolveigMM Video Splitter 7.0.1901.23 + loader.zip&xl=73454467&fc=1`|`6112aaa0a65b6d90adf7fd16cfd75e04ab81eb9c`
+|`magnet[:]?xt=urn[:]btih[:]xemjchxzc2y6vascagoesuyk47573mci&dn=Glary Malware Hunter Pro 1.73.0.659 Multilingual + Crack ~ [APKGOD.NET].zip&xl=59996489&fc=1`| - 
+|`magnet[:]?xt=urn[:]btih[:]ozb6szbtms5hsqi2vdijs4hc7dgy3ss2&dn=Aiseesoft Video Converter Ultimate 9.2.60 + Portable + patch - Crackingpatching.zip&xl=128497026&fc=1`| - 
+|`magnet[:]?xt=urn[:]btih[:]cf2h5zsx26ff3j5dhrildejodhedukar&dn=Aiseesoft FoneLab 9.1.82 + patch - Crackingpatching.zip&xl=70973015&fc=1`| - 
+|`magnet[:]?xt=urn[:]btih[:]xt5djeseznserubpjgczshvwtbho4e3f&dn=SUPERAntiSpyware Professional 8.0.1026 Multilingual ~ [APKGOD.NET].zip&xl=53878063&fc=1`| - 
+|`magnet[:]?xt=urn[:]btih[:]jeoejd4fa2ocdr46zikr4zmymk4tj332&dn=K-Lite_Codec_Pack_1465_Mega.zip&xl=71672744&fc=1`| - 
+|`magnet[:]?xt=urn[:]btih[:]ilb5b4pamryrjvfedceru7o2srlphcs2&dn=Atomix VirtualDJ Pro Infinity v8.3.4742.1964 (2-click run).zip&xl=47327223&fc=1`| - 
+|`magnet[:]?xt=urn[:]btih[:]sgrfo3qqyb6tk7rdn7f4o2gmaz23wpd7&dn=Ashampoo Slideshow Studio HD 4.0.9.3 Multilingual.zip&xl=73299714&fc=1`| - 
+|`magnet[:]?xt=urn[:]btih[:]bzgucfla4lveuzhes6j244byngf6c7ok&dn=BoxedApp_Packer_2018.14.0.0.zip&xl=27596369&fc=1`|`c7b7b06e83680a0410f66bcccd3a500db466db42`
+|`magnet[:]?xt=urn[:]btih[:]yfjeb3flumbc7bwabxafz5zzwhm4ruub&dn=Iperius Backup Full 5.8.5 + keygen - Crackingpatching.zip&xl=65868988&fc=1`| - 
+|`magnet[:]?xt=urn[:]btih[:]vxczk6lcbpivvskot4ipfjsuvwgv5xvi&dn=WinRAR 5.70 Beta1.zip&xl=19178347&fc=1`|`0702832aa419bad315480370862ed5b9d5bd868f`
+|`magnet[:]?xt=urn[:]btih[:]k7emoadr3mhtvt7plavocv2stgdvkczw&dn=DVDFab Media Player 3.2.0.1 + key - Crackingpatching.zip&xl=66201286&fc=1`| - 
+|`magnet[:]?xt=urn[:]btih[:]eutba6opydl3zj4gmzt2asurlvtwzdlo&dn=Awesome Miner Ultimate Plus 6.1.6 + Activation (licence-key-patch).zip&xl=109403625&fc=1`| - 
+|`magnet[:]?xt=urn[:]btih[:]rv3leed3d6pdl6zrnwlvabmrht22e72z&dn=Minecraft.v1.15.2.Cracked.Online.ServerList-GH05T.zip&xl=243165241&fc=1`| - 
+|`magnet[:]?xt=urn[:]btih[:]nnpu33laewikgtozqk3svd77fvolzibp&dn=Reg.Organizer.8.25.zip&xl=31856979&fc=1`| - 
+|`magnet[:]?xt=urn[:]btih[:]w6m7jlh757iecyl6efsccku2oyradqnb&dn=4K YouTube to MP3 3.4.0.1964 + x64 + patch - Crackingpatching.zip&xl=40491417&fc=1`| - 
+|`magnet[:]?xt=urn[:]btih[:]u2njkkbf3nla2pecy6xcfkdc4oruqj3f&dn=Wifi_Autoconnection_15.3.1.zip&xl=19119833&fc=1`|`e55ded5b9984bcb4a5e47cd14456d6e2fd051ce8`
+|`magnet[:]?xt=urn[:]btih[:]icwxb43ebmema4xnk42aines3f2jfmpd&dn=Ashampoo UnInstaller v8.00.12 (2-click run).zip&xl=30490782&fc=1`| - 
+|`magnet[:]?xt=urn[:]btih[:]4e6jsgyhux6xrnvuxwy5ird34hyesyst&dn=ADVANCED_Codecs_v1104.zip&xl=84171771&fc=1`| - 
+|`magnet[:]?xt=urn[:]btih[:]v37ijhpk663sjnxp7nipkmttqdcwljt2&dn=WinCatalog 2018 v18.6.1.125 + keygen - Crackingpatching.zip&xl=78207835&fc=1`| - 
+|`magnet[:]?xt=urn[:]btih[:]kk7wrogl7ohwzyyrsqohp24ijcuupalh&dn=OpenSSH-Win64.zip`| - 
+|`magnet[:]?xt=urn[:]btih[:]w24ftyvgz6dz5lusulxvageewutvx3gl&dn=DiskGenius_Professional_5.0.1.653.zip&xl=73197005&fc=1`|`b37faec190634dd6774f749a5082f08a22862c73`
+|`magnet[:]?xt=urn[:]btih[:]qjxrgdpcn2u4mtl65btg4xqkupdisyii&dn=Faronics_Deep_Freeze_Enterprise_8.55.220.5505.zip&xl=75248282&fc=1`| - 
+|`magnet[:]?xt=urn[:]btih[:]3ifsubfiekbm6tmolzbsbu5hbpyseeck&dn=uTorrent PRO v3.5.5 build 45036 Beta Multilingual.7z&xl=31635591&fc=1`| - 
+|`magnet[:]?xt=urn[:]btih[:]hc66a52xeebmvk5dnjqk46nqkawpheiu&dn=IObit Advanced SystemCare 12.2 PRO (v12.2.0.311) Multilingual.7z&xl=53420301&fc=1`| - 
+|========================================
+
+
+== Cryptocurrency wallets
+
+=== Bitcoin
+
+* `1B8QtVGktfjBfNptp1Ay1DVt5C47rq3yWY`
+* `3ATq2KXvPw9TEv6w8ED1ig8A71gB8ZcZpw`
+* `34Ca8UwUxKcbddicUBt2SMkGQThKJ161gg`
+* `389Y5VeD4vA6TdDWPj6YTV2RqQE3Viypxs`
+* `3AoR1NQ3dnEAdwFfbkBTWP4Kxjppg9ku2p`
+* `3P4URfNX8iR1G9LFYftEFUi5vp4ZsEPqfh`
+* `3K3Dbr8CaCQLd1kf7zJ3A9SU3Eyo1NvwQi`
+* `bc1q8rmdq7k3yfpupadvvkd430vdjwva72hua0gst4`
+
+=== Bitcoin Cash
+
+* `qph3s8p27pfg2lxgpzqmdel25tsmlryatyhxwzx3x5`
+
+=== Dash
+
+* `XdSrfZRP3gGEbtUpK8o9RV9S7LiGfDmTju`
+
+=== Ethereum
+
+* `0x19539a179ddf8a02b772557d5036bdd0ac0b0fa7`
+
+=== Litecoin
+
+* `LTzrJENnVYYRp8hMgUenoZuzEFLyaPzGQB`
+
+=== Monero
+
+* `46h7prr8CobGASRYKx36a7FNpQefBua6m7zHjLchodtjdahrZYmCiCuDK7g4CYiDnFBawFsDffMpFinwRYLMwd7QVV891GB`
