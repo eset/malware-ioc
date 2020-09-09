@@ -1,0 +1,53 @@
+= Linux/CDRThief -- Indicators of Compromise
+
+For a description of Linux/CDRThief, please see the article about
+https://www.welivesecurity.com/2020/09/10/who-callin-cdrthief-linux-voip-softswitches/[CDRThief]
+on https://www.welivesecurity.com[WeLiveSecurity].
+
+=== ESET detection names
+
+- Linux/CDRThief.A
+
+=== SHA-1 hashes
+
+----
+CC373D633A16817F7D21372C56955923C9DDA825
+8E2624DA4D209ABD3364D90F7BC08230F84510DB (UPX packed)
+FC7CCABB239AD6FD22472E5B7BB6A5773B7A3DAC
+8532E858EB24AE38632091D2D790A1299B7BBC87 (Corrupted)
+----
+
+=== C&C servers
+
+==== IP addresses
+
+* `119.29.173[.]65`
+* `129.211.157[.]244`
+* `129.226.134[.]180`
+* `150.109.79[.]136`
+* `34.94.199[.]142`
+* `35.236.173[.]187`
+
+==== File based mutexes
+
+----
+/dev/shm/.bin
+/dev/shm/.linux
+----
+
+==== Files created during malware update
+
+----
+/dev/shm/callservice
+/dev/shm/sys.png
+----
+
+==== Exfiltration encryption key (RSA)
+
+----
+-----BEGIN PUBLIC KEY-----
+MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCQ3k3GgS3FX4pI7s9x0krBYqbMcSaw4BPY91Ln
+tt5/X8s9l0BC6PUTbQcUzs6PPXhKKTx8ph5CYQqdWynxOLJah0FMMRYxS8d0HX+Qx9eWUeKRHm2E
+AtZQjdHxqTJ9EBpHYWV4RrWmeoOsWAOisvedlb23O0E55e8rrGGrZLhPbwIDAQAB
+-----END PUBLIC KEY-----
+----
