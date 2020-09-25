@@ -1,0 +1,21 @@
+= Krachulka Indicators of Compromise
+
+== Hashes
+
+=== Krachulka banking trojan
+
+[options="header"]
+|====
+| SHA-1                                      | Description              | ESET detection name
+| `83BCD611F0FD4D7D06C709BC5E26EB7D4CDF8D01` | Kracuhlka banking trojan | Win32/Spy.Krachulka.C
+| `FFE131ADD40628B5CF82EC4655518D47D2AB7A28` | Kracuhlka banking trojan | Win32/Spy.Krachulka.C
+| `4484CE3014627F8E2BB7129632D5A011CF0E9A2A` | Kracuhlka banking trojan | Win32/Spy.Krachulka.A
+|====
+
+=== Krachulka downloader
+
+[options="header"]
+|====
+| SHA-1                                      | Description          | ESET detection name
+| `20116A5F01439F669FD4BF77AFEB7EFE6B2175F3` | Kracuhlka downloader | Win32/TrojanDownloader.Banload.YJA
+|====

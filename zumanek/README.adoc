@@ -1,0 +1,22 @@
+= Zumanek Indicators of Compromise
+
+== Hashes
+
+=== Zumanek banking trojan
+
+[options="header"]
+|====
+| SHA-1                                      | Description            | ESET detection name
+| `69FD64C9E8638E463294D42B7C0EFE249D29C27E` | Zumanek banking trojan | Win32/Spy.Zumanek.DO
+| `59C955C227B83413B4BDF01F7D4090D249408DF2` | Zumanek banking trojan | Win32/Spy.Zumanek.DK
+| `4E49D878B13E475286C59917CC63DB1FA3341C78` | Zumanek banking trojan | Win32/Spy.Zumanek.DK
+|====
+
+=== Zumanek downloader
+
+[options="header"]
+|====
+| SHA-1                                      | Description              | ESET detection name
+| `2850B7A4E6695B89B81F1F891A48A3D34EF18636` | Zumanek downloader (MSI) | Win32/Spy.Zumanek.DN
+| `C936C3A661503BD9813CB48AD725A99173626AAE` | Zumanek downloader (MSI) | Win32/Spy.Zumanek.DM
+|====

@@ -1,0 +1,32 @@
+= Lokorrito Indicators of Compromise
+
+== Hashes
+
+=== Lokorrito banking trojan
+
+[options="header"]
+|====
+| SHA-1                                      | Description              | ESET detection name
+| `4249AA03E0F5142821DB2F1A769F3FE3DB63BE54` | Lokorrito banking trojan | Win32/Spy.Lokorrito.L
+| `D30F968741D4023CD8DAF716C78510C99A532627` | Lokorrito banking trojan | Win32/Spy.Lokorrito.A
+| `6837d826fbff3d81b0def4282d306df2ef59e14a` | Lokorrito banking trojan | Win32/Spy.Lokorrito.L
+|====
+
+=== Lokorrito backdoor module
+
+[options="header"]
+|====
+| SHA-1                                      | Description               | ESET detection name
+| `2F8F70220A9ABDCAA0868D274448A9A5819A3EBC` | Lokorrito backdoor module | Win32/Spy.Lokorrito.S
+| `0066035B7191ABB4DEEF99928C5ED4E232428A0D` | Lokorrito backdoor module | Win32/Spy.Lokorrito.R
+| `B29BB5DB1237A3D74F9E88FE228BE5A463E2DFA4` | Lokorrito backdoor module | Win32/Spy.Lokorrito.M
+|====
+
+=== Other Lokorrito tools
+
+[options="header"]
+|====
+| SHA-1                                      | Description      | ESET detection name
+| `119DC4233DF7B6A44DEC964A084F447553FACA46` | Spam tool        | Win32/SpamTool.Agent.NGO
+| `16C877179ADC8D5BFD516B5C42BF9D0809BD0BAE` | Password stealer | Win32/Spy.Banker.ADVQ
+|====
