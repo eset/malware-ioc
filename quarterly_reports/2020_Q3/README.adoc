@@ -1,0 +1,140 @@
+:toc:
+:toclevels: 2
+
+= Q3 2020 report -- Indicators of Compromise
+
+These plain text indicators of compromise are an annex to ESET's quarterly
+Threat Report for Q3 2020.
+
+The full Threat Report is available on
+https://www.welivesecurity.com[WeLiveSecurity] in PDF format at the follow URL:
+
+- https://www.welivesecurity.com/wp-content/uploads/2020/10/ESET_Threat_Report_Q32020.pdf
+
+
+== Gamaredon
+
+=== ESET detection names
+
+- Win32/Pterodo.ADH
+- Win32/Pterodo.ADJ.gen
+- Win32/Pterodo.AEJ
+- Win32/Pterodo.AGL
+
+=== SHA-1 hashes
+
+-----
+513E7DB316B01A34403806EBB4A6F01B16D6714B
+E96F913C60754DAF3F51884AF843B58D3CB3C99D
+31826FF6E5A58946047387BE91D77C585318DA08
+-----
+
+=== C&C servers
+
+- `++http://virginiana[.]space/index.html++`
+- `++http://ridibunda[.]xyz/index.html++`
+- `++http://barbatulus[.]xyz/<MAC addres>/home/log/HjwLX.dot++`
+- `++http://arvensis[.]xyz/<MAC address>/log/var/VEGWEHxp.dot++`
+
+== NewPass
+
+=== Samples
+
+[options="header"]
+|========================================
+|SHA-1 hash|Description|ESET Detection Name
+|`69F9DF8FF03C949BD89B44954DFC7F2B9874B217`|Dropper|Win64/Agent.JG
+|`F0DD2B59F121806BE2A32EAB99C70508AE3C383E`|Loader|Win64/Agent.JG
+|`642927729CF6E6F4CA02561401923D4D0E7676A6`|Backdoor|Win64/Agent.JG
+|========================================
+
+=== C&C servers
+
+- `++newshealthsport[.]com++`
+- `++utdtimes[.]com++`
+
+== Mekotio (Italian campaign)
+
+=== ESET detection names
+
+- Win64/Spy.Mekotio.A
+- JS/TrojanDownloader.Agent.VXX
+
+=== SHA-1 hashes
+
+----
+765FCA6893407EBF17C4E71C557A87DC4F963AD9
+13660189E0541F3DE89F979D33317431D075934F
+----
+
+=== File name
+
+- `MITGOVIT1208.msi`
+
+=== C&C servers
+
+- `++https://dwnfls[.]online/--/hXXps:/www[.]mit.gov.it/mit/sitephp=vclm=3id_cat=150++`
+- `++https://dwnfactur[.]online/--/hXXps:/www[.]mit.gov.it/mit/sitephp=vclm=3id_cat=150++`
+- `++https://mitgovit[.]online/--/hXXps:/www[.]mit.gov.it/mit/sitephp=vclm=3id_cat=150++`
+
+== GreyEnergy
+
+=== ESET detection names
+
+- Win32/GreyEnergy
+- Win64/GreyEnergy
+
+=== C&C server
+
+- `++https://185.153.196[.]94/UpdateServices/CF++`
+
+== Malicious MAXScripts
+
+=== ESET detection names
+
+- Win32/Agent.ACHE
+- Win32/Agent.ACKX
+- MSIL/Kryptik.XLW
+- MSIL/Agent.UAO
+
+=== Samples
+
+-----
+3FE7D1A0AED95EFD1759BB1C7B9E08064998BDEE
+E2DAC9DA03DD974CCCD72A681FC208A61351E07F
+C9FC6AAB9E6C47C0F40C51BC740FAA78821CE8EA
+81DC131F73BCCDA71E54FFF3388533030A335798
+B1757314437C2C1EEE7A6C50A1E9C31AC649A5B3
+E9BB2195EB98C8D43990A404E3FA809A895690E6
+65CE94144A9684F84C94990D5708116BFB464554
+31D36B6AAAFF7E50196D3A80DA73E65C6DFD0F1F
+-----
+
+=== C&C servers
+
+- `++175.197.40[.]61++`
+- `++http://175.197.40[.]61:3445/vLFnUf4++`
+- `++http://175.197.40[.]61:3445/TYEHVSjn2++`
+- `++http://175.197.40[.]61:3445/y5wgumYt++`
+- `++http://175.197.40[.]61:3445/eYOMAHg++`
+- `++http://175.197.40[.]61:3445/eYOMAHg++`
+- `++www.maxscript[.]cc++`
+- `++http://www.maxscript.cc/update/upscript[.]mse++`
+
+== Zebrocy (Sednit)
+
+=== ESET detection name
+
+- Win64/TrojanDownloader.Sednit.AA
+
+=== C&C server
+
+- `++http://31.7.62.103/tleaw.php++`
+
+=== SHA-1 hash
+
+- `3DC62F224D812A3A958FA766FF6D175579856743`
+
+=== Filename
+
+- `AVT_355_Call_for_Participation.exe`
