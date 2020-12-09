@@ -1,0 +1,78 @@
+:toc:
+:toclevels: 2
+
+= Operation StealthyTrident -- Indicators of Compromise
+
+These are the IoCs from
+http://www.welivesecurity.com/2020/12/10/luckymouse-ta428-compromise-able-desktop[
+"Operation StealthyTrident: corporate software under attack"]
+blogpost.
+
+== Samples
+
+=== Trojanized Able Desktop
+|=====
+|SHA1                                      |ESET Detection name
+|`0B0CF4ADA30797B0488857F9A3B1429F44335FB6`|Win32/LuckyMouse.BL
+|`B51835A5D8DA77A49E3266494A8AE96764C4C152`|Win32/Korplug.PO
+|=====
+
+=== Payload loader
+|=====
+|SHA1                                      |ESET Detection name
+|`23A227DD9B77913D15735A25EFB0882420B1DE81`|Win32/LuckyMouse.BL
+|=====
+
+=== HyperBro
+|=====
+|SHA1                                      |ESET Detection name
+|`8FFF5C6EB4DAEE2052B3578B73789EB15711FEEE`|Win32/HyperBro.AD
+|`6477783B302F4D893271F5522110650EB2C50BD1`|Win32/HyperBro.AF
+|=====
+
+=== Korplug
+|=====
+|SHA1                                      |ESET Detection name
+|`5D066113534A9E31F49BEFDA560CF8F8890496D0`|Win32/Korplug.ND
+|=====
+
+=== Tmanger
+|=====
+|SHA1                                      |ESET Detection name
+|`ED6CECFDAAEB7F41A824757862640C874EF3F7AE`|Win64/Spy.Tmanger.A
+|=====
+
+=== C&C domains
+----
+developer.firefoxapi[.]com
+----
+
+=== C&C IP addresses
+----
+45.77.173[.]124
+45.77.55[.]145
+139.180.208[.]225
+----
+
+=== C&C URLs
+----
+https://developer.firefoxapi[.]com/ajax
+https://139.180.208[.]225/ajax
+----
+
+=== MITRE ATT&CK matrix
+|=====
+|ID       |Name
+|T1195.002|Supply Chain Compromise: Compromise Software Supply Chain
+|T1204.002|User Execution: Malicious File
+|T1574.002|Hijack Execution Flow: DLL Side-Loading
+|T1140    |Deobfuscate/Decode Files or Information
+|T1574.002|Hijack Execution Flow: DLL Side-Loading
+|T1056.001|Input Capture: Keylogging
+|T1113    |Screen Capture
+|T1573.001|Encrypted Channel: Symmetric Cryptography
+|T1008    |Fallback Channels
+|T1095    |Non-Application Layer Protocol
+|T1071.001|Application Layer Protocol: Web Protocols
+|T1041    |Exfiltration Over C2 Channel
+|=====
