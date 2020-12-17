@@ -1,0 +1,46 @@
+:toc:
+:toclevels: 2
+
+= Operation SignSight -- Indicators of Compromise
+
+The blogpost about Operation SignSight is available on WeLiveSecurity at 
+https://www.welivesecurity.com/2020/12/17/operation-signsight-supply-chain-attack-southeast-asia.
+
+The https://www.misp-project.org[MISP] event is available in link:signsight-misp-event.json[`signsight-misp-event.json`].
+
+
+== Samples
+
+=== Trojanized GCA01
+
+[options="header"]
+|=====
+|SHA1                                      |ESET Detection name
+|`5C77A18880CF58DF9FBA102DD8267C3F369DF449`|Win32/TrojanDropper.Agent.SJQ
+|`B0E4E9BB6EF8AA7A9FCB9C9E571D8162B1B2443A`|Win32/TrojanDropper.Agent.SJQ
+|=====
+
+=== PhantomNet Dropper
+
+[options="header"]
+|=====
+|SHA1                                      |ESET Detection name
+|`9522F369AC109B03E6C16511D49D1C5B42E12A44`|Win32/TrojanDropper.Agent.SJQ
+|=====
+
+
+=== PhantomNet
+
+[options="header"]
+|=====
+|SHA1                                      |ESET Detection name
+|`989334094EC5BA8E0E8F2238CDF34D5C57C283F2`|Win32/PhantomNet.B
+|`5DFC07BB6034B4FDA217D96441FB86F5D43B6C62`|Win32/PhantomNet.A
+|=====
+
+== C&C Domains
+
+----
+office365.blogdns[.]com
+vgca.homeunix[.]org
+----
