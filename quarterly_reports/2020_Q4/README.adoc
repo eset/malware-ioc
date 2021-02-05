@@ -1,0 +1,219 @@
+:toc:
+:toclevels: 2
+
+= Q4 2020 report -- Indicators of Compromise
+
+These plain text indicators of compromise are an annex to ESET's quarterly
+Threat Report for Q4 2020.
+
+The full Threat Report is available on
+https://www.welivesecurity.com[WeLiveSecurity] in PDF format at the following URL:
+
+- https://www.welivesecurity.com/wp-content/uploads/2021/02/ESET_Threat_Report_Q42020.pdf
+
+
+== InvisiMole
+
+=== Samples
+
+[options="header"]
+|========================================
+|SHA-1 hash|Description|ESET Detection Name
+|`9453E8DE98CE976744B1A4E133AA69BC8A5C523A`|Trojanized software installer |Win32/InvisiMole.H
+|`0DDB0C5FA0362C7069CD9426FEE4E75564084D3E`|PowerShell script|PowerShell/InvisiMole.A
+|`B1F7906AD8D9D2338AF2BDD5E1FE4F0B9B2F4098`|TCP downloader|Win32/InvisiMole.H
+|`251CBC34C6E96216AFEDF80D0167EE15B91E0927`|TCP downloader|Win64/InvisiMole.G
+|`7AF72FE653E0AC2ECACD0898EEE45E7C4308C23E`|TCP downloader|Win64/InvisiMole.G
+|========================================
+
+=== File name
+
+- `execute.bat`
+
+=== Mutex name
+
+- `MDE~5`
+
+=== C&C servers
+
+- `++2ld[.]xyz++`
+- `++ro2[.]host++`
+- `++82.202.172[.]134++`
+- `++the-haba[.]com++`
+
+== Plead
+
+=== Signed samples
+
+-----
+2D093897B3057C8E5D5D5705016A7010730833E4
+913F7F3C5076DAFDE0A56B0CB043DD425CBB36D6
+-----
+
+=== Code signing certificates
+
+.GMDS COMERCIO, IMPORTACAO E REPRESENTACAO EIRELI
+-----
+Serial number: 0c39b8d27f7be8c728e486be144ea9d0
+Thumbprint: 32d363d2f3c4fc832c22ebf99ee7b3a6927d365a
+Subject CN: GMDS COMERCIO, IMPORTACAO E REPRESENTACAO EIRELI
+Subject OU: TI
+Subject O: GMDS COMERCIO, IMPORTACAO E REPRESENTACAO EIRELI
+Subject L: SÂO PAULO
+Subject S: sp
+Subject C: BR
+Valid from: Nov 20 00:00:00 2018 GMT
+Valid to: Nov 23 12:00:00 2020 GMT
+-----
+
+== PipeMon
+
+=== Samples
+
+[options="header"]
+|========================================
+|SHA-1 hash|Description|ESET Detection Name
+|`5D15492DE0C2EB5E389F0D98255378DCC60499E5`|PipeMon dropper|Win64/PipeMon.G
+|`D65889D6101F33D8A119C35967AA645614A9D008`|PipeMon dropper|Win64/PipeMon.G
+|`F334BFB629CDBDB6E493FC8FE398F31D877A3EA1`|PipeMon dropper|Win64/PipeMon.F
+|`0E2F32F9CC409027E054BA05BAA955808EBDEBA4`|PipeMon loader |Win64/PipeMon.H
+|`8E9AA020884030BDFD5B683E99CF1E3F0E97DFF2`|PipeMon loader |Win64/PipeMon.H
+|`2FB8007D8D4B3D2FD5EF5619E20053F0D1973A4B`|PipeMon loader |Win64/PipeMon.H
+|========================================
+
+=== File names
+
+----
+1.3.2.0_20201107223915.exe
+1.3.2.0_20201029171157.exe
+20201026114749.exe
+%SYSTEM32%\spool\prtprocs\x64\Secwinprint32.dll
+%SYSTEM32%\spool\prtprocs\x64\hpnppw72.dll
+----
+
+=== Registry
+
+----
+HKLM\SYSTEM\ControlSet001\Control\Print\Environments\Windows x64\Print Processors\BcastDVRUserService_6d67d\Driver
+HKLM\SYSTEM\ControlSet001\Control\Print\Environments\Windows x64\Print Processors\BcastDVRUserService_3c628o\Driver
+HKLM\SOFTWARE\Microsoft\Print\Components\Spooler-PPC\{94E5H6D48A-P895-85E1-54DD-080636B11A03}
+HKLM\SOFTWARE\Microsoft\Print\Components\Spooler-PPC\{38C8D238Q-923C-D782-9B8J-829263CD85C9}
+HKLM\SOFTWARE\Microsoft\Print\Components\Spooler-PPC\{94E5H6D48A-P895-85E1-54DD-080636B11A03}
+----
+
+=== C&C servers
+
+----
+update.npicgames[.]com
+n1.nplayon[.]com
+nt.nplayon[.]com
+----
+
+=== Code signing certificates
+
+.valofe Co.,Ltd.
+-----
+Serial number: 6a2fb2ef1896f3e1aee29995758cbf88
+Thumbprint: feb9a90f0d7c7b09152f88536b1798b55c2cf03e
+Subject CN: valofe Co.,Ltd.
+Subject O: valofe Co.,Ltd.
+Subject L: Geumcheon-gu
+Subject S: Seoul
+Subject C: KR
+Valid from: Tuesday, August 21, 2018 1:00:00 AM
+Valid to: Monday, September 20, 2021 12:59:59 AM
+-----
+
+.Movegames Co.,Ltd.
+-----
+Serial number: 1879d47062621c8888bc073c94b6fc0c
+Thumbprint: 37f38b9e87a37b09784dc96118e66e34d0dd4e4d
+Subject CN: Movegames Co.,Ltd.
+Subject O: Movegames Co.,Ltd.
+Subject L: Mapo-gu
+Subject S: Seoul
+Subject C: KR
+Valid from: Thursday, August 20, 2015 9:43:53 AM
+Valid to: Monday, September 19, 2016 9:43:53 AM
+-----
+
+== Operation In(ter)ception
+
+=== Samples
+
+[options="header"]
+|========================================
+|SHA-1 hash|Description|ESET detection name
+|`B2F20799ADF2C5E13617924E454BC31FBAAF71F2`|Downloader|Win32/Interception.A
+|`DC9753C0C5B3761C0A2D3BD917B009BA09AE50F6`|Exfiltration Tool|Win32/Interception.D
+|`A0BF7F6D5310DECD6B0F4A5A2BF8D1F963B2EB79`|Downloader|Win64/Interception.E
+|`F675C0AA46A18A6026F0D541FCE6A75688A018AA`|Malicious Word Document|VBA/TrojanDownloader.Agent.VJC
+|========================================
+
+=== File names
+
+----
+NG-Opportunity.doc
+C:\Dell\DellConfig.exe
+C:\Documents and Settings\All Users\Adobe\armsvc.exe
+C:\Intel\Thunderbolt\iprodifx.exe
+C:\ProgramData\OneDrive\OneDriveService.exe
+C:\ProgramLogs\AdvancedLog.exe
+C:\ProgramLogs\PerformLogs.vbs
+%APPDATA%\Microsoft\Windows\Templates\Report20230111-8982.diagsession
+----
+
+=== Code signing certificates
+
+.726 Lucile Development LLC
+----
+Serial number: 00ce68dea7bc5ba178e530b6292e78725b
+Thumbprint: 0a78f87d737abb69e05656df5b0249478ae144ba
+Subject CN = 726 Lucile Development LLC
+Subject O = 726 Lucile Development LLC
+Subject STREET = 125 Lincoln Ave Ste 225
+Subject L = Santa Fe
+Subject S = New Mexico
+Subject PostalCode = 87501
+Subject C = US
+Valid from: Tuesday, September 22, 2020 1:00:00 AM
+Valid to: Thursday, September 23, 2021 12:59:59 AM
+----
+
+.BRAIN TECHNOLOGY, INC
+----
+Serial number: 00fc07ddbd6721ebc11cc7ce6435a617f6
+Thumbprint: df1fb4f4685a1a994a7f7376b1049786f74f89b6
+Subject CN = BRAIN TECHNOLOGY, INC
+Subject O = BRAIN TECHNOLOGY, INC
+Subject STREET = ROUTE 1, BOX 157 B
+Subject L = INDIAHOMA
+Subject S = Oklahoma
+Subject PostalCode = 73552
+Subject C = US
+Valid from: Wednesday, February 26, 2020 1:00:00 AM
+Valid to: Friday, February 26, 2021 12:59:59 AM
+----
+
+=== Scheduled Tasks
+
+----
+ProgramLogsSrv
+ProgramLogsSrvSys
+OneDriveUpdate
+OneDriveService
+----
+
+=== Network indicators
+
+-----
+https://www.c-section[.]com/PaulhpGfx.xsl
+https://www.sfaonweb[.]com/marketplace.pdf
+https://domofon.flex[.]ru/statData.jpg
+http://crmute[.]com/custom.css
+https://crmute[.]com/ngca_detailed.docx
+https://www.apl-tec[.]com/ExportImport/Export/Exp.pdf
+https://www.apl-tec[.]com/WebAPL/img/address.jpg
+https://qfclindia[.]com/img/local.png
+https://qfclindia[.]com/login/about-en.docx
+-----
