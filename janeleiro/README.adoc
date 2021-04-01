@@ -1,0 +1,146 @@
+= Janeleiro, the time traveler -- Indicators of Compromise
+
+An analysis of Janeleiro is available as a https://www.welivesecurity.com/2021/04/06/janeleiro-time-traveler-new-old-banking-trojan-brazil/[blogpost on WeLiveSecurity].
+
+== SHA-1 hashes
+
+=== Version 0.0.4
+
+[options="header"]
+|====
+|SHA-1 malware                              |Description               |ESET Detection Name
+|`CF117E5CA26594F497E0F15106518FEE52B88D8D` |MSI file                  |MSIL/TrojanDownloader.Agent.FSC
+|`D16AC192499192F06A3903192A4AA57A28CCCA5A` .2+|Console.exe loader        |MSIL/TrojanDownloader.Agent.FSC
+|`462D6AD77860D3D523D2CAFBC227F012952E513C` |MSIL/Kryptik.TBD
+|`0A5BBEC328FDD4E8B2379AF770DF8B180411B05D` |LoadDllMSI.dll loader     |MSIL/TrojanDownloader.Agent.FSC
+|`0AA349050B7EF173BFA34B92687554E81EEB28FF` .2+|System.Logins.Initial.dll .2+|MSIL/Agent.TIX
+|`5B19E2D1950ADD701864D5F0F18A1111AAABEA28`
+|`186E590239083A5B54971CAB66A58301230164C2` .3+|System.Modules.Initial.dll|MSIL/Agent.TIX
+|`E1B2FD94F16237379E4CAD6832A6FCE7F543DC40` .2+|MSIL/Janeleiro.A
+|`4061B2FBEB7F1026E54EE928867169D1B001B7A5`
+|====
+
+=== Version 0.0.2A
+
+[options="header"]
+|====
+|SHA-1 malware                              |Description        |ESET Detection Name
+|`8674E61B421A905DA8B866A194680D08D27D77AE` .3+|Main Trojan Loader |MSIL/Agent.AAI
+|`2E5F7D5F680152E738B8910E694651D48126382A` .2+|MSIL/Janeleiro.A
+|`C3550501C26C3E0381958F64F744F60E5D24F459`
+|`06E4F11A2A6EF8284C6AAC5A924D186410257650` |Main Trojan        |MSIL/Agent.AAI
+|====
+
+=== Version 0.0.2B
+
+[options="header"]
+|====
+|SHA-1 malware                              |Description |ESET Detection Name
+|`291A5F0DF18CC68FA0DA1B7F401EAD17C9FBDD7F` .10+|MSI file    .20+|MSIL/Janeleiro.A
+|`FB246A5A1105B83DFA8032394759DBC23AB81529`
+|`349E81B7B6AB88C76F16A1844F864385A3A12A06`
+|`3A3A774FD04F151F0C0F21842E9ABBBFE6F68303`
+|`19C643AEDB930DF07F9156A731391DA7DEA4E087`
+|`E5EDDC8F7C5ED25FC467A2CBD1D67EB39C9D0D8F`
+|`87828A7339077F33DA64BB20271AE24EC25B18E8`
+|`A94B4EEA6C49A4075E0A6AFBFEEDE25E782765B2`
+|`277B390DE7617989231CC1E6A7AFFB7CD2F3652A`
+|`BD900FFA05EB6F544EED31402D4929131EC65735`
+|`6F6FF405F6DA50B517E82FF9D1A546D8F13EC3F7` .10+|Main Trojan
+|`742E0AEDC8970D47F16F5549A6B61D839485DE3C`
+|`5D092AFB9F6125C32FABC3CD3D88ADE3B1B691CA`
+|`E5FE4FC12D474DB109029C174C3A1D3358B79369`
+|`0601DA1DAAA18A7972F8B7F96FFFA93D8647DAB1`
+|`53E439602DDE84E98D60AD1A4D90D89CE6FDFC63`
+|`D92D98DAA3A2A483E9D079D6B911A0C4B6D8C6FE`
+|`D82917276C295FB987B8E89E958BDFA020502808`
+|`3CFE43789105A339181B900128799F86BA97A2BD`
+|`3EDCCBB31815F8EDD62B38894EC16C362B89C916`
+|====
+
+=== Version 0.0.3
+
+[options="header"]
+|====
+|SHA-1 malware                              |Description |ESET Detection Name
+|`455FAF2A741C28BA1EFCE8635AC0FCE935C080FF` .8+|MSI file    .15+|MSIL/Janeleiro.A
+|`D71EB97FC1F5FE50D608518D2820CB96F2A3376F`
+|`DA41D99196450E278760ED4FE7C404B01CC00E6F`
+|`EBE6DE68A55A779782F9F1F7E5272E779FA8A302`
+|`37FB60C732D8757611186448D9C2465571978602`
+|`3A616F26B5BA2491A2C208DA4978C797B091F896`
+|`583ABB9C3949A3879490E8BBE43B380496CE3E93`
+|`F6E3C3BF20862C04068E636B345FE80A84AAD97B`
+|`158DA5AB85BFAC471DC2B2EE66FD99AEF7432DBB` .7+|Main Trojan
+|`6BFAEFCC0930DA5A2BAEC19723C8C835A003D1EC`
+|`2241C67655CDB1939EA0B2AD3FE9545B26252AB5`
+|`25A71CF088D2921BCB93A8D1EAB79019094D6549`
+|`CDE07E292AE53EF679630CF6421C0B8E3852EDCC`
+|`ECE821C61D0FBA3BC9CD9730FB71C52521FA4F49`
+|`73AD622480B48697CA4497C6CAEFC75025FA0357`
+|====
+
+== Download URLs
+
+In the following `<NNNNNNNNNNN>` is a random number between _10000000000_ and _90000000000_.
+
+=== Downloading only Janeleiro
+
+----
+https://recuperaglobaldanfeonline.eastus.cloudapp.azure[.]com/nfedown.php?dw=<NNNNNNNNNNN>
+https://protocolo-faturamento-servico.brazilsouth.cloudapp.azure[.]com/nfedown.php?dw=<NNNNNNNNNN>
+https://acessoriapremierfantasiafaturas.eastus.cloudapp.azure[.]com/nfedown.php?dw=<NNNNNNNNNN>
+----
+
+=== Downloading Janeleiro and other Delphi banking trojans
+
+----
+https://portalrotulosfechamento.eastus.cloudapp.azure[.]com/nfedown.php?dw=<NNNNNNNNNN>
+https://servicosemitidosglobalnfe.southcentralus.cloudapp.azure[.]com/nfedown.php?dw=<NNNNNNNNNN>
+https://emissaocomprovanteatrasado.eastus.cloudapp.azure[.]com/nfedown.php?dw=<NNNNNNNNNN>
+----
+
+=== Downloading Delphi banking trojans
+
+----
+https://emitidasfaturasfevereiro.brazilsouth.cloudapp.azure[.]com/nfedown.php?dw=<NNNNNNNNNN>
+https://dinamicoscontratosvencidos.brazilsouth.cloudapp.azure[.]com/nfedown.php?dw=<NNNNNNNNNN>
+https://arquivosemitidoscomsucesso.eastus.cloudapp.azure[.]com/nfedown.php?dw=<NNNNNNNNNN>
+https://fatura-digital-arquiv-lo.brazilsouth.cloudapp.azure[.]com/nfedown.php?dw=<NNNNNNNNNN>
+https://nota-eletronica-servicos.brazilsouth.cloudapp.azure[.]com/nfedown.php?dw=<NNNNNNNNNN>
+https://eletronicadanfe.brazilsouth.cloudapp.azure[.]com/nfedown.php?dw=<NNNNNNNNNN>
+----
+
+== C&C Servers
+
+These are the IP addresses of the C&C servers where Janeleiro connects to
+report, receive commands and send data:
+
+----
+52.204.58[.]11
+35.174.60[.]172
+----
+
+These are the tracking URLs where Janeleiro sends information about the
+compromised system during installation:
+
+----
+http://tasoofile.us-east-1.elasticbeanstalk[.]com/count
+http://slkvemnemim.us-east-1.elasticbeanstalk[.]com/count
+http://checa-env.cf3tefmhmr.eu-north-1.elasticbeanstalk[.]com/cnt/
+----
+
+These are the URLs used by `System.Logins.dll` to exfiltrate the
+harvested data:
+
+----
+http://comunicador.duckdns[.]org/catalista/emails/checkuser.php
+http://comunicador.duckdns[.]org/catalista/lixo/index.php
+----
+
+IP addresses associated with the domain:
+
+----
+178.79.178[.]203
+138.197.101[.]4
+----
