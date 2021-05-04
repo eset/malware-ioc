@@ -1,0 +1,45 @@
+= Ousaban Indicators of Compromise
+
+The blog post about Ousaban "Ousaban – Private photo collection hidden in a
+CABinet" is available on WeLiveSecurity at https://www.welivesecurity.com/2021/05/05/ousaban-private-photo-collection-hidden-cabinet/.
+
+== Hashes
+
+[options="header"]
+|====
+| SHA-1                                      | Description            | ESET detection name
+| `C52BC5B0BDFC7D4C60DF60E88835E3145F7FB34F` | Ousaban banking trojan | Win32/Spy.Ousaban.G
+| `D04ACFAF74861DDC3B12E75658863DA65C03013F` | Ousaban JS downloader  | JS/TrojanDownloader.Banload.AAP
+| `9A6A4BF3B6E974E367982E5395702AFF8684D500` | Ousaban JS downloader  | JS/TrojanDownloader.Banload.AAP
+| `3E8A0B6400F2D02B6B8CD917C279EA1388494182` | Ousaban MSI downloader | Win32/Spy.Ousaban.W
+| `6946BFB8A519FED8EC8C30D9A56619F4E2525BEA` | Ousaban injector       | Win32/Spy.Ousaban.W
+| `E5DD2355E85B90D2D648B96C90676604A5C3AE48` | Ousaban support module | Win32/Spy.Ousaban.AB
+|====
+
+=== Abused legitimate applications
+
+[options="header"]
+|====
+| SHA-1                                      | EXE name                      | DLL name
+| `BA5493B08354AEE85151B7BBD15150A1C3F03D1D` | Avira.SystrayStartTrigger.exe | Avira.OE.NativeCore.dll
+| `7F6C820B00FC8C628E2420C388BBB9096A547DAA` | AudioGrabber.exe              | StarBurn.dll
+| `C5D5CF1B591C40344B20370C5EE5275356D312EC` | PlGen.exe                     | bass_fx.dll
+| `53045B8047CED049BBC7EBCB3D3299D2C465E8B9` | BlazeDVD.exe                  | SkinScrollBar.dll
+| `A6118D354D512DC29965E368F6C78AA3A42A27AD` | ImageGrabber.exe              | StarBurn.dll
+| `F9C71277CF05738275261D60A9E938CBA7232E0D` | nvsmartmaxapp.exe             | nvsmartmax.dll
+|====
+
+== Recent configuration file URLs
+
+- `++https://docs.google[.]com/document/d/1o9MlOhxIJq9tMOuUHJiw2eprQ-BGCA_ERnbF54dZ25w/edit++`
+- `++https://docs.google[.]com/document/d/1nQqifeYFsCcI7m-L1Y1oErkp50c-y670nfk7NTKOztg/edit++`
+- `++https://docs.google[.]com/document/d/13A6EBLMOOdvSL3u6IfyrPWbYREXNRVdDTiKzC6ZQx7U/edit++`
+- `++https://docs.google[.]com/document/d/1UiuqrzI_rrtsJQHqeSkp0sexhwU_VSje8AwS-U6KBPk/edit++`
+- `++https://docs.google[.]com/document/d/1VKxF3yKbwQZive-ZPCA4dAU1zOnZutJxY2XZA0YHa3M/edit++`
+- `++https://docs.google[.]com/document/d/19bXTaiFdY5iUqUWXl92Js7i9RoZSLJqcECgpp_4Kda4/edit++`
+- `++https://docs.google[.]com/document/d/1DDDmJzBVcNWhuj8JMRUVb7JlrVZ5kYBugR_INSS96No/edit++`
+- `++https://docs.google[.]com/document/d/1UbfOcHm-T9GCPiitqDRh5TNwZRNJ8_miEpLW-2ypU-I/edit++`
+- `++https://docs.google[.]com/document/d/1d1903AvDBYgOo0Pt9xBBnpCHwSerOpIi4l1b6M4mbT4/edit++`
+- `++https://docs.google[.]com/document/d/1JLuJKoxcd0vRqut8UeBjFJXzMDQ9OiY2ItoVIRq6Gw8/edit++`
+- `++https://docs.google[.]com/document/d/1EOwVDlYPV3gE7PSnLZvuTgUQXvOSN9alyN5aMw7bGeI/edit++`
+- `++https://docs.google[.]com/document/d/18sc6rZjk529iYF2iBTsmuNXvqDqTBSH45DhSZpuLv_U/edit++`
