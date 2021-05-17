@@ -1,0 +1,39 @@
+action: global
+title: InvisiMole PowerShell
+id: 3aac6b3a-3376-4199-9da7-25eed5fc8428
+status: experimental
+description: Detects InvisiMole shellcode loaded by PowerShell, as reported in February 2021
+references:
+    - https://www.welivesecurity.com/2021/02/08/eset-threat-report-q42020/
+author: ESET Research
+date: 2021/05/17
+tags:
+    - attack.execution
+    - attack.t1059.001
+falsepositives:
+    - Unlikely
+level: high
+---
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection:
+        CommandLine|contains|all:
+        - 'powershell'
+        - ' -enc '
+        - 'JABoAHMAdAByAD0AQAAiAA0ACgBiADcAYgAyADAAMAA1ADUANAA4ADgAOQBlADUANAA4ADgAZABhADQAMgA0ADA'
+        ParentCommandLine|contains: 'execute.bat'
+    condition: selection
+---
+logsource:
+    product: windows
+    service: powershell
+detection:
+    selection:
+        Message|contains|all:
+        - '$hstr=@'
+        - '$A::CryptStringToBinaryA'
+        - '$A::RtlDecompressBuffer'
+        - '5669727475616c41006c6c6f630000777300325f33322e646c6c80005753415374610038027002146f636b6574410000636f6e6e656374000072656376007365006e6400636c6f73651673021e00107401096f7074010185020001bb52caac0686010b0103746573745458435050050f2907'
+    condition: selection

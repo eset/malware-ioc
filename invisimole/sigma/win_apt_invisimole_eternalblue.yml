@@ -1,0 +1,22 @@
+action: global
+title: InvisiMole Artefacts
+id: 67c9bdff-2de7-4214-9734-6d48e1bf1381
+status: experimental
+description: Detects artefacts associated with lateral movement technique used by InvisiMole Group, as reported in June 2020
+references:
+    - https://www.welivesecurity.com/2020/06/18/digging-up-invisimole-hidden-arsenal/
+author: ESET Research
+date: 2021/05/17
+falsepositives:
+    - Unknown
+level: high
+---
+logsource:
+    category: image_load
+    product: windows
+detection:
+    selection:
+        ImageLoaded|endswith:
+            - '\stg0D0CE03.dll'
+            - '\stg0D33E0A.dll'
+    condition: selection

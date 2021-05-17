@@ -1,0 +1,23 @@
+title: Wireless Network Setup Settings Changed
+id: d574fff3-afe2-4c25-9f15-e6ddec18ae55
+status: experimental
+description: Detects manipulation of a registry key that allows to trigger an undocumented feature of legitimate setupSNK.exe, to load a custom DLL. This function is misused by InvisiMole Group to mask execution of malicious code, as reported in June 2020.
+references:
+    - https://www.welivesecurity.com/2020/06/18/digging-up-invisimole-hidden-arsenal/
+author: ESET Research
+date: 2021/05/17
+tags:
+    - attack.execution
+    - attack.t1203
+logsource:
+    category: registry_event
+    product: windows
+detection:
+    selection:
+        TargetObject:
+            - 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\FlashConfig\FlashConfigEnrollee'
+            - 'HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\FlashConfig\FlashConfigEnrollee'
+    condition: selection
+falsepositives:
+    - Legitimate use of the Wireless Network Setup Wizard
+level: low

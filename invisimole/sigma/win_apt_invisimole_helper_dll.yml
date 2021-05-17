@@ -1,0 +1,21 @@
+title: InvisiMole Helper DLLs dropped
+id: d03c192c-a432-42af-98f5-7fc9ae6c4989
+description: Detects DLL file names, as used by InvisiMole Group, reported in June 2018
+references:
+    - https://www.welivesecurity.com/2018/06/07/invisimole-equipped-spyware-undercover/
+author: ESET Research
+date: 2021/05/17
+falsepositives:
+    - Unknown
+level: low
+logsource:
+    category: file_event
+    product: windows
+detection:
+    selection1:
+        # 87ce2e7ca16f7b51012c93ac8d878c34dc334779'
+        TargetFilename|endswith: '\bass.dll'
+    selection2:
+        # f4090dd25967e98e007c713176ce11e14e30f67e'
+        TargetFilename|endswith: '\Rundll32Stub.dll'
+    condition: 1 of them

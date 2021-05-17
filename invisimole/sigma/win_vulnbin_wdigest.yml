@@ -1,0 +1,34 @@
+action: global
+title: Suspicious Load Of Legitimate Wdigest.dll Library
+id: 960d7c42-ac33-4bf1-a8f6-6a1624a37ccd
+status: experimental
+description: Detects suspicious cases of loading the legitimate Windows library wdigest.dll. Threat actors can bring the vulnerable, Windows XP version of the library to newer systems and exploit it for covert execution of malicious code. The rule detects instances when the wdigest.dll is unsigned (i.e. detected outside of the primary OS where it is signed by a catalog file), or instances when the library is loaded from outside of the default (system) folder. This technique is used by InvisiMole Group, as reported in June 2020.
+references:
+    - https://www.welivesecurity.com/2020/06/18/digging-up-invisimole-hidden-arsenal/
+author: ESET Research
+date: 2021/05/17
+falsepositives:
+    - The library intentionally copied outside of the system folder
+    - Legitimate use of older version of this library on newer OS
+level: low
+---
+logsource:
+    category: image_load
+    product: windows
+detection:
+    selection:
+        ImageLoaded|endswith: '\wdigest.dll'
+        Signed: "FALSE"
+    condition: selection
+---
+logsource:
+    category: image_load
+    product: windows
+detection:
+    selection:
+        ImageLoaded|endswith: '\wdigest.dll'
+    filter:
+        Image|contains:
+            - '\Windows\SysWOW64\wdigest.dll'
+            - '\Windows\system32\wdigest.dll'
+    condition: selection and not filter

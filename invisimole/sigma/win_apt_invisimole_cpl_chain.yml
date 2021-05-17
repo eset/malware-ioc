@@ -1,0 +1,55 @@
+action: global
+title: InvisiMole Control Panel Misuse Chain
+id: d57fd9ea-0ed5-4435-bff0-c998f0feeacf
+status: experimental
+description: Detects artefacts associated with InvisiMole Control Panel persistence chain, as reported in June 2020
+references:
+    - https://www.welivesecurity.com/2020/06/18/digging-up-invisimole-hidden-arsenal/
+author: ESET Research
+date: 2021/05/17
+tags:
+    - attack.defense_evasion
+    - attack.execution
+    - attack.persistence
+    - attack.t1218.002
+    - attack.t1059.007
+    - attack.t1547.001
+    - attack.t1547.009
+falsepositives:
+    - Unknown
+level: high
+---
+logsource:
+    category: registry_event
+    product: windows
+    definition: 'Note that you have to configure logging events associated with this registry key'
+detection:
+    selection:
+        TargetObject: 'HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Control Panel\CPLs\infocard'
+        Details|endswith: '\Microsoft\AddIns\infocardadd.cpl'
+    condition: selection
+---
+logsource:
+    category: file_event
+    product: windows
+detection:
+    selection:
+        TargetFilename|endswith:
+            - '\Startup\Control Panel.lnk'
+            - '\AppData\Roaming\Control\Control.js'
+            - '\Microsoft\AddIns\infocardadd.cpl'
+            - '\Microsoft\AddIns\imageapplet.dat'
+    condition: selection
+---
+logsource:
+    category: image_load
+    product: windows
+    definition: 'Note that you have to configure logging for loading CPL files'
+detection:
+    filename:
+        ImageLoaded|endswith: '\Microsoft\AddIns\infocardadd.cpl'
+    hash:
+        sha1:
+            - '9f64fec50d4447175459aab33bc9126f9a3370d8'
+            - 'a3aff8ce55907daa1f3360ded01bcf3f6f9d0cf2'
+    condition: 1 of them

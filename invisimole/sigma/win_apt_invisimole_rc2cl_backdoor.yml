@@ -1,0 +1,135 @@
+action: global
+title: InvisiMole RC2CL Backdoor
+id: 314fc5f4-f8a1-4159-8097-c4337eeb0267
+status: experimental
+description: Detects artefacts associated with InvisiMole RC2CL backdoor, as reported in 2018 and 2020
+references:
+    - https://www.welivesecurity.com/2018/06/07/invisimole-equipped-spyware-undercover/
+    - https://www.welivesecurity.com/2020/06/18/digging-up-invisimole-hidden-arsenal/
+author: ESET Research
+date: 2021/05/17
+tags:
+    - attack.collection
+    - attack.defense_evasion
+    - attack.t1112
+    - attack.t1074.001
+detection:
+    condition: 1 of them
+falsepositives:
+    - Unknown
+level: high
+---
+logsource:
+    category: registry_event
+    product: windows
+detection:
+    selection:
+        TargetObject:
+            - 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Console\Settings'
+            - 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Console\Type'
+            - 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OLE\Common'
+            - 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OLE\Current'
+            - 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OLE\ENC'
+            - 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OLE\FFLT'
+            - 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OLE\Flag1'
+            - 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OLE\FlagLF'
+            - 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OLE\FlagLF2'
+            - 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OLE\IfData'
+            - 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OLE\INFO'
+            - 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OLE\InstallA'
+            - 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OLE\InstallB'
+            - 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OLE\LegacyImpersonationNumber'
+            - 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OLE\LM'
+            - 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OLE\MachineAccessStateData'
+            - 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OLE\MachineState 0'
+            - 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OLE\RPT'
+            - 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OLE\SP2'
+            - 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OLE\SP3'
+            - 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OLE\SettingsMC'
+            - 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OLE\SettingsSR1'
+            - 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OLE\SettingsSR2'
+            - 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Console\BSKS'
+            - 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Console\Common'
+            - 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Console\DisableFM'
+            - 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Console\Edit'
+            - 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Console\ENC'
+            - 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Console\ENCEx'
+            - 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Console\ENCEx2'
+            - 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Console\FFLT'
+            - 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Console\Flag1'
+            - 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Console\FlagLF'
+            - 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Console\FlagLF2'
+            - 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Console\IfData'
+            - 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Console\INFO'
+            - 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Console\InstallA'
+            - 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Console\InstallB'
+            - 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Console\LastFD'
+            - 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Console\LegacyImpersonationNumber'
+            - 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Console\LM'
+            - 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Console\MachineAccessStateData'
+            - 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Console\MachineAT'
+            - 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Console\MachineDataUM'
+            - 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Console\MachineNW'
+            - 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Console\MachineState 0'
+            - 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Console\MFLT'
+            - 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Console\OverMin'
+            - 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Console\RPT'
+            - 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Console\SettingsFM'
+            - 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Console\SettingsMC'
+            - 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Console\SettingsSR1'
+            - 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Console\SettingsSR2'
+            - 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Console\SP2'
+            - 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Console\SP3'
+            - 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Console\UseDFlag'
+            - 'HKEY_CURRENT_USER\Software\Microsoft\Direct3D\BSKS'
+            - 'HKEY_CURRENT_USER\Software\Microsoft\Direct3D\DisableFM'
+            - 'HKEY_CURRENT_USER\Software\Microsoft\Direct3D\Edit'
+            - 'HKEY_CURRENT_USER\Software\Microsoft\Direct3D\ENCEx'
+            - 'HKEY_CURRENT_USER\Software\Microsoft\Direct3D\ENCEx2'
+            - 'HKEY_CURRENT_USER\Software\Microsoft\Direct3D\LastFD'
+            - 'HKEY_CURRENT_USER\Software\Microsoft\Direct3D\MachineAT'
+            - 'HKEY_CURRENT_USER\Software\Microsoft\Direct3D\MachineDataUM'
+            - 'HKEY_CURRENT_USER\Software\Microsoft\Direct3D\MachineNW'
+            - 'HKEY_CURRENT_USER\Software\Microsoft\Direct3D\MFLT'
+            - 'HKEY_CURRENT_USER\Software\Microsoft\Direct3D\OverMin'
+            - 'HKEY_CURRENT_USER\Software\Microsoft\Direct3D\SettingsFM'
+            - 'HKEY_CURRENT_USER\Software\Microsoft\Direct3D\UseDFlag'
+            - 'HKEY_CURRENT_USER\Software\Microsoft\Direct3D\Common'
+            - 'HKEY_CURRENT_USER\Software\Microsoft\Direct3D\Current'
+            - 'HKEY_CURRENT_USER\Software\Microsoft\Direct3D\ENC'
+            - 'HKEY_CURRENT_USER\Software\Microsoft\Direct3D\FFLT'
+            - 'HKEY_CURRENT_USER\Software\Microsoft\Direct3D\Flag1'
+            - 'HKEY_CURRENT_USER\Software\Microsoft\Direct3D\FlagLF'
+            - 'HKEY_CURRENT_USER\Software\Microsoft\Direct3D\FlagLF2'
+            - 'HKEY_CURRENT_USER\Software\Microsoft\Direct3D\IfData'
+            - 'HKEY_CURRENT_USER\Software\Microsoft\Direct3D\INFO'
+            - 'HKEY_CURRENT_USER\Software\Microsoft\Direct3D\InstallA'
+            - 'HKEY_CURRENT_USER\Software\Microsoft\Direct3D\InstallB'
+            - 'HKEY_CURRENT_USER\Software\Microsoft\Direct3D\LegacyImpersonationNumber'
+            - 'HKEY_CURRENT_USER\Software\Microsoft\Direct3D\LM'
+            - 'HKEY_CURRENT_USER\Software\Microsoft\Direct3D\MachineAccessStateData'
+            - 'HKEY_CURRENT_USER\Software\Microsoft\Direct3D\MachineState 0'
+            - 'HKEY_CURRENT_USER\Software\Microsoft\Direct3D\RPT'
+            - 'HKEY_CURRENT_USER\Software\Microsoft\Direct3D\SP2'
+            - 'HKEY_CURRENT_USER\Software\Microsoft\Direct3D\SP3'
+            - 'HKEY_CURRENT_USER\Software\Microsoft\Direct3D\Settings'
+            - 'HKEY_CURRENT_USER\Software\Microsoft\Direct3D\SettingsMC'
+            - 'HKEY_CURRENT_USER\Software\Microsoft\Direct3D\SettingsSR1'
+            - 'HKEY_CURRENT_USER\Software\Microsoft\Direct3D\SettingsSR2'
+            - 'HKEY_CURRENT_USER\Software\Microsoft\Direct3D\Type'
+---
+logsource:
+    category: file_event
+    product: windows
+detection:
+    selection1:
+        TargetFilename|endswith:
+            - 'fl_*\strcn*\fdata.dat'
+            - 'fl_*\strcn*\index.dat'
+            - '~mrc_*.tmp'
+            - '~src_*.tmp'
+            - '~wbc_*.tmp'
+            - 'sc\~sc*.tmp'
+            - '~zlp\zdf_*.data'
+    selection2:
+        TargetFilename|contains: '~lcf\tfl_'

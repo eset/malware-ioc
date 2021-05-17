@@ -1,0 +1,35 @@
+action: global
+title: Suspicious Execution of Rundll32.exe
+id: bd110e96-b179-428b-9546-b17acdbe3d9c
+status: experimental
+description: Detects instances when Rundll32.exe is executed outside of the system folder, or when Rundll32.exe is unsigned. InvisiMole Group uses a Windows XP version of Rundll32.exe to load and exploit a vulnerable Windows XP library. As Rundll32.exe is signed by a catalog file, older versions will not be signed on newer OS versions which can trigger this detection.
+references:
+    - https://www.welivesecurity.com/2020/06/18/digging-up-invisimole-hidden-arsenal/
+author: ESET Research
+date: 2021/05/17
+falsepositives:
+    - Rundll32.exe intentionally copied outside of the system folder.
+    - Legitimate use of older version of Rundll32.exe on newer OS
+level: low
+---
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection:
+        Image|endswith: 'rundll32.exe'
+    filter:
+        Image|endswith:
+            - '\Windows\SysWOW64\rundll32.exe'
+            - '\Windows\system32\rundll32.exe'
+    condition: selection and not filter
+---
+logsource:
+    category: image_load
+    product: windows
+detection:
+    selection:
+        Image|endswith:
+            - 'rundll32.exe'
+        Signed: "FALSE"
+    condition: selection

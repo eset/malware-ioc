@@ -1,0 +1,63 @@
+action: global
+title: InvisiMole SMInit Exploit Chain
+id: aeacf6b7-7ac1-4bd8-9196-4111081b6065
+status: experimental
+description: Detects artefacts associated with InvisiMole SMInit exploit persistence chain, as reported in June 2020
+references:
+    - https://www.welivesecurity.com/2020/06/18/digging-up-invisimole-hidden-arsenal/
+author: ESET Research
+date: 2021/05/17
+tags:
+    - attack.execution
+    - attack.persistence
+    - attack.t1203
+    - attack.t1053.005
+falsepositives:
+    - Unknown
+level: high
+---
+logsource:
+    category: file_event
+    product: windows
+detection:
+    selection:
+        TargetFilename|endswith:
+            - '\AppData\Roaming\Microsoft\Sessions\SMInit.exe'
+            - '\AppData\Roaming\Microsoft\Sessions\hskin.dll'
+            - '\AppData\Roaming\Microsoft\Sessions\TVPSkin.dll'
+            - '\AppData\Roaming\Microsoft\Sessions\Settings.ini'
+    condition: selection
+---
+logsource:
+    category: registry_event
+    product: windows
+detection:
+    selection:
+        TargetObject|contains:
+            - 'HKEY_CURRENT_USER\Software\Microsoft\Feeds\SyncData'
+            - 'HKEY_CURRENT_USER\Software\Microsoft\Feeds\SyncImage'
+    condition: selection
+---
+logsource:
+    product: windows
+    service: security
+    definition: 'Note that you have to configure logging for Task Scheduler events'
+detection:
+    selection:
+        EventID: 4698
+        TaskName: 'MSST'
+    condition: selection
+---
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    hash:
+        sha1: '2161A471B598EA002FC2A1CC4B65DBB8DA14A88E'
+    cmdline:
+        ParentCommandLine|contains:
+            - 'rundll32.exe shell32.dll,ShellExec_RundDLL'
+            - '\AppData\Roaming\Microsoft\Sessions\SMInit'
+    path:
+        Image|endswith: '\AppData\Roaming\Microsoft\Sessions\SMInit.exe'
+    condition: hash and (cmdline or path)

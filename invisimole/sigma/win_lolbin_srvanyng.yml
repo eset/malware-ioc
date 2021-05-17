@@ -1,0 +1,23 @@
+title: Srvany-ng Tool Executed
+id: ec1094c1-fce9-47e1-a804-1c73959b4623
+status: experimental
+description: Detects execution of legitimate srvany-ng tool, that allows running any Windows application as a service. This LOLBin is misused by InvisiMole Group to mask execution of malware, as reported in June 2020.
+references:
+    - https://www.welivesecurity.com/2020/06/18/digging-up-invisimole-hidden-arsenal/
+    - https://github.com/birkett/srvany-ng
+author: ESET Research
+date: 2021/05/17
+tags:
+    - attack.persistence
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    hash:
+        sha1: '9987c0b97cb6a0239d3af6e5a70b552e1c38810f'
+    filename:
+        Image|endswith: '\srvany-ng.exe'
+    condition: 1 of them
+falsepositives:
+    - Legitimate use of srvany-ng tool
+level: medium

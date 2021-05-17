@@ -1,0 +1,68 @@
+action: global
+title: InvisiMole Wdigest Exploit Chain
+id: b498a9ec-d8da-47f7-8584-5ee6aeca1d39
+status: experimental
+description: Detects artefacts associated with InvisiMole Wdigest exploit persistence chain, as reported in June 2020
+references:
+    - https://www.welivesecurity.com/2020/06/18/digging-up-invisimole-hidden-arsenal/
+author: ESET Research
+date: 2021/05/17
+tags:
+    - attack.execution
+    - attack.persistence
+    - attack.t1203
+    - attack.t1053.005
+detection:
+    condition: 1 of them
+falsepositives:
+    - Legitimate use of the Wireless Network Setup Wizard
+level: high
+---
+logsource:
+    category: registry_event
+    product: windows
+detection:
+    selection1:
+        TargetObject:
+            - 'HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\M'
+            - 'HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\A'
+            - 'HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\B'
+            - 'HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\C'
+            - 'HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\D'
+            - 'HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\ODBC\M'
+            - 'HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\ODBC\A'
+            - 'HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\ODBC\B'
+            - 'HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\ODBC\C'
+            - 'HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\ODBC\D'
+    selection2:
+        TargetObject: 'HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\CsPower\Parameters\ServiceDll'
+        Details|endswith: '\System32\FXSCOMPOSE.dll'
+    selection3:
+        TargetObject: 'HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\CsPower\Parameters\ServiceMain'
+        Details: 'HrSelectEmailRecipient'
+
+---
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection1:
+        ParentImage|endswith: 'svchost.exe'
+        CommandLine|contains: 'rundll32.exe Shell32.dll ShellExec_RunDLL cmd.exe /c mkdir SMRTNTKY\MessageB.txt'
+    selection2:
+        ParentImage|endswith: 'svchost.exe'
+        CommandLine|contains: '\Windows\SysWOW64\wbem\setupSNK.exe'
+    selection3:
+        ParentImage|endswith: 'svchost.exe'
+        sha1: 'ee7d06fc93d3c608b48823d1444148327330015a'
+---
+logsource:
+    category: file_event
+    product: windows
+detection:
+    selection:
+        TargetFilename|endswith:
+        - '\Windows\SysWOW64\drivers\Rundll32.exe'
+        - '\Windows\SysWOW64\drivers\wdigest.dll'
+        - '\Windows\SysWOW64\wbem\setupSNK.exe'
+        - '\Microsoft\Installer\kb043921.exe'

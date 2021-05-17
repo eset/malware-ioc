@@ -1,0 +1,105 @@
+action: global
+title: InvisiMole Speedfan Exploit Chain
+id: 71745aa9-9ac0-444e-9685-af788989d2f7
+status: experimental
+description: Detects artefacts associated with InvisiMole Speedfan exploit persistence chain, as reported in June 2020
+references:
+    - https://www.welivesecurity.com/2020/06/18/digging-up-invisimole-hidden-arsenal/
+author: ESET Research
+date: 2021/05/17
+tags:
+    - attack.defense_evasion
+    - attack.execution
+    - attack.persistence
+    - attack.t1202
+    - attack.t1569.002
+    - attack.t1543.003
+falsepositives:
+    - Unknown
+level: high
+---
+logsource:
+    category: file_event
+    product: windows
+detection:
+    selection:
+        TargetFilename|endswith:
+        - '\Windows\system32\mscorscvs.exe'
+        - '\Windows\system32\drivers\NGEN Framework\NGEN.exe'
+        - '\Windows\system32\drivers\NGEN Framework\NGEN.cab'
+    condition: selection
+---
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    srvanyng:
+        sha1: '9987c0b97cb6a0239d3af6e5a70b552e1c38810f'
+    winapiexec_path:
+        Image|endswith: '\intel_log64.exe'
+        ParentCommandLine|endswith:
+            - '\NGEN.exe'
+            - '\winapiexec.exe'
+            - '\winapiexec64.exe'
+    winapiexec_hash:
+        sha1:
+            - '9fdb5b3311ba5b61ff9008469dbaff271c29fa51'
+            - '4a6dc6a32a777dc5dd47221bf79604bc0258a987'
+    commandline:
+        CommandLine|contains:
+            - 'CreateFileW *Ngen.cab* 0x80000000 0 0 3 0 0'
+            - 'EnumUILanguagesA $$:1 4 $$:1'
+    condition: (srvanyng or winapiexec_hash or winapiexec_path) and commandline
+---
+logsource:
+    category: registry_event
+    product: windows
+detection:
+    selection1:
+        TargetObject: 'HKEY_LOCAL_MACHINE\SYSTEM\*ControlSet*\services\clr_optimization_v2.0.51527_X86\ImagePath'
+        Details|endswith: '\mscorscvs.exe'
+    selection2:
+        TargetObject: 'HKEY_LOCAL_MACHINE\SYSTEM\*ControlSet*\services\clr_optimization_v2.0.51527_X86\DisplayName'
+        Details: 'Microsoft .NET Framework NGEN v2.0.51527_X86'
+    selection3:
+        TargetObject: 'HKEY_LOCAL_MACHINE\SYSTEM\*ControlSet*\services\clr_optimization_v2.0.51527_X86\Parameters\Application'
+        Details|endswith: '\drivers\NGEN Framework\NGEN.exe'
+    selection4:
+        TargetObject: 'HKEY_LOCAL_MACHINE\SYSTEM\*ControlSet*\services\clr_optimization_v2.0.51527_X86\Parameters\AppParameters'
+        Details|contains:
+            - 'VirtualAlloc 0 0x20000 0x3000 0x40'
+            - 'CreateFileW *Ngen.cab* 0x80000000 0 0 3 0 0'
+            - 'SetFilePointer $$:7 64 0 0'
+            - 'ReadFile $$:7 $$:1 0x20000 $b:4 0'
+            - 'CloseHandle $$:7'
+            - 'EnumUILanguagesA $$:1 4 $$:1'
+    selection5:
+        TargetObject|contains:
+            - 'HKEY_LOCAL_MACHINE\software\microsoft\drm'
+            - 'HKEY_LOCAL_MACHINE\software\microsoft\windows\currentversion'
+            - 'HKEY_LOCAL_MACHINE\software\microsoft\windows\currentversion\ext'
+            - 'HKEY_LOCAL_MACHINE\software\microsoft\function discovery\registrystore\publication\explorer'
+        TargetObject|endswith:
+            - '1Extylc8fC5X1PL'
+            - '1Extylc8fC5X1HK'
+            - '1Extylc8fC5X1RK'
+            - '1Extylc8fC5X2PL'
+            - '1Extylc8fC5X2HK'
+            - '1Extylc8fC5X2RK'
+            - '1Extylc8fC5X3PL'
+            - '1Extylc8fC5X3HK'
+            - '1Extylc8fC5X3RK'
+    condition: 1 of them
+---
+logsource:
+    category: image_load
+    product: windows
+detection:
+    selection:
+        ImageLoaded|endswith:
+            - '\NlsModels0019.dll'
+            - '\NLSModels0022.dll '
+            - '\osppc.dll'
+            - '\osppcext.dll'
+            - '\WptsExtensions.dll'
+    condition: selection

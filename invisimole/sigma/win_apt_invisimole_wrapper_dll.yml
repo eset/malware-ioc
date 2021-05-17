@@ -1,0 +1,50 @@
+action: global
+title: InvisiMole Wrapper DLL Loaded
+id: 82880fba-a624-4fff-841f-feae655a6828
+status: experimental
+description: Detects process activity associated with InvisiMole loader, as reported in 2018
+references:
+    - https://www.welivesecurity.com/2018/06/07/invisimole-equipped-spyware-undercover/
+author: ESET Research
+date: 2021/05/17
+tags:
+    - attack.defense_evasion
+    - attack.t1574.001
+falsepositives:
+    - Unknown
+level: high
+---
+logsource:
+    category: image_load
+    product: windows
+detection:
+    filename:
+        Image|endswith: '\rundll32.exe'
+        ImageLoaded|endswith:
+            - 'Windows\mpr.dll'
+            - 'Windows\fxsst.dll'
+            - 'Windows\winmm.dll'
+    hash:
+        sha1:
+            - '5EE6E0410052029EAFA10D1669AE3AA04B508BF9'
+            - '2FCC87AB226F4A1CC713B13A12421468C82CD586'
+            - 'B6BA65A48FFEB800C29822265190B8EAEA3935B1'
+            - 'C8C4B6BCB4B583BA69663EC3AED8E1E01F310F9F'
+    condition: 1 of them
+---
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection:
+        ParentImage|endswith:
+            - '\Windows\explorer.exe'
+            - '\Windows\svchost.exe'
+        Image|endswith: '\rundll32.exe'
+        CommandLine|contains:
+            - '\mpr.dll'
+            - '\fxsst.dll'
+            - '\winmm.dll'
+        CommandLine|endswith: 'GetDataLength'
+    condition: selection
+

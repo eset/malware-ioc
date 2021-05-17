@@ -1,0 +1,70 @@
+action: global
+title: InvisiMole RC2FM backdoor
+id: 3a1c6d7c-e910-428d-a054-56af50d9fb0c
+status: experimental
+description: Detects artefacts associated with InvisiMole RC2FM backdoor, as reported in 2018 and 2020
+references:
+    - https://www.welivesecurity.com/2018/06/07/invisimole-equipped-spyware-undercover/
+    - https://www.welivesecurity.com/2020/06/18/digging-up-invisimole-hidden-arsenal/
+author: ESET Research
+date: 2021/05/17
+tags:
+    - attack.collection
+    - attack.defense_evasion
+    - attack.t1112
+    - attack.t1074.001
+detection:
+    condition: 1 of them
+falsepositives:
+    - Unknown
+level: high
+---
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection1:
+        sha1:
+            - 'A5A20BC333F22FD89C34A532680173CBCD287FF8'
+            - 'e3bf27f1303bfdb877d1699d5b480342a9a2fe58'
+            - '27fc1dcb1b3dca3e496f799a2944e4fb070af39c'
+            - 'e1599fb73dde78531bbf65063f10f239aef29d70'
+    selection2:
+        Image|endswith: 'Realtek\Drivers\Drv7\DP_Sound_Realtek_wnt\A6305_WDM\alcrmv.exe'
+---
+logsource:
+    category: registry_event
+    product: windows
+detection:
+    selection:
+        TargetObject:
+            - 'HKEY_CURRENT_USER\Software\Microsoft\IE\Cache\Index'
+            - 'HKEY_CURRENT_USER\Software\Microsoft\IE\SecureProtocols'
+            - 'HKEY_CURRENT_USER\Software\Microsoft\IE\Thumbnails'
+---
+logsource:
+    category: file_event
+    product: windows
+detection:
+    selection1:
+        TargetFilename|contains:
+            - '\Microsoft\Internet Explorer\Cache\AMB6HER8'
+            - '\Microsoft\Internet Explorer\Cache\Y68JG1TH'
+            - '\Microsoft\Internet Explorer\Cache\OUB1N96O'
+            - '\Microsoft\Internet Explorer\Cache\V2JMDODG'
+            - '\Microsoft\Internet Explorer\Cache\KQP70AQV'
+            - '\Microsoft\Internet Explorer\Cache\74BWF9JV'
+            - '\Microsoft\Internet Explorer\Cache\MX0ROSB1'
+            - '\Microsoft\Internet Explorer\Cache\4AINFWUJ'
+            - '\Microsoft\Internet Explorer\Cache\6FFT03MB'
+            - '\Microsoft\Internet Explorer\Cache\W9U2CJ6T'
+            - '\Microsoft\Internet Explorer\Cache\NI8NKODB'
+            - '\Microsoft\Internet Explorer\Cache\0IOQ61KI'
+            - '\Microsoft\Internet Explorer\Cache\7KWRPZWK'
+            - '\Microsoft\Internet Explorer\Cache\CZPOL9V4'
+        TargetFilename|endswith:
+            - 'content.dat'
+            - 'cache.dat'
+            - 'index.dat'
+    selection2:
+        TargetFilename|endswith: '\Microsoft\Internet Explorer\Cache\index0.dat'
