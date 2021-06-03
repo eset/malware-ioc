@@ -1,0 +1,122 @@
+:toc:
+:toclevels: 2
+
+= T1 2021 report -- Indicators of Compromise
+
+These plain text indicators of compromise are an annex to ESET's Threat Report for T1 2021.
+
+The full Threat Report is available on
+https://www.welivesecurity.com[WeLiveSecurity] in PDF format at the following URL:
+
+- https://www.welivesecurity.com/wp-content/uploads/2021/05/eset_threat_report_t12021.pdf
+
+
+== iOS/Spy.Postlo.A malicious iOS tweak
+
+=== Samples
+
+-----
+78B4DC91B1D6C7510009CF83A1E657281193C346
+0DD45321B1C764608DFAD400C15DE85C189B21CE
+-----
+
+== Lazarus: 2 TOY GUYS campaign
+
+===  SHA-1 hashes of samples with artifacts from Greek mythology
+
+-----
+8CE0B32135ACD6E80F600688D4716B70780397BD
+D154645FA6409B947235A6A7BA5A82C3DED25A08
+-----
+
+===  SHA-1 hashes of examples of signed samples
+
+-----
+A9B253479A1723875711EA68059D890154119459
+3ABFEC6FC3445759730789D4322B0BE73DC695C7
+3D311117D09F4A6AD300E471C2FB2B3C63344B1D
+9A8B7F11104156F0DF4F07827EC12E5C2300C4EE
+9757D92DCB5FC253783E8A1D2702BF0F1196D4AB
+57B6C0CBAC424C8C966CB7F56E74668920462826
+F150325DF166C93B24770F8E6E38EC1DA5A99CBF
+-----
+
+=== Code signing certificates
+
+.2 TOY GUYS LLC
+-----
+Serial number: 00818631110b5d14331dac7e6ad998b902
+Thumbprint: c93082334ef8c2d6a0a1823cdf632c0d75d56377
+Subject CN: 2 TOY GUYS LLC
+Subject O: 2 TOY GUYS LLC
+Subject L: Davie
+Subject S: Florida
+Subject C: US
+Valid from: October 21 00:00:00 2019 GMT
+Valid to: October 21 23:59:59 2020 GMT
+-----
+
+."A" MEDICAL OFFICE, PLLC
+-----
+Serial number: 1127ca3abddf4a05c6d574b2baece68f
+Thumbprint: 3a22dc4054a34aecbacbcadabdcc2489b1271404
+Subject CN: "A" MEDICAL OFFICE, PLLC
+Subject O: "A" MEDICAL OFFICE, PLLC
+Subject L: BROOKLYN
+Subject S: New York
+Subject C: US
+Valid from: October 15 00:00:00 2020 GMT
+Valid to: October 16 23:59:59 2021 GMT
+-----
+
+.BRAIN TECHNOLOGY, INC
+-----
+Serial number: 00fc07ddbd6721ebc11cc7ce6435a617f6
+Thumbprint: df1fb4f4685a1a994a7f7376b1049786f74f89b6
+Subject CN: BRAIN TECHNOLOGY, INC
+Subject O: BRAIN TECHNOLOGY, INC
+Subject L: INDIAHOMA
+Subject S: Oklahoma
+Subject C: US
+Valid from: February 26 00:00:00 2020 GMT
+Valid to: February 26 23:59:59 2021 GMT
+-----
+
+.726 Lucile Development LLC
+-----
+Serial number: 00ce68dea7bc5ba178e530b6292e78725b
+Thumbprint: 0a78f87d737abb69e05656df5b0249478ae144ba
+Subject CN: 726 Lucile Development LLC
+Subject O: 726 Lucile Development LLC
+Subject L: Santa Fe
+Subject S: New Mexico
+Subject C: US
+Valid from: September 22 00:00:00 2020 GMT
+Valid to: September 23 23:59:59 2021 GMT
+-----
+
+.ALEXIS SECURITY GROUP, LLC
+-----
+Serial number: 00b7f19b13de9bee8a52ff365ced6f67fa
+Thumbprint: 61708a3a2bae5343ff764de782d7f344151f2b74
+Subject CN: ALEXIS SECURITY GROUP, LLC
+Subject O: ALEXIS SECURITY GROUP, LLC
+Subject L: Scottsdale
+Subject S: Arizona
+Subject C: US
+Valid from: July 8 00:00:00 2019 GMT
+Valid to: July 8 23:59:59 2020 GMT
+-----
+
+.DREAM SECURITY USA INC
+-----
+Serial number: 4c8def294478b7d59ee95c61fae3d965
+Thumbprint: a16548fa05aef5e1b265c79a369007ffcd962061
+Subject CN: DREAM SECURITY USA INC
+Subject O: DREAM SECURITY USA INC
+Subject L: SAN JOSE
+Subject S: California
+Subject C: US
+Valid from: June 23 00:00:00 2020 GMT
+Valid to: June 24 00:00:00 2021 GMT
+-----
