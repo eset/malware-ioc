@@ -1,0 +1,117 @@
+
+= BackdoorDiplomacy Indicators of Compromise
+
+The blog post about this campaign is available on WeLiveSecurity at
+https://www.welivesecurity.com/2021/06/10/backdoordiplomacy-upgrading-quarian-turian/
+
+== ESET detection names
+
+ASP/Webshell.H
+ASP/Webshell.J
+ASP/Webshell.O
+Linux/Agent.KD
+MSIL/Webshell.C
+Win64/Agent.HA
+Win32/Agent.QAY
+Win32/Agent.QKK
+Win32/Agent.TGO
+Win32/Agent.TQI
+Win32/Agent.TZI
+Win32/Agent.UFX
+Win32/Agent.UJH
+Win32/Agent.URH
+
+
+== Network indicators
+
+=== C&C servers
+
+* `199.247.9.67`
+* `43.251.105.218`
+* `43.251.105.222`
+* `162.209.167.154`
+* `43.225.126.179`
+* `23.247.47.252`
+* `43.251.105.222`
+* `162.209.167.189`
+* `23.83.224.178`
+* `23.106.140.207`
+* `43.251.105.218`
+* `45.76.120.84`
+* `78.141.243.45`
+* `78.141.196.159`
+* `45.77.215.53`
+* `207.148.8.82`
+* `43.251.105.139`
+* `43.251.105.139`
+* `45.77.215.53`
+* `152.32.180.34`
+* `43.251.105.218`
+* `23.106.140.207`
+* `23.228.203.130`
+* `bill.microsoftbuys.com`
+* `dnsupdate.dns2.us`
+* `www.intelupdate.dns1.us`
+* `www.intelupdate.dns1.us`
+* `winupdate.ns02.us`
+* `winupdate.ns02.us`
+* `icta.worldmessg.com`
+* `Infoafrica.top`
+* `szsz.pmdskm.top`
+* `pmdskm.top`
+* `www.freedns02.dns2.us`
+* `web.vpnkerio.com`
+* `officeupdates.cleansite.us`
+* `dynsystem.imbbs.in`
+* `officeupdate.ns01.us`
+* `systeminfo.oicp.net`
+* `systeminfo.myftp.name`
+* `systeminfo.cleansite.info`
+* `updateip.onmypc.net`
+* `buffetfactory.oicp.io`
+
+
+== Samples
+
+All hashes are SHA-1
+
+=== Turian Windows Backdoor
+
+-----
+2183AE45ADEF97500A26DBBF69D910B82BFE721A
+255F54DE241A3D12DEBAD2DF47BAC5601895E458
+40E73BF21E31EE99B910809B3B4715AF017DB061
+564F1C32F2A2501C3C7B51A13A08969CDC3B0390
+5F87FBFE30CA5D6347F4462D02685B6E1E90E464
+626EFB29B0C58461D831858825765C05E1098786
+6E1BB476EE964FFF26A86E4966D7B82E7BACBF47
+849B970652678748CEBF3C4D90F435AE1680601F
+934B3934FDB4CD55DC4EA1577F9A394E9D74D660
+9DBBEBEBBA20B1014830B9DE4EC9331E66A159DF
+A99CF07FBA62A63A44C6D5EF6B780411CF1B1073
+B16393DFFB130304AD627E6872403C67DD4C0AF3
+B6936BD6F36A48DD1460EEB4AB8473C7626142AC
+C176F36A7FC273C9C98EA74A34B8BAB0F490E19E
+EF4DF176916CE5882F88059011072755E1ECC482
+FBB0A4F4C90B513C4E51F0D0903C525360FAF3B7
+-----
+
+=== Turian Linux Backdoor
+
+-----
+CDD583BB6333644472733617B6DCEE2681238A11
+FA6C20F00F3C57643F312E84CC7E46A0C7BABE75
+-----
+
+=== Webshells
+
+-----
+32EF3F67E06C43C18E34FB56E6E62A6534D1D694
+3C0DB3A5194E1568E8E2164149F30763B7F3043D
+8C4D2ED23958919FE10334CCFBE8D78CD0D991A8
+C0A3F78CF7F0B592EF813B15FC0F1D28D94C9604
+-----
+
+== MISP event
+
+link:misp.event_2021-06-10_backdoordiplomacy.json[MISP event]
