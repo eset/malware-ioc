@@ -1,0 +1,630 @@
+:toc:
+:toclevels: 2
+
+= Native IIS malware -- Indicators of Compromise
+
+The following indicators are related to the samples analyzed during our
+research on native IIS malware. For a full description of each family, see
+ESET’s research paper Anatomy of native IIS malware available on WeLiveSecurity
+(to be published on Friday August 6th 2021). A blog post summarizing our
+findings is also available.
+
+== Group 1 (IIS-Raid derivates)
+
+=== ESET detection names
+
+- Win64/BadIIS.S
+- Win64/BadIIS.T
+- Win64/BadIIS.V
+- Win64/BadIIS.W
+- Win64/BadIIS.X
+
+=== SHA-1 hashes
+
+----
+1176B51814B59526B02AA7F3C88334A0256D0370
+58E23A74AC78D223505C774A20D0C1DE1070BE3A
+66739373D34DE7002C80A5E2AF660E9EA6FF6E7F
+68B6E7A48CD9B894A076C4D10A64E98F1C7366A3
+6AC1CB3E04E45894DFFFC5D113068B28923508AA
+77B9E64F4C2B7DF6AAC00D21A5EB071EEFC25596
+8A0885AE43FA9057A46611E8171EA2DDC5DA7330
+8B8BBF897C49A01D82610F3834CC77111D310161
+9DFA1EC8704A697F9847C0B8DFF41BF5EE289FC1
+AA9BA493CB9E9FA6F9599C513EDBCBEE84ECECD6
+B24E67BDB53B380AC97249B489AADE3BFDAF9E43
+BBFC53367730C270C680EE5E7860F824102082C3
+BF2A9C216A1DA23BBDA004101A2E2F5E8D8D3D23
+C2F9740A73CCC13A868E1E3150F43BDDB54CC66A
+ECAEA1D9D4E84FDDF61C87AB64256EAC7863D3A7
+F449C31AAB9EC0E6C6B2C336DEB83ADE6DAD53FD
+F8EF3168DD4C07D0C2E36D4143C9DDA8E1F6E306
+----
+
+=== File names and paths
+
+----
+authmd4.dll
+cachport.dll
+httpapxd.dll
+iiscom.dll
+IISNET4.dll
+IIS-Raid-Backdoor.dll
+IIS-Trojan.dll
+IISModule.dll
+Microsoft.Exchange.Clients.OwaAuth.dll
+svcfilter.dll
+C:\Windows\Temp\AAD30E0F.tmp
+C:\Windows\Temp\creds.db
+C:\Windows\Temp\log.tmp
+C:\Windows\Temp\thumbs.db
+DllResolve.db
+----
+
+=== Network indicators
+
+==== HTTP header combinations
+
+* `COM_InterProt, X-Chrome-Variations`
+* `Cookie, X-FFEServer`
+* `Sense-Pwd, X-Chrome-Variations`
+* `Strict-Transport-Security, X-Content-Type-Options`
+* `X-BLOG, X-BlogEngine`
+* `X-Cache, X-Via`
+* `X-Password, X-Chrome-Variations`
+* `XXXYYY-Ref, X-Chrome-Variations`
+
+== Group 2
+
+=== ESET detection names
+
+- Win64/BadIIS.D
+- Win64/BadIIS.L
+
+=== SHA-1 hashes
+
+----
+338B6E464874A52E61BC5B8FCAA94D66FE7E4141
+481543A5985B947989691C01C478721AED5B0F2D
+AB934E9A0BFCEFB2DF295E1E9ADBB3FFD1F15B82
+E2EAA585E69150029487080E445E1240D918ED1D
+----
+
+=== File names and paths
+
+----
+iisddos.dll
+iisred.dll
+iissup.dll
+----
+
+=== RSA public keys
+
+----
+-----BEGIN PUBLIC KEY-----
+MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC5VGPiBWYOHbmeM8xOR4KhahM5
+FRRph6cSIkUj0q4AoehtDGeNtEhrJsseY8lORhyh1NRcz4vCGMLapgkLOpT8dWjY
+pvu5NXPDQmsVwQxViJpF/3Qw5KHg09CM8TfwyRCbwpZ9MHGCQVNUyWOdw2FD/ViM
+nSGyLGvHajyVAqM6BwIDAQAB
+-----END PUBLIC KEY-----
+----
+
+----
+-----BEGIN PUBLIC KEY-----
+MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCzMKJzL9vCPjsDdFaxAOUAyZeE
+g+DzS9f4iEVNdS9bk+lYErzMVHWNnET6zKt+AH7sCZUdHvSBUkETX9k6a3kJWkWd
+ecfV1MTpRcCBFIm/VandARn2WFSEr/hzlEF6tA0QmD4OVe1J791DvfBKbDEybXJN
+c5+xsO/Cql5UNrIWLwIDAQAB
+-----END PUBLIC KEY-----
+----
+
+----
+-----BEGIN PUBLIC KEY-----
+MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDDi7W5fyEi6rlaB8CTxIcL63KO
+5iGW4dGBqkaN9Fgyv3bQhvVCupmtAdd8y8W89Ct1JQeTfwgEDF+Ld0A4mHxZCJKC
+Je+YPW+SijXaJ+YMgnTNk39izYLiRiwrVfjxhC7sNmMRBxxBAoDAAStPbLu99j/W
+J4IKS5zmbPecxCPh+wIDAQAB
+-----END PUBLIC KEY-----
+----
+
+=== RSA private keys
+
+----
+-----BEGIN PRIVATE KEY-----
+MIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBAKbcOW5n/YV7vUKB
+D90FslgWQRUIOulpoKcByKyPw80ZqcmHS9tBN5b3hSJ2rD6EoNTDa6BEJ7x7PN4h
+B2hJ/OGAWC71RrBiKj9J4xsAk1p+v0Crc+8FZRazv+idnXdFN/NEXgtbm6HEZ1Y9
+lG+OMb3Xln1F/U9umV/ZlebCUyvlAgMBAAECgYAnuDehnPZ//mccfB17Fv6Psmh2
+qblgU6kO6EFNNoG9AnVkyCSaAinJ8YzLGeXBkg+45fXqNh8hYlKoa8NYI3ijECJp
+YQ6PXU/jjize8DUdvi0cn/pXI/L6eYeyaSnw0afEqS9jT4aX/tMM5blF6CxCv3EF
++JEojlCcEqY9hIM1sQJBALaLXIPRPGMbgoYcDGQfF2tVejJcwkHTtoN5cujSQJiK
+0EVc3bRO3nynnVxnJioPK7iNmknfGsUWIBNqJj5xJ2kCQQDqAS1UOdJJ6iM7+MsI
+2x54GPPR4D3IxqjNLqiP8KLg8rVyDWuJOO5qIn82GC5/Ggfj+tdjzxemcxZePBfm
+qm0dAkEAgfCj82UuwjGj8MjofSCwsAPRjyX+VZNZ+S6rgFWiC7PMW4OmgaIet8cs
+ucjnHstbyOxrZqg8ywxb2tYV0R8E+QJBAKJC1q/EuHDQjkYTqpYleudERi2OFMmY
+F4zPgcrtzcO2CONhMuQgOhIWgad89SDlZ/tKAPkQrRGaVDRb7ybfnnECQH6gtqTU
+JIC8xWm+OLeOsKUW4h1SgHysmDCimTOeke//YAQIYNIVH6sXq/10NtH0Xv7zckjp
+RblBUQgk4Iu6EUE=
+-----END PRIVATE KEY-----
+----
+
+----
+-----BEGIN PRIVATE KEY-----
+MIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBAMWWvT3nNfzMr+bF
+12nO68qs1c/KicQ9z9DA2yRw0nLNjsP/94Dr4xcMXVoc2jGjC/2uCRxUnnOiKUhz
+bjFdtFwv9t+ubjblsp4lDaSo7UDfH4fn2sQsmkme8WeuGjmy1Ie7WM33roSSbcnk
+BeAFi09Eb1eQiUCk2WBCjNyJj7kTAgMBAAECgYAY1FHwkvr2SxR5p/fjXHTF8cUm
+iPmZ9viD75A6OpE/ivQ7ThGgmkPdtBiRB9olbatGlBWiAUIuHr0YVSUOQAu3ZyNu
+9jpAjimrG1n0hWdGgnN0PbzpAAuPeA9edPDlnNqW0JCBdpG1JstaMLHaurWmZ+pN
+lJOXerHMPnhFEHBjOQJBAMuYrgcVhJ4M+BhHUay9TYEjplu/IVqLpZ8m/6+tMvcn
+ki4RV18K8+kkuEa2wBAFM84t4Ikmd5r8o1cO+zs2n1sCQQD4cjWkoqt1mWSNpqMU
+cJwqtd8tyqMGI1u5E9QNDk8PWZmFJ/E5V733rnfl5BoNCxnAD3cIWBscAdr0hX6u
+vnKpAkEAxzW8Sigu2+r6sd7OtsN/W3WDaFAKlasAQkqJcd55eMXaTYMgR1nTMPOB
+74cPRF2ixAG1qtzduOOr+xoojlay8wJBAJgiP4zv+3RImNVQm/4RMt/IfMBqnEdO
+8YS0ip3wDCOHJ0Xtfn4xp2b6k/rXIcio6ny8O5SFdxxAWpZvBHL2tfkCQFM6iVcY
+SQNU1je2LwJiLbhl/Jif/LFSGndZIFS6v5cuBCMQ2LdbSKOI7nJUa2nsxBcSanzE
+OLDWIXXrJGbd7gs=
+-----END PRIVATE KEY-----
+----
+
+----
+-----BEGIN PRIVATE KEY-----
+MIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBALkeAveIwS0z8Vi2
+9YJsG05N9vWS8s5gfKOy3UNE2VBK30+gH1rwUVlaMZpO+gyOKwYHMNBLQ8NpRfHy
+2ey/7snN+q9XcpAjX4Q1A0bhafN/viYWNAoxWGi1n69SwZ7Nd77E5zSB+re4JnK6
+p290+hvj03wCdI7BgrBEBLenPvqvAgMBAAECgYAfF47ZA6Oqk3hcdbJruvulHcw2
+d/2HM0aL+i1WsJgtd73lMlhB3m5TayY8rDosZK6OPyPwQEv75NEmL6txq9UPz6a0
+X+BxvuRkMwXaBIH6MWAsFu/x8DkNlM1R2cjSkLOxzkqYhhyRss2+spsOdMGIGoII
+Zv39e0cVmywMZRN2cQJBAPB/hmYDDAcgXfhzoRsgq1AdVqgQnZ3wcLkr8HhTCAZt
+77zfSbBp7ecUqcrN4Sua+6dZXGz7SZKZVhdID8eTHXECQQDFDKSHOcc4ypJ53XPV
+bTWMkNVnmjYjokFFm+Ihqeu2BRZfRQ1fncsZSIsNyYHTRgMDV+cpgZXO/6iFbGUN
+yAofAkAEcabPHcFMJGn4HFLeyHTB7zjZtCzlbTr4APrZjlc4nzFt4QZgjySJP5V/
+nNxLTPrXdcxCa0ZJwjGYDonUG0DRAkA3Nv+zVKFabIj21PLsTxm+NadWzIN3ILQh
+iTioLjD6ZBqMv5Crxk9u2kD8sAZM6UVW3n7Lxp/vzPuvx1vZrMAJAkEA8AVRI3i1
+jbZ7lbA2nmTyRqdwnCdxYxfBukC9Kv91o8RvWqpg/ZocnzR3Ok8TR/E9PArmn1TR
+Yeml0Z9G0pfTRA==
+-----END PRIVATE KEY-----
+----
+
+== Group 3
+
+=== ESET detection names
+
+- Win64/BadIIS.Q
+
+=== SHA-1 hashes
+
+----
+D33FA7C550AC0A7B47EB690FE9C3750CAF04EB68
+----
+
+=== File names and paths
+
+----
+statdoc.dll
+----
+
+== Group 4 (RGDoor)
+
+=== ESET detection names
+
+- Win64/BadIIS.R
+
+=== SHA-1 hashes
+
+----
+5447283518473EA8B9D35424532A94E2966F7A90
+A9143B0FC38B6329D5DFBFFC4AA91B5F57211DA0
+----
+
+=== File names and paths
+
+----
+HTTPParser.dll
+TrafficHandler.dll
+----
+
+== Group 5 (IIStealer)
+
+=== ESET detection names
+
+- Win64/BadIIS.F
+- Win64/BadIIS.O
+
+=== SHA-1 hashes
+
+----
+706EAB59C20FCC9FBC82C41BF955B5C49C644B38
+7A2FA07A7DC05D50FE8E201A750A3DC7F22D6549
+A1C5E7424E7C4C4C9902A5A1D97F708C6BB2F53A
+----
+
+=== File names and paths
+
+----
+dir.dll
+isapicache___.dll
+isapicache_.dll_
+C:\Windows\Temp\cache.txt
+----
+
+=== Network indicators
+
+==== Targeted URIs
+* `/checkout/checkout.aspx`
+* `/checkout/Payment.aspx`
+* `/privacy.aspx`
+
+==== HTTP headers
+* `X-IIS-Data`
+
+== Group 6 (ISN)
+
+=== ESET detection names
+
+- Win32/Spy.IISniff.A
+- Win64/Spy.IISniff.A
+
+=== SHA-1 hashes
+
+----
+A43D964E709EF8F7F035B85ED4AE9B26D4394B58
+E00E8477CEE2BEDA5B67346C9742C4002D6B567A
+----
+
+=== File names and paths
+
+----
+iis7_32.dll
+iis7_64.dll
+----
+
+== Group 7 (IISpy)
+
+=== ESET detection names
+
+- Win32/BadIIS.F
+- Win64/BadIIS.U
+
+=== SHA-1 hashes
+
+----
+22F8CA2EB3AF377E913B6D06B5A3618D294E4331
+435E3795D934EA8C5C7F4BCFEF2BEEE0E3C76A54
+CED7BC6E0F1A15465E61CFEC87AAEF98BD999E15
+----
+
+=== File names and paths
+
+----
+cache.dll
+logging.dll
+----
+
+== Group 8
+
+=== ESET detection names
+
+- Win32/BadIIS.B
+- Win64/BadIIS.B
+- Win64/BadIIS.C
+
+=== SHA-1 hashes
+
+----
+0AC34B71F1CBED482579509DDF12DC28312E11A5
+1B9EC94251AD5E8F407584DC786B261CADD7FA8F
+21618E3FE6D133403320B4430054394AED944105
+36741260BDE2B9304302F5AEB63CAEB309979554
+4F6EAD034BF9A0B27ECFF16A08DB3ED57EA9C7D4
+528527C8166FC55C2D80824D7C94FD574EACD1BC
+54E98E2655B39DFA486A01A09AC4920B7639401D
+5924800E432731C6699A80EF4D6AD9496EB1BF98
+5A5545B868EC41A15810E9351ECA93110C878BC1
+8B0D9F3DBA9B05FFB91B8C77786B6FD85BEA6944
+A70CA39BE949629C8EED1A71258ADB259E6A9D9E
+AED3625099606849755A6C25022D072BCE7E9EE7
+D669F4DDE56DF8D032520399EDEA0F9971063F38
+E3FE87183E5F63A63915EB9B3740218A42CD6CF3
+----
+
+=== File names and paths
+
+----
+FilterSecurity32.dll
+FilterSecurity64.dll
+iiscrash32.dll
+iiscrash64.dll
+----
+
+=== Network indicators
+
+==== HTTP headers
+
+* `Cmd`
+
+== Group 9
+
+=== ESET detection names
+
+- Win32/BadIIS.C
+- Win32/BadIIS.D
+- Win32/BadIIS.E
+- Win32/BadIIS.H
+- Win64/BadIIS.A
+- Win64/BadIIS.G
+- Win64/BadIIS.I
+- Win64/BadIIS.K
+- Win64/BadIIS.M
+- Win64/BadIIS.N
+- Win64/BadIIS.P
+
+=== SHA-1 hashes
+
+==== Variant A
+
+----
+279D841539212D4F159404417404827EBC17B8D7
+44933C61C82B9FB7C2A17B32C010C5B044B638F3
+4E8B84412101112E73F846545A412127AA5DCEB8
+52FDE6863D8C3E79913B29EFA656C3B32FE2CF45
+5B205F3C19CAA177C0D32EBCCCAA3D3202764132
+62C47260DC013DDF625F0016736576BDF4E3B212
+64DF8B5AD43A0C4D81DFF075898E492FBAF1CD9E
+7DA9FBD4BAB842DADB943790E69B0C15E74EC614
+93C40123D11EFC0C75F9C8E515EA49B4D047D8C1
+A3E64F4D0898B77E5AE931029BCD330F2694643E
+A41F73A3A28E46ADBD6753F9B0A005E8A4FA55FD
+A42893843059ED9922FDAFFF0A02DF4F39519930
+B8051F1B51EC093BA56B1F70C8AE63EB6A9644C1
+BD98ABC510AC3DF66E21C3CDCEE7BDFC1A326AC5
+FABCEFF3B03D3DA0B338E2EC0F7D47E83E86F720
+----
+
+==== Variant B
+
+----
+3A3DF03DA61F86CEFEB7A1546421346CE2608DE1
+7080CC770A99FF57FD899E367B7F2A430FC55CD1
+8A25CBCF5B7DEBCA8A9E55D233E816EA6FBE8A0F
+B626B9A712FCF957438DBED889575D3F9E1B33C8
+DD9F72DE1070903359ACEA98884A953B23CB7354
+----
+
+==== Variant C
+
+----
+72FB52C21EDC50D79DDDAAAE6EE473713CE4F82D
+----
+
+=== File names and paths
+
+----
+autehbas.dll
+autohbas.dll
+dirshow.dll
+httpevt.dll
+mscorevt.dll
+sortkey.dll
+webdac.dll
+windows.dll
+----
+
+=== Network indicators
+
+==== C&C servers
+
+* `++http://20.3323sf[.]com++`
+* `++http://20.3323sf[.]com/zz.php++`
+* `++http://bj.whtjz[.]com++`
+* `++http://bj.whtjz[.]com/zz1.php++`
+* `++http://bj2.wzrpx[.]com++`
+* `++http://bj2.wzrpx[.]com/zz1.php++`
+* `++http://cs.whtjz[.]com++`
+* `++http://cs.whtjz[.]com/zz.php++`
+* `++http://df.e652[.]com++`
+* `++http://df.e652[.]com/zz1.php++`
+* `++http://dfcp.yyphw[.]com++`
+* `++http://dfcp.yyphw[.]com/zz1.php++`
+* `++http://es.csdsx[.]com++`
+* `++http://es.csdsx[.]com/zz.php++`
+* `++http://hz.wzrpx[.]com/pq.php++`
+* `++http://hz.wzrpx[.]com/zk.php++`
+* `++http://id.3323sf[.]com/wh1.php++`
+* `++http://id.3323sf[.]com/zid.php++`
+* `++http://qp.008php[.]com++`
+* `++http://qp.008php[.]com/zz.php++`
+* `++http://qp.nmnsw[.]com++`
+* `++http://qp.nmnsw[.]com/zz1.php++`
+* `++http://sc.300bt[.]com++`
+* `++http://sc.300bt[.]com/zz.php++`
+* `++http://sc.wzrpx[.]com++`
+* `++http://sc.wzrpx[.]com/zz1.php++`
+* `++http://sf2223[.]com/xin.html++`
+* `++http://sx.cmdxb[.]com++`
+* `++http://sx.cmdxb[.]com/zz1.php++`
+* `++http://sz.ycfhx[.]com++`
+* `++http://sz.ycfhx[.]com/zz1.php++`
+* `++http://xpq.0660sf[.]com++`
+* `++http://xpq.0660sf[.]com/zy.php++`
+* `++http://xsc.b1174[.]com++`
+* `++http://xsc.b1174[.]com/zz1.php++`
+
+== Group 10
+
+=== ESET detection names
+
+- Win32/BadIIS.A
+
+=== SHA-1 hashes
+
+----
+2ED260A0EA017D0322C494E9EBFB0E1C07A6A0F2
+----
+
+=== File names and paths
+
+----
+FilterSecurity.dll
+----
+
+=== Network indicators
+
+==== C&C server
+
+* `++https://js.breakavs[.]com/93/jc.js++`
+
+== Group 11
+
+=== ESET detection names
+
+- Win32/BadIIS.H
+- Win64/BadIIS.E
+
+=== SHA-1 hashes
+
+----
+33F999E9F31648B3115D314EC49B09A005EC992A
+A2EF7DE7A217B6F9F0F886B5D4DE4C56D5A6A7BE
+----
+
+=== File names and paths
+
+----
+HttpCache.dll
+httpuser.dll
+ispric.dll
+----
+
+=== Network indicators
+
+==== HTTP headers
+
+* `Cmd`
+
+==== C&C servers
+
+* `++143.92.48[.]38++`
+* `++www.allsoulu[.]com++`
+* `++xinxx.allsoulu[.]com++`
+
+== Group 12
+
+=== ESET detection names
+
+- Win32/BadIIS.H
+- Win32/BadIIS.I
+- Win64/BadIIS.AA
+- Win64/BadIIS.H
+- Win64/BadIIS.J
+
+=== SHA-1 hashes
+
+==== Variant A
+
+----
+1E82C6DB2EE1688BF8B182FF93C9BEA8CD84BEC1
+7554B6A5244D4BCE83C2ABE762174399CDE1ED05
+DCACD46E441C42AA0EACBC99F072F3BA6A91D02B
+----
+
+==== Variant B
+
+----
+09BFC4596BAEF62BD2FFA79D5A4D4116B0186DB5
+6C531446598E743D315A74B4C1B3C08BE2B70C0C
+AFB59D38754ED71B251F89A999ECFB2046D5CB21
+FA790BCC0338899ABBF6C573D7FB76086A8CD62D
+----
+
+==== Variant C
+
+----
+5A3CC5E97AD448BF3DDDD4ABFD59BC74CD23B583
+----
+
+=== File names and paths
+
+----
+authcutd.dll
+ManagedEngineV4.1_32bit.dll
+ManagedEngineV4.1_64bit.dll
+mscore.dll
+----
+
+=== Network indicators
+
+==== HTTP header combinations
+
+* `3389, Cmd`
+
+==== C&C servers
+
+* `++http://202.100.206[.]136:443++`
+* `++http://center.g666[.]org:443/++`
+* `++http://ee.allsoulu[.]com++`
+* `++http://m.goudie[.]in:1024++`
+* `++http://m.goudie[.]in:1024/?zz++`
+* `++http://m.goudie[.]in:1024/js.html++`
+* `++http://m.pz8[.]in/++`
+* `++http://tz.allsoulu[.]com++`
+* `++http://www.allsoulu[.]com++`
+* `++http://www.g666[.]org/pic/++`
+* `++http://www.pz9[.]in++`
+* `++http://zz.allsoulu[.]com++`
+
+== Group 13 (IISerpent)
+
+=== ESET detection names
+
+- Win32/BadIIS.H
+
+=== SHA-1 hashes
+
+----
+D0F274EBD2A0636FEF9D9C48A7AC2FAD7B661653
+----
+
+=== File names and paths
+
+----
+stati.dll
+----
+
+=== Network indicators
+
+==== Query parameters
+
+* `?DisplayModuleConfig=1`
+* `?ReloadModuleConfig=1`
+
+==== C&C servers
+* `++http://sb.qrfy[.]net++`
+
+== Group 14
+
+=== ESET detection names
+
+- Win32/BadIIS.H
+- Win64/BadIIS.AA
+
+=== SHA-1 hashes
+
+----
+086A211A069322DF84484E0E4B4B4D8AF3ADE95B
+30BE5F13FA182008EBE991C0795AFD3783AAA903
+CD1B29BFD41F469D9CB25FA282F26B3B2AB422B9
+----
+
+=== File names and paths
+
+----
+urlresol.dll
+----
+
+=== Network indicators
+
+==== C&C servers
+
+* `++now.asmkpo[.]com:80++`
+* `++speed.wlaspsd[.]com/vip.js++`
