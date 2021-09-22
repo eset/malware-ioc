@@ -1,0 +1,57 @@
+= FamousSparrow: A suspicious hotel guest -- Indicators of Compromise
+
+The blog post on FamousSparrow is available in WeLiveSecurity at
+https://www.welivesecurity.com/2021/09/23/famoussparrow-suspicious-hotel-guest
+
+[options="header"]
+|========================================
+|SHA-1 hash|ESET Detection Name|Description
+|`B9601E60F87545441BF8579B2F62668C56507F4A`|Win64/Riskware.Mimikatz.H|Mimikatz
+|`4DF896624695EA2780552E9EA3C40661DC84EFC8`|Win64/Riskware.Mimikatz.H|Mimikatz
+|`76C430B55F180A85F4E1A1E40E4A2EA37DB97599`|Win64/Kryptik.BSQ|Lsass dumper
+|`873F98CAF234C3A8A9DB18343DAD7B42117E85D4`|Win32/NetTool.Nbtscan.A|Nbtscan
+|`FDC44057E87D7C350E6DF84BB72541236A770BA2`|Win32/FamousSparrow.A|Dropper
+|`C36ECD2E0F38294E1290F4B9B36F602167E33614`|-|Legitimate K7 Computing binary
+|`BB2F5B573AC7A761015DAAD0B7FF03B294DC60F6`|Win32/FamousSparrow.A|Loader
+|`23E228D5603B4802398B2E7419187AEF71FF9DD5`|-|Encrypted shellcode
+|`2560B7E28B322BB7A56D0B1DA1B2652E1EFE76EA`|-|Decrypted shellcode
+|`E2B0851E2E281CC7BCA3D6D9B2FA0C4B7AC5A02B`|Win32/FamousSparrow.B|Loader
+|========================================
+
+== Network indicators
+
+=== C&C server
+
+`++credits.offices-analytics[.]com++`
+
+=== Delivery domain
+
+`++27.102.113[.]240++`
+
+
+== MITRE ATT&CK matrix
+
+[options="header"]
+|=====
+|ID       |Name
+|T1588.005|Obtain Capabilities: Exploits
+|T1583.001|Acquire Infrastructure: Domains
+|T1583.004|Acquire Infrastructure: Server
+|T1190|Exploit Public-Facing Application
+|T1059.003|Command and Scripting Interpreter: Windows Command Shell
+|T1203|Exploitation for Client Execution
+|T1547.001|Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder
+|T1543.003|Create or Modify System Process: Windows Service
+|T1574.001|Hijack Execution Flow: DLL Search Order Hijacking
+|T1055.001|Process Injection: Dynamic-link Library Injection
+|T1134.002|Access Token Manipulation: Create Process with Token
+|T1134|Access Token Manipulation
+|T1027|Obfuscated Files or Information
+|T1003|OS Credential Dumping
+|T1082|System Information Discovery
+|T1083|File and Directory Discovery
+|T1005|Data from Local System
+|T1071.001|Application Layer Protocol: Web Protocols
+|T1573.001|Encrypted Channel: Symmetric Cryptography
+|T1041|Exfiltration Over C2 Channel
+|=====
