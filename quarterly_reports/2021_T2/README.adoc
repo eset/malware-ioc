@@ -1,0 +1,67 @@
+:toc:
+:toclevels: 2
+
+= T2 2021 report -- Indicators of Compromise
+
+These plain text indicators of compromise are an annex to ESET's Threat Report for T2 2021.
+
+The full Threat Report is available on
+https://www.welivesecurity.com[WeLiveSecurity] in PDF format at the following URL:
+
+- https://www.welivesecurity.com/wp-content/uploads/2021/09/eset_threat_report_t22021.pdf
+
+
+== Gamaredon group
+
+=== SHA-1 hash of reconnaissance tool
+
+-----
+6022688EC568AEEC536565CC511FA161E0A3D885
+-----
+
+=== SHA-1 hash of reconnaissance tool with Nmap
+
+-----
+21162B402747A26FAF610272D05E16D3EC255227
+-----
+
+== Candiru's DevilsTongue 
+
+=== Custom %WINDIR%\system32\config\ subdirectories
+
+----
+en-us 
+curv
+config
+help
+files
+af-ZA
+AppV
+cy-GB
+GroupPolicy
+Licenses
+networklist
+PointOfService
+Recovery
+spp
+Sysprep
+Themes
+Prefetch
+Setup
+SKB
+tracing
+ServiceState
+InputMethod
+migration
+Msdtc
+----
+
+
+=== C&C servers
+
+----
+service-deamon[.]com
+online-source-validate[.]com
+online-affiliate-mon[.]com
+library-update[.]com
+----
