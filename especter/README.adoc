@@ -1,0 +1,136 @@
+= ESPecter -- Indicators of Compromise
+
+These IoCs are related to ESET's investigation on ESPecter.
+
+The blog post about ESPecter is available on WeLiveSecurity at
+https://www.welivesecurity.com/2021/10/05/uefi-threats-moving-esp-introducing-especter-bootkit/
+
+== ESET detection names
+
+- EFI/Rootkit.ESPecter
+- Win32/Rootkit.ESPecter
+- Win64/Rootkit.ESPecter
+
+== Host based indicators
+
+=== SHA-1 hashes
+
+==== Legacy BIOS version installers
+----
+ABC03A234233C63330C744FDA784385273AF395B
+DCD42B04705B784AD62BB36E17305B6E6414F033
+656C263FA004BB3E6F3EE6EF6767D101869C7F7C
+A8B4FE8A421C86EAE060BB8BF525EF1E1FC133B2
+3AC6F9458A4A1A16390379621FDD230C656FC444
+9F6DF0A011748160B0C18FB2B44EBE9FA9D517E9
+2C22AE243FDC08B84B38D9580900A9A9E3823ACF
+08077D940F2B385FBD287D84EDB58493136C8391
+1D75BFB18FFC0B820CB36ACF8707343FA6679863
+37E49DBCEB1354D508319548A7EFBD149BFA0E8D
+7F501AEB51CE3232A979CCF0E11278346F746D1F
+----
+
+==== Compromised UEFI Windows Boot Manager
+----
+27AD0A8A88EAB01E2B48BA19D2AAABF360ECE5B8
+8AB33E432C8BEE54AE759DFB5346D21387F26902
+----
+
+==== Kernel drivers
+----
+09F0F17AECCDEF5CB1112BC9BEF0FE4F828D6D3B
+374D1A399EF44472EE088563D621DF28221CBCCE
+7AD4442D3C02FA145BEF9BF18C9464C3E4449224
+865F5B87B5F6FB75F3EC68CA05A21CC36446812F
+99DC33BEDF4CB9BDBDF04CC60E1DA55CFBEADC09
+C06EEB1600CF4E8AAC91730E00DD7C169738AFDE
+C8C2C127EC6AF87D96B058FF023B534F1237215C
+CA19347287FCE93F2C675EFDF88C8B0DB4910929
+CAE4B2C049542FD28667CA6E9AFA440B3F0138F9
+----
+
+==== WinSys.dll
+
+----
+180B0E6A4A3334AAA4249B3D631695A31EB45D7A
+C7FE86E5981B39927275873C3A386CB1D8C93A6B
+81E6D19865647DC160861E2154D6903FC78C7DFB
+0A8A388911A7A368FC1CF111FB26BA92A19FED3E
+ABB410A4F863B101C218990664981914D14F1E58
+26F7757602000BCC3C18A887DBC7416AE43BF61A
+6B2AD6114029D60F7C40F306271669B3A69EA270
+030B97860ED5A3089C5E8EFB8EDD7CC359134124
+0A97EFA15A62E90D71F643B693B3DD3CF2657B9F
+----
+
+=== Network Indicators
+
+==== C&C IPs & domains from configurations
+
+----
+196.1.2[.]111
+103.212.69[.]175
+183.90.187[.]65
+61.178.79[.]69
+swj02.gicp[.]net
+server.microsoftassistant[.]com
+yspark.justdied[.]com
+crystalnba[.]com
+----
+
+=== Filenames and directories
+
+==== Configuration file path
+
+----
+%windir%\Temp\syslog
+----
+
+==== Base directory for the collected data (%BaseDir%)
+
+----
+%sysdir%\Media\NPCSJDLFSD
+or %windir%\Temp\NPCSJDLFSD
+----
+
+==== Screenshots directory
+
+----
+%BaseDir%\SSQWCVBER
+----
+
+==== Stolen documents directory
+
+----
+%BaseDir%\UTXZCZXQ
+----
+
+==== Intercepted keyboard logs directory
+
+----
+%BaseDir%\KLACVSWER
+----
+
+==== Encrypted user-mode payloads files
+
+----
+%windir%\Temp\dd_vcredist
+%windir%\Temp\memlog
+%windir%\Temp\vmmmlog
+%windir%\Temp\vmmmmlog
+----
+
+==== Decrypted user-mode payloads files
+
+----
+%windir%\Temp\vmmmlog.exe
+%windir%\Temp\vmmmmlog.exe
+\SystemRoot\System32\Client.dll
+\SystemRoot\System32\WinSys.dll
+----
+
+==== Backed up clean null.sys or beep.sys driver path
+
+----
+%windir%\\Help\\intel.chm
+----
