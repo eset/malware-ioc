@@ -1,0 +1,56 @@
+= APT Kimsuky -- HotDogeToken and DonutCat case
+
+== ESET detection names
+----
+DOC/Agent.HM
+VBS/Kimsuky.S
+MSIL/Agent.AFK
+----
+
+== Host based indicators
+=== SHA-1 hashes
+----
+D7AA4DF7EFE9AC8355DA24DC79791B07E2A35686
+5A632B45D6162422B6752410F9FB22A9123185B1
+AAE96CA264FAB1400CFB97723AE95A443B036A35
+F16D77FF7C536F9DC6CC4B41E92FD74D2619954F
+6162857990E2C1D88144F42C8AD98C1151B222FB
+C4BA3E752715C2D97F5635188640D3708BC6B54B
+F699A475A8BD79F89ED911CAE6A635AF821DCC05
+55EF90981F4FDA7DE2FD028AA0EE274EAFE816A1
+----
+
+=== Files and folders
+----
+HOTDOGE-Migration-BSC-Export.xls
+DONUTCAT-Migration-BSC-Export.xls
+Hotdoge Whitepaper Finals.xls
+%PUBLIC%\DownLoads\zThumbs.db
+%PUBLIC%\Libraries\backup.jiysf-ms
+%PROGRAMDATA%\OldPackages\asset.vbs
+%PROGRAMDATA%\fibTmk.BAT
+%PROGRAMDATA%\fibTrq.BAT
+----
+
+=== Scheduled tasks
+----
+ClouDNS.pduh
+ClouDNS.xrdw
+----
+
+== Network indicators
+----
+wix.navercloud[.]me
+ftp://ybnm.navercloud[.]org/mongo/rtvwiydo.gif
+ftp://ybnm.navercloud[.]org/mongo/<user_id>/pjpuvisa.tif
+https://wnqd.navercloud[.]org/mongo/assist.php?iyz=baby&user=<user_id>
+https://wnqd.navercloud[.]org/mongo/assist.php?iyz=child&user=<user_id>&fore=<Win_ver>
+https://wnqd.navercloud[.]org/mongo/index.php?iyz=adult&user=<user_id>
+ftp://ausq.inaver[.]org/board/efyiokek.psd
+ftp://ausq.inaver[.]org/board/<user_id>/kocbqhuw.dib
+https://hsjj.inaver[.]org/board/assist.php?dhk=baby&user=<user_id>
+https://31e27735-43a4-4a42-ba59-0b3cbe6efb21.usrfiles[.]com/ugd/31e277_b49bdbeced814b60aa0502d3f3e41b77.xls?dn=DONUTCAT-Migration-BSC-Export.xls
+https://525ea21c-e821-4bb7-a7e9-24cb6c8a891a.usrfiles[.]com/ugd/525ea2_21a62af3f23743dd9a8705ff1d201aff.xls?dn=HOTDOGE-Migration-BSC-Export.xls
+https://525ea21c-e821-4bb7-a7e9-24cb6c8a891a.usrfiles[.]com/ugd/525ea2_27966ccfd5d547b8a1f720ef960e216b.xls?dn=Hotdoge Whitepaper Finals.xls
+103.125.219[.]119:81
+----
