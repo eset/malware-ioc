@@ -1,0 +1,80 @@
+= DazzleSpy -- Indicators of Compromise
+
+An analysis of DazzleSpy and it's distributions methods are available as
+blogpost on https://www.welivesecurity.com[WeLiveSecurity].
+
+- https://www.welivesecurity.com/2022/01/25/watering-hole-deploys-new-macos-malware-dazzlespy-asia/["Watering hole deploys new macOS malware, DazzleSpy, in Asia"]
+
+== Samples
+
+[options="header"]
+|====
+| SHA-1                                      | Filename     | ESET detection name  | Description
+| `F3772A23595C0B51AE32D8E7D601ACBE530C7E97` | `mac.js`     | JS/Exploit.Agent.NQK | JavaScript code with WebKit exploit launching an LPE.
+| `95889E0EF3D31367583DD31FB5F25743FE92D81D` | N/A          | OSX/Exploit.Agent.C  | Mach-O file with LPE launching next stage.
+| `EE0678E58868EBD6603CC2E06A134680D2012C1B` | `server.enc` | OSX/DazzleSpy        | DazzleSpy Mach-O after decryption of server.enc.
+|====
+
+== File names
+
+- `$HOME/Library/LaunchAgents/com.apple.softwareupdate.plist`
+- `$HOME/.local/softwareupdate`
+- `$HOME/.local/security.zip`
+- `$HOME/.local/security/keystealDaemon`
+- `$HOME/.local/security/libkeystealClient.dylib`
+
+== Network
+
+=== URLs of Safari exploit
+
+- `https://amnestyhk[.]org/ss/defaultaa.html`
+- `https://amnestyhk[.]org/ss/4ba29d5b72266b28.html`
+- `https://amnestyhk[.]org/ss/mac.js`
+- `https://amnestyhk[.]org/ss/server.enc`
+
+=== DazzleSpy C&C server
+
+- `88.218.192[.]128:5633`
+
+=== DazzleSpy CA certificate
+
+SHA-256: `1F862B89CC5557F8309A6739DF30DC4AB0865668193FDFF70BA93F05D4F8C8B8`
+
+----
+Certificate:
+    Data:
+        Version: 1 (0x0)
+        Serial Number: 10557282746731470350 (0x928300b9284a1e0e)
+    Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=11, ST=11, L=11, O=11, OU=11, CN=11/emailAddress=11@qq.com
+        Validity
+            Not Before: May 18 07:26:17 2021 GMT
+            Not After : May 16 07:26:17 2031 GMT
+        Subject: C=11, ST=11, L=11, O=11, OU=11, CN=11/emailAddress=11@qq.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus: …
+                Exponent: 65537 (0x10001)
+    Signature Algorithm: sha256WithRSAEncryption
+-----BEGIN CERTIFICATE-----
+MIIDTDCCAjQCCQCSgwC5KEoeDjANBgkqhkiG9w0BAQsFADBoMQswCQYDVQQGEwIx
+MTELMAkGA1UECAwCMTExCzAJBgNVBAcMAjExMQswCQYDVQQKDAIxMTELMAkGA1UE
+CwwCMTExCzAJBgNVBAMMAjExMRgwFgYJKoZIhvcNAQkBFgkxMUBxcS5jb20wHhcN
+MjEwNTE4MDcyNjE3WhcNMzEwNTE2MDcyNjE3WjBoMQswCQYDVQQGEwIxMTELMAkG
+A1UECAwCMTExCzAJBgNVBAcMAjExMQswCQYDVQQKDAIxMTELMAkGA1UECwwCMTEx
+CzAJBgNVBAMMAjExMRgwFgYJKoZIhvcNAQkBFgkxMUBxcS5jb20wggEiMA0GCSqG
+SIb3DQEBAQUAA4IBDwAwggEKAoIBAQDFfrP+LbCk9KhPH2gQ3V5lBWCpuM+yzBzn
+ofL2RJiTMedP467Js4wzrP+qCkXs9STaOZCvYRFaCmfY9bG7PsrgqG90OHfVkttG
+5xIdEpd5XPl+GYl/48ridpE7mgw+KO0oRxoyUO1if9nRXvHNGmx0C3i9Rb6ahynv
+dEBAZVxeX20fDHMr0dvVe4TKst9g5W02o31zU54mx2f7m2Kgit+n+UsDA/uBRF/c
+GcWsvQFVlcguFmBDt58t98BO5nEmI3iDEfUi8FTf2HVSS0LAYC83IkwZyWpML9Jn
+uVg67KFKprNMmzBxDK0eDa9ZHObohj3iscM3IYXlCnicbOLYTCvRAgMBAAEwDQYJ
+KoZIhvcNAQELBQADggEBAAvkJC5Fi8+Kz8roBhzCY3ayPLMMMj49aHGU/JDLZwsh
+WSng5/eY7LrGkTqP0tKay/rrxQvyMeZftvB0DMCbxu0vndK/jTqruxS+ZXDkqyOb
+ykU0Z6TqRZ/ltgcK9ii4R6PgUEynrJVZHtUHDtemulpHgPRjkFDA4emOui1kFdNT
+gnUr0vgh12KlVNAm64UVh9kkneCTFZtYeCAGNw5kFknv5OgsjcaueqCsm3a3dxFq
+7JqReIV1WDx+QEBXgM4itvQRY+d5pv5eOlz8sBzxFR7+Gh/Q9aJoPL+ZX7kouMEU
+bKwsEwNCrWZWQu41ghFi/8MdqBxb2Nb9H4gCupqKdiI=
+-----END CERTIFICATE-----
+----
