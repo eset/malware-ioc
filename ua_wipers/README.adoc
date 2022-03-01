@@ -1,0 +1,54 @@
+= Wipers and worm in Ukraine -- Indicators of Compromise
+
+These IoCs are related to ESET’s investigations on malware found in Ukraine in
+relation to the hostilities between Russia and Ukraine.
+
+For more information about these threats, see the following publications on
+https://www.welivesecurity.com[WeLiveSecurity] and Twitter.
+
+ - https://www.welivesecurity.com/2022/03/01/isaacwiper-hermeticwizard-wiper-worm-targeting-ukraine/[IsaacWiper and HermeticWizard: New wiper and worm targeting Ukraine]
+ - https://www.welivesecurity.com/2022/02/24/hermeticwiper-new-data-wiping-malware-hits-ukraine/[HermeticWiper: New data‑wiping malware hits Ukraine]
+ - https://twitter.com/ESETresearch/status/1496581903205511181
+
+== HermeticWiper
+
+=== Samples
+
+[options="header"]
+|====
+|SHA-1                                      | Filename       | ESET Detection Name
+|`912342F1C840A42F6B74132F8A7C4FFE7D40FB77` | `com.exe`      | Win32/KillDisk.NCV
+|`61B25D11392172E587D8DA3045812A66C3385451` | `conhosts.exe` | Win32/KillDisk.NCV
+|====
+
+== HermeticWizard
+
+=== Samples
+
+[options="header"]
+|====
+|SHA-1                                      |Filename             | ESET Detection Name
+|`3C54C9A49A8DDCA02189FE15FEA52FE24F41A86F` | `c9EEAF78C9A12.dat` | Win32/GenCBL.BSP
+|====
+
+== HermeticRansom
+
+=== Samples
+
+[options="header"]
+|====
+|SHA-1                                      |Filename   | ESET Detection Name
+|`F32D791EC9E6385A91B45942C230F52AFF1626DF` | `cc2.exe` | WinGo/Filecoder.BK
+|====
+
+== IsaacWiper
+
+=== Samples
+
+[options="header"]
+|====
+|SHA-1                                      |Filename     | ESET Detection Name
+|`AD602039C6F0237D4A997D5640E92CE5E2B3BBA3` | `cl64.dll`  | Win32/KillMBR.NHP
+|`736A4CFAD1ED83A6A0B75B0474D5E01A3A36F950` | `cld.dll`   | Win32/KillMBR.NHQ
+|`E9B96E9B86FAD28D950CA428879168E0894D854F` | `clean.exe` | Win32/KillMBR.NHP
+|====
