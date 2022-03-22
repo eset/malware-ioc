@@ -1,0 +1,110 @@
+= Mustang Panda’s Hodur: Old Tricks, New Korplug Variant -- Indicators of Compromise
+
+The blog post on Hodur is available on WeLiveSecurity at
+https://www.welivesecurity.com/2022/03/23/mustang-panda-hodur-old-tricks-new-korplug-variant/.
+
+== Files
+
+[options="header"]
+|===
+|SHA-1 |Filename |Detection |Description
+|`69AB6B9906F8DCE03B43BEBB7A07189A69DC507B` |coreclr.dll |Win32/Agent.ADMW |Korplug loader
+|`10AE4784D0FFBC9CD5FD85B150830AEA3334A1DE` |N/A |Win32/Korplug.TC |Decrypted Korplug
+|`4EBFC035179CD72D323F0AB357537C094A276E6D` |PowerDVD18.exe |Win32/Delf.UTN |Korplug loader
+|`FDBB16B8BA7724659BAB5B2E1385CFD476F10607` |N/A |Win32/Korplug.TB |Decrypted Korplug
+|`7E059258CF963B95BDE479D1C374A4C300624986` |N/A |Win32/Korplug.TC |Decrypted Korplug
+|`7992729769760ECAB37F2AA32DE4E61E77828547` |SHELLSEL.ocx |Win32/Agent.ADMW |Korplug loader
+|`F05E89D031D051159778A79D81685B62AFF4E3F9` |SymHp.exe |Win32/Delf.UTN |Korplug loader
+|`AB01E099872A094DC779890171A11764DE8B4360` |BoomerangLib.dll |Win32/Korplug.TH |Korplug loader
+|`CDB15B1ED97985D944F883AF05483990E02A49F7` |PotPlayer.dll |Win32/Agent.ADYO |Korplug loader
+|`908F55D21CCC2E14D4FF65A7A38E26593A0D9A70` |SmadHook32.dll |Win32/Agent.ADMW |Korplug loader
+|`477A1CE31353E8C26A8F4E02C1D378295B302C9E` |N/A |Win32/Agent.ADMW |Korplug loader
+|`52288C2CDB5926ECC970B2166943C9D4453F5E92` |SmadHook32c.dll |Win32/Agent.ADMW |Korplug loader
+|`CBD875EE456C84F9E87EC392750D69A75FB6B23A` |SHELLSEL.ocx |Win32/Agent.ADMW |Korplug loader
+|`2CF4BAFE062D38FAF4772A7D1067B80339C2CE82` |Adobe_Caps.dll |Win32/Agent.ADMW |Korplug loader
+|`97C92ADD7145CF9386ABD5527A8BCD6FABF9A148` |DocConvDll.dll |Win32/Agent.ADYO |Korplug loader
+|`39863CECA1B0F54F5C063B3015B776CDB05971F3` |N/A |Win32/Korplug.TD |Decrypted Korplug
+|`0D5348B5C9A66C743615E819AEF152FB5B0DAB97` |FontEDL.exe |clean |Vulnerable legitimate Font File Generator executable
+|`C8F5825499315EAF4B5046FF79AC9553E71AD1C0` |Silverlight.Configuration.exe |clean |Vulnerable legitimate Microsoft Silverlight Configuration Utility executable
+|`D4FFE4A4F2BD2C19FF26139800C18339087E39CD` |PowerDVDLP.exe |clean |Vulnerable legitimate PowerDVD executable
+|`65898ACA030DCEFDA7C970D3A311E8EA7FFC844A` |Symantec.exe |clean |Vulnerable legitimate Symantec AntiVirus executable
+|`7DDB61872830F4A0E6BF96FAF665337D01F164FC` |Adobe Stock Photos CS3.exe |clean |Vulnerable legitimate Adobe Stock Photos executable
+|`C13D0D669365DFAFF9C472E615A611E058EBF596` |COVID-19 travel restrictions EU reviews list of third countries.exe |Win32/Agent_AGen.NJ |Downloader
+|`062473912692F7A3FAB8485101D4FCF6D704ED23` |REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL.exe |Win32/TrojanDownloader.Agent.GDL |Downloader
+|`2B5D6BB5188895DA4928DD310C7C897F51AAA050` |log.dll |Win32/Agent.ACYW |Korplug loader
+|`511DA645A7282FB84FF18C33398E67D7661FD663` |2.exe |Win32/Agent.ADPL |Korplug loader
+|`59002E1A58065D7248CD9D7DD62C3F865813EEE6` |log.dll |Win32/Agent.ADXE |Korplug loader
+|`F67C553678B7857D1BBC488040EA90E6C52946B3` |KINGSTON.exe |Win32/Agent.ADXZ |Korplug loader
+|`58B6B5FD3F2BFD182622F547A93222A4AFDF4E76` |PotPlayer.exe |clean |Vulnerable legitimate PotPlayer executable
+|===
+
+== Network Indicators
+
+[options="header"]
+|===
+|Domain |IP |First seen |Notes
+| |`103.56.53[.]120` |2021-06-15 |Korplug C&C
+| |`154.204.27[.]181` |2020-10-05 |Korplug C&C.
+| |`43.254.218[.]42` |2021-02-09 |Download server.
+| |`45.131.179[.]179` |2020-10-05 |Korplug C&C.
+| |`176.113.69[.]91` |2021-04-19 |Korplug C&C.
+|`upespr[.]com` |`45.154.14[.]235` |2022-01-17 |Download server.
+|`urmsec[.]com` |`156.226.173[.]23` |2022-02-23 |Download server.
+| |`101.36.125[.]203` |2021-06-01 |Korplug C&C.
+| |`185.207.153[.]208` |2022-02-03 |Download server.
+| |`154.204.27[.]130` |2021-12-14 |Korplug C&C.
+| |`92.118.188[.]78` |2022-01-27 |Korplug C&C.
+|`zyber-i[.]com` |`107.178.71[.]211` |2022-03-01 |Download server.
+|`locvnpt[.]com` |`103.79.120[.]66` |2021-05-21 |Download server. This domain was previously used in a 2020 campaign https://www.recordedfuture.com/reddelta-cyber-threat-operations/[documented by Recorded Future].
+|===
+
+== Mitre ATT&CK matrix
+
+[options="header"]
+|===
+|ID |Name
+|T1583.001 |Acquire Infrastructure: Domains
+|T1583.003 |Acquire Infrastructure: Virtual Private Server
+|T1583.004 |Acquire Infrastructure: Server
+|T1587.001 |Develop Capabilities: Malware
+|T1588.006 |Obtain Capabilities: Vulnerabilities
+|T1608.001 |Stage Capabilities: Upload Malware
+|T1059.003 |Command and Scripting Interpreter: Windows Command Shell
+|T1106 |Native API
+|T1129 |Shared Modules
+|T1204.002 |User Execution: Malicious File
+|T1574.002 |Hijack Execution Flow: DLL Side-Loading
+|T1547.001 |Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder
+|T1053.005 |Scheduled Task/Job: Scheduled Task
+|T1140 |Deobfuscate/Decode Files or Information
+|T1564.001 |Hide Artifacts: Hidden Files and Directories
+|T1564.003 |Hide Artifacts: Hidden Window
+|T1070 |Indicator Removal on Host
+|T1070.004 |Indicator Removal on Host: File Deletion
+|T1070.006 |Indicator Removal on Host: Timestomp
+|T1036.004 |Masquerading: Masquerade Task or Service
+|T1036.005 |Masquerading: Match Legitimate Name or Location
+|T1112 |Modify Registry
+|T1027 |Obfuscated Files or Information
+|T1027.005 |Obfuscated Files or Information: Indicator Removal from Tools
+|T1055.001 |Process Injection: Dynamic-link Library Injection
+|T1620 |Reflective Code Loading
+|T1083 |File and Directory Discovery
+|T1082 |System Information Discovery
+|T1614 |System Location Discovery
+|T1016 |System Network Configuration Discovery
+|T1016.001 |System Network Configuration Discovery: Internet Connection Discovery
+|T1033 |System Owner/User Discovery
+|T1124 |System Time Discovery
+|T1005 |Data from Local System
+|T1025 |Data from Removable Media
+|T1039 |Data from Network Shared Drive
+|T1071.001 |Application Layer Protocol: Web Protocols
+|T1095 |Non-Application Layer Protocol
+|T1573.001 |Encrypted Channel: Symmetric Cryptography
+|T1008 |Fallback Channels
+|T1105 |Ingress Tool Transfer
+|T1571 |Non-Standard Port
+|T1132.001 |Data Encoding: Standard Encoding
+|T1041 |Exfiltration Over C2 Channel
+|===
