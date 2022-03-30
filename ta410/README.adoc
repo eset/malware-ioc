@@ -1,0 +1,98 @@
+= A Lookback Under The TA410 Umbrella: Its Cyberespionage TTPs And Activity -- Indicators of Compromise
+
+The blog post on TA410 is available on WeLiveSecurity at
+https://www.welivesecurity.com/2022/04/27/lookback-ta410-umbrella-cyberespionage-ttps-activity/.
+
+== Files
+
+[options="header"]
+|===
+|SHA-1 |Filename |Detection |Description
+|`C96558312FBF5847351B0B6F724D7B3A31CCAF03` |N/A |Win32/Agent.UWR |FlowCloud v5.0.3 initial loader
+|`1403241C415A8D686B1148FA4229A2EB833D8D08` |setlangloc.dll |Win32/Agent.UNL |FlowCloud DLL hijacking malicious library
+|`38D0E92AFF991CFC9C68D7BAAD6CB85916139AF5` |hidmouse.sys |Win32/Agent.UKR |TA410 32-bit Rootkit/Keylogger driver
+|`AF978ED8AD37CE1437A6B42D96BF518D5C4CFD19` |hidmouse.sys |Win64/Agent.UKR |TA410 64-bit Rootkit/Keylogger driver
+|`B70F3A3A9B5B8506EE95791469CA496E01AD7DAF` |winver32.dll |Win32/Agent.ULH |FlowCloud v4.1.3 hcClientLoaderZero_x86 backdoor
+|`014421BDB1EA105A6DF0C27FC114819FF3637704` |hhh.exe |Win32/Agent.ABYK |FlowCloud v4.1.3 initial loader
+|`EA298866E5A61FEEA4D062987F23B10A78C8A4CA` |N/A |Win32/Agent.ULH |FlowCloud v4.1.3 backdoor
+|`021B9E2E8AA30B29569254C0378A9F43E4F32EEC` |winver64.dll |Win64/Agent.KM |FlowCloud v4.1.3 hcClientLoaderZero_x64 backdoor
+|`2A2F08FAD6B0A86DC94885224687D954E739CC21` |N/A |Win32/ParanoidFish.A |Pafish sandbox detection tool
+|`3658B7CCA13C8C8AD03E9B6AEFE4B9CBE48E3C81` |hidmouse.sys |Win64/Agent.UKR |TA410 Rootkit/Keylogger driver
+|`517488F6BD0E7FC9EDE82F37226A75212B277E21` |hidmouse.sys |Win64/Agent.UKR |TA410 Rootkit/Keylogger driver
+|`C05B4AD7A3322917E17710842FB88A090198D51F` |N/A |Win32/Agent.TWI |LookBack trojanized libcurl loader
+|`DB2DF1BDF8145CB8ABA3A2026A3CC3EF4F1762BE` |phx.dll |Win32/Agent.TWI |LookBack trojanized libcurl loader
+|`EDE2AB811311FC011B1E89C5A0B7A60C123B7398` |hidmouse.sys |Win64/Agent.UKR |TA410 Rootkit/Keylogger driver
+|`7AA35BA7030AFCD271436DE8173D7B2F317A1BFC` |libcurl.dll |Win32/Agent.TWI |LookBack trojanized libcurl loader
+|`A5C02ABE698300F3DE0B7CC7F0856652753831DA` |libcurl.dll |Win32/Agent.TWI |LookBack trojanized libcurl loader
+|`613C4AFAE8F5F80F22DCD1827E3230FCA361ADA5` |libcurl.dll |Win32/Agent.UKD |LookBack trojanized libcurl loader
+|`859CD6DFDADAB3D6427C6C1C29581CB2094D648F` |meterpreter.exe |Win32/Rozena.CP |Metasploit Meterpreter backdoor
+|`DBEA7F0C0D2BF8BC365A2D1572CA1538FE8FB9A3` |responsor.dat |Win32/Agent.ULL |FlowCloud fcClientDLL final stage backdoor
+|`ADD5B4FD9AEA6A38B5A8941286BC9AA4FE23BD20` |絆邧坋蔡趕昴.doc |Win32/Exploit.Agent.TY |Malicious Royal Road document.
+|`7BA42061568FF6D9CA5FE5360DCE74C25EA48ADA` |N/A |Win32/Agent.ACKQ |Packed Tendyron downloader.
+|`D81215890703C48B8EA07A1F50FEC1A6CA9DF88B` |N/A |Win32/TrojanDownloader.Agent.FLI |Unpacked Tendyron downloader.
+|`F359D3C074135BBCA9A4C98A6B6544690EDAE93D` |OnKeyToken_KEB.dll |Win32/Injector.ELGA |Tendyron malicious DLL.
+|`621B31D5778EC2FB72D38FB61CED110A6844D094` |N/A |Win64/Rozena.AO |X4 network shellcode.
+|`BC11DC8D86A457A07CFE46B5F2EF6598B83C8A1F` |m.exe |Win32/Injector.EMVA |Korplug dropper.
+|`C369E1466F66744AA0E658588E7CF2C051EE842F` |qrt.dll |Win32/Injector.EMVA |Korplug loader.
+|`5379FBB0E02694C524463FDF7F267A7361ECDD68` |sll.exe |MSIL/TrojanDownloader.Agent.GPS |QuasarRAT downloader.
+|`6CC6170977327541F8185288BB9B1B81F56D3FD0` |PresentationCache.exe |MSIL/Agent.TZG |QuasarRAT loader.
+|`D95185A4A3F8512D92F69D2ED7B8743638C54BE8` |N/A |MSIL/Spy.Agent.AES |QuasarRAT backdoor.
+|`BE7F0E41CD514561AED43B07AA9F5F0842BF876C` |HTra.exe |Win32/HackTool.Hucline.AB |HUC Packet Transmitter (HTran).
+|`7F663F50E9D6376715AEB3AB66DEDE038258EF6C` |HTran13.exe |Win32/HackTool.Hucline.S |HUC Packet Transmitter (HTran).
+|`BEDA1224B3BB9F98F95FF7757D2687F4D9F4B53A` |event.exe |Win32/Agent.UJN |Simple cmd.exe-based backdoor compiled with MingW.
+|`2B61E7C63A0A33AAC4CF7FE0CEB462CF6DACC080` |htran.exe |Win32/HackTool.Hucline.AB |HUC Packet Transmitter (HTran).
+|`EF3C796652141B8A68DCCF488159E96903479C29` |htran_f-secury.exe |Win32/HackTool.Hucline.AB |HUC Packet Transmitter (HTran).
+|`6B547C244A3086B5B6EA2B3A0D9594BBE54AE06B` |inbt.zip |Python/HackTool.Agent.J |EXE masquerading as ZIP. This is a Python network scanner (compiled with PyInstaller).
+|`4CDCE3AF614C2A5E60E71F1205812AB129C0955B` |msd017.exe |Python/Exploit.MS17-010.B |This is a Python scanner (compiled with PyInstaller) for the vulnerability MS17-010 (EternalBlue).
+|===
+
+== Network IOCs
+
+[options="header"]
+|===
+|Domain |IP |First seen |Details
+| |`43.254.216[.]104` |2020-06 |Delivery server
+| |`45.124.115[.]103` |2020-08 |Delivery server
+| |`161.82.181[.]4` |2020-12 |Delivery server
+| |`43.254.219[.]153` |2020-07 |X4 C&C server
+| |`154.223.141[.]36` |2020-06 |HTran C&C server
+| |`103.139.2[.]93` |2020-10 |Tendyron C&C server
+|`cahe.microsofts[.]com` | | |QuasarRAT C&C server
+|`ffca.caibi379[.]com` | | |QuasarRAT downloader C&C server
+|`smtp.nsfwgo[.]com` | | |Korplug C&C server
+| |`45.124.115[.]103` |2020-06 |LookBack C&C server
+| |`185.225.19[.]17` |2021-01 |LookBack C&C server
+| |`94.158.245[.]249` |2020-03 |LookBack C&C server
+| |`5.252.179[.]227` |2021-03 |LookBack C&C server
+| |`222.186.151[.]141` |2019-11 |FlowCloud C&C server
+| |`47.111.22[.]65` |2020-09 |FlowCross C&C server
+| |`114.55.109[.]199` |2020-05 |FlowCloud C&C server
+|`dlaxpcmghd[.]com` |`185.225.17[.]39` |2020-09 |LookBack C&C server
+|`wwww.dlmum[.]com` | |N/A |FlowCloud C&C server
+|===
+
+== Code Signing Certificates
+
+|===
+|Serial number |0x0F8B600FF1882E
+|Thumbprint (SHA-1)|`02ED6A578C575C8D9C72398E790354B095BB07BC`
+|Subject CN |Hangzhou Leishite Laser Technology Co., Ltd.
+|Subject O |Hangzhou Leishite Laser Technology Co., Ltd.
+|Subject L |Hangzhou
+|Subject S |Zhejiang
+|Subject C |CN
+|Valid from |2012-03-29 09:07:04 UTC
+|Valid to |2014-04-02 06:24:19 UTC
+|===
+
+|===
+|Serial number |0x4ED8730F4E1B8558CD1CB0107B5F776B
+|Thumbprint (SHA-1)|`850821D88A4475F0310F10FBA806353A4113D252`
+|Subject CN |北京和赢讯时科技有限公司 (Beijing Heyingxunshi Technology Co., Ltd.)
+|Subject O |北京和赢讯时科技有限公司 (Beijing Heyingxunshi Technology Co., Ltd.)
+|Subject OU |研发部 (R&D Department)
+|Subject S |北京市 (Beijing)
+|Subject C |CN
+|Valid from |2019-11-13 00:00:00 UTC
+|Valid to |2020-11-12 23:59:59 UTC
+|===

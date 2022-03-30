@@ -1,0 +1,66 @@
+# For feedback or questions contact us at: github@eset.com
+# https://github.com/eset/malware-ioc/
+#
+# These snort rules are provided to the community under the two-clause BSD
+# license as follows:
+#
+# Copyright (c) 2022, ESET
+# All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are met:
+#
+# 1. Redistributions of source code must retain the above copyright notice, this
+# list of conditions and the following disclaimer.
+#
+# 2. Redistributions in binary form must reproduce the above copyright notice,
+# this list of conditions and the following disclaimer in the documentation
+# and/or other materials provided with the distribution.
+#
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+# AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+# IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+# DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+# FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+# DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+# SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+# CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+# OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+# OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#
+
+alert tcp any any -> any any \
+	(msg:"TA410 FlowCloud Hardcoded HTTP request"; gid:45534554; sid:45410003; rev:1;\
+	metadata: author "Alexandre Côté", date "2021-10-19", source "https://github.com/eset/malware-ioc/",\
+	license "BSD 2-Clause, reference "https://www.welivesecurity.com/";\
+	content:"Origin: http://s.peheavens.com"; http_header; content:"X-Requested-With: ShockwaveFlash/20.0.0.306"; http_header;\
+	content:"http://s.peheavens.com/html/portlet/ext/draco/resources/draco_manager.swf/[[DYNAMIC]]/1"; http_header;\
+	content:"COOKIE_SUPPORT=true\; JSESSIONID=5C7E7A60D01D2891F40648DAB6CB3DF4.jvm1\; COMPANY_ID=10301\; ID=666e7375545678695645673d\; PASSWORD=7a4b48574d746470447a303d\; LOGIN=6863303130\; SCREEN_NAME=4a2b455377766b657451493d\; GUEST_LANGUAGE_ID=en-US"; http_cookie;)
+
+alert tcp any any -> any any \
+	(msg:"TA410 FlowCloud Hardcoded HTTP request"; gid:45534554; sid:45410004; rev:1;\
+	metadata: author "Alexandre Côté", date "2021-10-19", source "https://github.com/eset/malware-ioc/",\
+	license "BSD 2-Clause, reference "https://www.welivesecurity.com/";\
+	content:"200"; http_stat_code; content:"Server: Apache-Coyote/1.1"; http_header;\
+	content:"Expires: Thu, 01 Jan 1970 08:00:00 CST"; http_header; content:"Last-Modified: Fri, 27 Apr 2012 08:11:04 GMT"; http_header;)
+
+alert tcp any any -> any any \
+	(msg:"TA410 LookBack HTTP client packet magic bytes"; gid:45534554; sid:45410000; rev:1;\
+	metadata: author "Alexandre Côté", date "2021-10-19", source "https://github.com/eset/malware-ioc/",\
+	license "BSD 2-Clause, reference "https://www.welivesecurity.com/";\
+	content:"=mccoklei"; http_client_body;)
+
+alert tcp any any -> any any \
+	(msg:"TA410 LookBack HTTP server packet"; gid:45534554; sid:45410001; rev:1;\
+	metadata: author "Alexandre Côté", date "2021-10-19", source "https://github.com/eset/malware-ioc/",\
+	license "BSD 2-Clause, reference "https://www.welivesecurity.com/";\
+	content:"200"; http_stat_code; content:"Content-Type: image/gif"; http_header;\
+	pcre:"/ETag: \"[0-9]{6}-[0-9]{3,5}-[0-9]{8}\"/H";\
+	file_data; content:"|c2 2e ab 48|"; depth:4;)
+
+alert tcp any any <> any any \
+	(msg:"TA410 LookBack raw TCP packet"; gid:45534554; sid:45410002; rev:1;\
+	metadata: author "Alexandre Côté", date "2021-10-19", source "https://github.com/eset/malware-ioc/",\
+	license "BSD 2-Clause, reference "https://www.welivesecurity.com/";\
+	dsize:>31; flags:PA;\
+	content:"|c2 2e ab 48|"; depth:4; byte_extract:4,8,payload_size; isdataat:31+payload_size;)
