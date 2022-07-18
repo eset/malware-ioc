@@ -1,0 +1,37 @@
+= I see what you did there: a look at the CloudMensis macOS spyware -- Indicators of Compromise
+
+The blog post about CloudMensis is available on WeLiveSecurity at
+https://www.welivesecurity.com/2022/07/19/i-see-what-you-did-there-look-cloudmensis-macos-spyware/.
+
+== Samples
+
+[options="header"]
+|===
+| SHA-1                                      | Filename                    | Description            | Detection name
+| `D7BF702F56CA53140F4F03B590E9AFCBC83809DB` | `mdworker3`                 | Downloader (`execute`) | OSX/CloudMensis.A
+| `0AA94D8DF1840D734F25426926E529588502BC08` | `WindowServer`, `myexe`     | Spy agent (`Client`)   | OSX/CloudMensis.A
+| `C3E48C2A2D43C752121E55B909FC705FE4FDAEF6` | `WindowServer`, `MyExecute` | Spy agent (`Client`)   | OSX/CloudMensis.A
+|===
+
+== RSA public key
+
+----
+-----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsGRYSEVvwmfBFNBjOz+Q
+pax5rzWf/LT/yFUQA1zrA1njjyIHrzphgc9tgGHs/7tsWp8e5dLkAYsVGhWAPsjy
+1gx0drbdMjlTbBYTyEg5Pgy/5MsENDdnsCRWr23ZaOELvHHVV8CMC8Fu4Wbaz80L
+Ghg8isVPEHC8H/yGtjHPYFVe6lwVr/MXoKcpx13S1K8nmDQNAhMpT1aLaG/6Qijh
+W4P/RFQq+Fdia3fFehPg5DtYD90rS3sdFKmj9N6MO0/WAVdZzGuEXD53LHz9eZwR
+9Y8786nVDrlma5YCKpqUZ5c46wW3gYWi3sY+VS3b2FdAKCJhTfCy82AUGqPSVfLa
+mQIDAQAB
+-----END PUBLIC KEY-----
+----
+
+== Paths
+
+- `/Library/WebServer/share/httpd/manual/WindowServer`
+- `/Library/LaunchDaemons/.com.apple.WindowServer.plist`
+- `~/Library/Containers/com.apple.FaceTime/Data/Library/windowserver`
+- `~/Library/Containers/com.apple.Notes/Data/Library/.CFUserTextDecoding`
+- `~/Library/Containers/com.apple.languageassetd/loginwindow`
+- `~/Library/Application Support/com.apple.spotlight/Resources_V3/.CrashRep`
