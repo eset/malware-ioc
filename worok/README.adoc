@@ -1,0 +1,104 @@
+:toc:
+
+= Worok Indicators of Compromise
+
+For a description of Worok's samples, please see the article about
+[Worok](https://www.welivesecurity.com/2022/09/06/worok-big-picture/) on
+[WeLiveSecurity](https://www.welivesecurity.com/).
+
+== PowheartBeat
+
+=== ESET detection names
+
+- PowerShell/PowheartBeat.A
+- PowerShell/PowheartBeat.B
+
+=== SHA-1 hashes
+
+----
+3A47185D0735CDECF4C7C2299EB18401BFB328D5
+27ABB54A858AD1C1FF2863913BDA698D184E180D
+678A131A9E932B9436241402D9727AA7D06A87E3
+757ABA12D04FD1167528FDD107A441D11CD8C427
+54700A48D934676FC698675B4CA5F712C0373188
+C2F53C138CB1B87D8FC9253A7088DB30B25389AF
+C2F1954DE11F72A46A4E823DE767210A3743B205
+CE430A27DF87A6952D732B4562A7C23BEF4602D1
+EDE5AB2B94BA85F28D5EE22656958E4ECD77B6FF
+----
+
+=== C&C servers
+
+- `++118.193.78.22++`
+- `++118.193.78.57++`
+- `++5.183.101.9++`
+- `++45.77.36.243++`
+- `++airplane.travel-commercials.agency++`
+- `++central.suhypercloud.org++`
+
+== PNGLoader
+
+=== ESET detection names
+
+* MSIL/PNGLoader.A
+
+
+=== SHA-1 hashes
+
+----
+4721EEBA13535D1EE98654EFCE6B43B778F13126
+728A6CB7A150141B4250659CF853F39BFDB7A46C
+864E55749D28036704B6EA66555A86527E02AF4A
+8DA6387F30C584B5FD3694A99EC066784209CA4C
+AA60FB4293530FBFF00D200C0D44EEB1A17B1C76
+B2EAEC695DD8BB518C7E24C4F37A08344D6975BE
+CDB6B1CAFEE098615508F107814179DEAED1EBCF
+----
+
+=== Used paths
+
+
+- `C:\Program Files\VMware\VMware Tools\`
+- `C:\Program Files\WinRar\`
+- `C:\Program Files\UltraViewer\`
+- `C:\Program Files\VMware\VMware Tools\VMware VGAuth\readme.txt`
+- `C:\Program Files\WinRar\rarinstall.log`
+- `C:\Program Files\UltraViewer\CopyRights.dat`
+- `C:\Program Files\VMware\VMware Tools\VMware VGAuth\VMWSU_V1_1.dll`
+- `C:\Program Files\WinRar\des.dat`
+- `C:\Program Files\UltraViewer\uvcr.dll`
+
+== CLRLoad
+
+=== ESET detection names
+
+- Win64/CLRLoad.F
+- Win64/CLRLoad.A
+- Win32/CLRLoad.A
+- Win64/CLRLoad.E
+- Win64/CLRLoad.H
+
+=== SHA-1 hashes
+
+----
+4F9A43E6CF37FF20AE96E564C93898FDA6787F7D
+F181E87B0CD6AA4575FD51B9F868CA7B27240610
+4CCF0386BDE80C339EFE0CC734CB497E0B08049C
+5CFC0D776AF023DCFE8EDED5CADA03C6D7F9C244
+05F19EBF6D46576144276090CC113C6AB8CCEC08
+A5D548543D3C3037DA67DC0DA47214B2C2B15864
+CBF42DCAF579AF7E6055237E524C0F30507090F3
+----
+
+=== Mutex names
+
+- `oERiQtKLgPgK`
+- `zYCLBWekRX3t`
+- `aB82UduGX0EX`
+- `U37uxsCsA4Xm`
+- `xBUjQR2vxYTz`
+- `Mr2PJVxbIBD4`
+- `ad8TbUIZl5Ga`
+- `9xvzMsaWqxMy`
+- `Wo0r0KGWhYGO`
+- `3c3401ad-e77d-4142-8db5-8eb5483d7e41`
