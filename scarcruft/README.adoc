@@ -1,0 +1,26 @@
+= ScarCruft Indicators of Compromise
+
+== Dolphin
+
+The blog post about Dolphin is available on WeLiveSecurity at
+https://www.welivesecurity.com/2022/11/30/whos-swimming-south-korean-waters-meet-scarcrufts-dolphin/
+
+=== ESET detection names
+
+- Win64/Agent.MS
+- Win32/Spy.Agent.QET
+- Win64/Agent.MS
+- Win32/Agent.UYO
+- Win64/Agent.MS
+
+=== Host based indicators
+
+==== SHA-1 hashes
+
+----
+D9A369E328EA4F1B8304B6E11B50275F798E9D6B
+F9F6C0184CEE9C1E4E15C2A73E56D7B927EA685B
+2C6CC71B7E7E4B28C2C176B504BC5BDB687C4D41
+5B70453AB58824A65ED0B6175C903AA022A87D6A
+21CA0287EC5EAEE8FB2F5D0542E378267D6CA0A6
+----
