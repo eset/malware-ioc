@@ -1,0 +1,37 @@
+= MirrorFace: Operation LiberalFace -- Indicators of Compromise
+
+The blog post about MirrorFace is available on https://www.welivesecurity.com[WeLiveSecurity] at
+https://www.welivesecurity.com/2022/12/14/unmasking-mirrorface-operation-liberalface-targeting-japanese-political-entities
+
+== Host based indicators
+
+=== SHA-1 hashes
+
+----
+F4691FF3B3ACD15653684F372285CAC36C8D0AEF
+DB81C8719DDAAE40C8D9B9CA103BBE77BE4FCE6C
+A8D2BE15085061B753FDEBBDB08D301A034CE1D5
+0AB7BB3FF583E50FBF28B288E71D3BB57F9D1395
+E888A552B00D810B5521002304D4F11BC249D8ED
+----
+
+=== ESET detection names
+
+- Win32/Agent.ACLP
+
+=== File names
+
+- `PART_01\【参考】220628<redacted>発・<redacted>選挙管理委員会宛文書（添書分）.exe`
+- `K7SysMon.Exe.db`
+- `31558_n.dll`
+
+
+== Network indicators
+
+----
+5.8.95[.]174
+45.32.13[.]180
+103.175.16[.]39
+www.ninesmn[.]com
+www.aesorunwe[.]com
+----
