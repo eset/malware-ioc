@@ -1,0 +1,66 @@
+= Agrius Indicators of Compromise
+
+== Fantasy
+
+The blog post about Fantasy, _Fantasy -- a new Agrius wiper deployed through a
+supply‑chain attack_ is available on https://www.welivesecurity.com[WeLiveSecurity] at
+https://www.welivesecurity.com/2022/12/07/fantasy-new-agrius-wiper-supply-chain-attack/
+
+=== Samples
+
+[options="header"]
+|====
+| SHA-1                                      | Filename         | Detection         | Description
+| `1A62031BBB2C3F55D44F59917FD32E4ED2041224` | `fantasy35.exe`  | MSIL/KillDisk.I   | Fantasy wiper.
+| `820AD7E30B4C54692D07B29361AECD0BB14DF3BE` | `fantasy45.exe`  | MSIL/KillDisk.I   | Fantasy wiper.
+| `1AAE62ACEE3C04A6728F9EDC3756FABD6E342252` | `host2ip.exe`    | _clean_           | Resolves a hostname to an IP address.
+| `5485C627922A71B04D4C78FBC25985CDB163313B` | `MiniDump.exe`   | MSIL/Riskware.LsassDumper.H | Implementation of Mimikatz minidump that dumps credentials from LSASS.
+| `DB11CBFFE30E0094D6DE48259C5A919C1EB57108` | `registry.bat`   | BAT/Agent.NRG     | Batch file that wipes some registry keys and is dropped and executed by the Fantasy wiper.
+| `3228E6BC8C738781176E65EBBC0EB52020A44866` | `secretsdump.py` | Python/Impacket.A | Python script that dumps credential hashes.
+| `B3B1EDD6B80AF0CDADADD1EE1448056E6E1B3274` | `spchost.exe`    | MSIL/Agent.XH     | Sandals lateral movement tool and Fantasy spreader.
+|====
+
+=== File extensions targeted by Fantasy wiper
+
+----
+$$$ blend drw jsp nyf qualsoftcode tdb $db blend1 dsb kb2 oab quicken2015backup
+tex 001 blend2 dss kbx obj quicken2016backup tga 002 blob dtd kc2 obk
+quicken2017backup thm 003 bm3 dwg kdb odb quickenbackup tib 113 bmk dxb kdbx
+odc qv~ tibkp 3dm bookexport dxf kdc odf r3d tif 3ds bpa dxg key odg raf tig
+3fr bpb em1 kf odm rar tis 3g2 bpm epk kpdx odp rat tlg 3gp bpn eps layout ods
+raw tmp 3pr bps erbsql lbf odt rb tmr 73b bpw erf lcb oeb rbc tor 7z bsa esm
+ldabak ogg rbf trn __a bup exe litemod oil rbk ttbk __b c exf llx old rbs txt
+ab caa fbc lnk onepkg rdb uci ab4 cas fbf ltx orf re4 upk aba cbk fbk lua ori
+rgss3a v2i abbu cbs fbu lvl orig rim vb abf cbu fbw m ost rm vbk abk cdf fdb m2
+otg rmbak vbm abu cdr ff m3u oth rmgb vbox-prev abu1 cdr3 ffd m4a otp rofl vcf
+accdb cdr4 fff m4v ots rrr vdf accde cdr5 fh map ott rtf vfs0 accdr cdr6 fhd
+max oyx rw2 vmdk accdt cdrw fhf mbf p12 rwl vob ach cdx fla mbk p7b rwz
+vpcbackup acp ce2 flat mbw p7c s3db vpk acr cel flka mcmeta pab safenotebackup
+vpp_pc act cenon~ flkb mdb pages sas7bdat vrb adb cer flv mdbackup pak sav vtf
+adi cfp fmb mdc paq say w01 ads cfr forge mddata pas sb w3x aea cgm fos mdf pat
+sbb wallet afi cib fpk mdinfo pba sbs walletx agdl ck9 fpsx mef pbb sbu war ai
+class fpx mem pbd sdO wav ait cls fsh menu pbf sda wb2 al cmf ftmb mfw pbj sdc
+wbb apj cmt ful mig pbl sdf wbcat apk config fwbackup mkv pbx5script sid wbk
+arc cpi fxg mlx pbxscript sidd wbx arch00 cpp fza mmw pcd sidn win arw cr2 fzb
+moneywell pct sie wjf as4 craw gb1 mos pdb sim wma asd crds gb2 mov pdd sis wmo
+asf crt gbp mp3 pdf skb wmv ashbak crw gdb mp4 pef sldm wotreplay asm cs gho
+mpb pem sldx wpb asmx csd ghs mpeg pfi slm wpd asp csh gray mpg pfx sln wps
+aspx csl grey mpqge php sme wspak asset csm gry mrw php5 sn1 wxwanam asv css
+gs-bck mrwref phtml sn2 x asvx csv gz msg pk7 sna x11 asx d3dbsp h msi pkpass
+sns x3f ate da0 hbk msim pl snx xbk ati dac hkdb mv_ plc spf xf avi das hkx myd
+plc spg xis awg dash hplg mynotesbackup png spi xla ba6 dazip hpp nb7 pot sps
+xlam ba7 db htm nba potm sqb xlk ba8 db-journal htm1 nbak potx sql xlm ba9 db0
+html nbd ppam sqlite xlr bac db3 hvpl nbd pps sqlite3 xls back dba ibank nbf
+ppsm sqlitedb xlsb backup dbf ibd nbi ppsx sr2 xlsm backup1 dbk ibk nbk ppt srf
+xlsx backupdb dbs ibz nbs pptm srr xlt bak dbx icbu nbu pptx srt xltm bak2 dc2
+icf ncf pqb-backup srw xltx bak3 dcr icxs nco prf st4 xlw bakx dcs idx nd prv
+st6 xml bak~ ddd iif nda ps st7 ycbcra bank ddoc iiq ndd psa st8 yrcbck bar
+ddrw incpas nef psafe3 std yuv bat dds indd nfb psd stg zbfx bay der index nfc
+psk sti zip bbb des inprogress nk2 pspimage stw ztmp bbz desc ipd nop pst stx
+~cw bc6 design iso noy ptb sty bc7 dgc itdb npf ptx sum bck dim itl nps pvc sv$
+bckp divx itm nrbak pvhd sv2i bcm diy iv2i nrs py svg bdb djvu iwd nrw qba swf
+bff dmp iwi ns2 qbb sxc bgt dna j01 ns3 qbk sxd bif dng jar ns4 qbm sxg bifx
+doc java nsd qbmb sxi big docm jbk nsf qbmd sxm bik docx jdc nsg qbr sxw bk1
+dot jpa nsh qbw syncdb bkc dotm jpe ntl qbx t12 bkf dotx jpeg nwb qby t13 bkp
+dov jpg nwbak qdf tar bkup dpb jps nx2 qic tax bkz drf js nxl qsf tbk
+----
