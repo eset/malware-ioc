@@ -1,0 +1,34 @@
+= Tick -- Indicators of Compromise
+
+The blog post about Tick, "The slow Tick-ing time bomb: Tick APT group
+compromise of a DLP software developer in East Asia" is available on
+WeLiveSecurity at
+https://www.welivesecurity.com/2023/03/14/slow-ticking-time-bomb-tick-apt-group-dlp-software-developer-east-asia/.
+
+== Files
+
+[options="header"]
+|===
+|SHA-1 |Filename |ESET detection name |Description
+|`72BDDEAD9B508597B75C1EE8BE970A7CA8EB85DC` |`dwmapi.dll` |Win32/Netboy.A |Netboy backdoor.
+|`8BC1F41A4DDF5CFF599570ED6645B706881BEEED` |`vssapi.dll` |Win64/ShadowPy.A |ShadowPy downloader.
+|`4300938A4FD4190A47EDD0D333E26C8FE2C7451E` |N/A |Win64/TrojanDropper.Agent.FU |Trojanized Q-dir installer, 64-bit version. Drops the customized ReVBShell version A.
+|`B9675D0EFBC4AE92E02B3BFC8CA04B01F8877DB6` |N/A |Win64/TrojanDropper.Agent.FU |Trojanized Q-dir installer, 64-bit version. Drops the customized ReVBShell version B.
+|`F54F91D143399B3C9E9F7ABF0C90D60B42BF25C9` |N/A |Win32/TrojanDownloader.Agent.GBY |Trojanized Q-dir installer, 32-bit version.
+|`FE011D3BDF085B23E6723E8F84DD46BA63B2C700` |N/A |VBS/Agent.DL |Customized ReVBShell backdoor version A.
+|`02937E4A804F2944B065B843A31390FF958E2415` |N/A |VBS/Agent.DL |Customized ReVBShell backdoor version B.
+|===
+
+== Network Indicators
+
+[options="header"]
+|===
+|IP address          |First seen | Details
+|`115.144.69[.]108`  |2021-04-14 | ShadowPY C&C server (`travelasist[.]com`)
+|`110.10.16[.]56`    |2020-08-19 | Netboy C&C server (`mssql.waterglue[.]org`)
+|`103.127.124[.]117` |2020-10-15 | Server contacted by the malicious update executable to retrieve a key for decryption.
+|`103.127.124[.]119` |2021-04-28 | ReVBShell backdoor version A server. (`slientship[.]com`)
+|`103.127.124[.]76`  |2020-06-26 | ReVBShell backdoor version B server.
+|`58.230.118[.]78`   |2022-01-25 | Ghostdown server. (`oracle.eneygylakes[.]com`)
+|`192.185.89[.]178`  |2020-01-28 | Server contacted by the malicious 32-bit installer to retrieve a payload.
+|===
