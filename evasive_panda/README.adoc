@@ -1,0 +1,30 @@
+= Evasive Panda APT Group delivers malware via updates for popular Chinese software –- Indicators of Compromise
+
+The blog post on Evasive Panda is available on WeLiveSecurity at
+https://www.welivesecurity.com/2023/04/26/evasive-panda-apt-group-malware-updates-popular-chinese-software/
+
+== Files
+
+[options="header"]
+|===
+|SHA-1 |Filename |ESET detection name|Description
+|`10FB52E4A3D5D6BDA0D22BB7C962BDE95B8DA3DD` |`wcdbcrk.dll` |Win32/Agent.VFT |MgBot information stealer plugin.
+|`E5214AB93B3A1FC3993EF2B4AD04DFCC5400D5E2` |`sebasek.dll` |Win32/Agent.VFT |MgBot file stealer plugin.
+|`D60EE17418CC4202BB57909BEC69A76BD318EEB4` |`kstrcs.dll` |Win32/Agent.VFT |MgBot keylogger plugin.
+|`2AC41FFCDE6C8409153DF22872D46CD259766903` |`gmck.dll` |Win32/Agent.VFT |MgBot cookie stealer plugin.
+|`0781A2B6EB656D110A3A8F60E8BCE9D407E4C4FF` |`qmsdp.dll` |Win32/Agent.VFT |MgBot information stealer plugin.
+|`9D1ECBBE8637FED0D89FCA1AF35EA821277AD2E8` |`pRsm.dll` |Win32/Agent.VFT |MgBot audio capture plugin.
+|`22532A8C8594CD8A3294E68CEB56ACCF37A613B3` |`cbmrpa.dll` |Win32/Agent.ABUJ |MgBot clipboard text capture plugin.
+|`970BABE49945B98EFADA72B2314B25A008F75843` |`agentpwd.dll` |Win32/Agent.VFT |MgBot credential stealer plugin.
+|`8A98A023164B50DEC5126EDA270D394E06A144FF` |`maillfpassword.dll` |Win32/Agent.VFT |MgBot credential stealer plugin.
+|`65B03630E186D9B6ADC663C313B44CA122CA2079` |`QQUrlMgr_QQ88_4296.exe` |Win32/Kryptik.HRRI |MgBot installer.
+|===
+
+== Network Indicators
+
+[options="header"]
+|===
+|IP address        |First seen | Details
+|`122.10.88[.]226` |2020-07-09 | MgBot C&C server.
+|`122.10.90[.]12`  |2020-07-14 | MgBot C&C server.
+|===
