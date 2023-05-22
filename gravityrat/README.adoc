@@ -1,0 +1,27 @@
+= Android GravityRAT goes after WhatsApp backups –- Indicators of Compromise
+
+The blog post on Android GravityRAT is available on WeLiveSecurity at
+https://www.welivesecurity.com/2023/06/15/android-gravityrat-goes-after-whatsapp-backups/
+
+== Files
+
+[options="header"]
+|===
+|SHA-1 |Package name |ESET detection name|Description
+|`2B448233E6C9C4594E385E799CEA9EE8C06923BD` |`eu.siacs.bingechat` |Android/Spy.Gravity.A |GravityRAT impersonating BingeChat app.
+|`25715A41250D4B9933E3599881CE020DE7FA6DC3` |`eu.siacs.bingechat` |Android/Spy.Gravity.A |GravityRAT impersonating BingeChat app.
+|`1E03CD512CD75DE896E034289CB2F5A529E4D344` |`eu.siacs.chatico` |Android/Spy.Gravity.A |GravityRAT impersonating Chatico app.
+|===
+
+== Network Indicators
+
+[options="header"]
+|===
+|IP address        |Domain |First seen | Details
+|`75.2.37[.]224` |'jre.jdklibraries[.]com' |2022-11-16 | C&C server.
+|`104.21.12[.]211` |'cld.androidadbserver[.]com' 'adb.androidadbserver[.]com' |2023-03-16 | C&C server.
+|`104.21.24[.]109` |'dev.jdklibraries[.]com' |N/A | C&C server.
+|`104.21.41[.]147` |'chatico.co[.]uk' |2021-11-19 | Distribution website.
+|`172.67.196[.]90` |'dev.androidadbserver[.]com' 'ping.androidadbserver[.]com' |2022-11-16 | C&C server.
+|`172.67.203[.]168` |'bingechat[.]net' |2022-08-18 | Distribution website.
+|===
