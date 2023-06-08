@@ -1,0 +1,136 @@
+= Asylum Ambuscade: crimeware or cyberespionage? –- Indicators of Compromise
+
+The blog post on Asylum Ambuscade is available on WeLiveSecurity at
+https://www.welivesecurity.com/2023/06/08/asylum-ambuscade-crimeware-or-cyberespionage/
+
+== Files
+
+[options="header"]
+|===
+|SHA-1 | Filename | ESET detection name | Description
+|`2B42FD41A1C8AC12221857DD2DF93164A71B95D7` | `ass.dll` | Win64/Packed.VMProtect.OX | Cobalt Strike loader.
+|`D5F8ACAD643EE8E1D33D184DAEA0C8EA8E7FD6F8` | `M_suri antiinfla_ioniste Polonia.doc` | DOC/TrojanDownloader.Agent.AAP | Document exploiting the Follina vulnerability.
+|`57157C5D3C1BB3EB3E86B24B1F4240C867A5E94F` | `N/A` | Win32/TrojanDownloader.AutoHK.KH | AHKBOT.
+|`7DB446B95D5198330B2B25E4BA6429C57942CFC9` | `N/A` | VBS/Agent.QOF | Python screenshotter.
+|`5F67279C195F5E8A35A24CBEA76E25BAD6AB6E8E` | `N/A` | VBS/TrojanDownloader.Agent.YDQ | VBS downloader.
+|`C98061592DE61E34DA280AB179465580947890DE` | `install.msi` | JS/Agent.QRI | NODEBOT.
+|`519E388182DE055902C656B2D95CCF265A96CEAB` | `Document_12_dec`-1532825.js | JS/TrojanDownloader.Agent.ZJM | Malicious JavaScript file distributed via the TDS.
+|`AC3AFD14AD1AEA9E77A84C84022B4022DF1FC88B` | `ahk` | Win32/Spy.AHK.AD | AHKBOT plugin.
+|`64F5AC9F0C6C12F2A48A1CB941847B0662734FBF` | `ass` | Win32/TrojanDownloader.AHK.N | AHKBOT plugin.
+|`557C5150A44F607EC4E7F4D0C0ED8EE6E9D12ADF` | `connect` | Win32/Spy.AHK.AD | AHKBOT plugin.
+|`F85B82805C6204F34DB0858E2F04DA9F620A0277` | `deletecookies` | Win32/Spy.AHK.AD | AHKBOT plugin.
+|`5492061DE582E71B2A5DA046536D4150F6F497F1` | `deskscreen` | Win32/Spy.AHK.AD | AHKBOT plugin.
+|`C554100C15ED3617EBFAAB00C983CED5FEC5DB11` | `deskscreenoff` | Win32/Spy.AHK.AD | AHKBOT plugin.
+|`AD8143DE4FC609608D8925478FD8EA3CD9A37C5D` | `deskscreenon` | Win32/Spy.AHK.AD | AHKBOT plugin.
+|`F2948C27F044FC6FB4849332657801F78C0F7D5E` | `domain` | Win32/TrojanDownloader.AutoHK.KH | AHKBOT plugin.
+|`7AA23E871E796F89C465537E6ECE962412CDA636` | `hardware` | Win32/Spy.AHK.AD | AHKBOT plugin.
+|`384961E19624437EB4EB22B1BF45953D7147FB8F` | `hvncoff` | Win32/Spy.AHK.AD | AHKBOT plugin.
+|`7FDB9A73B3F13DBD94D392132D896A5328DACA59` | `hvncon` | Win32/Spy.AHK.AD | AHKBOT plugin.
+|`3E38D54CC55A48A3377A7E6A0800B09F2E281978` | `installchrome` | Win32/Spy.AHK.AD | AHKBOT plugin.
+|`7F8742778FC848A6FBCFFEC9011B477402544171` | `keylogoff` | Win32/Spy.AHK.AD | AHKBOT plugin.
+|`29604997030752919EA42B6D6CEE8D3AE28F527E` | `keylogon` | Win32/Spy.AHK.AD | AHKBOT plugin.
+|`7A78AF75841C2A8D8A5929C214F08EB92739E9CB` | `passwords` | Win32/Spy.AHK.AB | AHKBOT plugin.
+|`441369397D0F8DB755282739A05CB4CF52113C40` | `rutservoff` | Win32/Spy.AHK.AD | AHKBOT plugin.
+|`117ECFA95BE19D5CF135A27AED786C98EC8CE50B` | `rutservon` | Win32/Spy.AHK.AD | AHKBOT plugin.
+|`D24A9C8A57C08D668F7D4A5B96FB7B5BA89D74C3` | `steal` | Win32/Spy.AHK.AE | AHKBOT plugin.
+|`95EDC096000C5B8DA7C8F93867F736928EA32575` | `towake` | Win32/Spy.AHK.AD | AHKBOT plugin.
+|`62FA77DAEF21772D599F2DC17DBBA0906B51F2D9` | `update` | Win32/Spy.AHK.AD | AHKBOT plugin.
+|`A9E3ACFE029E3A80372C0BB6B7C500531D09EDBE` | `wndlist` | Win32/Spy.AHK.AD | AHKBOT plugin.
+|`EE1CFEDD75CBA9028904C759740725E855AA46B5` | `tasklist` | Win32/Spy.AHK.AD | AHKBOT plugin.
+|===
+
+
+== Network Indicators
+
+[options="header"]
+|===
+| IP address | Domain | First seen | Details
+| `5.39.222[.]150` | N/A | 2022-02-27 | C&C server.
+| `5.44.42[.]27` | `snowzet[.]com` | 2022-12-07 | Cobalt Strike C&C server.
+| `5.230.68[.]137` | N/A | 2022-09-05 | C&C server.
+| `5.230.71[.]166` | N/A | 2022-08-17 | C&C server.
+| `5.230.72[.]38` | N/A | 2022-09-24 | C&C server.
+| `5.230.72[.]148` | N/A | 2022-09-26 | C&C server.
+| `5.230.73[.]57` | N/A | 2022-08-09 | C&C server.
+| `5.230.73[.]63` | N/A | 2022-06-02 | C&C server.
+| `5.230.73[.]241` | N/A | 2022-08-20 | C&C server.
+| `5.230.73[.]247` | N/A | 2022-08-09 | C&C server.
+| `5.230.73[.]248` | N/A | 2022-06-01 | C&C server.
+| `5.230.73[.]250` | N/A | 2022-06-02 | C&C server.
+| `5.252.118[.]132` | N/A | 2023-03-01 | C&C server.
+| `5.252.118[.]204` | N/A | 2023-03-01 | C&C server.
+| `5.255.88[.]222` | N/A | 2022-05-28 | C&C server.
+| `23.106.123[.]119` | N/A | 2022-02-04 | C&C server.
+| `31.192.105[.]28` | N/A | 2022-02-23 | C&C server.
+| `45.76.211[.]131` | N/A | 2023-01-19 | C&C server.
+| `45.77.185[.]151` | N/A | 2022-12-16 | C&C server.
+| `45.132.1[.]238` | N/A | 2022-11-07 | C&C server.
+| `45.147.229[.]20` | N/A | 2022-01-22 | C&C server.
+| `46.17.98[.]190` | N/A | 2020-08-31 | C&C server.
+| `46.151.24[.]197` | N/A | 2023-01-01 | C&C server.
+| `46.151.24[.]226` | N/A | 2022-12-23 | C&C server.
+| `46.151.25[.]15` | N/A | 2022-12-27 | C&C server.
+| `46.151.25[.]49` | N/A | 2022-12-29 | C&C server.
+| `46.151.28[.]18` | N/A | 2023-01-01 | C&C server.
+| `51.83.182[.]153` | N/A | 2022-03-08 | C&C server.
+| `51.83.189[.]185` | N/A | 2022-03-05 | C&C server.
+| `62.84.99[.]195` | N/A | 2023-03-27 | C&C server.
+| `62.204.41[.]171` | N/A | 2022-12-12 | C&C server.
+| `77.83.197[.]138` | N/A | 2022-03-07 | C&C server.
+| `79.137.196[.]121` | N/A | 2023-03-01 | C&C server.
+| `79.137.197[.]187` | N/A | 2022-12-01 | C&C server.
+| `80.66.88[.]155` | N/A | 2022-02-24 | C&C server.
+| `84.32.188[.]29` | N/A | 2022-01-10 | C&C server.
+| `84.32.188[.]96` | N/A | 2022-01-29 | C&C server.
+| `85.192.49[.]106` | N/A | 2022-12-25 | C&C server.
+| `85.192.63[.]13` | N/A | 2022-12-27 | C&C server.
+| `85.192.63[.]126` | N/A | 2023-03-05 | C&C server.
+| `85.239.60[.]40` | N/A | 2022-04-30 | C&C server.
+| `88.210.10[.]62` | N/A | 2022-12-12 | C&C server.
+| `89.41.182[.]94` | N/A | 2021-09-03 | C&C server.
+| `89.107.10[.]7` | N/A | 2022-12-04 | C&C server.
+| `89.208.105[.]255` | N/A | 2022-12-22 | C&C server.
+| `91.245.253[.]112` | N/A | 2022-03-04 | C&C server.
+| `94.103.83[.]46` | N/A | 2022-12-11 | C&C server.
+| `94.140.114[.]133` | N/A | 2022-03-08 | C&C server.
+| `94.140.114[.]230` | N/A | 2022-04-13 | C&C server.
+| `94.140.115[.]44` | N/A | 2022-04-01 | C&C server.
+| `94.232.41[.]96` | N/A | 2022-10-02 | C&C server.
+| `94.232.41[.]108` | N/A | 2022-08-19 | C&C server.
+| `94.232.43[.]214` | N/A | 2022-10-10 | C&C server.
+| `98.142.251[.]26` | N/A | 2022-04-29 | C&C server.
+| `98.142.251[.]226` | N/A | 2022-04-12 | C&C server.
+| `104.234.118[.]163` | N/A | 2023-03-01 | C&C server.
+| `104.248.149[.]122` | N/A | 2022-12-11 | C&C server.
+| `109.107.173[.]72` | N/A | 2023-01-20 | C&C server.
+| `116.203.252[.]67` | N/A | 2022-03-05 | C&C server.
+| `128.199.82[.]141` | N/A | 2022-12-11 | C&C server.
+| `139.162.116[.]148` | N/A | 2022-03-03 | C&C server.
+| `141.105.64[.]121` | N/A | 2022-03-21 | C&C server.
+| `146.0.77[.]15` | N/A | 2022-04-10 | C&C server.
+| `146.70.79[.]117` | N/A | 2022-03-02 | C&C server.
+| `157.254.194[.]225` | N/A | 2023-03-01 | C&C server.
+| `157.254.194[.]238` | N/A | 2023-03-13 | C&C server.
+| `172.64.80[.]1` | `namesilo.my[.]id` | 2022-12-14 | C&C server.
+| `172.86.75[.]49` | N/A | 2021-05-17 | C&C server.
+| `172.104.94[.]104` | N/A | 2022-03-05 | C&C server.
+| `172.105.235[.]94` | N/A | 2022-04-05 | C&C server.
+| `172.105.253[.]139` | N/A | 2022-03-03 | C&C server.
+| `176.124.214[.]229` | N/A | 2022-12-26 | C&C server.
+| `176.124.217[.]20` | N/A | 2023-03-02 | C&C server.
+| `185.70.184[.]44` | N/A | 2021-04-12 | C&C server.
+| `185.82.126[.]133` | N/A | 2022-03-12 | C&C server.
+| `185.123.53[.]49` | N/A | 2022-03-14 | C&C server.
+| `185.150.117[.]122` | N/A | 2021-04-02 | C&C server.
+| `185.163.45[.]221` | N/A | 2023-01-02 | C&C server.
+| `193.109.69[.]52` | N/A | 2021-11-05 | C&C server.
+| `193.142.59[.]152` | N/A | 2022-11-17 | C&C server.
+| `193.142.59[.]169` | N/A | 2022-11-08 | C&C server.
+| `194.180.174[.]51` | N/A | 2022-12-24 | C&C server.
+| `195.2.81[.]70` | N/A | 2022-09-27 | C&C server.
+| `195.133.196[.]230` | N/A | 2022-07-15 | C&C server.
+| `212.113.106[.]27` | N/A | 2023-01-28 | C&C server.
+| `212.113.116[.]147` | N/A | 2023-03-01 | C&C server.
+| `212.118.43[.]231` | N/A | 2023-03-01 | C&C server.
+| `213.109.192[.]230` | N/A | 2022-06-01 | C&C server.
+|===
