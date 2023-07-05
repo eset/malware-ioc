@@ -1,0 +1,24 @@
+= Emotet -- Indicators of Compromise
+
+These IoCs are related to ESET’s investigation on Emotet.
+
+The blog post with detailed analysis is available on WeLiveSecurity at
+https://www.welivesecurity.com/2023/07/06/whats-up-with-emotet/
+
+== Host based indicators
+
+=== Samples
+
+[options="header"]
+|====
+| SHA-1 | ESET detection name
+| `cecc5bba6193d744837e689e68bc25c43eda7235` | Win32/Emotet.DG
+| `8852b81566e8331ed43ab3c5648f8d13012c8a3b` | Win64/Emotet.AL
+| `f2e79ec201160912ab48849a5b5558343000042e` | Win64/Emotet.AQ
+| `0ceb10940ce40d1c26fc117bc2d599c491657aeb` | Win64/Emotet.AQ
+| `d5fde4a0df9e416de02ae51d07efa8d7b99b11f2` | Win64/Emotet.AL
+| `1b6cfe35ef42eb9c6e19bcbd5a3829458c856dbc` | Win64/Emotet.AL
+| `d938849f4c9d7892cd1558c8eda634dadfad2f5a` | Win64/Emotet.AO
+| `1df4561c73bd35e30b31eee62554dd7157aa26f2` | Win64/Emotet.AL
+| `05eeb597b3a0f0c7a9e2e24867a797df053ad860` | Win64/Emotet.AL
+|====
