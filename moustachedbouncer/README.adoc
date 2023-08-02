@@ -1,0 +1,80 @@
+:toc:
+:toclevels: 2
+
+= MoustachedBouncer: Espionage against foreign diplomats in Belarus –- Indicators of Compromise
+
+The blog post on MoustachedBouncer is available on WeLiveSecurity at
+https://www.welivesecurity.com/en/eset-research/moustachedbouncer-espionage-against-foreign-diplomats-in-belarus/
+
+The https://www.misp-project.org[MISP] event is available in link:misp-moustachedbouncer.event.json[`misp-moustachedbouncer.event.json`].
+
+== Files
+
+[options="header"]
+|===
+|SHA-1 | Filename | ESET detection name | Description
+|`02790DC4B276DFBB26C714F29D19E53129BB6186` | `index.html` | JS/TrojanDownloader.Agent.YJJ | Fake Windows update webpage.
+|`6EFF58EDF7AC0FC60F0B8F7E22CFE243566E2A13` | `jdrop.js` | JS/TrojanDownloader.Agent.YJJ | JavaScript code that triggers the download prompt of the fake Windows update.
+|`E65EB4467DDB1C99B09AE87BA0A964C36BAB4C30` | `MicrosoftUpdate845255.exe` | WinGo/Agent.ET | Disco dropper.
+|`3A9B699A25257CBD0476CB1239FF9B25810305FE` | `driverpackUpdate.exe` | WinGo/Runner.B | Disco plugin. Executes PowerShell scripts.
+|`19E3D06FBE276D4AAEA25ABC36CC40EA88435630` | `DPU.exe` | WinGo/Runner.C | Disco plugin. Executes PowerShell scripts.
+|`52BE04C420795B0D9C7CD1A4ACBF8D5953FAFD16` | `sdrive.exe` | Win64/Exploit.CVE-2021-1732.I | Disco plugin. LPE exploit for CVE-2021-1732.
+|`0241A01D4B03BD360DD09165B59B63AC2CECEAFB` | `nod32update.exe` | WinGo/Agent.EV | Disco plugin. Reverse proxy based on revsocks.
+|`A01F1A9336C83FFE1B13410C93C1B04E15E2996C` | `aact.exe` | WinGo/Spy.Agent.W | Disco plugin. Takes screenshots.
+|`C2AA90B441391ADEFAA3A841AA8CE777D6EC7E18` | `officetelemetry.exe` | WinGo/Agent.BT | Disco plugin. Reverse proxy based on revsocks.
+|`C5B2323EAE5E01A6019931CE35FF7623DF7346BA` | `oracleTelemetry.exe` | WinGo/Spy.Agent.W | Disco plugin packed with Themida. Takes screenshots.
+|`C46CB98D0CECCB83EC7DE070B3FA7AFEE7F41189` | `outlooksync.exe` | WinGo/Spy.Agent.W | Disco plugin. Takes screenshots.
+|`A3AE82B19FEE2756D6354E85A094F1A4598314AB` | `kb4480959_EdgeUpdate.exe` | MSIL/TrojanDropper.Agent.FKQ | Disco .NET dropper.
+|`4F1CECF6D05571AE35ED00AC02D5E8E0F878A984` | `WinSrcNT.exe` | Win32/Nightclub.B | NightClub plugin used by Disco. Steals recent files.
+|`0DAEA89F91A55F46D33C294CFE84EF06CE22E393` | `It11.exe` | Win32/Nightclub.B | NightClub plugin used by Disco. Steals recent files.
+|`11CF38D971534D9B619581CEDC19319962F3B996` | `It3.exe` | Win32/Nightclub.B | NightClub plugin used by Disco. Makes raw dumps of removable drives.
+|`F92FE4DD679903F75ADE64DC8A20D46DFBD3B277` | `metamn.dll` | Win64/Nightclub.B | NightClub (2017 version).
+|`6999730D0715606D14ACD19329AF0685B8AD0299` | `et2z7q0FREZ.cr` | Win64/Nightclub.B | NightClub plugin. Keylogger.
+|`6E729E84C7672F048ED8AE847F20A0219E917FA3` | `sTUlsWa1.cr` | Win64/Nightclub.A | NightClub plugin.  File stealer.
+|`0401EE7F3BC384734BF7E352C4C4BC372840C30D` | `EsetUpdate-0117583943.exe | Win32/Nightclub.C` | NightClub dropper.
+|`5B55250CC0DA407201B5F042322CFDBF56041632` | `creh.dll` | Win32/Nightclub.C | NightClub (2014).
+|`D14D9118335C9BF6633CB2A41023486DACBEB052` | `svhvost.exe` | Win32/Nightclub.D | Orchestrator (NightClub).
+|`E6DE72516C1D4338D7E45E028340B54DCDC7A8AC` | `schvost.exe` | Win32/Nightclub.D | Module agent (NightClub).
+|`3AD77281640E7BA754E9B203C8B6ABFD3F6A7BDD` | `nullnat.ini` | Win32/Nightclub.D | Backdoor with DNS tunneling (NightClub plugin).
+|`142FF0770BC6E3D077FBB64D6F23499D9DEB9093` | `soccix.ini` | Win32/Nightclub.D | Keylogger (NightClub plugin).
+|`FE9527277C06D7F986161291CE7854EE79788CB8` | `oreonion.ini` | Win32/Nightclub.D | Screenshotter (NightClub plugin).
+|`92115E21E565440B1A26ECC20D2552A214155669` | `svhvost.exe` | Win32/Nightclub.D | Orchestrator (NightClub).
+|`DE0B38E12C0AF0FD63A67B03DD1F8C1BF7FA6128` | `schvost.exe` | Win32/Nightclub.D | Module agent (NightClub).
+|`D2B715A72BBA307CC9BF7690439D34F62EDF1324` | `sysleg.ini` | Win32/Nightclub.D | Records audio (NightClub plugin).
+|`DF8DED42F9B7DE1F439AEC50F9C2A13CD5EB1DB6` | `oreonion.ini` | Win32/Nightclub.D | Takes screenshots (NightClub plugin).
+|===
+
+
+== Network Indicators
+
+[options="header"]
+|===
+| IP address | Domain | First seen | Details
+| `185.87.148[.]86` | centrocspupdate[.]com | 2021-11-03 | Suspected NightClub C&C server.
+| `185.87.151[.]130` | ocsp-atomsecure[.]com | 2021-11-11 | Suspected NightClub C&C server.
+| `45.136.199[.]67` | securityocspdev[.]com | 2022-07-05 | NightClub C&C server.
+| `45.136.199[.]129` | dervasopssec[.]com | 2022-10-12 | Suspected NightClub C&C server.
+|===
+
+== Domains used in AitM
+Note: These domains are used in a context where DNS queries are intercepted before reaching the internet. They do not resolve outside the context of the AitM attack.
+
+* `windows.network.troubleshooter[.]com`
+* `updates.microsoft[.]com`
+
+== SMB share IP addresses while AitM is ongoing
+Note: These IP addresses are used in a context where traffic to them is intercepted before reaching the internet. These internet-routable IP addresses are not malicious outside the context of the AitM attack.
+
+* `24.9.51[.]94`
+* `35.214.56[.]2`
+* `38.9.8[.]78`
+* `52.3.8[.]25`
+* `59.6.8[.]25`
+* `209.19.37[.]184`
+
+== Email addresses
+
+* `fhtgbbwi@mail[.]ru`
+* `nvjfnvjfnjf@mail[.]ru`
+* `glen.morriss75@seznam[.]cz`
+* `SunyaF@seznam[.]cz`
