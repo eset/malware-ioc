@@ -1,0 +1,39 @@
+= Telekopye – Indicators of Compromise
+
+The blog post on Telekopye is available on WeLiveSecurity at https://www.welivesecurity.com/en/eset-research/telekopye-hunting-mammoths-using-telegram-bot/
+
+== Samples
+
+These files are part of the Telekopye scam toolkit and are detected as
+PHP/HackTool.Telekopye.A by ESET products.
+
+[options="header"]
+|===
+| SHA-1 | First seen | Filename
+| `26727D5FCEEF79DE2401CA0C9B2974CD99226DCB` | 2021-04-04 | `scam.php`
+| `285E0573EF667C6FB7AEB1608BA1AF9E2C86B452` | 2021-01-30 | `tinkoff.php`
+| `8A3CA9EFA2631435016A4F38FF153E52C647146E` | 2023-03-27 | `600be5ab7f0513833336bec705ca9bcfd1150a2931e61a4752b8de4c0af7b03a.php`
+|===
+
+== Network
+
+These domains are used to test the toolkit or scam victims.
+
+[options="header"]
+|===
+| Domain |Hosting provider |First seen
+| `+id23352352[.]ru+`    | Cloudflare | 2023-07-04
+| `+id8092[.]ru+`        | Cloudflare | 2023-06-26
+| `+id2770[.]ru+`        | Cloudflare | 2023-06-28
+| `+id83792[.]ru+`       | Cloudflare | 2023-06-17
+| `+id39103[.]ru+`       | Cloudflare | 2023-06-19
+| `+2cdx[.]site+`        | Cloudflare | 2021-03-21
+| `+3inf[.]site+`        | Cloudflare | 2021-03-12
+| `+pay-sacure4ds[.]ru+` | Jino       | 2021-12-27
+| `+id7423[.]ru+`        | Cloudflare | 2021-03-27
+| `+id2918[.]site+`      | Cloudflare | 2021-03-08
+| `+formaa[.]ga+`        | Zomro      | 2021-05-30
+| `+id0391[.]ru+`        | Cloudflare | 2023-06-23
+| `+id66410[.]ru+`       | Cloudflare | 2023-06-17
+| `+id82567[.]ru+`       | Cloudflare | 2023-06-07
+|===
