@@ -1,0 +1,23 @@
+= Mass-spreading campaign targeting Zimbra users -- Indicators of Compromise
+
+The analysis of this campaign is available on WeLiveSecurity at
+https://www.welivesecurity.com/en/eset-research/mass-spreading-campaign-targeting-zimbra-users/
+
+
+
+== ESET detection names
+
+- HTML/Phishing.Gen 
+
+
+== URLs
+
+----
+https://fmaildd.000webhostapp[.]com/wp-admin/ZimbraNew.php 
+https://mtatdd.000webhostapp[.]com/wp-admin/ZimbraNew.php 
+https://nmailddt.000webhostapp[.]com/wp-admin/ZimbraNew.php 
+https://posderd.000webhostapp[.]com/wp-admin/ZimbraNew.php 
+https://ridddtd.000webhostapp[.]com/wp-admin/ZimbraNew.php 
+https://tmaxd.000webhostapp[.]com/wp-admin/ZimbraNew.php 
+https://zimbra.y2kportfolio[.]com/wp/wp-admin/ZimbraNew.php 
+----
