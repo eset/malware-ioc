@@ -1,0 +1,59 @@
+== Scarabs colon-izing vulnerable servers – Indicators of Compromise
+
+The blog post on CosmicBeetle and its toolset, Spacecolon, is available on WeLiveSecurity at https://www.welivesecurity.com/en/eset-research/scarabs-colon-izing-vulnerable-servers/
+
+== Samples
+
+[options="header"]
+|===
+| SHA-1 | Filename | Detection | Description
+| `40B8AF12EA6F89DB6ED635037F468AADEE7F4CA6` | `app.exe` | Win32/Spacecolon.A | Spacecolon HackTool
+| `1CB9320C010065E18881F0AAA0B72FC7C5F85956` | `Taskmgr.exe` | Win32/Spacecolon.A | Spacecolon HackTool
+| `EF911DB066866FE2734038A35A3B298359EDABCE` | `ap.exe` | Win32/Spacecolon.A | Spacecolon HackTool
+| `0A2FA26D6EAB6E9B74AD54D37C82DEE83E80BDD7` | `ap.exe` | Win32/Spacecolon.A | Spacecolon HackTool
+| `B916535362E2B691C6AEF76021944B4A23DDE190` | `ap.exe` | Win32/Spacecolon.A | Spacecolon HackTool
+| `95931DE0AA6D96568ACEBC11E551E8E1305BF003` | `a.exe` | Win64/Spacecolon.A | Spacecolon Installer
+| `6700AFB03934B01B0B2A9885799322307E3299D5` | `installer.exe` | Win64/Spacecolon.A | Spacecolon Installer
+| `4B07391434332E4F8FAADF61F288E48389BCEA08` | `svcss.exe` | Win64/Spacecolon.A | Spacecolon Service
+| `B9CF8B18A84655D0E8EF1BB14C60763CEFFF9686` | `svvc.exe` | Win64/Spacecolon.A | Spacecolon Service
+| `E2EAA1EE0B51CAF803CEEDD7D3452577B6FE7A8D` | `1new.exe` | Win32/Filecoder.FS | Scarab ransomware (.danger variant)
+| `8F1374D4D6CC2899DA1251DE0325A7095E719EDC` | `kkk.exe` | Win32/Filecoder.FS | Scarab ransomware (.rdprecovery variant)
+| `2E4A85269BA1FDBA74A49B0DF3397D6E4397DB78` | `Analyzer_sib.msi` | Win64/DelShad.D | MSI installer of ScRansom
+| `7AA1A41F561993C4CCA9361F9BAEF2B00E31C05D` | `Project1.exe` | Win32/Filecoder.Spacecolon.A | ScRansom
+| `7BC7EEAAF635A45BC2056C468C4C42CC4C7B8F05` | `Shadow.exe` | Win64/DelShad.D | Utility to delete Shadow Copies
+|===
+
+== Network indicators
+
+[options="header"]
+|===
+| IP address | Domain | First seen | Details
+| N/A | `+u.piii[.]net+`    | 2022-01-25 | Spacecolon C&C server.
+| 3.76.107[.]228 | `+N/A+`    | 2023-01-16 | Spacecolon C&C server.
+| 87.251.64[.]19 | `+N/A+`    | 2021-11-08 | Spacecolon C&C server.
+| 87.251.64[.]57 | `+up.awiki[.]org+`    | 2021-12-11 | Spacecolon C&C server.
+| 87.251.67[.]163 | `+ss.688[.]org+`    | 2023-02-27 | Spacecolon C&C server.
+| 162.255.119[.]146 | `+akamaicdnup[.]com+`    | 2023-02-24 | Spacecolon C&C server.
+| 185.170.144[.]190 | `+b.688[.]org+`    | 2021-11-21 | Spacecolon C&C server.
+| 185.202.0[.]149 | `+sys.688[.]org+`    | 2020-12-16 | Spacecolon C&C server.
+| 193.37.69[.]152 | `+update.inet2[.]org+`    | 2023-03-03 | Spacecolon C&C server.
+| 193.37.69[.]153 | `+up.vctel[.]com+` `+u.cbu[.]net+` `+update.cbu[.]net+`    | 2021-12-11 | Spacecolon C&C server.
+| 193.149.185[.]23 | `+N/A+`    | 2023-05-31 | Spacecolon C&C server.
+| 206.188.196[.]104 | `+cdnupdate[.]net+`    | 2023-01-16 | Spacecolon C&C server.
+| 213.232.255[.]131 | `+N/A+`    | 2021-12-19 | Spacecolon C&C server.
+|===
+
+
+== Paths where Spacecolon is usually installed
+- `%USERPROFILE%\Music\`
+- `%ALLUSERSPROFILE%\`
+
+== Names of custom accounts set up by CosmicBeetle
+- `support`
+- `IIS`
+- `IWAM_USR`
+- `BK$`
+
+== Mutexes created by Scarab ransomware
+- `{46E4D4E6-8B81-84CA-93DA-BB29377B2AC0}`
+- `{7F57FB1B-3D23-F225-D2E8-FD6FCF7731DC}`
