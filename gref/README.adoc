@@ -1,0 +1,38 @@
+= BadBazaar espionage tool targets Android users via patched Signal and Telegram apps –- Indicators of Compromise
+
+The blog post on Android BadBazaar is available on WeLiveSecurity at
+https://www.welivesecurity.com/en/eset-research/badbazaar-espionage-tool-targets-android-users-trojanized-signal-telegram-apps/
+
+== Files
+
+[options="header"]
+|===
+|SHA-1 |Package name |ESET detection name|Description
+|`19E5CF2E8EED73EE614B668BC1DBDDA01E058C0C` |`org.thoughtcrime.securesmsplus` |Android/Spy.BadBazaar.A |BadBazaar malware.
+|`DAB2F85C5282889E678CD0901CD6DE027FD0EC44` |`org.thoughtcrime.securesmsplus` |Android/Spy.BadBazaar.A |BadBazaar malware from Google Play Store.
+|`606E33614CFA4969F0BF8B0828710C9A23BDA22B` |`org.thoughtcrime.securesmsplus` |Android/Spy.BadBazaar.A |BadBazaar malware from Samsung Galaxy Store.
+|`C6E26EAFBF6703DC19446944AF5DED65F86C9571` |`org.telegram.FlyGram` |Android/Spy.BadBazaar.A |BadBazaar malware from distribution website and Samsung Galaxy Store.
+|`B0402E3B6270DCA3DD42FFEB033F02B9BCD9228E` |`org.telegram.FlyGram` |Android/Spy.BadBazaar.A |BadBazaar malware from Google Play Store.
+|===
+
+== Network Indicators
+
+[options="header"]
+|===
+|IP address         | Domain |First seen | Details
+|`45.63.89[.]238`   | `45.63.89.238.vultrusercontent[.]com` |2020-01-04 | FlyGram proxy server.
+|`45.133.238[.]92`  | `mail.pmumail[.]com` |2020-11-26 | FlyGram proxy server.
+|`45.154.12[.]132`  | `signalplus[.]org` |2022-06-13 | C&C server.
+|`45.154.12[.]151`  | `proxy3.signalplus[.]org` |2021-02-02 | Signal Plus proxy server.
+|`45.154.12[.]202`  | `proxy4.signalplus[.]org` |2020-12-14 | Signal Plus proxy server.
+|`62.210.28[.]116`  | `62-210-28-116.rev.poneytelecom[.]eu` |2020-03-08 | FlyGram proxy server.
+|`82.180.174[.]230` | `www.signalplus[.]org` |2022-10-26 | Distribution website.
+|`92.118.189[.]164` | `proxy2.signalplus[.]org` |N/A | Signal Plus proxy server.
+|`103.27.186[.]156` | `proxy6.signalplus[.]org` |2022-06-13 | Signal Plus proxy server.
+|`103.27.186[.]195` | `proxy5.signalplus[.]org` |2021-12-21 | Signal Plus proxy server.
+|`148.251.87[.]245` | `flygram[.]org` |2020-09-10 | C&C server.
+|`154.202.59[.]169` | `proxy1.signalplus[.]org` |2022-06-13 | Signal Plus proxy server.
+|`156.67.73[.]71`   | `www.flygram[.]org` |2021-06-04 | Distribution website.
+|`185.239.227[.]14` | N/A |N/A | FlyGram proxy server.
+|`217.163.29[.]84`  | N/A |N/A | FlyGram proxy server.
+|===
