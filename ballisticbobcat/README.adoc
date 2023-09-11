@@ -1,0 +1,38 @@
+= Sponsor with Batch-File Whiskers: Ballistic Bobcat's Scan and Strike Backdoor -- Indicators of Compromise
+
+The blog post on Ballistic Bobcat is available on WeLiveSecurity at
+https://www.welivesecurity.com/en/eset-research/sponsor-batch-filed-whiskers-ballistic-bobcats-scan-strike-backdoor/
+
+== Files
+
+[options="header"]
+|===
+|SHA-1 | Filename | ESET detection name | Description
+|`098B9A6CE722311553E1D8AC5849BA1DC5834C52` | `SystemNetwork.exe` | Win32/Agent.UXG | Ballistic Bobcat backdoor, Sponsor (v1).
+|`5AEE3C957056A8640041ABC108D0B8A3D7A02EBD` | `rundll64.exe` | Win32/Agent.UXG |Ballistic Bobcat backdoor, Sponsor (v2).
+|`764EB6CA3752576C182FC19CFF3E86C38DD51475` | `sponser.exe` | Win32/Agent.UXG | Ballistic Bobcat backdoor, Sponsor (v3).
+|`2F3EDA9D788A35F4C467B63860E73C3B010529CC` | `rundll433.exe` | Win32/Agent.UXG | Ballistic Bobcat backdoor, Sponsor (v4).
+|`E443DC53284537513C00818392E569C79328F56F` | `alumina.exe` | Win32/Agent.UXG | Ballistic Bobcat backdoor, Sponsor (v5, aka Alumina).
+|`C4BC1A5A02F8AC3CF642880DC1FC3B1E46E4DA61` | `rev.exe` | WinGo/Agent.BT | RevSocks reverse tunnel.
+|`39AE8BA8C5280A09BA638DF4C9D64AC0F3F706B6` | `procdump64.exe` | N/A | ProcDump, a command line utility for monitoring applications and generating crash dumps.
+|`A200BE662CDC0ECE2A2C8FC4DBBC8C574D31848A` | `m.exe` | Generik.EYWYQYF | Mimikatz.
+|`5D60C8507AC9B840A13FFDF19E3315A3E14DE66A` | `go.exe` | WinGo/Riskware.Gost.D | GO Simple Tunnel (GOST).
+|`50CFB3CF1A0FE5EC2264ACE53F96FADFE99CC617` | `chisel.exe` | WinGo/HackTool.Chisel.A | Chisel reverse tunnel.
+|`1AAE62ACEE3C04A6728F9EDC3756FABD6E342252` | `host2ip.exe` | N/A | Host2IP discovery tool.
+|`519CA93366F1B1D71052C6CE140F5C80CE885181` | `csrss_protected.exe` | Win64/Packed.Enigma.BV | RevSocks tunnel, protected with the trial version of the Enigma Protector software protection.
+|`4709827C7A95012AB970BF651ED5183083366C79` | `plink.exe` | N/A | Plink (PuTTY Link), a command line connection tool.
+|`99C7B5827DF89B4FAFC2B565ABED97C58A3C65B8` | `WebBrowserPassView.exe` | Win32/PSWTool.WebBrowserPassView.I | A password recovery tool for passwords stored in web browsers.
+|`E52AA118A59502790A4DD6625854BD93C0DEAF27` | `sqlextractor.exe` | MSIL/HackTool.SQLDump.A | A tool for interacting with, and extracting data from, SQL databases.
+|===
+
+
+== Network Indicators
+
+[options="header"]
+|===
+| IP address | Domain | First seen | Details
+| `162.55.137[.]20` | N/A | 2021-06-14 | PowerLess C&C.
+| `37.120.222[.]168` | N/A | 2021-11-28 | Sponsor C&C.
+| `198.144.189[.]74` | N/A | 2021-11-29 | Support tools download site.
+| `5.255.97[.]172` | N/A | 2021-09-05 | Support tools download site.
+|===
