@@ -1,0 +1,38 @@
+= Operation Jacana – Indicators of Compromise
+
+The blog post on Operation Jacana is available on WeLiveSecurity at
+https://www.welivesecurity.com/en/eset-research/operation-jacana-spying-guyana-entity/
+
+== Files
+
+[options="header"]
+|===
+|SHA-1 |Filename |Detection |Description
+|`599EA9B26581EBC7B4BDFC02E6C792B6588B751E` |`President Mohamed Irfaan Ali's Official Visit to Nassau, The Bahamas.doc.exe` |Win32/DinodasRAT.A |DinodasRAT
+|`8BDC8FA3E398733F50F8572D04172CD4B9765BBC` |`client.exe` |Win32/DinodasRAT.A |DinodasRAT
+|`9C660AC9E32AD853CAAA995F5FC112E281D8520A` |`tools.exe` |Win32/DinodasRAT.A |DinodasRAT
+|`6022383243927CAFC74D8DC937423DBED2A170B8` |`Client.exe` |Win32/DinodasRAT.A |DinodasRAT
+|`B2B86DDA48A109EDD932B460649F60F505D5D71C` |`windowsupdate.exe` |Win32/DinodasRAT.A |DinodasRAT
+|`EFD1387BB272FFE75EC9BF5C1DD614356B6D40B5` |`people.zip` |Win32/DinodasRAT.A |ZIP file containing DinodasRAT
+|`9343E9716933382DA172124803F5463A8454E347` |`lass.exe` |Win64/Agent.CAY |Loader. Executes DLLs used in Operation Jacana
+|`C92DAC928D70EDED7D52CB1347850AA422CEA817` |`2.dll` |Win64/Spy.Agent.DD |DLL used to steal information, like clipboard data, from the machine
+|`FFBA119D86688AFC098109E08811F67A6E5DECDA` |`1.dll` |Win64/DinodasRAT.A |DinodasRAT
+|`9A6E803A28D27462D2DF47B52E34120FB2CF814B` |`President Mohamed Irfaan Ali's Official Visit to Nassau, The Bahamas.exe` |Win32/DinodasRAT.B |DinodasRAT
+|`33065850B30A7C797A9F1E5B219388C6991674DB` |`114.exe` |Win32/DinodasRAT.B |DinodasRAT
+|`6129E37412AFEAFEE47ECEB4C52094EE185E6768` |`hh.hsnx` |Win32/DinodasRAT.B |DinodasRAT
+|`010451191D8556DCF65C7187BE9579E99323F74D` |`COTED_Att. I to Sav. 230 (Draft Agenda).docx.exe` |Win32/DinodasRAT.A |DinodasRAT
+|===
+
+== Network Indicators
+
+[options="header"]
+|===
+|IP address   | Domain |First seen | Details
+|`23.106.122[.]5` | N/A |2023-03-29 | Hosts other malicious components.
+|`23.106.122[.]46` | N/A |2023-02-13 | Hosts other malicious components.
+|`23.106.123[.]166` | N/A |2023-02-15 | Hosts other malicious components.
+|`42.119.111[.]97` | `+`fta.moit.gov[.]vn+` |2023-02-13 | Hosts DinodasRAT in a compressed file.
+|`115.126.98[.]204` | N/A |2023-05-08 | C&C server for DinodasRAT.
+|`118.99.6[.]202` | N/A |2023-02-02 | C&C server for DinodasRAT.
+|`199.231.211[.]19` | `+update.microsoft-settings[.]com+` |2022-11-07 | C&C server for DinodasRAT.
+|===
