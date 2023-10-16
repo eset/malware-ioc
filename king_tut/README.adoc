@@ -1,0 +1,133 @@
+= Operation King TUT: The Universe of Threats in LATAM –- Indicators of Compromise
+
+The blog post on Operation King TUT is available on WeLiveSecurity at https://www.welivesecurity.com/en/eset-research/operation-king-tut-universe-threats-latam/
+
+== Samples
+
+[options="header"]
+|===
+| SHA-1 | Filename | ESET Detection name | Description
+| `1ECA09DC9001A0B6D146C01F5B549DD96A0BFE5D` | `gcgdfhjfhhfhgfh.txt` | MSIL/Spy.AgentTesla.F | Payload used in Operation guinea pig.
+| `1652619B5095EEA2AFEC3A03B920BF63230C8C8A` | `confirmación de la dirección de entrega.jpg.xxe` | PowerShell/TrojanDownloader.Agent.GNZ | Payload used in Operation guinea pig.
+| `D86960DD7B093DD0F3EF1DC3BC956D57217BD4EC` | `confirmación de la dirección de entrega.jpg_________________.exe` | PowerShell/TrojanDownloader.Agent.GNZ | Payload used in Operation guinea pig.
+| `9754596E9E8B0A6E053A4988CF85099C2617A98B` | `EXE_DLL.txt` | MSIL/TrojanDownloader.Agent.NEN | Payload used in Operation guinea pig.
+| `64EFA2CE952F1616F185DAA26FF84C6D99CF50C1` | `SOPORTE DE PAGO DETALLE DE TRANSACCION A CUENTA BANCARIA.bat` | BAT/Agent.PRS | Payload used in Operation Absoluta.
+| `A4C8133A8E646D832DE8740016416CDB2BD30234` | `Analytics.exe` | MSIL/Kryptik.AFOS | Payload used in Operation red octopus.
+| `356ABAAE92952BEBEF177B446BAF61CDE4C0A334` | `Analytics.exe` | Win32/Rescoms.B | Payload used in Operation red octopus.
+| `486E1DD5DF7F1EFB4F00139F44AD03DE91931965` | `PROCESO JUDICIAL EMPRESARIAL ADMINISTRATIVO LLAMADO 1 FISCALIA GENERAL.exe` | Win64/Agent.BLT | Payload used in Operation red octopus.
+| `4A339C2E82DE11D4D4FD6540B207E356650F8897` | `TRANSFERENCIA BANCARIA ADJUNTO COMPROBANTE.exe` | Win64/Agent.BLT | Payload used in Operation red octopus.
+| `35DF300D1ACDC93E9780FD71E3A08A590BA2F934` | `DUpdate.exe` | MSIL/Kryptik.AFOG | Payload used in Operation red octopus.
+| `2376E9F05348937AA2972C93F7E3AF4A8DEF9A68` | `DEMANDA ADMINISTRATIVA JUICIO PENAL.exe` | Win64/Agent.BLT | Payload used in Operation red octopus.
+| `268909FAAC8D1666D0287583BA3CFC40F034237A` | `DEMANDA ADMINISTRATIVA JUICIO PENAL.exe` | MSIL/TrojanDropper.Agent.FOC | Payload used in Operation red octopus.
+| `E04A994AD1CDAB5A909D5C025D28A8BDD764AAD0` | `SPOA Sistema Penal Oral Acusatorio Notificacion de requerimiento fiscal a su nombre por admision de denuncia.vbs` | PowerShell/TrojanDownloader.Agent.DZH | Payload used in Operation Discordia.
+| `CF6BEE622EFB09720C9BA38D7661E7E35FFF7F07` | `Copia de la denuncia fiscal presentada en su contra NUNC Numero Unico de Noticia Criminal ESM.vbs` | PowerShell/TrojanDownloader.Agent.DZH | Payload used in Operation Discordia.
+| `F452C85ADBA79CE68D5955FB179B792235B47D3E` | `Copia de la denuncia fiscal presentada en su contra NUNC Numero Unico de Noticia Criminal ESM.vbs` | PowerShell/TrojanDownloader.Agent.DZH | Payload used in Operation Discordia.
+| `F0E598DFC618568A2BB258EC39E84FD4C6DA9C46` | `SPOA Sistema Penal Oral Acusatorio Notificacion de requerimiento fiscal a su nombre por admision de denuncia.vbs` | PowerShell/TrojanDownloader.Agent.DZH | Payload used in Operation Discordia.
+| `2F3FE7AB8A6157F2492F9B94AC85104623F12F6C` | `Copia de la denuncia fiscal presentada en su contra NUNC Numero Unico de Noticia Criminal ESM.vbs` | PowerShell/TrojanDownloader.Agent.DZH | Payload used in Operation Discordia.
+| `709BD2951E521C851CF98430010948B16DBE20EB` | `2022-01-06T22:39:14Z` | MSIL/Agent.UHC | Payload used in Operation Discordia.
+| `90DA8CBCC82629CA28062EB473206480CFBC52EF` | `2022-03-22T18:28:52Z` | MSIL/Bladabindi.AZ | Payload used in Operation Discordia.
+| `82F3960589526CB80A21B62073D8743DF1A97D34` |  | MSIL/Bladabindi.AZ | Payload used in Operation Discordia.
+| `7995E66356DA3238FC4D4D7843A6C724B7039AAF` | `Client.exe` | MSIL/Bladabindi.AZ | Payload used in Poisoned Archives.
+| `E907D930776AFA5DF317840CE68E456D68C77186` | `Sancion Interpuesta Nº02147-0145.vbs` | MSIL/TrojanDownloader.Agent.HUQ | Payload used in Poisoned Archives.
+| `6CF9F0C950A3EEBC173FB4BE51FCA9787202E8A4` | `Detalles Foto Comparendos.vbs` | VBS/TrojanDownloader.Agent.VXO | Payload used in Poisoned Archives.
+| `CB6EB3C4462B2ECF9C217F652802B3BA2A939850` | `ReciboDePago.vbs` | MSIL/TrojanDownloader.Agent.HUQ | Payload used in Poisoned Archives.
+| `FB4AB5F9CEEDF6F2AD3EEC28F9E3D44A56914D3F` |  | MSIL/Agent.CFQ | Payload used in Poisoned Archives.
+| `7995E66356DA3238FC4D4D7843A6C724B7039AAF` |  | MSIL/Bladabindi.AZ | Payload used in Poisoned Archives.
+| `5284D51D8AF3023FE7FBCA6D28126EF05465884D` | `ClassLibrary1.dll` | MSIL/Injector.WCE | Payload used in Poisoned Archives.
+| `AF1F08A0D2E0D40E99FCABA6C1C090B093AC0756` | `presupuesto 15.exe` | Win32/Bandok.NAT | Payload used in Bandidos at large.
+| `0CB9641A9BF076DBD3BA38369C1C16FCDB104FC2` |  | Win32/Bandok.NAT | Payload used in Bandidos at large.
+| `D32E7178127CE9B217E1335D23FAC3963EA73626` |  | Win32/Bandok.NAT | Payload used in Bandidos at large.
+| `124ABF42098E644D172D9EA69B05AF8EC45D6E49` | `Recibo de pago mes 3.exe` | Win32/Bandok.NAT | Payload used in Bandidos at large.
+| `89F1E932CC37E4515433696E3963BB3163CC4927` | `Cotizacion nuevas.exe` | Win32/Bandok.NAT | Payload used in Bandidos at large.
+| `A06665748DF3D4DEF63A4DCBD50917C087F57A27` | `Comunicado_Covic19.pdf` | N/A | Payload used in Bandidos at large.
+| `8D2B48D37B2B56C5045BCEE20904BCE991F99272` | `main.js` | JS/Kryptik.ALB | Malicious browser extension used in Bandidos at large.
+| `F384BDD63D3541C45FAD9D82EF7F36F6C380D4DD` | `COMUNICADO ANUAL..pdf` | PDF/TrojanDownloader.Agent.AMF | PDF used in Bandidos at large.
+| `7DE9D09D2529F9ED8EB42A6779AF4B9FA657E2C0` |  | MSIL/Spy.Agent.DBF | Payload used in Maggots in Ecuador.
+| `5119C2253019970ABD914B0C571F793F1A9466BD` | `Detalles De La Multa Electronica.js` | JS/TrojanDropper.Agent.OGG | Payload used in Maggots in Ecuador.
+| `CEC4CB73E3F7E2E33D8657648374435EBF808F50` |  | MSIL/HackTool.HackersUtility.A | Payload seen in Maggots in Ecuador.
+| `0CBD9801B38B7CB1FEFA5EEB2D953ABF8D22DB41` |  | JS/WSHRAT.A | Payload used in Maggots in Ecuador.
+| `CAD0695C649BFA4BC52F70A83FEA48CC427C6F57` |  | MSIL/Agent.VVZ | Payload seen in Maggots in Ecuador.
+| `A4E02E1C136641A37A1BEE0A23E1732B17326996` | `Notificacion_AFIP.vbs` | VBS/TrojanDownloader.Agent.UIS | Payload used in LuxPlague.
+| `BFF251CE126CCA54613BA50E1B4815424B186518` |  | PowerShell/TrojanDropper.Agent.WP | Payload used in LuxPlague.
+| `86A0376DE9B9EE12F86ED24091BC151EBAE7D147` |  | Win32/Rescoms.B | Payload used in Opeartion spalax.
+| `229BFED1D0F656125F883EC8D44D9EB85DDA1517` | `PDF COPIA DECRETO 329 DEL 2020COPIA DECRETO 329 DEL 2020 .exe` | Win32/Rescoms.B | Payload used in Operation spalax.
+| `9333A67EF082C0005B82A9B1C9E002A167173197` |  | MSIL/Bladabindi.BA | Payload used in Operation spalax.
+| `90C4FE7EB949C44607D29680B6B8A47BF294E02E` | `WA00023930550349imagnpdfvistapreviaadobeplayer003946034033991201.exe` | Win32/Rescoms.B | Payload used in Operation spalax.
+| `6358B2BF1DC6E8AFF646AD6AB919BE865FA19870` | `Instrucciones_Operativas_y_Tecnicas_Personal_y_Costos ver 1.1.exe` | Win32/Injector.EKHE | Payload used in Operation spalax.
+| `55EEC354B5F1E58A8A59A7BE1CD287EC2C2CA02E` |  | Win32/Injector.Autoit.DXR | Payload used in Operation spalax.
+| `B5ED4D1CB148709E77D88B917FFDD858153C14CA` | `COMPARENDO EN SU CONTRA .exe` | Win32/Injector.ENEY | Payload used in Operation Spalax.
+| `686EEF924E6B7AADB5BCFF1045B25163501670E6` | `unlodctar2.exe` | Win32/VictoryGate.A | Payload used in VictoryGate.
+| `A187D8BE61B7AD6C328F3EE9AC66F3D2F4B48C6B` | `JhYGcDKj.exe` | MSIL/VictoryGate.A | Payload used in VictoryGate.
+| `398C99FD804043863959CC34C68B0305B1131388` | `2czcy5xvh7br[1].jpg` | MSIL/VictoryGate.A | Payload used in VictoryGate.
+| `AF0530B9F70E62AB47BB696AEF6F79AC28E6411D` | `SOPORTE DE PAGO OCTUBRE15-2020.exe` | MSIL/Kryptik.YFQ | Payload used in Operation spalax.
+| `63DCBE2DB9CC14564EB84D5E953F2F9F5C54ACD9` |  | Win32/PSWTool.MailPassView.E | Payload seen in Maggots in Ecuador.
+|===
+
+== Certificate
+
+.SHA-1 thumbprint: `D2EC6809EF6D82AB8089DF8FC185F4312D7E3B62`
+----
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            3e:0a:2c:0e:38:22:59:d6:91:52:e1:7e:09:e4:d1:65
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: CN=Microsoft Windows Third Party Component CA 2012, O=Microsoft Corporation, OU=/emailAddress=36085FC@microsoft.com/title=, L=Redmond, ST=Washington, C=US
+        Validity
+            Not Before: Jul 14 14:41:38 2020 GMT
+            Not After : Jul 14 14:41:38 2021 GMT
+        Subject: CN=Microsoft Windows Third Party Component CA 2012, O=Microsoft Corporation, OU=/emailAddress=36085FC@microsoft.com/title=, L=Redmond, ST=Washington, C=US
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (1024 bit)
+                Modulus: [...]
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Key Usage:
+                Digital Signature
+            X509v3 Extended Key Usage:
+                Code Signing
+            X509v3 Subject Key Identifier:
+                9D:4F:9E:38:13:E9:34:74:13:69:89:17:10:01:88:91:58:08:87:27
+    Signature Algorithm: sha256WithRSAEncryption
+    Signature Value: [...]
+----
+
+== Network
+
+[options="header"]
+|===
+|IP |Domain |Hosting provider |First seen |Details
+|`+45.142.213[.]108+` |`+ladvsa[.]club+` |Stark Industries Solutions Ltd |2021-06-03 |Domain used in Bandidos At Large
+|`+45.142.214[.]31+` |`+r2.panjo[.]club+` |STARK INDUSTRIES SOLUTIONS LTD |2021-07-07 |Domain used in Bandidos At Large
+|`+46.246.4[.]12+` |`+yursos.duckdns[.]org+` |GleSYS AB |2022-03-01 |Domain used in Operation Discordia
+|`+46.246.84[.]23+` |`+marzo1.duckdns[.]org+` |GleSYS Support |2022-03-01 |Domain used in Operation Discordia
+|`+103.75.191[.]120+` |`+scitie.ddns[.]net+` +
+`+mrxud.ddns[.]net+` +
+`+luio.ddns[.]net+` |Gigabit Hosting Sdn Bhd |2019-12-31 |Domain used in VictoryGate
+|`+152.169.70[.]42+` |`+pepito1337.hopto[.]org+` |Telecom Argentina S.A. |2020-11-25 |Domain used in LuxPlague
+|`+177.255.91[.]167+` |`+bmxfghsh.duckdns[.]org+` |Colombia Móvil |2022-11-29 |Domain used in Operation Absoluta
+|`+179.13.5[.]158+` |`+env2022.duckdns[.]org+` +
+`+2022env.duckdns[.]org+` |Colombia Móvil |2022-01-12 |Domain used in Operation Discordia
+|`+181.58.154[.]33+` |`+buenaventura.duckdns[.]org+` |Telmex Colombia S.A. |2020-01-28 |Domain used in Operation Spalax
+|`+181.58.155[.]117+` |`+administradorduck.duckdns[.]org+` +
+`+agrariobuenasuerte.duckdns[.]org+` +
+`+verdehithoy.duckdns[.]org+` |Telmex Colombia S.A. |2020-01-15 |Domain used in Operation Spalax
+|`+181.140.202[.]66+` |`+pedrobedoya2021.duckdns[.]org+` |EPM Telecomunicaciones S.A. E.S.P. |2021-09-16 |Domain used in Poisoned Archives
+|`+186.112.198[.]62+` |`+wins24feb.duckdns[.]org+` |COLOMBIA TELECOMUNICACIONES S.A. ESP |2022-02-24 |Domain used in Operation Discordia
+|`+186.145.214[.]167+` |`+briserodeenero202020.duckdns[.]org+` |Telmex Colombia S.A. |2020-01-16 |Domain used in Operation Spalax
+|`+186.145.214[.]199+` |`+agosto20192019.duckdns[.]org+` |Telmex Colombia S.A. |2020-04-28 |Domain used in Operation Spalax
+|`+186.146.240[.]244+` |`+verdepruebauno.duckdns[.]org+` |Telmex Colombia S.A. |2020-12-27 |Domain used in Operation Spalax
+|`+186.147.55[.]19+` |`+windowspowershell.duckdns[.]org+` |Telmex Colombia S.A. |2020-05-13 |Domain used in Operation Spalax
+|`+186.153.208[.]136+` |`+avastsecure32.publicvm[.]com+` |Apolo -Gold-Telecom-Per |2020-07-08 |Domain used in LuxPlague
+|`+186.169.37[.]205+` |`+newsr.duckdns[.]org+` |COLOMBIA TELECOMUNICACIONES S.A. ESP |2021-10-03 |Domain used in Operation Poisoned Archives
+|`+186.169.43[.]60+` |`+viernes9.duckdns[.]org+` |COLOMBIA TELECOMUNICACIONES S.A. ESP |2021-10-22 |Domain used in Maggots in Ecuador
+|`+190.28.131[.]156+` |`+defenderav.con-ip[.]com+` |EPM Telecomunicaciones S.A. E.S.P. |2022-07-11 |Domain used in Operation Red Octopus
+|`+190.28.202[.]144+` |`+apartachord2.con-ip[.]com+` |EPM Telecomunicaciones S.A. E.S.P. |2022-07-01 |Domain used in Operation Red Octopus
+|`+190.138.41[.]31+` |`+winup.publicvm[.]com+` |Apolo -Gold-Telecom-Per |2020-08-26 |Domain used in LuxPlague
+|`+194.5.250[.]103+` |`+d1.ngobmc[.]com+` +
+`+d2.ngobmc[.]com+` |ro-zergrush-1-mnt |2021-05-07 |Domain used in Bandidos At Large
+|`+194.36.190[.]73+` |`+pronews[.]icu+` |Host Sailor Ltd |2021-04-15 |Domain used in Bandidos At Large
+|`+201.212.123[.]212+` |`+jamaica123.ddns[.]net+` |Telecom Argentina S.A. |2021-09-01 |Domain used in LuxPlague
+|===
