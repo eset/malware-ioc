@@ -1,0 +1,31 @@
+:toc:
+:toclevels: 2
+
+= Winter Vivern exploits zero-day vulnerability in Roundcube mail servers –- Indicators of Compromise
+
+The blog post on Winter Vivern is available on WeLiveSecurity at
+https://www.welivesecurity.com/en/eset-research/winter-vivern-exploits-zero-day-vulnerability-roundcube-webmail-servers/
+
+The https://www.misp-project.org[MISP] event is available in link:misp-wintervivern.event.json[`misp-wintervivern.event.json`].
+
+== Files
+
+[options="header"]
+|===
+|SHA-1 | Filename | ESET detection name | Description
+|`97ED594EF2B5755F0549C6C5758377C0B87CFAE0` | `checkupdate.js` | JS/WinterVivern.B | JavaScript loader.
+|`8BF7FCC70F6CE032217D9210EF30314DDD6B8135` | N/A | JS/Kryptik.BIK | JavaScript payload exfiltrating emails in Roundcube.
+|===
+
+
+== Network Indicators
+
+[options="header"]
+|===
+| IP address | Domain | First seen | Details
+| `38.180.76[.]31` | `recsecas[.]com` | 2023-09-28 | Winter Vivern C&C server.
+|===
+
+== Email addresses
+
+* `team.managment@outlook[.]com`
