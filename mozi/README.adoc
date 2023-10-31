@@ -1,0 +1,48 @@
+:toc:
+:toclevels: 2
+
+= Who Killed Mozi? –- Indicators of Compromise
+
+The blog post on Mozi kill switch is available on WeLiveSecurity at https://www.welivesecurity.com/en/eset-research/who-killed-mozi-finally-putting-the-iot-zombie-botnet-in-its-grave/
+
+The https://www.misp-project.org[MISP] event is available in link:mozi.misp-event.json[`mozi.misp-event.json`].
+
+== Files
+
+[options="header"]
+|===
+|SHA-1 | ESET detection name | Description
+|`0F01136F38EA50A6BEBFD58C181622AD00C40723` | Linux/Mozi.D | Mozi botnet kill switch.
+|`11516FB0E54EAAB68C1892E0A30B3C7122CFC52C` | Linux/Mozi.C | Mozi botnet kill switch.
+|`287763ABDDDC43A90EFE5D7A9950B7105CF466D2` | Linux/Mozi.D | Mozi botnet kill switch.
+|`2FD42FE5134365BE32AC40814E60A821DBCBD882` | Linux/Mozi.C | Mozi botnet kill switch.
+|`41DF289EB24B2C7FC25CD2F19EC52B0D2EB373D3` | Linux/Mozi.D | Mozi botnet kill switch.
+|`4FA35BDA6281515AC60C4F8B66F796A84A158E66` | Linux/Mozi.C | Mozi botnet kill switch.
+|`55096740F59E7F2CE86025D58BC68C2969F68CC6` | Linux/Mozi.D | Mozi botnet kill switch.
+|`5B0837C519D67DCA8B7AED53410B8961C5794805` | Linux/Mozi.C | Mozi botnet kill switch.
+|`6ACC97560A27C8F3017119DBFC8A724E853B6727` | Linux/Mozi.D | Mozi botnet kill switch.
+|`713509941C067FC17ACFFDD4E05F7596654BE661` | Linux/Mozi.C | Mozi botnet kill switch.
+|`7A33AAB1CA153CE15570F7CE8E9757C5EB16BE3D` | Linux/Mozi.D | Mozi botnet kill switch.
+|`8780B06CBAEA68A44A6BADC22220350BFD824BB0` | Linux/Mozi.D | Mozi botnet kill switch.
+|`87F407455C32C85A0A1646AE724EAB2AD3B55C29` | Linux/Mozi.C | Mozi botnet kill switch.
+|`8DD706F56D33FEA6823769C69B18A9E3F4EAF888` | Linux/Mozi.C | Mozi botnet kill switch.
+|`978E81501599ABFEBB430476ECCAAFD844764FA6` | Linux/Mozi.C | Mozi botnet kill switch.
+|`9DEF707F156DD4B0147FF3F5D1065AA7D9F058AA` | Linux/Mozi.C | Mozi botnet kill switch.
+|`ACF4706F436D4195BD6BB88DCC978BA0032C7CA2` | Linux/Mozi.D | Mozi botnet kill switch.
+|`D31A2BD004AD6A72812AAB1CADE9F58D2A5EC9C2` | Linux/Mozi.C | Mozi botnet kill switch.
+|`E8217065191DF7FC9E824567833445FF7147D319` | Linux/Mozi.C | Mozi botnet kill switch.
+|`EF45C9048F072D540B7BA5530FD0BCD5BFFF1C99` | Linux/Mozi.C | Mozi botnet kill switch.
+|`F49078D2E409C9F631320236FE8EDB4F0D502939` | Linux/Mozi.D | Mozi botnet kill switch.
+|===
+
+
+== Network Indicators
+
+[options="header"]
+|===
+| IP address | First seen | Details
+| `157.119.75[.]16` | 2023-20-09 | Server hosting Mozi kill switch binaries.
+| `69.172.75[.]177` | 2023-20-09 | Host adverstising Mozi kill switch config into its P2P network.
+| `95.24.203[.]149` | 2023-10-02 | Host adverstising Mozi kill switch config into its P2P network.
+| `190.80.24[.]115` | 2023-10-05 | Host adverstising Mozi kill switch config into its P2P network.
+|===
