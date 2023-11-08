@@ -1,0 +1,16 @@
+= Unlucky Kamran: Android malware spying on Urdu-speaking residents of Gilgit Baltistan -- Indicators of Compromise
+
+The blog post on "Unlucky Kamran: Android malware spying on Urdu-speaking
+residents of Gilgit Baltistan" is available on WeLiveSecurity at
+https://www.welivesecurity.com/en/eset-research/unlucky-kamran-android-malware-spying-urdu-speaking-residents-gilgit-baltistan/
+
+== Files
+
+[options="header"]
+|====
+| SHA-1 | Package name | ESET detection name | Description
+| `0F0259F288141EDBE4AB2B8032911C69E03817D2`
+| `com.kamran.hunzanews`
+| Android/Spy.Kamran.A
+| Kamran spyware.
+|====
