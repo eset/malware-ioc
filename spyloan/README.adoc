@@ -1,0 +1,50 @@
+= Beware of predatory fin(tech): Loan sharks use Android apps to reach new depths –- Indicators of Compromise
+
+The blog post on Android SpyLoan predatory apps is available on WeLiveSecurity at
+https://www.welivesecurity.com/en/eset-research/beware-predatory-fintech-loan-sharks-use-android-apps-reach-new-depths/
+
+== Files
+
+----
+136067AC519C23EF7B9E8EB788D1F5366CCC5045
+C0A6755FF0CCA3F13E3C9980D68B77A835B15E89
+0951252E7052AB86208B4F42EB61FC40CA8A6E29
+B4B43FD2E15FF54F8954BAC6EA69634701A96B96
+D5104BB07965963B1B08731E22F00A5227C82AF5
+F79D612398C1948DDC8C757F9892EFBE3D3F585D
+C0D56B3A31F46A7C54C54ABEE0B0BBCE93B98BBC
+E5AC364C1C9F93599DE0F0ADC2CF9454F9FF1534
+9C430EBA0E50BD1395BB2E0D9DDED9A789138B46
+6DC453125C90E3FA53988288317E303038DB3AC6
+532D17F8F78FAB9DB953970E22910D17C14DDC75
+720127B1920BA8508D0BBEBEA66C70EF0A4CBC37
+2010B9D4471BC5D38CD98241A0AB1B5B40841D18
+892CF1A5921D34F699691A67292C1C1FB36B45A8
+690375AE4B7D5D425A881893D0D34BB63462DBBF
+1F01654928FC966334D658244F27215DB00BE097
+DF38021A7B0B162FA661DB9D390F038F6DC08F72
+----
+
+== Network indicators
+
+=== C&C server domains
+
+----
+pss.aakredit[.]in
+www.guayabacash[.]com
+eg.easycredit-app[.]com
+ag.ahymvoxxg[.]com
+hwpamjvk.whcashph[.]com
+qt.qtzhreop[.]com
+rest.bhvbhgvh[.]space
+la6gd.cashwow[.]club
+mpx.mpxoptim[.]com
+oy.oyeqctus[.]com
+iu.iuuaufbt[.]com
+kk.softheartlend2[.]com
+www.credibusco[.]com
+cy.amorcash[.]com
+api.yumicash[.]com
+app.truenaira[.]co
+apitai.coccash[.]com
+----
