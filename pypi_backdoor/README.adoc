@@ -1,0 +1,186 @@
+= A pernicious potpourri of Python packages in PyPI –- Indicators of Compromise
+
+The blog post about malicious Python packages on PyPI is available
+on WeLiveSecurity at
+https://www.welivesecurity.com/en/eset-research/pernicious-potpourri-python-packages-pypi/
+
+== Samples
+
+=== Malicious packages
+
+[options="header"]
+|===
+| Date | Project | Package | SHA-256
+| 2023-11-25 | hexcolurs | `hexcolurs-1.4-py3-none-any.whl` | `f98e17c3535b3d3fa00a4e7fb5e2e507ce5a9deb8110512c0be9007c3f90b594`
+| 2023-11-25 | pyqcolour | `pyqcolour-1.2-py3-none-any.whl` | `a130b977fe18788e8ccefe253cfa9997fd4f7f1f8563b24a55caa639b75cbe0b`
+| 2023-11-20 | hexcolurs | `hexcolurs-1.2-py3-none-any.whl` | `772235bf504a53b6b32dd58576e80cda716b5f99849ed11d967b4bd07675f792`
+| 2023-11-04 | pyqcolur | `pyqcolur-1.1-py3-none-any.whl` | `8bea5ef967a7463c356df39c10803f8d43a652ea39cf2b84dc48783527e3a91e`
+| 2023-10-24 | colorfill | `colorfill-1.0-py3-none-any.whl` | `bf7ccd0315ca3fe4e6b091f1fd984c9efe1cad7263d09fa4a86a004f5d1b77d3`
+| 2023-10-23 | pyqcolored | `pyqcolored-1.1-py3-none-any.whl` | `223ee9ffe4beea8826773757e716510fbe5f7973318876718523bafd3b000f6f`
+| 2023-10-18 | pyqcolor | `pyqcolor-1.1-py3-none-any.whl` | `6dadcda3d89e5affcf39c617e7dc6c8acd31cadab800ad1892beacf72d6db422`
+| 2023-10-05 | strcolored | `strcolored-2.3-py3-none-any.whl` | `64b6392313faf39422f39b8e92675329c526fe1396b2557536265aa92339d523`
+| 2023-09-29 | pyqtcolor | `pyqtcolor-2.0-py3-none-any.whl` | `4cac5762aa0205a67f9a55d3e2806ce1a38826ac827426b3eb4ed5cb5e6b4617`
+| 2023-09-07 | pyqtcolor | `pyqtcolor-1.9-py3-none-any.whl` | `8a75671b1bb62b423bcbf84ae8456d672a760d669accefa0cb0b8a335efbc77d`
+| 2023-09-07 | strcolored | `strcolored-2.2-py3-none-any.whl` | `a7dbf6db9c0f29fe1956403b13f85acf3f42cd575e2c9512f22529282bf59ac8`
+| 2023-08-07 | strcolored | `strcolored-2.1-py3-none-any.whl` | `f591a26624344368efe1d4ec5e95fd483ffb37f2b21c8f6edbc6938e47317679`
+| 2023-07-05 | pygrabshot | `pygrabshot-1.0.2-py3-none-any.whl` | `1a94d5d39eb824ce5aa5bdfae20929e34c573e5a9fdca27907f3c73aa99f0b61`
+| 2023-07-02 | strcolored | `strcolored-2.0-py3-none-any.whl` | `27f53b9e3db609724b6f01a69d5f43f2527daf667f1e1d6c2510d6a7cd50ace8`
+| 2023-05-27 | pyqtcolor | `pyqtcolor-2.8-py3-none-any.whl` | `dbbaf7872512fb04cd743f44ee95584957fae710718e679bbbfe176235bc06d6`
+| 2023-05-16 | pyqtcolor | `pyqtcolor-2.6-py3-none-any.whl` | `4f80001783dacb8a6e15b921a413083ca043741235efe3c84f9c238be4faa283`
+| 2023-05-04 | qtcolor | `qtcolor-2.3-py3-none-any.whl` | `b1a3335d35572e03859e95271b05d424b474c0777ff711651fa47a8427671b32`
+| 2023-04-19 | ascicolor | `ascicolor-4.3-py3-none-any.whl` | `e64983b5be179734b14b9dfedabeb15007598d40eee32376c2644001d9e9ca9f`
+| 2023-04-16 | osbeautify | `osbeautify-1.8-py3-none-any.whl` | `5ccb83e674aa944ea323417a290b7dd6b5a8d6ac0fa9713b1d1b39c8218c270f`
+| 2023-04-16 | osbeautify | `osbeautify-1.7-py3-none-any.whl` | `b821cd91e4eb6584c11cf9d06ca4888bca2e170f1a3d8d496a40083e73063778`
+| 2023-04-11 | colorsmaster | `colorsmaster-3.1.tar.gz` | `858acbc4f4a320d8ec436c2b1d41fc3b065dc27bacbef6cb5e1aed77f2160510`
+| 2023-04-08 | asciicolor | `asciicolor-4.2-py3-none-any.whl` | `1c8cbc3462b75ff0ab3364b8d180d203ff0fce38c192812b3fb4ac7b1b345f5b`
+| 2023-04-08 | asciicolor | `asciicolor-4.1.tar.gz` | `bfd6ae7a69f2bddab37bd6c1dd718d66aab99f272544da385651848ca4b5d961`
+| 2023-04-08 | asciicolor | `asciicolor-4.1-py3-none-any.whl` | `2a87771e4963886b58a0c71698c5ffe6a52a313782e3ea7fc1610b0a6500e917`
+| 2023-04-07 | asciicolor | `asciicolor-1.0.tar.gz` | `0eff26d10a52cabc17840ee368432bde6c1f833ebf0a7154a3afa53259a76e7b`
+| 2023-03-19 | forestyle | `forestyle-2.9.tar.gz` | `dfda24afdf8b9446fe7234bf2373c31ce6b41b6741943ab01386d891a373c7f0`
+| 2023-03-19 | forestyle | `forestyle-2.9-py3-none-any.whl` | `5449b5252bf85ca61e343a670c74cdb1c0d74905175899fb0cc6414fadb7bfd7`
+| 2023-03-18 | isusfuci | `isusfuci-1.1.tar.gz` | `d95f8a7cb45331dd831bd0eb644f15b0c51f2861de906a56f465cd59542b6001`
+| 2023-03-18 | isusfuci | `isusfuci-1.1-py3-none-any.whl` | `dce2d0832e0efe25f4aa0c8661792a05f35338844007b7956f98eb45a87e4418`
+| 2023-03-18 | isusfuci | `isusfuci-2.8-py3-none-any.whl` | `4f5e4d5a996f398bdd70ff43869720a0fa4d9868b7664dac9136d50010e558a4`
+| 2023-03-18 | pyinitise | `pyinitise-2.8.tar.gz` | `e4daf3ed004d5e3242b7942d4d8aa5c22d159ee6d971238341680fc81f849817`
+| 2023-03-18 | pyinitise | `pyinitise-2.8-py3-none-any.whl` | `80a773b87c63ecbb0710809464c383332dfe83cc414ada90241033d54f1e08df`
+| 2023-02-23 | setupyntx | `setupyntx-0.0.1.tar.gz` | `c9139c35b15c3fea0fb961e801947bf39af03d42cb5286f1827cf74ea140608d`
+| 2023-02-22 | setupyntq | `setupyntq-0.0.1.tar.gz` | `c9a31e4a27eba0c50f00909dc001b44deb9bbc752894dc89b4fd315208237e1f`
+| 2023-02-22 | setupynts | `setupynts-0.0.1.tar.gz` | `96e7611dd407b7efb526d89bfc157de7c1fdc621e7f65b43f75769383144ddce`
+| 2023-02-15 | pystylie | `pystylie-2.8.tar.gz` | `b02b08a3d2cf2ac60e663ea9df96eec35aff07f7324305c1ed76ffa74b1840a0`
+| 2023-02-15 | pystylie | `pystylie-2.8-py3-none-any.whl` | `c4cab3a1bcec1fec25873dead64e3fe47a00f1381f385e7f68ad2f5646dea5d3`
+| 2023-02-13 | pydriverslog | `pydriverslog-0.7.tar.gz` | `ae60c270ec8fad847eb986e0c7f7b1e74c724a5140ec623f035537f0f9a56110`
+| 2023-02-13 | pydriverslog | `pydriverslog-0.7-py3-none-any.whl` | `4fc0faefa3938708413b6207c8e03d6ab2de2f7be1a5d1ab8c8f3f404d924558`
+| 2023-02-13 | pydriverslog | `pydriverslog-0.8.tar.gz` | `26d13d2dcddcec699cfca79277495dff40995ddbd94d65672f70f43dbeecb7fa`
+| 2023-02-13 | pydriverslog | `pydriverslog-0.8-py3-none-any.whl` | `c4aa9f7523ffe94c28f85a872c1ae06959dc2d939d52ba378109f044dbe9d07b`
+| 2023-02-13 | pydriverslog | `pydriverslog-0.9.tar.gz` | `cca09561fd27cd6619e4feaa3f2858b0e485e7b0d9eddc2e57190b609c08a71f`
+| 2023-02-13 | pydriverslog | `pydriverslog-0.9-py3-none-any.whl` | `ca39148e2ab2b917f9ae3227f4cf8baaa39ae0d39c0055b40fd80260f0fd9fe1`
+| 2023-02-13 | setupint3s | `setupint3s-0.0.2.tar.gz` | `7bbba7d71c0f51d2054c92b14e0bbe6c7c6f2e7d68245279c2128f67758e2776`
+| 2023-02-12 | setupint3 | `setupint3-0.0.2.tar.gz` | `3c72def0deb2369865240c7ad2499e9ad9f44f809848e1e74df93f7565faf4ad`
+| 2023-02-11 | setup1nter | `setup1nter-0.0.2.tar.gz` | `642e1027983c79bd771742e72e49d946a23fb71acc80cbcc0279a2709f77614f`
+| 2023-02-08 | setup1nter | `setup1nter-0.0.1.tar.gz` | `c6f790ac839302f8db2bc8d2b37b68a9f5ef42c36e384f5798fb641f72c641b9`
+| 2023-02-07 | pyinstalers | `pyinstalers-0.0.1.tar.gz` | `d6ac514d83d9bba7ee529f2035fe4d315d9883a1de2dade6fce30232857ae1fe`
+| 2023-02-07 | tikinters | `tikinters-0.0.1.tar.gz` | `b3556ebd47f7f7c84d8f8521ed9076982ccc2da768a03b50f73a730f31a6e60c`
+| 2023-02-06 | tk1ntres | `tk1ntres-0.0.1.tar.gz` | `9aeaf2dbd2cb230207ce921a3e7e0e359f8e5129713d7f99400c39ae27595057`
+| 2023-02-06 | tkintres | `tkintres-0.0.1.tar.gz` | `3392c9418fc75cce569935f20c518f879fa4eef267f8e171cc31b744c5d9f42b`
+| 2023-02-04 | tkintrs | `tkintrs-0.0.1.tar.gz` | `8a37f693ab094eb5ae924e9785de4922ac48941978e81b4df4f67ccaa9e787aa`
+| 2023-02-03 | tkint3rs | `tkint3rs-2.0.1.tar.gz` | `0ea5d17b2c0ecb74572a3f245ae3f080666528bdfafa0c4af15f57338d9ba63c`
+| 2023-02-03 | tkint3rs | `tkint3rs-2.0.0.tar.gz` | `7fb3f04c04c86c1c2f6b40392abd965006199df51b80722be36ed7e18bbe3491`
+| 2023-02-02 | tkint3r | `tkint3r-1.0.2.tar.gz` | `869ed0333bf1cf158ebe82bae51aa94aa282832cfe5631c6f6a4ee1c6612b65c`
+| 2023-02-02 | tk1nter | `tk1nter-0.0.1.tar.gz` | `7dcfb580015995b7cc3b106d4dd47c5470f6e9abf9d67a6b5a7fb1378a1de688`
+| 2023-02-01 | forecolor5 | `forecolor5-0.1.5.tar.gz` | `58b014d3585b092ecd4b6776c74dac7cfdf69bb447ef220c5219de1851067120`
+| 2023-02-01 | forecolor5 | `forecolor5-0.1.1.tar.gz` | `204e496e174bc325cb66759a1afcd5f369fabb42badb3c122a37f3b64f4e2f19`
+| 2023-02-01 | forecolor5 | `forecolor5-0.1.0.tar.gz` | `230c84fa357272034e5590078b019501cd4ee3d55563e28d166179a85fa74dc8`
+| 2023-02-01 | forecolor5 | `forecolor5-0.0.9.tar.gz` | `75d41d21955725453a5baf754648cd4eb3e100a693867a16c13da03f65679beb`
+| 2023-02-01 | forecolor5 | `forecolor5-0.0.6.tar.gz` | `9c40035f8a75704e7645762d42df1e5e6fae41a7f8a0f243e8043294d1eb44d3`
+| 2023-02-01 | forecolor5 | `forecolor5-0.0.4.tar.gz` | `bd820fdfd15ce08227ca6fdeeb34235e96c052768a1ff4f70b2de1f8a574c0a4`
+| 2023-02-01 | forecolor5 | `forecolor5-0.0.3.tar.gz` | `4ee81ce3c5b3036fe5061144c7d020df27ec29ba1a88a9ad5c155fd2d6af83c5`
+| 2023-02-01 | forecolor5 | `forecolor5-0.0.2.tar.gz` | `d6a60b633a7130f4a6d967bd98174cc3380b99753ace341edb8b6b14b00a425e`
+| 2023-02-01 | forecolor5 | `forecolor5-0.0.1.tar.gz` | `195ea0e2c86141d863f4886a32345637e3d51b7d1e013230ab038912b9738251`
+| 2023-02-01 | forecolors7 | `forecolors7-8.0.0.tar.gz` | `aea2f8c047366d04f3321d460a47e8d85c3c51d77e681af9d2581301825e00ba`
+| 2023-01-24 | pystilez | `pystilez-4.0.tar.gz` | `b286327c7e81b0ba718d929115cc5613206bab7a08eec1e7ca2b92e5c333d0c4`
+| 2023-01-24 | pystilez | `pystilez-3.9.tar.gz` | `9cd94f420e7a4d667f7ec9289cda23d944ccc3834146e13d6f7e84148b4f49b9`
+| 2023-01-22 | pystiles | `pystiles-3.9.tar.gz` | `2d04eb5b8f04d1df520743577880c3e8ee7d99b1855eef0cc59418a985039b2a`
+| 2023-01-22 | pystiles | `pystiles-3.8.tar.gz` | `b0ec47b106e5944185e62dc733c035a089e2fc33e1c7d4aeb2540a447c46ee99`
+| 2023-01-21 | pythonpathenv | `pythonpathenv-2.9.tar.gz` | `d4b96d7456f03e54cb17d8f14c05b582d3e117e4ab8e9644fc85f32b16369ca0`
+| 2023-01-21 | pythonpathenv | `pythonpathenv-2.9-py3-none-any.whl` | `91a40896e5b9dc119b2edb624ea2b56f7401a00131bb08a73e496fdb401ada84`
+| 2023-01-21 | pystiles | `pystiles-3.7.tar.gz` | `97c46df404d56944d83c16d4057bc36dd2fe5d03ca701e6dc43dac30ce7110ed`
+| 2023-01-21 | pystiles | `pystiles-3.5.tar.gz` | `17be5f89b2bba346c71e2661e1a91f9ca6eec7f844ced33d5973063220e0e36a`
+| 2023-01-21 | pystiles | `pystiles-3.2.tar.gz` | `eed7997b8a5234e4def368c8f9a7bab59046726f49b2aa82f2b59e961151488b`
+| 2023-01-21 | pystiles | `pystiles-3.0.tar.gz` | `ad3cf03bb861e7ba569df226919908f5d41fe798bd29276f530e9dbc8be43f00`
+| 2023-01-21 | pystiles | `pystiles-2.9.tar.gz` | `5ee37d8bbde26dd06de352f7c27a8b133f8336bf370cae8279a5eefb744c7150`
+| 2023-01-17 | pystiyle | `pystiyle-2.9.tar.gz` | `4189faa568130394d82b1dfee239b110860b4d61d6772db54ea9e05b46ea57fd`
+| 2023-01-17 | pystiyle | `pystiyle-2.9-py3-none-any.whl` | `2090324325a8c6f6fafcad8531dd10aa81d4ee91c8b7bef5f29298506567f797`
+| 2023-01-15 | pystiyle | `pystiyle-2.8.tar.gz` | `15de5fa79438e0060e9f1bfefe389cd73d4e36cd4a9eafedcd0dd123bbeca178`
+| 2023-01-15 | pystiyle | `pystiyle-2.8-py3-none-any.whl` | `ee1ddeb3a0a572af9f7e5ca77af8aceb4308745d7922743a127efa24b8b0bc53`
+| 2023-01-11 | pystyile | `pystyile-2.7.tar.gz` | `82205af99f18e18f73c0733cfe679e6f0524952c0bdcc34b03ea456c50ac74e9`
+| 2023-01-11 | pystyile | `pystyile-2.7-py3-none-any.whl` | `6dbb4895641e4794230a1dca27f8176fc5189056be5dcee8a4fa310cbd9eab62`
+| 2023-01-08 | pystyile | `pystyile-2.8.tar.gz` | `e829028ae8272a7da669b9e07e65c54471a84911f5f4ab1f20962bada4be0ce0`
+| 2023-01-08 | pystyile | `pystyile-2.8-py3-none-any.whl` | `3cf5174219eda108c6dad669f815a6eda34ebdae949e568ba1ac9c9d4ef5e306`
+| 2023-01-06 | pystyile | `pystyile-2.9.tar.gz` | `1d60d4bdb9c5402dd9c1153581d952c1bacc6fbb1e2f60f606db8b94be8edf4f`
+| 2023-01-06 | pystyile | `pystyile-2.9-py3-none-any.whl` | `3c7fa28e3bed6da54512c5e0bc82b35b0bfbbe655ae98c7c97bf59884166d175`
+| 2023-01-05 | pystyile | `pystyile-3.0.tar.gz` | `cfcac381de5f29d7c27a2cea55f6447d28386d304cb0559c44c8d5b31cea04f1`
+| 2023-01-05 | pystyile | `pystyile-3.0-py3-none-any.whl` | `5e410cf891b8148076cf7796d9db8c1e316494c8ecca2d1ddf737b0c24440372`
+| 2022-11-29 | pystylle | `pystylle-0.8.tar.gz` | `06a0bd9fc055c70080cd9b4a0a2d5747deb81142d9b76852bc242b5a98388c8e`
+| 2022-11-29 | pystylle | `pystylle-0.8-py3-none-any.whl` | `2046fe1224da6fcf160178245b46160f9ddc6038bd774cd91014502ece306be3`
+| 2022-11-27 | pyshdesings | `pyshdesings-1.9.tar.gz` | `256d4ffcabb78d5322e996b63381d4783600ed1eac8eadc9c38f8c1a07ca89cf`
+| 2022-11-27 | pyshdesings | `pyshdesings-1.9-py3-none-any.whl` | `0ebb3f34eb7da7abafceeb569195e0f300ecdfb52b25c47538d2d2f2594c8a4d`
+| 2022-11-27 | pydesings | `pydesings-2.9.tar.gz` | `ee832d04fef837d392143a1a89dc6d0a17f7aaf2d5275b5b78cfbe00e2ad8ac1`
+| 2022-11-27 | pydesings | `pydesings-2.9-py3-none-any.whl` | `c4c2c2db115b0d54d00dddbe2576eabfb697fbcabadb336e8c97ed344b27bb5c`
+| 2022-11-23 | Pystyiles | `Pystyiles-0.9.tar.gz` | `b90b506592f96ed304fc9d4b7dab47909372426edd18b98bd88d2011da3c2f77`
+| 2022-11-23 | Pystyiles | `Pystyiles-0.9-py3-none-any.whl` | `899199793b1905997237c9408b872f1d6129e58c3840250152e352007ab63e1c`
+| 2022-10-28 | pystyle | `pystyle-2.2.tar.gz` | `470615b685a46a3f71f76831a9b50f388f9a3744e0675278ec73891defee00ef`
+| 2022-10-28 | pystyle | `pystyle-2.2-py3-none-any.whl` | `18c910bdbb522edd2914961e27f02dc990be6092c10458e4a25c8a4fe59a9bf2`
+| 2022-10-28 | pystyle | `pystyle-2.1.tar.gz` | `63ac59041e97752f6756b7a88ffa3359008ed10849d2465a136078221bd83a48`
+| 2022-10-28 | pystyle | `pystyle-2.1-py3-none-any.whl` | `360fb81142950e1319cbb02f10b916762b77433cb87a9ab28b09f89e82d38aae`
+| 2022-10-26 | pystyles | `pystyles-2.5.tar.gz` | `7f69b2392c795265242e4c65ef3d2778481c4a37541c781bd3f390f8b95fdda5`
+| 2022-09-29 | bscscan | `bscscan-8.9.tar.gz` | `5a69a3021378563539b63d50f263f01d1a7542fedf43459557973e28ff2ae9cb`
+| 2022-09-29 | looksrare | `looksrare-8.9.tar.gz` | `5399984272a789df0f996f645cc43e31fecfce16b939080f0783eba5b64f703e`
+| 2022-09-29 | binancesmartchain | `binancesmartchain-8.9.tar.gz` | `0eaaa47949091fa2b74a660bca1e039efe7f86744675a30fc2370c6951fa5e22`
+| 2022-09-29 | ethereum2 | `ethereum2-8.9.tar.gz` | `41dbc876bf90c4ab78d02d32a76334e4dd92c30fc6932dee9a1e8adb535e27f0`
+| 2022-09-29 | 1inch | `1inch-8.9.tar.gz` | `23915c9434509cfb98ac61235b9592deddbb2d23dc420fd79a35b0e116dbe502`
+| 2022-09-29 | 1inch | `1inch-8.7.tar.gz` | `b92f135b2223aa0ce005894ca9817f6686255dcd9fc1398b4fb6b3149cc165f4`
+| 2022-09-29 | 1inch | `1inch-8.6.tar.gz` | `34d90396fa38233e71a488618672e9471ee2b517f57641706c764f582d9fb957`
+| 2022-09-29 | ethereum0etl | `ethereum0etl-8.6.tar.gz` | `128a180cdba67b486bae1b5d2853900082695325bf1971c9f57dd246f78841ff`
+| 2022-09-29 | ethereum2 | `ethereum2-8.6.tar.gz` | `717a6999436101f3868cce0103baf7464e839c9ac8526173da41dc50f7839102`
+| 2022-09-29 | ethereum2 | `ethereum2-8.4.tar.gz` | `cd89588e577296f399bef132d9cf923a7bfb82a7549121ffe87ab67556f9692a`
+| 2022-09-29 | ethereum2 | `ethereum2-8.3.tar.gz` | `a91b54686af8ee54764c9c8e0a7d1ebcec447026403bdc762d296e7e417c8a7d`
+| 2022-09-25 | pygradient | `pygradient-2.5.tar.gz` | `02d837e277df27e551e36552822becbd39b98fcd3e83ce62edc2bab8abe099cd`
+| 2022-09-25 | pygradient | `pygradient-2.3.tar.gz` | `36aac0b2054f9d99e1608c1361a4bb0a20a868f35e05c03d3c1c30025abd6730`
+| 2022-09-25 | pygradient | `pygradient-2.2.tar.gz` | `71439254b82c45b2bb493ee34951f3d91bb1886af6f51fb5d6cd6d56f3ccc9ef`
+|===
+
+==== ESET detection names
+
+- Python/Agent.AGF
+- Python/Agent.AGG
+- Python/Agent.AGJ
+- Python/Agent.AGK
+- Python/Agent.AGN
+- Python/Agent.AGU
+- Python/Agent.AGV
+- Python/Agent.AGW
+- Python/Agent.AGY
+- Python/Agent.AGZ
+- Python/Agent.AHA
+- Python/Agent.ARQ
+- Python/HackTool.Rshell.G
+- Python/Kryptik.EC
+- Python/PSW.Agent.AQC
+- Python/TrojanDownloader.Agent.QD
+- Python/TrojanDownloader.Agent.YH
+- Python/TrojanDownloader.Agent.YI
+- Python/TrojanDownloader.Agent.YJ
+- Python/TrojanDownloader.Agent.YP
+- Python/TrojanDownloader.Agent.YQ
+- Python/TrojanDownloader.Agent.YR
+- Python/TrojanDownloader.Agent.YS
+- Python/TrojanDownloader.Agent.ZO
+
+=== Later stages
+
+[options="headers"]
+|===
+| SHA-1 | Filename | Detection | Description
+| `439A5F553E4EE15EDCA1CFB77B96B02C77C5C388` | `cache.py` | Python/Agent.AGL
+| Linux backdoor downloader.
+| `B94E493579CC1B7864C70FAFB43E15D2ED14A16B` | `coloramma-0.5.4-py3-none-any.whl` | Python/Agent.AGU
+| Package with Linux backdoor installer.
+| `AE3072A72F8C54596DCBCDE9CFE74A4146A4EF52` | `coloramma-4.5-py3-none-any.zip` | Python/Agent.AOY
+| Package with Windows backdoor.
+| `70C271F79837B8CC42BD456A22EC51D1261ED0CA` | `junk.py` | Python/Agent.AGM
+| Windows persistence installer.
+| `B0C8D6BEEE80813C8181F3038E42ADACC3848E68` | `proclean` | Linux/Spy.Agent.BB
+| Linux backdoor.
+| `07204BA8D39B20F5FCDB9C0242B112FADFFA1BB4` | `prov.py` | Python/Agent.AGL
+| Linux backdoor downloader.
+| `EF59C159D3FD668C3963E5ADE3C726B8771E6F54` | `tmp` | Linux/Spy.Agent.BB
+| Linux backdoor.
+|===
+
+== Network
+
+[options="headers"]
+|===
+| Domain name | IP Address | First seen | Description
+| `blazywound.ignorelist.com` | `204.152.203.78` | 2022-11-21 | C&C server for backdoor component
+|===
