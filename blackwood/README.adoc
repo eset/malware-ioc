@@ -1,0 +1,33 @@
+= NSPX30: a sophisticated AitM-enabled implant evolving since 2005 –- Indicators of Compromise
+
+The blog post on Blackwood's NSPX30 is available on WeLiveSecurity at
+https://www.welivesecurity.com/en/eset-research/nspx30-sophisticated-aitm-enabled-implant-evolving-since-2005
+
+== Files
+
+[options="header"]
+|===
+|SHA-1 |Filename |ESET detection name|Description
+|`625BEF5BD68F75624887D732538B7B01E3507234` |`minibrowser_shell.dll` |Win32/Agent.AFYI |NSPX30 initial dropper.
+|`43622B9573413E17985B3A95CBE18CFE01FADF42` |`comx3.dll` |Win32/Agent.AFYH |Loader for the installer.
+|`240055AA125BD31BF5BA23D6C30133C5121147A5` |`msnsp.dll` |Win32/Agent.AFYH |Persistent loader.
+|`308616371B9FF5830DFFC740318FD6BA4260D032` |`mshlp.dll` |Win32/Agent.AFYH |Loader for the orchestrator.
+|`796D05F299F11F1D78FBBB3F6E1F497BC3325164` |`comx3.dll.txt` |Win32/TrojanDropper.Agent.SWR |Decrypted installer.
+|`82295E138E89F37DD0E51B1723775CBE33D26475` |`WIN.cfg` |Win32/Agent.AFYI |Decrypted orchestrator.
+|`44F50A81DEBF68F4183EAEBC08A2A4CD6033DD91` |`msfmtkl.dat` |Win32/Agent.VKT |Decrypted backdoor.
+|`DB6AEC90367203CAAC9D9321FDE2A7F2FE2A0FB6` |`c001.dat` |Win32/Agent.AFYI |Credentials and data stealer plugin.
+|`9D74FE1862AABAE67F9F2127E32B6EFA1BC592E9` |`c002.dat` |Win32/Agent.AFYI |Tencent QQ message interception plugin.
+|`8296A8E41272767D80DF694152B9C26B607D26EE` |`c003.dat` |Win32/Agent.AFYI |Audio capture plugin.
+|`8936BD9A615DD859E868448CABCD2C6A72888952` |`a010.dat` |Win32/Agent.VKT |Information collector plugin.
+|`AF85D79BC16B691F842964938C9619FFD1810C30` |`b011.dat` |Win32/Agent.VKT |Keylogger plugin.
+|`ACD6CD486A260F84584C9FF7409331C65D4A2F4A` |`b010.dat` |Win32/Agent.VKT |Screen capture plugin.
+|===
+
+== Network Indicators
+
+[options="header"]
+|===
+|IP address        |First seen | Details
+|`104.193.88[.]123` |2017-08-04 | Legitimate website (`www.baidu[.]com`) contacted by the orchestrator and backdoor components to download payloads. The HTTP GET request is intercepted by AitM.
+|`183.134.93[.]171`  |2021-10-17 | Legitimate domain (`dl_dir.qq[.]com`), part of the URL from where the dropper was downloaded by legitimate software.
+|===
