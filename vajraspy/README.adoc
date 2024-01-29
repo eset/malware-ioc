@@ -1,0 +1,42 @@
+= VajraSpy: A Patchwork of espionage apps –- Indicators of Compromise
+
+The blog post on Android VajraSpy is available on WeLiveSecurity at
+https://www.welivesecurity.com/en/eset-research/vajraspy-patchwork-espionage-apps
+
+== Files
+
+----
+BAF6583C54FC680AA6F71F3B694E71657A7A99D0
+846B83B7324DFE2B98264BAFAC24F15FD83C4115
+5CFB6CF074FF729E544A65F2BCFE50814E4E1BD8
+1B61DC3C2D2C222F92B84242F6FCB917D4BC5A61
+BCD639806A143BD52F0C3892FA58050E0EEEF401
+137BA80E443610D9D733C160CCDB9870F3792FB8
+5F860D5201F9330291F25501505EBAB18F55F8DA
+3B27A62D77C5B82E7E6902632DA3A3E5EF98E743
+44E8F9D0CD935D0411B85409E146ACD10C80BF09
+94DC9311B53C5D9CC5C40CD943C83B71BD75B18A
+E0D73C035966C02DF7BCE66E6CE24E016607E62E
+235897BCB9C14EB159E4E74DE2BC952B3AD5B63A
+8AB01840972223B314BF3C9D9ED3389B420F717F
+----
+
+== Network indicators
+
+=== C&C server domains
+
+----
+hello-chat-c47ad-default-rtdb.firebaseio[.]com
+chit-chat-e9053-default-rtdb.firebaseio[.]com
+meetme-abc03-default-rtdb.firebaseio[.]com
+chatapp-6b96e-default-rtdb.firebaseio[.]com
+tiktalk-2fc98-default-rtdb.firebaseio[.]com
+wave-chat-e52fe-default-rtdb.firebaseio[.]com
+privchat-6cc58-default-rtdb.firebaseio[.]com
+glowchat-33103-default-rtdb.firebaseio[.]com
+letschat-5d5e3-default-rtdb.firebaseio[.]com
+quick-chat-1d242-default-rtdb.firebaseio[.]com
+yooho-c3345-default-rtdb.firebaseio[.]com
+rafaqat-d131f-default-rtdb.asia-southeast1.firebasedatabase[.]app
+160.20.147[.]67
+----
