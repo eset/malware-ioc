@@ -1,0 +1,55 @@
+:toc:
+:toclevels: 2
+
+= Operation Texonto: Information operation targeting Ukrainian speakers in the context of the war –- Indicators of Compromise
+
+The blog post on Operation Texonto is available on WeLiveSecurity at
+https://www.welivesecurity.com/en/eset-research/operation-texonto-information-operation-targeting-ukrainian-speakers-context-war/
+
+== Files
+
+[options="header"]
+|===
+|SHA-1 | Filename | ESET detection name | Description
+|`3C201B2E40357996B3832C72EA305606F07477E3` |`Minagroua111.pdf` |PDF/Fraud.CDY |PDF used in an information operation against Ukraine.
+|`15BF71A771256846D44E8CB3012EE6BC6F9E1532` |`Mozua.pdf` |PDF/Fraud.CDU |PDF used in an information operation against Ukraine.
+|`960341B2C296C425821E4B42435A0618B89D4037` |`Minregion.pdf` |PDF/Fraud.CDT |PDF used in an information operation against Ukraine.
+|`BB14153040608A4F559F48C20B98C1056C794A60` |`Minregion.pdf` |PDF/Fraud.CDX |PDF used in an information operation against Ukraine.
+|===
+
+
+== Network Indicators
+
+[options="header"]
+|===
+| IP address | Domain | First seen | Details
+|`45.9.148[.]165` |infoattention[.]com |2023-12-25 |Server used to send emails in Operation Texonto.
+|`45.9.150[.]58` |stronginfo1[.]com |2023-12-25 |Server used to send emails in Operation Texonto.
+|`46.249.58[.]177` |infonotifi[.]com |2023-12-28 |Server used to send emails in Operation Texonto.
+|`185.12.14[.]13` |infonotification[.]com |2023-12-28 |Server used to send emails in Operation Texonto.
+|`45.9.148[.]207` |minuaregionbecareful[.]com |2023-11-23 |Server used to send emails in Operation Texonto.
+|`89.116.52[.]79` |uaminagro[.]com, ua-minagro[.]com |2023-11-17 |Server used to send emails in Operation Texonto.
+|`45.129.199[.]222` |uamtu[.]com |2023-11-20 |Server used to send emails in Operation Texonto.
+|`45.129.199[.]200` |minuaregion[.]org |2023-11-21 |Server used to send emails in Operation Texonto.
+|`195.54.160[.]59` |minagroua[.]org |2023-11-21 |Server used to send emails in Operation Texonto.
+|`193.43.134[.]113` |login.microsoftidonline[.]com |2023-10-03 |Office 365 phishing server.
+|`154.49.137[.]16` |choicelive149200[.]com |2023-10-26 |Phishing server.
+| `N/A` |navalny-votes[.]net |2023-09-09 |Domain related to Alexei Navalny.
+| `N/A` |navalny-votesmart[.]net |2023-09-09 |Domain related to Alexei Navalny.
+| `N/A` |navalny-voting[.]net |2023-09-09 |Domain related to Alexei Navalny.
+|===
+
+
+== Email addresses
+
+* `minregion@uaminagro[.]com`
+* `minregion@minuaregion[.]org`
+* `minregion@minuaregionbecareful[.]com`
+* `minregion@uamtu[.]com`
+* `mozua@ua-minagro[.]com`
+* `mozua@minagroua[.]org`
+* `minagroua@vps-3075.lethost[.]network`
+* `happyny@infoattention[.]com`
+* `happyny@stronginfo1[.]com`
+* `happyny@infonotifi[.]com`
+* `happyny@infonotification[.]com`
