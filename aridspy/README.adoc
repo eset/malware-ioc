@@ -1,0 +1,49 @@
+= Arid Viper poisons Android apps with AridSpy - Indicators of Compromise
+
+The blog post on Android VajraSpy is available on WeLiveSecurity at
+https://www.welivesecurity.com/en/eset-research/arid-viper-poisons-android-apps-with-aridspy/
+
+== Files
+
+----
+797073511A15EB85C1E9D8584B26BAA3A0B14C9E
+5F0213BA62B84221C9628F7D0A0CF87F27A45A28
+A934FB482F61D85DDA5E52A7015F1699BF55B5A9
+F49B00896C99EA030DCCA0808B87E414BBDE1549
+3485A0A51C6DAE251CDAD20B2F659B3815212162
+568E62ABC0948691D67236D9290D68DE34BD6C75
+DB6B6326B772257FDDCB4BE7CF1A0CC0322387D8
+2158D88BCE6368FAC3FCB7F3A508FE6B96B0CF8A
+B806B89B8C44F46748888C1F8C3F05DF2387DF19
+E71F1484B1E3ACB4C8E8525BA1F5F8822AB7238B
+16C8725362D1EBC8443C97C5AB79A1B6428FF87D
+A64D73C43B41F9A5B938AE8558759ADC474005C1
+C999ACE5325B7735255D9EE2DD782179AE21A673
+78F6669E75352F08A8B0CA155377EEE06E228F58
+8FF57DC85A7732E4A9D144F20B68E5BC9E581300
+----
+
+== Network indicators
+
+=== C&C server domains
+
+----
+gameservicesplay[.]com
+crashstoreplayer[.]website
+reblychat[.]com
+proj3-1e67a.firebaseio[.]com
+proj-95dae.firebaseio[.]com
+proj-2bedf.firebaseio[.]com
+proj-54ca0.firebaseio[.]com
+project44-5ebbd.firebaseio[.]com
+www.palcivilreg[.]com
+analyticsandroid[.]com
+almoshell[.]website
+orientflags[.]com
+elsilvercloud[.]com
+www.lapizachat[.]com
+lapizachat[.]com
+alwaysgoodidea[.]com
+nortirchats[.]com
+ultraversion[.]com
+----
