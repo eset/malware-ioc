@@ -1,0 +1,22 @@
+= HotPage - Indicators of Compromise
+
+The blog post about HotPage "HotPage: Story of a signed, vulnerable,
+ad-injecting driver" is available on WeLiveSecurity at
+https://www.welivesecurity.com/en/eset-research/hotpage-story-signed-vulnerable-ad-injecting-driver/.
+
+== Hashes
+
+[options="header"]
+|===
+| SHA-1                                      | Description                       | ESET detection name
+| `0D1D298A3EBCA4ECE0BA52828DD3B7676D884E7F` | HotPage Driver                    | Win64/HotPage.B
+| `DDD82422D418FC8E8748BCC7BD2E2BC468124A6B` | 32-bit HotPage hooking library    | Win32/HotPage.B
+| `D5D646B052E8B25723991CB4CAB51CB2F9D55906` | 64-bit HotPage hooking library    | Win64/HotPage.A
+| `941F0D2D4589FB8ADF224C8969F74633267B2561` | HotPage installer                 | Win32/HotPage.A
+|===
+
+== C&C servers
+
+- 61.147.93.49
+- 140.210.24.33
+- 202.189.5.222
