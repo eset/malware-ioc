@@ -1,0 +1,18 @@
+= Cursed tapes: Exploiting the EvilVideo vulnerability in Telegram for Android - Indicators of Compromise
+
+The blog post on Cursed tapes: Exploiting the EvilVideo vulnerability in Telegram for Android is available on WeLiveSecurity at
+https://www.welivesecurity.com/en/eset-research/cursed-tapes-exploiting-evilvideo-vulnerability-telegram-android/
+
+== Files
+
+----
+F159886DCF9021F41EAA2B0641A758C4F0C4033D
+----
+
+== Network indicators
+
+=== C&C server domains
+
+----
+infinityhackscharan.ddns[.]net
+----
