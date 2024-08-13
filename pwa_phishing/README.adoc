@@ -1,0 +1,22 @@
+== Be careful what you pwish for: Phishing in PWA applications -– Indicators of Compromise
+
+The blog post on "Be careful what you pwish for: Phishing in PWA applications"
+is available on WeLiveSecurity at
+https://www.welivesecurity.com/en/eset-research/be-careful-what-you-pwish-for-phishing-in-pwa-applications/
+
+[options="header"]
+|===
+|SHA-1 |Filename |Detection |Description
+|`D3D5AE6B8AE9C7C1F8690452760745E18640150D` |`base.apk` |Android/Spy.Banker.CIC |Android Mobile Phishing App
+|`66F97405A1538A74CEE4209E59A1E22192BC6C08` |`base.apk` |Android/Spy.Banker.CLW |Android Mobile Phishing App
+|===
+
+[options="header"]
+|===
+|IP |Domain |Hosting provider |First seen |Details
+|`+46.175.145[.]67+` |`+hide-me[.]online+` |Serverius |2024-03-05 |C&C server.
+|`+185.181.165[.]124+` |`+cyrptomaker[.]info+` |NETH LLC |2024-02-21 |C&C server.
+|`+172.67.182[.]151+` |`+blackrockapp[.]eu+` |Cloudflare, Inc. |2024-04-07 |C&C server.
+|`+185.68.16[.]56+` |`+csas.georgecz[.]online+` |Hosting Ukraine LTD |2023-11-29 |Distribution server.
+|`+188.114.96[.]9+` |`+play-protect[.]pro+` |Cloudflare, Inc. |2024-01-18 |Distribution server.
+|===
