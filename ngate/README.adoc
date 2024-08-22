@@ -1,0 +1,28 @@
+= NGate Android malware relays NFC traffic to steal cash -- Indicators of Compromise
+
+The blog post on "NGate Android malware relays NFC traffic to steal cash" is
+available on WeLiveSecurity at
+https://www.welivesecurity.com/en/eset-research/ngate-android-malware-relays-nfc-traffic-to-steal-cash/
+
+== Files
+
+----
+7225ED2CBA9CB6C038D8615A47423E45522A9AD1
+66DE1E0A2E9A421DD16BD54B371558C93E59874F
+DA84BC78FF2117DDBFDCBA4E5C4E3666EEA2013E
+E7AE59CD44204461EDBDDF292D36EEED38C83696
+103D78A180EB973B9FFC289E9C53425D29A77229
+11BE9715BE9B41B1C8527C9256F0010E26534FDB
+----
+
+== Network indicators
+
+=== C&C server domains and distribution websites
+
+----
+raiffeisen-cz[.]eu
+client.nfcpay.workers[.]dev
+172.187.98[.]211
+app.mobil-csob-cz[.]eu
+nfc.cryptomaker[.]info
+----
