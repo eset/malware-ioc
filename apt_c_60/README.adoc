@@ -1,0 +1,20 @@
+= APT-C-60 - Indicators of Compromise
+
+The blog post "Analysis of two arbitrary code execution vulnerabilities
+affecting WPS office" is available at
+https://www.welivesecurity.com/en/eset-research/analysis-of-two-arbitrary-code-execution-vulnerabilities-affecting-wps-office/.
+
+== Hashes
+
+[options="header"]
+|===
+| SHA-1                                      | Description                       | ESET detection name
+| `7509B4C506C01627C1A4C396161D07277F044AC6` | WPS Office exploit CVE-2024-7262  | HTML/Agent.HQ
+| `08906644b0ef1ee6478c45a6e0dd28533a9efc29` | APT-C-60 download component       | Win32/TrojanDownloader.Agent.HRP
+|===
+
+== C&C servers
+
+- `rammenale[.]com`
+- `162.222.214[.]48`
+- `131.153.206[.]231`
