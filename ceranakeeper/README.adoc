@@ -1,0 +1,33 @@
+= CeranaKeeper - Indicators of Compromise
+
+The blog post about CeranaKeeper, _CeranaKeeper -- Separating the bee from the panda: 
+CeranaKeeper making a beeline for Thailand_ is available at 
+https://www.welivesecurity.com/en/eset-research/separating-bee-panda-ceranakeeper-making-beeline-thailand
+
+== Hashes
+
+[options="header"]
+|===
+| SHA-1                                      | Filename            | Detection         | Description
+| `8e3b3c600ab812537a84409adfc5169518862fd3` | `EACore.dll`        | Win32/Agent.VJO   | YK0130 reverse shell.
+| `0b9efaef974c625d9f8e3935b33c16ffbc59d798` | `SearchApp.exe`     | Python/Agent.AGT  | WavyExfiller.
+| `7a5f5cf1aa0e1909f1cda4cf99cbcbef026c68d7` | `OneDrive.exe`      | Win32/Agent.VKV   | OneDoor.
+| `322eb20377dbdb4acb3067a4f2aaa47631ca5ed5` | `dropbox.exe`       | Python/Agent.AQN  | PyInstaller DropFlop.
+| `6db173c599a2fb0de200cabfbf0d4c07f090f82f` | `Update.exe`        | Python/Agent.AJJ  | BingoShell.
+| `37db71172ab64c108fedca85e5be51a499b2ba12` | `oneDrive.exe`      | Python/Agent.AGP  | WavyExfiller PixelDrain variant.
+| `50eee1b2601aebae0ce7b360d7c970b7c1ee0866` | `MsOcrRes.orp`      | Win32/Agent.AFWW  | TONESHELL type B.
+| `42a3d252faa7d7457c7f708ec6f44f3c1afd843e` | `avk.dll`           | Win32/Agent.VJQ   | TONESHELL variant.
+| `f2329c6066497068ff3e1cec0be20461f23d80cc` | `TurboActivate.dll` | Win32/Agent.AFWX  | TONESHELL variant.
+|===
+
+== C&C servers
+
+- `104.21.81[.]233`
+- `172.67.165[.]197`
+- `103.245.165[.]237`
+- `103.27.202[.]185`
+- `www.toptipvideo[.]com`
+- `dljmp2p[.]com`
+- `inly5sf[.]com`
+- `www.dl6yfsl[.]com`
+- `www.uvfr4ep[.]com`
