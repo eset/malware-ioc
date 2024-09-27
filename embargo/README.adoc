@@ -1,0 +1,45 @@
+= Embargo ransomware: Rock'n'Rust – Indicators of Compromise
+
+The blog post on Embargo toolkit is available on WeLiveSecurity at
+https://www.welivesecurity.com/en/eset-research/embargo-ransomware-rocknrust/
+
+== Samples
+
+[options="header"]
+|===
+|SHA-1 |Filename |Detection |Description
+|`+A1B98B1FBF69AF79E5A3F27AA6256417488CC117+` |`dtest.dll` |Win64/Agent.ECY |MDeployer
+|`+F0A25529B0D0AABCE9D72BA46AAF1C78C5B48C31+` |`fxc.exe` |Win64/Agent.ECY |MDeployer
+|`+2BA9BF8DD320990119F42F6F68846D8FB14194D6+` |`fdasvc.exe` |Win64/Agent.ECY |MDeployer
+|`+946D1EFD0073A2452CFA1F36FBC46BCC41C5853A+` |`EraAgentInstaller.bat` |BAT/KillAV.NHH |BAT script that disables a security solution
+|`+946D1EFD0073A2452CFA1F36FBC46BCC41C5853A+` |`update.bat` |BAT/KillAV.NHH |BAT script that disables a security solution
+|`+888F27DD2269119CF9524474A6A0B559D0D201A1+` |`praxisbackup.exe` |Win64/Agent.ECW |MS4Killer
+|`+BA14C43031411240A0836BEDF8C8692B54698E05+` |`praxisbackup.exe` |Win64/Agent.ECW |MS4Killer
+|`+8A85C1399A0E404C8285A723C4214942A45BBFF9+` |`pay.exe` |Win32/Filecoder.Embargo.A |Embargo ransomware
+|`+612EC1D41B2AA2518363B18381FD89C12315100F+` |`win32.exe` |Win32/Filecoder.Embargo.A |Embargo ransomware
+|`+7310D6399683BA3EB2F695A2071E0E45891D743B+` |`Sysmon64.sys` |Win64/ITMSystem.A |Legitimate vulnerable driver dropped and used by MS4Killer
+|`+7310D6399683BA3EB2F695A2071E0E45891D743B+` |`Sysprox.sys` |Win64/ITMSystem.A |Legitimate vulnerable driver dropped and used by MS4Killer
+|===
+
+== Additional MDeployer file paths
+
+- `C:\Windows\Debug\b.cache`
+- `C:\Windows\Debug\a.cache`
+- `C:\Windows\Debug\fail.txt`
+- `C:\Windows\Debug\stop.exe`
+
+== Commands used by MDeployer
+
+- `reg delete HKLM\SYSTEM\CurrentControlSet\Control\Safeboot\Network\WinDefend /f`
+- `C:\Windows\System32\cmd.exe /c takeown /R /A /F "C:\ProgramData\[redacted]" /D Y`
+- `C:\Windows\System32\cmd.exe /c takeown /R /A /F "C:\Program Files\[redacted]" /D Y`
+- `sc create irnagentd binpath="C:\Windows\System32\cmd.exe /c start /B rundll32.exe C:\Windows\Debug\dtest.dll,Open" start=auto`
+- `sc delete irnagentd`
+- `reg add HKLM\SYSTEM\CurrentControlSet\Control\Safeboot\Network\irnagentd /t REG_SZ /d Service /f`
+- `C:\Windows\System32\cmd.exe /c bcdedit /set {default} safeboot Minimal`
+- `C:\Windows\System32\cmd.exe /c bcdedit /deletevalue {default} safeboot`
+- `reg delete HKLM\SYSTEM\CurrentControlSet\Control\Safeboot\Network\WinDefend /f`
+- `C:\Windows\System32\cmd.exe /c ping localhost -n 5 > nul & del C:\Windows\Debug\dtest.dll`
+- `shutdown -r -f -t 00`
+- `C:\Windows\praxisbackup.exe`
+- `C:\Windows\Debug\pay.exe`
