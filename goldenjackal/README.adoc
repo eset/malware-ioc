@@ -1,0 +1,40 @@
+= GoldenJackal Indicators of Compromise
+
+== Mind the (air) gap - GoldenJackal gooses government guardrails
+
+The blog post on GoldenJackal's two separate toolsets for breaching air-gapped
+systems is available on WeLiveSecurity at
+https://www.welivesecurity.com/en/eset-research/mind-air-gap-goldenjackal-gooses-government-guardrails.
+
+=== Files
+[options="header"]
+|====
+|SHA-1 |Filename |Detection |Description
+|`DA9562F5268FA61D19648DFF9C6A57FB8AB7B0D7` |`winaero.exe` |Win32/Agent.AGKQ |GoldenDealer
+|`5F12FFD272AABC0D5D611D18812A196A6EA2FAA9` |`1102720677` |Python/Agent.ANA +
+Python/HackTool.Agent.W +
+Python/Riskware.LdapDump.A +
+Python/Riskware.Impacket.C |GoldenHowl
+|`6DE7894F1971FDC1DF8C4E4C2EDCC4F4489353B6` |`OfficeAutoComplete.exe` |WinGo/Agent.AAO |GoldenRobo
+|`7CB7C3E98CAB2226F48BA956D3BE79C52AB62140` |`prinntfy.dll` |WinGo/DataStealer.A |GoldenUsbCopy
+|`8F722EB29221C6EAEA9A96971D7FB78DAB2AD923` |`zUpdater.exe` |WinGo/Spy.Agent.AH |GoldenUsbGo
+|`24FBCEC23E8B4B40FEA188132B0E4A90C65E3FFB` |`fc.exe` |WinGo/DataStealer.C |GoldenAce
+|`A87CEB21EF88350707F278063D7701BDE0F8B6B7` |`upgrade` |MSIL/Agent.WPJ |JackalWorm - simpler version
+|`9CBE8F7079DA75D738302D7DB7E97A92C4DE5B71` |`fp.exe` |WinGo/Spy.Agent.CA |GoldenBlacklist
+|`9083431A738F031AC6E33F0E9133B3080F641D90` |`fp.exe` |Python/TrojanDownloader.Agent.YO |GoldenPyBlacklist
+|`C830EFD843A233C170285B4844C5960BA8381979` |`cb.exe` |Python/Agent.ALE |GoldenMailer
+|`F7192914E00DD0CE31DF0911C073F522967C6A97` |`GoogleUpdate.exe` |WinGo/Agent.YH |GoldenDrive
+|`B2BAA5898505B32DF7FE0A7209FC0A8673726509` |`fp.exe` |Python/Agent.ALF |Python HTTP server
+|====
+
+=== Network
+
+[options="header"]
+|====
+|IP |Domain |Hosting provider |First seen |Details
+|83.24.9[.]124 |N/A |OPL - Hostmaster, ORG-PT1-RIPE |2019-08-09 |Primary C&C server used by GoldenJackal in 2019.
+|196.29.32[.]210 |N/A |Charles Mashamba |2019-08-09 |Secondary C&C server used by GoldenJackal in 2019.
+|N/A |assistance[.]uz |N/A |2019-09-25 |Compromised website used to download malware.
+|N/A |thehistore[.]com |N/A |2019-09-25 |Compromised website used as C&C server.
+|N/A |xgraphic[.]ro |N/A |2019-09-25 |Compromised website used as C&C server.
+|====
